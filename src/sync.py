@@ -44,72 +44,91 @@ def sync(full: bool = False, limit: int | None = None) -> int:
     skipped = 0
     failed = 0
 
-    for person in client.iter_persons_with_address():
-        if limit is not None and added >= limit:
-            break
+    try:
+        for person in client.iter_persons_with_address():
+            if limit is not None and added >= limit:
+                break
 
-        pid = str(person["person_id"])
-        if not full and pid in persons_map:
-            skipped += 1
-            continue
-        if full and pid in persons_map and persons_map[pid].get("lat") is not None:
-            skipped += 1
-            continue
+            pid = str(person["person_id"])
+            if not full and pid in persons_map:
+                skipped += 1
+                continue
+            if full and pid in persons_map and persons_map[pid].get("lat") is not None:
+                skipped += 1
+                continue
 
-        address = person["address"]
-        log.info("Geocoding person %s: %s", pid, address[:80])
-        geo = geocoder.geocode(address)
-        if not geo:
-            failed += 1
+            address = person["address"]
+            log.info("Geocoding person %s: %s", pid, address[:80])
+            try:
+                geo = geocoder.geocode(address)
+            except Exception as exc:
+                log.exception("Unexpected geocode error for %s: %s", pid, exc)
+                failed += 1
+                continue
+
+            if not geo:
+                failed += 1
+                persons_map[pid] = {
+                    "person_id": int(pid) if pid.isdigit() else pid,
+                    "project_number": next_num,
+                    "address": address,
+                    "lat": None,
+                    "lon": None,
+                    "error": "geocode_failed",
+                }
+                next_num += 1
+                if (added + failed) % 10 == 0:
+                    state["next_project_number"] = next_num
+                    save_state(state)
+                    write_geojson(state)
+                continue
+
+            city_key = (geo.city or address.split(",")[-1]).strip().lower()
+            lat, lon = geo.lat, geo.lon
+            address_type = "city" if geo.is_city_level else "street"
+
+            if geo.is_city_level:
+                occupied = _occupied_near_city(state, city_key)
+                lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
+                log.info(
+                    "Scattered city-level person %s near %s -> %.5f,%.5f",
+                    pid,
+                    city_key,
+                    lat,
+                    lon,
+                )
+
             persons_map[pid] = {
                 "person_id": int(pid) if pid.isdigit() else pid,
                 "project_number": next_num,
                 "address": address,
-                "lat": None,
-                "lon": None,
-                "error": "geocode_failed",
+                "lat": lat,
+                "lon": lon,
+                "address_type": address_type,
+                "city_key": city_key,
+                "geocode_display": geo.display_name,
             }
             next_num += 1
-            # Persist progress periodically
-            if (added + failed) % 10 == 0:
+            added += 1
+
+            if added % 5 == 0:
                 state["next_project_number"] = next_num
                 save_state(state)
                 write_geojson(state)
-            continue
-
-        city_key = (geo.city or address.split(",")[-1]).strip().lower()
-        lat, lon = geo.lat, geo.lon
-        address_type = "city" if geo.is_city_level else "street"
-
-        if geo.is_city_level:
-            occupied = _occupied_near_city(state, city_key)
-            lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
-            log.info(
-                "Scattered city-level person %s near %s -> %.5f,%.5f",
-                pid,
-                city_key,
-                lat,
-                lon,
-            )
-
-        persons_map[pid] = {
-            "person_id": int(pid) if pid.isdigit() else pid,
-            "project_number": next_num,
-            "address": address,
-            "lat": lat,
-            "lon": lon,
-            "address_type": address_type,
-            "city_key": city_key,
-            "geocode_display": geo.display_name,
-        }
-        next_num += 1
-        added += 1
-
-        if added % 5 == 0:
-            state["next_project_number"] = next_num
-            save_state(state)
-            write_geojson(state)
-            log.info("Progress: added=%s skipped=%s failed=%s", added, skipped, failed)
+                log.info(
+                    "Progress: added=%s skipped=%s failed=%s", added, skipped, failed
+                )
+    except Exception:
+        log.exception(
+            "Sync interrupted after added=%s skipped=%s failed=%s — saving progress",
+            added,
+            skipped,
+            failed,
+        )
+        state["next_project_number"] = next_num
+        save_state(state)
+        write_geojson(state)
+        raise
 
     state["next_project_number"] = next_num
     save_state(state)

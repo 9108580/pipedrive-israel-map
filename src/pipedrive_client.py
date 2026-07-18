@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from typing import Any, Iterator
 
 import requests
@@ -50,12 +51,31 @@ class PipedriveClient:
         p = dict(params or {})
         p["api_token"] = self.token
         url = f"{self.base}{path}"
-        r = self.session.get(url, params=p, timeout=60)
-        r.raise_for_status()
-        data = r.json()
-        if not data.get("success", True) and data.get("error"):
-            raise RuntimeError(f"Pipedrive error: {data.get('error')}")
-        return data
+        last_exc: Exception | None = None
+        for attempt in range(5):
+            try:
+                r = self.session.get(url, params=p, timeout=60)
+                if r.status_code in (429, 500, 502, 503, 504):
+                    wait = min(60, 2 ** attempt)
+                    log.warning(
+                        "Pipedrive HTTP %s on %s, retry in %ss",
+                        r.status_code,
+                        path,
+                        wait,
+                    )
+                    time.sleep(wait)
+                    continue
+                r.raise_for_status()
+                data = r.json()
+                if not data.get("success", True) and data.get("error"):
+                    raise RuntimeError(f"Pipedrive error: {data.get('error')}")
+                return data
+            except requests.RequestException as exc:
+                last_exc = exc
+                wait = min(60, 2 ** attempt)
+                log.warning("Pipedrive request failed (%s), retry in %ss", exc, wait)
+                time.sleep(wait)
+        raise RuntimeError(f"Pipedrive request failed after retries: {last_exc}")
 
     def discover_address_fields(self) -> list[str]:
         """Return person field keys that look like address fields (main keys only)."""

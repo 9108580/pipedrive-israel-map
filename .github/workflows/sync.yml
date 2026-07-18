@@ -48,6 +48,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run sync
+        id: sync
+        continue-on-error: true
         env:
           PIPEDRIVE_API_TOKEN: ${{ secrets.PIPEDRIVE_API_TOKEN }}
           PIPEDRIVE_COMPANY_DOMAIN: ${{ secrets.PIPEDRIVE_COMPANY_DOMAIN }}
@@ -63,6 +65,7 @@ jobs:
           python -m src.sync $ARGS
 
       - name: Commit updated map data
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -75,13 +78,22 @@ jobs:
           fi
 
       - name: Setup Pages
+        if: always()
         uses: actions/configure-pages@v5
 
       - name: Upload map artifact
+        if: always()
         uses: actions/upload-pages-artifact@v3
         with:
           path: map
 
       - name: Deploy to GitHub Pages
         id: deployment
+        if: always()
         uses: actions/deploy-pages@v4
+
+      - name: Fail job if sync failed
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo "Sync failed — check logs above. Map was still deployed if possible."
+          exit 1
