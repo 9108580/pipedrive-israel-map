@@ -1,8 +1,8 @@
-name: Sync Pipedrive → Israel map
+name: Sync Pipedrive Israel map
 
 on:
   schedule:
-    # Sunday–Thursday 06:00 UTC ≈ 09:00 Israel (IDT, UTC+3)
+    # Sunday-Thursday 06:00 UTC ~ 09:00 Israel (IDT, UTC+3)
     - cron: "0 6 * * 0-4"
   workflow_dispatch:
     inputs:
