@@ -1,5 +1,5 @@
 {
-  "next_project_number": 4,
+  "next_project_number": 76,
   "persons": {
     "9": {
       "person_id": 9,
@@ -30,6 +30,692 @@
       "address_type": "street",
       "city_key": "מועצה אזורית מרום הגליל",
       "geocode_display": "כלנית, מועצה אזורית מרום הגליל, נפת צפת, מחוז הצפון, ישראל"
+    },
+    "21": {
+      "person_id": 21,
+      "project_number": 4,
+      "address": "ראמה",
+      "lat": 32.936371872016814,
+      "lon": 35.36970511504758,
+      "address_type": "city",
+      "city_key": "الرامة",
+      "geocode_display": "الرامة, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "22": {
+      "person_id": 22,
+      "project_number": 5,
+      "address": "רוויה, Revaya, Israel",
+      "lat": 32.450438421241515,
+      "lon": 35.47753428406622,
+      "address_type": "city",
+      "city_key": "מועצה אזורית עמק המעיינות",
+      "geocode_display": "רוויה, 6661, רוויה, מועצה אזורית עמק המעיינות, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "23": {
+      "person_id": 23,
+      "project_number": 6,
+      "address": "Yitskhak Wald St 18, Rishon LeZion, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "24": {
+      "person_id": 24,
+      "project_number": 7,
+      "address": "Hosen, Israel",
+      "lat": 32.99670138048353,
+      "lon": 35.29510028504728,
+      "address_type": "city",
+      "city_key": "חוסן",
+      "geocode_display": "חוסן, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "25": {
+      "person_id": 25,
+      "project_number": 8,
+      "address": "42, Even Menachem, Israel",
+      "lat": 33.0736105,
+      "lon": 35.2941382,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "אבן מנחם, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "26": {
+      "person_id": 26,
+      "project_number": 9,
+      "address": "Elkosh, Israel",
+      "lat": 33.030993853269955,
+      "lon": 35.327173298413975,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "אלקוש, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "27": {
+      "person_id": 27,
+      "project_number": 10,
+      "address": "Shomera, Israel",
+      "lat": 33.079430236824585,
+      "lon": 35.28765738328943,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "שומרה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "28": {
+      "person_id": 28,
+      "project_number": 11,
+      "address": "שקד 340",
+      "lat": 31.2653242,
+      "lon": 35.2202838,
+      "address_type": "street",
+      "city_key": "ערד",
+      "geocode_display": "שקד, ערד, נפת באר שבע, מחוז הדרום, ישראל"
+    },
+    "29": {
+      "person_id": 29,
+      "project_number": 12,
+      "address": "HaEgoz St 8, Safed, Israel",
+      "lat": 32.9616439,
+      "lon": 35.5098079,
+      "address_type": "street",
+      "city_key": "צפת",
+      "geocode_display": "האגוז, רמת מנחם בגין, צפת, נפת צפת, מחוז הצפון, 1311502, ישראל"
+    },
+    "30": {
+      "person_id": 30,
+      "project_number": 13,
+      "address": "Julis, Israel",
+      "lat": 32.94351060293279,
+      "lon": 35.18929837680702,
+      "address_type": "city",
+      "city_key": "جولس",
+      "geocode_display": "جولس, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "31": {
+      "person_id": 31,
+      "project_number": 14,
+      "address": "Yanuh, Yarka, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "32": {
+      "person_id": 32,
+      "project_number": 15,
+      "address": "Julis, Israel",
+      "lat": 32.941822454132556,
+      "lon": 35.184272324483466,
+      "address_type": "city",
+      "city_key": "جولس",
+      "geocode_display": "جولس, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "33": {
+      "person_id": 33,
+      "project_number": 16,
+      "address": "Beit Jann, Israel",
+      "lat": 32.96281950410102,
+      "lon": 35.378450202382425,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "34": {
+      "person_id": 34,
+      "project_number": 17,
+      "address": "סאג'ור 395",
+      "lat": 32.9419893,
+      "lon": 35.3421983,
+      "address_type": "street",
+      "city_key": "ساجور",
+      "geocode_display": "ساجور, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "35": {
+      "person_id": 35,
+      "project_number": 18,
+      "address": "Rumana, Israel",
+      "lat": 32.791251841093974,
+      "lon": 35.311947621374216,
+      "address_type": "city",
+      "city_key": "مجلس إقليمي البطوف",
+      "geocode_display": "رمانة, مجلس إقليمي البطوف, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "36": {
+      "person_id": 36,
+      "project_number": 19,
+      "address": "Yanuh, Yarka, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "37": {
+      "person_id": 37,
+      "project_number": 20,
+      "address": "ירכא",
+      "lat": 32.95496684624172,
+      "lon": 35.2117241609918,
+      "address_type": "city",
+      "city_key": "ירכא",
+      "geocode_display": "ירכא, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "38": {
+      "person_id": 38,
+      "project_number": 21,
+      "address": "גולס",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "39": {
+      "person_id": 39,
+      "project_number": 22,
+      "address": "Netiv HaGdud",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "40": {
+      "person_id": 40,
+      "project_number": 23,
+      "address": "Uzeir, Israel",
+      "lat": 32.79284612484628,
+      "lon": 35.326561899513905,
+      "address_type": "city",
+      "city_key": "مجلس إقليمي البطوف",
+      "geocode_display": "العزير, مجلس إقليمي البطوف, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "41": {
+      "person_id": 41,
+      "project_number": 24,
+      "address": "תומר",
+      "lat": 31.519053272882875,
+      "lon": 34.5933817189109,
+      "address_type": "city",
+      "city_key": "שדרות",
+      "geocode_display": "תומר, הדקל, אזור תעשייה, שדרות, נפת אשקלון, מחוז הדרום, 8720178, ישראל"
+    },
+    "42": {
+      "person_id": 42,
+      "project_number": 25,
+      "address": "פצאל",
+      "lat": 32.81197272098806,
+      "lon": 34.99129648502898,
+      "address_type": "city",
+      "city_key": "חיפה",
+      "geocode_display": "קפה פאזל, מדרגות שמואל, רמת הדר, רובע הדר, חיפה, נפת חיפה, מחוז חיפה, 3339108, ישראל"
+    },
+    "43": {
+      "person_id": 43,
+      "project_number": 26,
+      "address": "תומר",
+      "lat": 31.520212600253213,
+      "lon": 34.59723451971379,
+      "address_type": "city",
+      "city_key": "שדרות",
+      "geocode_display": "תומר, הדקל, אזור תעשייה, שדרות, נפת אשקלון, מחוז הדרום, 8720178, ישראל"
+    },
+    "44": {
+      "person_id": 44,
+      "project_number": 27,
+      "address": "Beit Jann, Israel",
+      "lat": 32.96705634550157,
+      "lon": 35.375261232519286,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "45": {
+      "person_id": 45,
+      "project_number": 28,
+      "address": "Beit Jann, Israel",
+      "lat": 32.967355263123515,
+      "lon": 35.37861013347768,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "46": {
+      "person_id": 46,
+      "project_number": 29,
+      "address": "משואה 314",
+      "lat": 31.8947044,
+      "lon": 35.0080189,
+      "address_type": "street",
+      "city_key": "מודיעין-מכבים-רעות",
+      "geocode_display": "משואה, מודיעין-מכבים-רעות, נפת רמלה, מחוז המרכז, 7173709, ישראל"
+    },
+    "47": {
+      "person_id": 47,
+      "project_number": 30,
+      "address": "Beit Jann, Israel",
+      "lat": 32.9653594354964,
+      "lon": 35.38113980526022,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "48": {
+      "person_id": 48,
+      "project_number": 31,
+      "address": "Beit Jann, Israel",
+      "lat": 32.963855833379974,
+      "lon": 35.38098924139802,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "49": {
+      "person_id": 49,
+      "project_number": 32,
+      "address": "Fatsa'el",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "50": {
+      "person_id": 50,
+      "project_number": 33,
+      "address": "62, Even Menachem, Israel",
+      "lat": 33.0736105,
+      "lon": 35.2941382,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "אבן מנחם, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "51": {
+      "person_id": 51,
+      "project_number": 34,
+      "address": "24, Shtula, Israel",
+      "lat": 33.084763,
+      "lon": 35.3143141,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "שתולה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "52": {
+      "person_id": 52,
+      "project_number": 35,
+      "address": "Yanuh, Yarka, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "53": {
+      "person_id": 53,
+      "project_number": 36,
+      "address": "Gush Khalav St 9, Holon, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "54": {
+      "person_id": 54,
+      "project_number": 37,
+      "address": "Asif St 23, Karmiel, Israel",
+      "lat": 32.9143548,
+      "lon": 35.276,
+      "address_type": "street",
+      "city_key": "כרמיאל",
+      "geocode_display": "אסיף, כרמיאל, גבעת רם, רמת רבין, כרמיאל, נפת עכו, מחוז הצפון, 2195106, ישראל"
+    },
+    "55": {
+      "person_id": 55,
+      "project_number": 38,
+      "address": "85, Nevatim, Israel",
+      "lat": 31.2225371,
+      "lon": 34.8807983,
+      "address_type": "street",
+      "city_key": "מועצה אזורית בני שמעון",
+      "geocode_display": "נבטים, מועצה אזורית בני שמעון, נפת באר שבע, מחוז הדרום, ישראל"
+    },
+    "56": {
+      "person_id": 56,
+      "project_number": 39,
+      "address": "Kiryat Ata, Israel",
+      "lat": 32.8058501,
+      "lon": 35.1150929,
+      "address_type": "city",
+      "city_key": "קרית אתא",
+      "geocode_display": "קרית אתא, נפת חיפה, מחוז חיפה, 2820313, ישראל"
+    },
+    "57": {
+      "person_id": 57,
+      "project_number": 40,
+      "address": "Kafr Manda, Israel",
+      "lat": 32.81214385996462,
+      "lon": 35.261754819298986,
+      "address_type": "city",
+      "city_key": "كفر مندا",
+      "geocode_display": "كفر مندا, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "58": {
+      "person_id": 58,
+      "project_number": 41,
+      "address": "משהד 88",
+      "lat": 32.7401998,
+      "lon": 35.3245126,
+      "address_type": "street",
+      "city_key": "משהד",
+      "geocode_display": "משהד, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "59": {
+      "person_id": 59,
+      "project_number": 42,
+      "address": "Amzaleg St 5, Rishon LeZion, Israel",
+      "lat": 31.9693905,
+      "lon": 34.7997193,
+      "address_type": "street",
+      "city_key": "ראשון לציון",
+      "geocode_display": "חיים אמזלג, אברמוביץ, ראשון לציון, נפת רחובות, מחוז המרכז, 7528766, ישראל"
+    },
+    "60": {
+      "person_id": 60,
+      "project_number": 43,
+      "address": "ג'ת",
+      "lat": 32.40058282313681,
+      "lon": 35.03969807698516,
+      "address_type": "city",
+      "city_key": "جت",
+      "geocode_display": "جت, נפת חדרה, מחוז חיפה, ישראל"
+    },
+    "61": {
+      "person_id": 61,
+      "project_number": 44,
+      "address": "Kabul, Israel",
+      "lat": 32.86797092751725,
+      "lon": 35.20736402766243,
+      "address_type": "city",
+      "city_key": "كابول",
+      "geocode_display": "كابول, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "62": {
+      "person_id": 62,
+      "project_number": 45,
+      "address": "Tirat Yehuda, Israel",
+      "lat": 32.01702217882942,
+      "lon": 34.932755054207554,
+      "address_type": "city",
+      "city_key": "טירת יהודה",
+      "geocode_display": "טירת יהודה, מועצה אזורית חבל מודיעין, נפת פתח תקווה, מחוז המרכז, ישראל"
+    },
+    "63": {
+      "person_id": 63,
+      "project_number": 46,
+      "address": "David Remez St 33, Nahariyya, Israel",
+      "lat": 33.0015727,
+      "lon": 35.0904185,
+      "address_type": "street",
+      "city_key": "נהריה",
+      "geocode_display": "דוד רמז, נווה מנחם בגין, נהריה, נפת עכו, מחוז הצפון, 2220903, ישראל"
+    },
+    "64": {
+      "person_id": 64,
+      "project_number": 47,
+      "address": "Mehora",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "65": {
+      "person_id": 65,
+      "project_number": 48,
+      "address": "Deir Hanna, Israel",
+      "lat": 32.86119345404653,
+      "lon": 35.36636592379022,
+      "address_type": "city",
+      "city_key": "دير حنا",
+      "geocode_display": "دير حنا, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "66": {
+      "person_id": 66,
+      "project_number": 49,
+      "address": "טובא",
+      "lat": 32.96669394889951,
+      "lon": 35.59120142223995,
+      "address_type": "city",
+      "city_key": "طوبا الزنغرية",
+      "geocode_display": "طوبا, طوبا الزنغرية, נפת צפת, מחוז הצפון, 1200000, ישראל"
+    },
+    "67": {
+      "person_id": 67,
+      "project_number": 50,
+      "address": "Yitskhak Sadeh St 33, Petah Tikva, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "68": {
+      "person_id": 68,
+      "project_number": 51,
+      "address": "Merom Kna'an St 320, Safed, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "69": {
+      "person_id": 69,
+      "project_number": 52,
+      "address": "נצרת",
+      "lat": 32.70724927192178,
+      "lon": 35.3038566753541,
+      "address_type": "city",
+      "city_key": "נצרת",
+      "geocode_display": "נצרת, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "70": {
+      "person_id": 70,
+      "project_number": 53,
+      "address": "Kisra-Sumei, Israel",
+      "lat": 32.96324074448767,
+      "lon": 35.30301621227489,
+      "address_type": "city",
+      "city_key": "كيسرى-كفر سميع",
+      "geocode_display": "كيسرى-كفر سميع, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "71": {
+      "person_id": 71,
+      "project_number": 54,
+      "address": "58, Avigdor, Israel",
+      "lat": 31.7109457,
+      "lon": 34.7435754,
+      "address_type": "street",
+      "city_key": "מועצה אזורית באר טוביה",
+      "geocode_display": "אביגדור, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל"
+    },
+    "72": {
+      "person_id": 72,
+      "project_number": 55,
+      "address": "Meishar St 57, Rosh Haayin, Israel",
+      "lat": 32.0921255,
+      "lon": 34.9762714,
+      "address_type": "street",
+      "city_key": "ראש העין",
+      "geocode_display": "מישר, פרס נובל, ראש העין, נפת פתח תקווה, מחוז המרכז, 4809284, ישראל"
+    },
+    "73": {
+      "person_id": 73,
+      "project_number": 56,
+      "address": "53, Avigdor, Israel",
+      "lat": 31.7109457,
+      "lon": 34.7435754,
+      "address_type": "street",
+      "city_key": "מועצה אזורית באר טוביה",
+      "geocode_display": "אביגדור, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל"
+    },
+    "74": {
+      "person_id": 74,
+      "project_number": 57,
+      "address": "ג'ת 124",
+      "lat": 32.3988067,
+      "lon": 35.0375429,
+      "address_type": "street",
+      "city_key": "جت",
+      "geocode_display": "جت, נפת חדרה, מחוז חיפה, ישראל"
+    },
+    "75": {
+      "person_id": 75,
+      "project_number": 58,
+      "address": "Boltimor St 15, Acre, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "76": {
+      "person_id": 76,
+      "project_number": 59,
+      "address": "Abu Snan, Israel",
+      "lat": 32.95739065560791,
+      "lon": 35.17401811153665,
+      "address_type": "city",
+      "city_key": "أبو سنان",
+      "geocode_display": "أبو سنان, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "77": {
+      "person_id": 77,
+      "project_number": 60,
+      "address": "Abu Snan, Israel",
+      "lat": 32.95565748592186,
+      "lon": 35.170613988280195,
+      "address_type": "city",
+      "city_key": "أبو سنان",
+      "geocode_display": "أبو سنان, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "78": {
+      "person_id": 78,
+      "project_number": 61,
+      "address": "נחף",
+      "lat": 32.934436378346234,
+      "lon": 35.318482704643486,
+      "address_type": "city",
+      "city_key": "نحف",
+      "geocode_display": "نحف, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "79": {
+      "person_id": 79,
+      "project_number": 62,
+      "address": "Tur'an, Israel",
+      "lat": 32.77958796653942,
+      "lon": 35.375598651538425,
+      "address_type": "city",
+      "city_key": "طرعان",
+      "geocode_display": "طرعان, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "80": {
+      "person_id": 80,
+      "project_number": 63,
+      "address": "Yanuh-Jat, Israel",
+      "lat": 32.976402312160474,
+      "lon": 35.23173115983249,
+      "address_type": "city",
+      "city_key": "يانوح جت",
+      "geocode_display": "يانوح جت, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "81": {
+      "person_id": 81,
+      "project_number": 64,
+      "address": "Meishar St 58, Rosh Haayin, Israel",
+      "lat": 32.0921255,
+      "lon": 34.9762714,
+      "address_type": "street",
+      "city_key": "ראש העין",
+      "geocode_display": "מישר, פרס נובל, ראש העין, נפת פתח תקווה, מחוז המרכז, 4809284, ישראל"
+    },
+    "82": {
+      "person_id": 82,
+      "project_number": 65,
+      "address": "Horev St 69, Tnuvot, 4283000, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "83": {
+      "person_id": 83,
+      "project_number": 66,
+      "address": "Ashdot Ya'akov Meuhad, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "84": {
+      "person_id": 84,
+      "project_number": 67,
+      "address": "בועניה נוגידאת",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "85": {
+      "person_id": 85,
+      "project_number": 68,
+      "address": "Yanuh, Yarka, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "86": {
+      "person_id": 86,
+      "project_number": 69,
+      "address": "אקסודוס 5",
+      "lat": 31.7945576,
+      "lon": 34.6327773,
+      "address_type": "street",
+      "city_key": "אשדוד",
+      "geocode_display": "5, אקסודוס, אשדוד, נפת אשקלון, מחוז הדרום, 7777039, ישראל"
+    },
+    "87": {
+      "person_id": 87,
+      "project_number": 70,
+      "address": "Me'ona, Israel",
+      "lat": 33.018701404709944,
+      "lon": 35.262371006633515,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "מעונה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "88": {
+      "person_id": 88,
+      "project_number": 71,
+      "address": "Gidona, Israel",
+      "lat": 32.54700204300401,
+      "lon": 35.361958049347486,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גלבוע",
+      "geocode_display": "גדעונה, מועצה אזורית גלבוע, נפת יזרעאל, מחוז הצפון, ישראל"
+    },
+    "89": {
+      "person_id": 89,
+      "project_number": 72,
+      "address": "Shefa-Amr, Israel",
+      "lat": 32.803452232939975,
+      "lon": 35.17424024904522,
+      "address_type": "city",
+      "city_key": "شفا عمرو",
+      "geocode_display": "شفا عمرو, נפת עכו, מחוז הצפון, ישראל"
+    },
+    "90": {
+      "person_id": 90,
+      "project_number": 73,
+      "address": "HeHarim St 34, Haluts, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "91": {
+      "person_id": 91,
+      "project_number": 74,
+      "address": "Mishmar HaYarden, Israel",
+      "lat": 33.00243835302491,
+      "lon": 35.60358736938276,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מבואות החרמון",
+      "geocode_display": "משמר הירדן, מועצה אזורית מבואות החרמון, נפת צפת, מחוז הצפון, ישראל"
+    },
+    "92": {
+      "person_id": 92,
+      "project_number": 75,
+      "address": "Kafr Manda, Israel",
+      "lat": 32.81460170118205,
+      "lon": 35.25957502277206,
+      "address_type": "city",
+      "city_key": "كفر مندا",
+      "geocode_display": "كفر مندا, נפת עכו, מחוז הצפון, ישראל"
     }
   }
 }
