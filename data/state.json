@@ -4833,9 +4833,11 @@
       "person_id": 1794,
       "project_number": 476,
       "address": "Uman, Cherkasy Oblast, Ukraine, 20300",
-      "lat": null,
-      "lon": null,
-      "error": "geocode_failed"
+      "lat": 32.564047723790125,
+      "lon": 35.24543552879933,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גלבוע",
+      "geocode_display": "אומן, מועצה אזורית גלבוע, נפת יזרעאל, מחוז הצפון, ישראל"
     },
     "1795": {
       "person_id": 1795,

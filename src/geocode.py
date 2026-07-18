@@ -105,6 +105,8 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "תומר": "תומר",
     "תומר חממה": "תומר",
     "tomer": "תומר",
+    "uman": "אומן",
+    "אומן": "אומן",
 }
 
 _FOREIGN = re.compile(
@@ -213,7 +215,7 @@ def _strip_street_noise(name: str) -> str:
 def build_query_candidates(address: str) -> list[str]:
     """Ordered list of Nominatim queries to try."""
     raw = address.strip()
-    if not raw or _FOREIGN.search(raw):
+    if not raw:
         return []
 
     cleaned = _POSTAL.sub("", raw)
@@ -223,8 +225,15 @@ def build_query_candidates(address: str) -> list[str]:
     cleaned = re.sub(r"(\d)([\u0590-\u05FF])", r"\1 \2", cleaned)
 
     settlement = extract_settlement(cleaned)
+    # For foreign-looking lines, still take the first token (e.g. Uman, … Ukraine)
+    if _FOREIGN.search(cleaned) and settlement:
+        settlement = settlement.split(",")[0].strip() or settlement
     settlement_clean = _strip_street_noise(settlement) if settlement else ""
     aliased = apply_alias(settlement_clean or settlement) if settlement else ""
+    # Also try first word alias for multi-part foreign addresses
+    first_word = cleaned.split(",")[0].strip().split()[0] if cleaned else ""
+    first_alias = apply_alias(first_word) if first_word else ""
+
     no_apos = _APOSTROPHE.sub("", cleaned)
     no_apos_sett = _APOSTROPHE.sub("", settlement_clean or settlement) if settlement else ""
 
@@ -236,12 +245,22 @@ def build_query_candidates(address: str) -> list[str]:
             candidates.append(q)
 
     # Prefer Hebrew / alias settlement early for West Bank & transliteration fixes
+    if first_alias and first_alias != first_word:
+        add(first_alias)
+        add(f"{first_alias}, Israel")
     if aliased and aliased != settlement:
         add(aliased)
         add(f"{aliased}, Israel")
     if settlement_clean and settlement_clean != settlement:
         add(settlement_clean)
         add(apply_alias(settlement_clean))
+
+    # Skip full foreign address string — it pulls Ukraine; use settlement aliases only
+    if _FOREIGN.search(cleaned):
+        if first_word:
+            add(first_word)
+            add(f"{first_word}, Israel")
+        return candidates
 
     add(cleaned)
     if "israel" not in cleaned.lower() and "ישראל" not in cleaned:
@@ -386,13 +405,12 @@ class NominatimGeocoder:
         query = address.strip()
         if not query:
             return None
-        if _FOREIGN.search(query):
-            log.info("Skip foreign address: %s", query[:80])
-            return None
 
-        city_only = is_city_only_address(query)
+        city_only = is_city_only_address(query) or bool(_FOREIGN.search(query))
         candidates = build_query_candidates(query)
         if not candidates:
+            if _FOREIGN.search(query):
+                log.info("Skip foreign address with no Israel alias: %s", query[:80])
             return None
 
         sett = extract_settlement(query)

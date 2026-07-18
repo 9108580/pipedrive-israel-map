@@ -7606,6 +7606,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.24543552879933,
+          32.564047723790125
+        ]
+      },
+      "properties": {
+        "name": "Project 0476",
+        "project_number": 476,
+        "address_type": "city",
+        "person_id": 1794
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.370318621225316,
           32.69591982856445
         ]
