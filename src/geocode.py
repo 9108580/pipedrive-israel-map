@@ -102,6 +102,9 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "שפר הלבנה": "שפר",
     "מרגה": "מרג'ה",
     "מרג'ה": "מרג'ה",
+    "תומר": "תומר",
+    "תומר חממה": "תומר",
+    "tomer": "תומר",
 }
 
 _FOREIGN = re.compile(
@@ -186,6 +189,10 @@ def apply_alias(name: str) -> str:
     key_no_num = _norm_key(re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", name))
     if key_no_num in SETTLEMENT_ALIASES:
         return SETTLEMENT_ALIASES[key_no_num]
+    # First word only (e.g. "תומר חממה 50" → "תומר")
+    first = _norm_key(name.split()[0]) if name.split() else ""
+    if first in SETTLEMENT_ALIASES:
+        return SETTLEMENT_ALIASES[first]
     # try without leading "ha-" / "the "
     key2 = re.sub(r"^(ha|the)\s+", "", key)
     return SETTLEMENT_ALIASES.get(key2, name)

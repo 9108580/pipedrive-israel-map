@@ -3722,9 +3722,11 @@
       "person_id": 1680,
       "project_number": 366,
       "address": "תומר חממה 50",
-      "lat": null,
-      "lon": null,
-      "error": "geocode_failed"
+      "lat": 32.02174833963359,
+      "lon": 35.440874284759886,
+      "address_type": "city",
+      "city_key": "מועצה אזורית ערבות הירדן",
+      "geocode_display": "תומר, מועצה אזורית ערבות הירדן, שטח C, יהודה ושומרון, الأراضي الفلسطينية"
     },
     "1681": {
       "person_id": 1681,

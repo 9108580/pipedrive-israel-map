@@ -5846,6 +5846,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.440874284759886,
+          32.02174833963359
+        ]
+      },
+      "properties": {
+        "name": "Project 0366",
+        "project_number": 366,
+        "address_type": "city",
+        "person_id": 1680
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.299635390962806,
           32.99830073104234
         ]
