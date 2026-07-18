@@ -13,6 +13,24 @@ log = logging.getLogger(__name__)
 
 # Known Hebrew custom-field labels that may hold the address
 ADDRESS_LABEL_HINTS = ("כתובת", "address", "Address", "כתובת מלאה")
+ADDRESS_SUBFIELD_SUFFIXES = (
+    "lat",
+    "long",
+    "longitude",
+    "subpremise",
+    "street_number",
+    "route",
+    "sublocality",
+    "locality",
+    "admin_area_level_1",
+    "admin_area_level_2",
+    "country",
+    "postal_code",
+)
+
+
+def _is_address_component_key(key: str) -> bool:
+    return any(key.endswith(f"_{suf}") for suf in ADDRESS_SUBFIELD_SUFFIXES)
 
 
 class PipedriveClient:
@@ -44,7 +62,6 @@ class PipedriveClient:
         if self._address_field_keys is not None:
             return self._address_field_keys
 
-        # Prefer full formatted address over partial sub-keys
         keys: list[str] = []
         try:
             data = self._get("/personFields")
@@ -52,38 +69,26 @@ class PipedriveClient:
                 name = (field.get("name") or "").strip()
                 key = field.get("key") or ""
                 ftype = (field.get("field_type") or "").lower()
-                if not key or "_" in key and key.rsplit("_", 1)[-1] in {
-                    "lat",
-                    "long",
-                    "subpremise",
-                    "street_number",
-                    "route",
-                    "sublocality",
-                    "locality",
-                    "admin_area_level_1",
-                    "admin_area_level_2",
-                    "country",
-                    "postal_code",
-                }:
-                    # Skip Pipedrive address component subfields
-                    if key.endswith("_formatted_address"):
-                        keys.insert(0, key)
+                if not key:
                     continue
-                if key == "postal_address" or name in ADDRESS_LABEL_HINTS:
-                    keys.append(key)
-                elif ftype == "address":
-                    keys.append(key)
-                elif "כתובת" in name:
+                if key.endswith("_formatted_address"):
+                    keys.insert(0, key)
+                    continue
+                if _is_address_component_key(key):
+                    continue
+                if (
+                    key == "postal_address"
+                    or name in ADDRESS_LABEL_HINTS
+                    or ftype == "address"
+                    or "כתובת" in name
+                ):
                     keys.append(key)
         except Exception as exc:
             log.warning("Could not list personFields: %s", exc)
 
-        # Always try these last as fallbacks
-        for fallback in ("postal_address",):
-            if fallback not in keys:
-                keys.append(fallback)
+        if "postal_address" not in keys:
+            keys.append("postal_address")
 
-        # Deduplicate preserving order
         seen: set[str] = set()
         ordered: list[str] = []
         for k in keys:
