@@ -58,6 +58,11 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                 continue
 
             address = person["address"]
+            existing = persons_map.get(pid) or {}
+            project_number = int(existing.get("project_number") or next_num)
+            if "project_number" not in existing:
+                next_num = max(next_num, project_number + 1)
+
             log.info("Geocoding person %s: %s", pid, address[:80])
             try:
                 geo = geocoder.geocode(address)
@@ -70,13 +75,14 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                 failed += 1
                 persons_map[pid] = {
                     "person_id": int(pid) if pid.isdigit() else pid,
-                    "project_number": next_num,
+                    "project_number": project_number,
                     "address": address,
                     "lat": None,
                     "lon": None,
                     "error": "geocode_failed",
                 }
-                next_num += 1
+                if project_number >= next_num:
+                    next_num = project_number + 1
                 if (added + failed) % 10 == 0:
                     state["next_project_number"] = next_num
                     save_state(state)
@@ -100,7 +106,7 @@ def sync(full: bool = False, limit: int | None = None) -> int:
 
             persons_map[pid] = {
                 "person_id": int(pid) if pid.isdigit() else pid,
-                "project_number": next_num,
+                "project_number": project_number,
                 "address": address,
                 "lat": lat,
                 "lon": lon,
@@ -108,7 +114,8 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                 "city_key": city_key,
                 "geocode_display": geo.display_name,
             }
-            next_num += 1
+            if project_number >= next_num:
+                next_num = project_number + 1
             added += 1
 
             if added % 5 == 0:
