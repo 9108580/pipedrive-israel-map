@@ -13,8 +13,6 @@
   <style>
     :root {
       --ink: #1a2332;
-      --accent: #2f6fed;
-      --panel: rgba(255, 255, 255, 0.92);
     }
     * { box-sizing: border-box; }
     html, body {
@@ -25,36 +23,6 @@
       background: #0e1624;
     }
     #map { width: 100%; height: 100%; }
-    .panel {
-      position: absolute;
-      z-index: 1000;
-      top: 12px;
-      right: 12px;
-      left: 12px;
-      max-width: 420px;
-      margin-inline-start: auto;
-      background: var(--panel);
-      backdrop-filter: blur(8px);
-      border-radius: 12px;
-      padding: 14px 16px;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
-    }
-    .panel h1 {
-      margin: 0 0 4px;
-      font-size: 1.15rem;
-      font-weight: 700;
-    }
-    .panel p {
-      margin: 0;
-      font-size: 0.85rem;
-      line-height: 1.4;
-      opacity: 0.85;
-    }
-    .meta {
-      margin-top: 8px;
-      font-size: 0.8rem;
-      color: #445;
-    }
     .leaflet-popup-content { direction: rtl; text-align: right; }
     .leaflet-marker-icon.company-marker {
       border-radius: 50%;
@@ -64,14 +32,6 @@
   </style>
 </head>
 <body>
-  <div class="panel">
-    <h1>Solar Projects — Privacy Safe</h1>
-    <p>
-      נקודות לפי כתובת מ־Pipedrive. כאשר יש רק שם יישוב — הנקודה מפוזרת באזור מגורים
-      (לא כתובת מדויקת).
-    </p>
-    <div class="meta" id="stats">טוען…</div>
-  </div>
   <div id="map"></div>
 
   <script
@@ -119,9 +79,6 @@
         }).addTo(map);
 
         const n = (geojson.features || []).length;
-        document.getElementById("stats").textContent =
-          n + " projects on map";
-
         if (n > 0) {
           try {
             map.fitBounds(layer.getBounds().pad(0.08));
@@ -129,8 +86,6 @@
         }
       })
       .catch((err) => {
-        document.getElementById("stats").textContent =
-          "Failed to load projects.geojson";
         console.error(err);
       });
   </script>
