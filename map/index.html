@@ -56,6 +56,11 @@
       color: #445;
     }
     .leaflet-popup-content { direction: ltr; text-align: left; }
+    .leaflet-marker-icon.company-marker {
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+      background: #fff;
+    }
   </style>
 </head>
 <body>
@@ -93,14 +98,13 @@
       [34.0, 36.5],
     ]);
 
-    const blueIcon = L.icon({
-      iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-      iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-      shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41],
+    const companyIcon = L.icon({
+      iconUrl: "marker-logo.png",
+      iconRetinaUrl: "marker-logo-2x.png",
+      iconSize: [36, 36],
+      iconAnchor: [18, 18],
+      popupAnchor: [0, -18],
+      className: "company-marker",
     });
 
     fetch("data/projects.geojson?ts=" + Date.now())
@@ -108,7 +112,7 @@
       .then((geojson) => {
         const layer = L.geoJSON(geojson, {
           pointToLayer: (feature, latlng) =>
-            L.marker(latlng, { icon: blueIcon }),
+            L.marker(latlng, { icon: companyIcon }),
           onEachFeature: (feature, layer) => {
             const p = feature.properties || {};
             layer.bindPopup(
