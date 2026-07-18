@@ -8128,6 +8128,4502 @@
         "address_type": "city",
         "person_id": 1994
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19162491022467,
+          32.9442204200097
+        ]
+      },
+      "properties": {
+        "name": "Project 0651",
+        "project_number": 651,
+        "address_type": "city",
+        "person_id": 1995
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.211691573272304,
+          32.95833375556889
+        ]
+      },
+      "properties": {
+        "name": "Project 0653",
+        "project_number": 653,
+        "address_type": "city",
+        "person_id": 1997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34691161079894,
+          33.015816738861346
+        ]
+      },
+      "properties": {
+        "name": "Project 0656",
+        "project_number": 656,
+        "address_type": "city",
+        "person_id": 2000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8914945,
+          31.9596517
+        ]
+      },
+      "properties": {
+        "name": "Project 0657",
+        "project_number": 657,
+        "address_type": "street",
+        "person_id": 2001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.40804154926654,
+          32.88987191615756
+        ]
+      },
+      "properties": {
+        "name": "Project 0658",
+        "project_number": 658,
+        "address_type": "city",
+        "person_id": 2002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.85900193291929,
+          31.248490516094883
+        ]
+      },
+      "properties": {
+        "name": "Project 0660",
+        "project_number": 660,
+        "address_type": "city",
+        "person_id": 2004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.204315522655904,
+          32.54428694500552
+        ]
+      },
+      "properties": {
+        "name": "Project 0662",
+        "project_number": 662,
+        "address_type": "city",
+        "person_id": 2006
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.14409541869994,
+          32.927838130100874
+        ]
+      },
+      "properties": {
+        "name": "Project 0663",
+        "project_number": 663,
+        "address_type": "city",
+        "person_id": 2007
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1906241757289,
+          32.9403717248649
+        ]
+      },
+      "properties": {
+        "name": "Project 0664",
+        "project_number": 664,
+        "address_type": "city",
+        "person_id": 2008
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.186491734572805,
+          32.94101243062248
+        ]
+      },
+      "properties": {
+        "name": "Project 0665",
+        "project_number": 665,
+        "address_type": "city",
+        "person_id": 2009
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37069264170766,
+          32.69464882203825
+        ]
+      },
+      "properties": {
+        "name": "Project 0666",
+        "project_number": 666,
+        "address_type": "city",
+        "person_id": 2010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.184643958163356,
+          32.944377942285534
+        ]
+      },
+      "properties": {
+        "name": "Project 0668",
+        "project_number": 668,
+        "address_type": "city",
+        "person_id": 2012
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34607503919507,
+          33.015136937130784
+        ]
+      },
+      "properties": {
+        "name": "Project 0669",
+        "project_number": 669,
+        "address_type": "city",
+        "person_id": 2013
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2091354872749,
+          32.95710095087486
+        ]
+      },
+      "properties": {
+        "name": "Project 0670",
+        "project_number": 670,
+        "address_type": "city",
+        "person_id": 2014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.312023197231184,
+          33.04994065588597
+        ]
+      },
+      "properties": {
+        "name": "Project 0671",
+        "project_number": 671,
+        "address_type": "city",
+        "person_id": 2015
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.22932303376763,
+          33.010373844322324
+        ]
+      },
+      "properties": {
+        "name": "Project 0672",
+        "project_number": 672,
+        "address_type": "city",
+        "person_id": 2016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0339948,
+          31.8920945
+        ]
+      },
+      "properties": {
+        "name": "Project 0673",
+        "project_number": 673,
+        "address_type": "street",
+        "person_id": 2017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.04796770016382,
+          32.69302326278538
+        ]
+      },
+      "properties": {
+        "name": "Project 0674",
+        "project_number": 674,
+        "address_type": "city",
+        "person_id": 2018
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9082736,
+          32.1382948
+        ]
+      },
+      "properties": {
+        "name": "Project 0675",
+        "project_number": 675,
+        "address_type": "street",
+        "person_id": 2019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37567340419541,
+          32.776082225388336
+        ]
+      },
+      "properties": {
+        "name": "Project 0676",
+        "project_number": 676,
+        "address_type": "city",
+        "person_id": 2020
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30810755277156,
+          32.70593988044622
+        ]
+      },
+      "properties": {
+        "name": "Project 0677",
+        "project_number": 677,
+        "address_type": "city",
+        "person_id": 2021
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18707386498684,
+          32.946401715204544
+        ]
+      },
+      "properties": {
+        "name": "Project 0678",
+        "project_number": 678,
+        "address_type": "city",
+        "person_id": 2022
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18297129626239,
+          32.94330047916664
+        ]
+      },
+      "properties": {
+        "name": "Project 0679",
+        "project_number": 679,
+        "address_type": "city",
+        "person_id": 2023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7957224,
+          32.0434067
+        ]
+      },
+      "properties": {
+        "name": "Project 0680",
+        "project_number": 680,
+        "address_type": "street",
+        "person_id": 2025
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.191821649712274,
+          32.94292865413442
+        ]
+      },
+      "properties": {
+        "name": "Project 0681",
+        "project_number": 681,
+        "address_type": "city",
+        "person_id": 2026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76968427679638,
+          31.6089108926067
+        ]
+      },
+      "properties": {
+        "name": "Project 0682",
+        "project_number": 682,
+        "address_type": "city",
+        "person_id": 2027
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.381891257754404,
+          32.96668593169831
+        ]
+      },
+      "properties": {
+        "name": "Project 0683",
+        "project_number": 683,
+        "address_type": "city",
+        "person_id": 2028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37438232655032,
+          32.966192510003104
+        ]
+      },
+      "properties": {
+        "name": "Project 0684",
+        "project_number": 684,
+        "address_type": "city",
+        "person_id": 2029
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2097781325677,
+          32.95829921661043
+        ]
+      },
+      "properties": {
+        "name": "Project 0685",
+        "project_number": 685,
+        "address_type": "city",
+        "person_id": 2030
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18793640150497,
+          32.939566583943
+        ]
+      },
+      "properties": {
+        "name": "Project 0686",
+        "project_number": 686,
+        "address_type": "city",
+        "person_id": 2031
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.21297761370645,
+          32.95817429636206
+        ]
+      },
+      "properties": {
+        "name": "Project 0687",
+        "project_number": 687,
+        "address_type": "city",
+        "person_id": 2032
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3233116,
+          33.0649415
+        ]
+      },
+      "properties": {
+        "name": "Project 0692",
+        "project_number": 692,
+        "address_type": "street",
+        "person_id": 2037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16819247079371,
+          32.959954283308775
+        ]
+      },
+      "properties": {
+        "name": "Project 0693",
+        "project_number": 693,
+        "address_type": "city",
+        "person_id": 2038
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3233116,
+          33.0649415
+        ]
+      },
+      "properties": {
+        "name": "Project 0694",
+        "project_number": 694,
+        "address_type": "street",
+        "person_id": 2039
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9761808,
+          32.0944922
+        ]
+      },
+      "properties": {
+        "name": "Project 0695",
+        "project_number": 695,
+        "address_type": "city",
+        "person_id": 2040
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2841818,
+          33.0818094
+        ]
+      },
+      "properties": {
+        "name": "Project 0696",
+        "project_number": 696,
+        "address_type": "street",
+        "person_id": 2041
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6720813,
+          31.5635578
+        ]
+      },
+      "properties": {
+        "name": "Project 0697",
+        "project_number": 697,
+        "address_type": "street",
+        "person_id": 2042
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0225446,
+          32.7768128
+        ]
+      },
+      "properties": {
+        "name": "Project 0698",
+        "project_number": 698,
+        "address_type": "street",
+        "person_id": 2043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8859708,
+          32.0468419
+        ]
+      },
+      "properties": {
+        "name": "Project 0700",
+        "project_number": 700,
+        "address_type": "street",
+        "person_id": 2045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4988072,
+          33.0521283
+        ]
+      },
+      "properties": {
+        "name": "Project 0701",
+        "project_number": 701,
+        "address_type": "street",
+        "person_id": 2046
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5816801,
+          31.6951789
+        ]
+      },
+      "properties": {
+        "name": "Project 0703",
+        "project_number": 703,
+        "address_type": "city",
+        "person_id": 2048
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.198298336914625,
+          32.85476835141348
+        ]
+      },
+      "properties": {
+        "name": "Project 0704",
+        "project_number": 704,
+        "address_type": "city",
+        "person_id": 2049
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.11321639833087,
+          32.76107602235767
+        ]
+      },
+      "properties": {
+        "name": "Project 0705",
+        "project_number": 705,
+        "address_type": "city",
+        "person_id": 2050
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15194572396076,
+          33.01971093862422
+        ]
+      },
+      "properties": {
+        "name": "Project 0706",
+        "project_number": 706,
+        "address_type": "city",
+        "person_id": 2051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19835703469023,
+          32.852152704518716
+        ]
+      },
+      "properties": {
+        "name": "Project 0708",
+        "project_number": 708,
+        "address_type": "city",
+        "person_id": 2054
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.200733669523856,
+          32.85328515951656
+        ]
+      },
+      "properties": {
+        "name": "Project 0709",
+        "project_number": 709,
+        "address_type": "city",
+        "person_id": 2055
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9362467,
+          32.5283339
+        ]
+      },
+      "properties": {
+        "name": "Project 0710",
+        "project_number": 710,
+        "address_type": "street",
+        "person_id": 2057
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.945458346141,
+          32.33482876820671
+        ]
+      },
+      "properties": {
+        "name": "Project 0712",
+        "project_number": 712,
+        "address_type": "city",
+        "person_id": 2062
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.158133380213606,
+          32.59550275531024
+        ]
+      },
+      "properties": {
+        "name": "Project 0713",
+        "project_number": 713,
+        "address_type": "city",
+        "person_id": 2063
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.874288,
+          32.1754683
+        ]
+      },
+      "properties": {
+        "name": "Project 0714",
+        "project_number": 714,
+        "address_type": "street",
+        "person_id": 2064
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.17198381655629,
+          32.95763714324106
+        ]
+      },
+      "properties": {
+        "name": "Project 0715",
+        "project_number": 715,
+        "address_type": "city",
+        "person_id": 2065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2675299,
+          32.9993369
+        ]
+      },
+      "properties": {
+        "name": "Project 0716",
+        "project_number": 716,
+        "address_type": "street",
+        "person_id": 2066
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9095126,
+          32.1386683
+        ]
+      },
+      "properties": {
+        "name": "Project 0717",
+        "project_number": 717,
+        "address_type": "street",
+        "person_id": 2067
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.26824760786175,
+          32.93441677565866
+        ]
+      },
+      "properties": {
+        "name": "Project 0718",
+        "project_number": 718,
+        "address_type": "city",
+        "person_id": 2068
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.266838716195316,
+          32.93327914212199
+        ]
+      },
+      "properties": {
+        "name": "Project 0719",
+        "project_number": 719,
+        "address_type": "city",
+        "person_id": 2069
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.136659,
+          33.083278
+        ]
+      },
+      "properties": {
+        "name": "Project 0720",
+        "project_number": 720,
+        "address_type": "street",
+        "person_id": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.25985057012379,
+          33.01621500502956
+        ]
+      },
+      "properties": {
+        "name": "Project 0721",
+        "project_number": 721,
+        "address_type": "city",
+        "person_id": 2071
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.26004887982738,
+          33.018652142908124
+        ]
+      },
+      "properties": {
+        "name": "Project 0722",
+        "project_number": 722,
+        "address_type": "city",
+        "person_id": 2072
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.047318485228494,
+          32.692065352635815
+        ]
+      },
+      "properties": {
+        "name": "Project 0723",
+        "project_number": 723,
+        "address_type": "city",
+        "person_id": 2073
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2615355,
+          33.018206
+        ]
+      },
+      "properties": {
+        "name": "Project 0726",
+        "project_number": 726,
+        "address_type": "street",
+        "person_id": 2079
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0940576,
+          33.0027016
+        ]
+      },
+      "properties": {
+        "name": "Project 0727",
+        "project_number": 727,
+        "address_type": "city",
+        "person_id": 2081
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9114715,
+          32.2994324
+        ]
+      },
+      "properties": {
+        "name": "Project 0728",
+        "project_number": 728,
+        "address_type": "street",
+        "person_id": 2082
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19754414409066,
+          32.85626211249467
+        ]
+      },
+      "properties": {
+        "name": "Project 0731",
+        "project_number": 731,
+        "address_type": "city",
+        "person_id": 2087
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.31621458304554,
+          32.93560099910173
+        ]
+      },
+      "properties": {
+        "name": "Project 0732",
+        "project_number": 732,
+        "address_type": "city",
+        "person_id": 2088
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8549353,
+          31.2699086
+        ]
+      },
+      "properties": {
+        "name": "Project 0733",
+        "project_number": 733,
+        "address_type": "street",
+        "person_id": 2089
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34762636778233,
+          33.01430281169784
+        ]
+      },
+      "properties": {
+        "name": "Project 0734",
+        "project_number": 734,
+        "address_type": "city",
+        "person_id": 2090
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8710952,
+          32.3543135
+        ]
+      },
+      "properties": {
+        "name": "Project 0735",
+        "project_number": 735,
+        "address_type": "street",
+        "person_id": 2091
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3428803,
+          32.53467
+        ]
+      },
+      "properties": {
+        "name": "Project 0736",
+        "project_number": 736,
+        "address_type": "street",
+        "person_id": 2092
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.54108315891448,
+          31.452526425763594
+        ]
+      },
+      "properties": {
+        "name": "Project 0737",
+        "project_number": 737,
+        "address_type": "city",
+        "person_id": 2093
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7596205,
+          31.2468657
+        ]
+      },
+      "properties": {
+        "name": "Project 0738",
+        "project_number": 738,
+        "address_type": "street",
+        "person_id": 2094
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2909996,
+          32.9186403
+        ]
+      },
+      "properties": {
+        "name": "Project 0739",
+        "project_number": 739,
+        "address_type": "street",
+        "person_id": 2096
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2675299,
+          32.9993369
+        ]
+      },
+      "properties": {
+        "name": "Project 0740",
+        "project_number": 740,
+        "address_type": "street",
+        "person_id": 2097
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2913984,
+          33.0106465
+        ]
+      },
+      "properties": {
+        "name": "Project 0742",
+        "project_number": 742,
+        "address_type": "street",
+        "person_id": 2099
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9096289,
+          32.1388962
+        ]
+      },
+      "properties": {
+        "name": "Project 0743",
+        "project_number": 743,
+        "address_type": "street",
+        "person_id": 2100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.136659,
+          33.083278
+        ]
+      },
+      "properties": {
+        "name": "Project 0745",
+        "project_number": 745,
+        "address_type": "street",
+        "person_id": 2107
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0900191,
+          32.9363298
+        ]
+      },
+      "properties": {
+        "name": "Project 0747",
+        "project_number": 747,
+        "address_type": "street",
+        "person_id": 2109
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7596205,
+          31.2468657
+        ]
+      },
+      "properties": {
+        "name": "Project 0750",
+        "project_number": 750,
+        "address_type": "street",
+        "person_id": 2112
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5242497,
+          32.9979671
+        ]
+      },
+      "properties": {
+        "name": "Project 0752",
+        "project_number": 752,
+        "address_type": "street",
+        "person_id": 2119
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15788809686926,
+          32.73499750847382
+        ]
+      },
+      "properties": {
+        "name": "Project 0755",
+        "project_number": 755,
+        "address_type": "city",
+        "person_id": 2134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5805036,
+          33.212044
+        ]
+      },
+      "properties": {
+        "name": "Project 0757",
+        "project_number": 757,
+        "address_type": "city",
+        "person_id": 2136
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5806436,
+          33.2750483
+        ]
+      },
+      "properties": {
+        "name": "Project 0758",
+        "project_number": 758,
+        "address_type": "street",
+        "person_id": 2137
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.21308310371282,
+          32.86834745728157
+        ]
+      },
+      "properties": {
+        "name": "Project 0759",
+        "project_number": 759,
+        "address_type": "city",
+        "person_id": 2138
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0774877,
+          32.9410391
+        ]
+      },
+      "properties": {
+        "name": "Project 0760",
+        "project_number": 760,
+        "address_type": "street",
+        "person_id": 2139
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.269541924699226,
+          32.93381726485561
+        ]
+      },
+      "properties": {
+        "name": "Project 0761",
+        "project_number": 761,
+        "address_type": "city",
+        "person_id": 2140
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.67881381452841,
+          32.98622135870616
+        ]
+      },
+      "properties": {
+        "name": "Project 0764",
+        "project_number": 764,
+        "address_type": "city",
+        "person_id": 2153
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.836579,
+          32.115015
+        ]
+      },
+      "properties": {
+        "name": "Project 0765",
+        "project_number": 765,
+        "address_type": "street",
+        "person_id": 2157
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.77460253829742,
+          33.17821616810442
+        ]
+      },
+      "properties": {
+        "name": "Project 0768",
+        "project_number": 768,
+        "address_type": "city",
+        "person_id": 2160
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910332345275364,
+          32.29539763940937
+        ]
+      },
+      "properties": {
+        "name": "Project 0769",
+        "project_number": 769,
+        "address_type": "city",
+        "person_id": 2161
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2822305,
+          32.9009604
+        ]
+      },
+      "properties": {
+        "name": "Project 0770",
+        "project_number": 770,
+        "address_type": "street",
+        "person_id": 2162
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.049258152106624,
+          32.69218202866267
+        ]
+      },
+      "properties": {
+        "name": "Project 0773",
+        "project_number": 773,
+        "address_type": "city",
+        "person_id": 2165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.256108193140044,
+          32.529859717745
+        ]
+      },
+      "properties": {
+        "name": "Project 0775",
+        "project_number": 775,
+        "address_type": "city",
+        "person_id": 2167
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34208664128691,
+          32.944437636679815
+        ]
+      },
+      "properties": {
+        "name": "Project 0777",
+        "project_number": 777,
+        "address_type": "city",
+        "person_id": 2169
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5347021,
+          32.7453638
+        ]
+      },
+      "properties": {
+        "name": "Project 0778",
+        "project_number": 778,
+        "address_type": "street",
+        "person_id": 2170
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9798027,
+          32.3369633
+        ]
+      },
+      "properties": {
+        "name": "Project 0779",
+        "project_number": 779,
+        "address_type": "street",
+        "person_id": 2171
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2817012,
+          32.9965633
+        ]
+      },
+      "properties": {
+        "name": "Project 0780",
+        "project_number": 780,
+        "address_type": "street",
+        "person_id": 2172
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5817375,
+          33.278958
+        ]
+      },
+      "properties": {
+        "name": "Project 0781",
+        "project_number": 781,
+        "address_type": "street",
+        "person_id": 2173
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.217515069980124,
+          32.99339596893751
+        ]
+      },
+      "properties": {
+        "name": "Project 0782",
+        "project_number": 782,
+        "address_type": "city",
+        "person_id": 2174
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2575682,
+          32.9927356
+        ]
+      },
+      "properties": {
+        "name": "Project 0783",
+        "project_number": 783,
+        "address_type": "street",
+        "person_id": 2175
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7856443,
+          31.2442713
+        ]
+      },
+      "properties": {
+        "name": "Project 0785",
+        "project_number": 785,
+        "address_type": "city",
+        "person_id": 2177
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.4313885,
+          31.2258967
+        ]
+      },
+      "properties": {
+        "name": "Project 0786",
+        "project_number": 786,
+        "address_type": "city",
+        "person_id": 2178
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1502700657682,
+          32.51542732155912
+        ]
+      },
+      "properties": {
+        "name": "Project 0787",
+        "project_number": 787,
+        "address_type": "city",
+        "person_id": 2179
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15442623762241,
+          32.51642801508544
+        ]
+      },
+      "properties": {
+        "name": "Project 0788",
+        "project_number": 788,
+        "address_type": "city",
+        "person_id": 2180
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34140090781966,
+          32.94512913506615
+        ]
+      },
+      "properties": {
+        "name": "Project 0789",
+        "project_number": 789,
+        "address_type": "city",
+        "person_id": 2181
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.57494148097345,
+          31.451220908477925
+        ]
+      },
+      "properties": {
+        "name": "Project 0790",
+        "project_number": 790,
+        "address_type": "city",
+        "person_id": 2182
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.267214873928346,
+          32.93230444044071
+        ]
+      },
+      "properties": {
+        "name": "Project 0791",
+        "project_number": 791,
+        "address_type": "city",
+        "person_id": 2184
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9569596,
+          32.0966122
+        ]
+      },
+      "properties": {
+        "name": "Project 0792",
+        "project_number": 792,
+        "address_type": "street",
+        "person_id": 2185
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.956746,
+          32.0899203
+        ]
+      },
+      "properties": {
+        "name": "Project 0793",
+        "project_number": 793,
+        "address_type": "street",
+        "person_id": 2186
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.296405,
+          32.9112666
+        ]
+      },
+      "properties": {
+        "name": "Project 0795",
+        "project_number": 795,
+        "address_type": "street",
+        "person_id": 2188
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34250932299085,
+          32.94522692031852
+        ]
+      },
+      "properties": {
+        "name": "Project 0796",
+        "project_number": 796,
+        "address_type": "city",
+        "person_id": 2189
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7692546254765,
+          33.18253819456726
+        ]
+      },
+      "properties": {
+        "name": "Project 0797",
+        "project_number": 797,
+        "address_type": "city",
+        "person_id": 2194
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.169411614636196,
+          32.95767856052419
+        ]
+      },
+      "properties": {
+        "name": "Project 0798",
+        "project_number": 798,
+        "address_type": "city",
+        "person_id": 2195
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0846752,
+          32.9277367
+        ]
+      },
+      "properties": {
+        "name": "Project 0800",
+        "project_number": 800,
+        "address_type": "street",
+        "person_id": 2197
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7580794,
+          31.3891202
+        ]
+      },
+      "properties": {
+        "name": "Project 0801",
+        "project_number": 801,
+        "address_type": "city",
+        "person_id": 2199
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32119172591378,
+          32.5209476834371
+        ]
+      },
+      "properties": {
+        "name": "Project 0802",
+        "project_number": 802,
+        "address_type": "city",
+        "person_id": 2200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2615355,
+          33.018206
+        ]
+      },
+      "properties": {
+        "name": "Project 0803",
+        "project_number": 803,
+        "address_type": "street",
+        "person_id": 2201
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1031056,
+          32.9769409
+        ]
+      },
+      "properties": {
+        "name": "Project 0805",
+        "project_number": 805,
+        "address_type": "city",
+        "person_id": 2203
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.55233,
+          31.4472752
+        ]
+      },
+      "properties": {
+        "name": "Project 0806",
+        "project_number": 806,
+        "address_type": "street",
+        "person_id": 2204
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.31220456840977,
+          33.00300341483497
+        ]
+      },
+      "properties": {
+        "name": "Project 0807",
+        "project_number": 807,
+        "address_type": "city",
+        "person_id": 2207
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30728754119155,
+          33.04868184654661
+        ]
+      },
+      "properties": {
+        "name": "Project 0808",
+        "project_number": 808,
+        "address_type": "city",
+        "person_id": 2210
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.336894478258685,
+          32.91155314952887
+        ]
+      },
+      "properties": {
+        "name": "Project 0810",
+        "project_number": 810,
+        "address_type": "city",
+        "person_id": 2212
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4214394,
+          32.6897343
+        ]
+      },
+      "properties": {
+        "name": "Project 0814",
+        "project_number": 814,
+        "address_type": "street",
+        "person_id": 2218
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38244676209062,
+          32.96315250655794
+        ]
+      },
+      "properties": {
+        "name": "Project 0815",
+        "project_number": 815,
+        "address_type": "city",
+        "person_id": 2220
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8232634,
+          31.4134736
+        ]
+      },
+      "properties": {
+        "name": "Project 0816",
+        "project_number": 816,
+        "address_type": "street",
+        "person_id": 2221
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76343010626715,
+          31.97609523446412
+        ]
+      },
+      "properties": {
+        "name": "Project 0817",
+        "project_number": 817,
+        "address_type": "city",
+        "person_id": 2222
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7761435,
+          31.637573
+        ]
+      },
+      "properties": {
+        "name": "Project 0819",
+        "project_number": 819,
+        "address_type": "street",
+        "person_id": 2224
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.49693462980806,
+          32.93862526571869
+        ]
+      },
+      "properties": {
+        "name": "Project 0820",
+        "project_number": 820,
+        "address_type": "city",
+        "person_id": 2227
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2615865416958,
+          32.71809760082135
+        ]
+      },
+      "properties": {
+        "name": "Project 0821",
+        "project_number": 821,
+        "address_type": "city",
+        "person_id": 2228
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37643689676949,
+          32.96692488015885
+        ]
+      },
+      "properties": {
+        "name": "Project 0822",
+        "project_number": 822,
+        "address_type": "city",
+        "person_id": 2230
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.945114819549865,
+          32.00156994322509
+        ]
+      },
+      "properties": {
+        "name": "Project 0823",
+        "project_number": 823,
+        "address_type": "city",
+        "person_id": 2231
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.46843590671231,
+          32.72229292077356
+        ]
+      },
+      "properties": {
+        "name": "Project 0824",
+        "project_number": 824,
+        "address_type": "city",
+        "person_id": 2232
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.59252066523813,
+          33.1779432877235
+        ]
+      },
+      "properties": {
+        "name": "Project 0825",
+        "project_number": 825,
+        "address_type": "city",
+        "person_id": 2233
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.909833501377946,
+          32.14084560753258
+        ]
+      },
+      "properties": {
+        "name": "Project 0827",
+        "project_number": 827,
+        "address_type": "city",
+        "person_id": 2236
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1742596757437,
+          32.95597022227107
+        ]
+      },
+      "properties": {
+        "name": "Project 0828",
+        "project_number": 828,
+        "address_type": "city",
+        "person_id": 2238
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19317258061673,
+          33.04153875135571
+        ]
+      },
+      "properties": {
+        "name": "Project 0829",
+        "project_number": 829,
+        "address_type": "city",
+        "person_id": 2239
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2863113,
+          32.9440603
+        ]
+      },
+      "properties": {
+        "name": "Project 0830",
+        "project_number": 830,
+        "address_type": "street",
+        "person_id": 2240
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2798457,
+          32.606095
+        ]
+      },
+      "properties": {
+        "name": "Project 0831",
+        "project_number": 831,
+        "address_type": "street",
+        "person_id": 2241
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7071255,
+          31.6951844
+        ]
+      },
+      "properties": {
+        "name": "Project 0832",
+        "project_number": 832,
+        "address_type": "street",
+        "person_id": 2242
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.259032,
+          32.5272379
+        ]
+      },
+      "properties": {
+        "name": "Project 0833",
+        "project_number": 833,
+        "address_type": "street",
+        "person_id": 2243
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38212571797167,
+          32.96441968380703
+        ]
+      },
+      "properties": {
+        "name": "Project 0834",
+        "project_number": 834,
+        "address_type": "city",
+        "person_id": 2244
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.373677879996585,
+          32.96361008473287
+        ]
+      },
+      "properties": {
+        "name": "Project 0835",
+        "project_number": 835,
+        "address_type": "city",
+        "person_id": 2245
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5827572584742,
+          31.679296661207967
+        ]
+      },
+      "properties": {
+        "name": "Project 0837",
+        "project_number": 837,
+        "address_type": "city",
+        "person_id": 2248
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.374471057437255,
+          32.961058845018066
+        ]
+      },
+      "properties": {
+        "name": "Project 0838",
+        "project_number": 838,
+        "address_type": "city",
+        "person_id": 2249
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.31649596416745,
+          32.933195255320214
+        ]
+      },
+      "properties": {
+        "name": "Project 0839",
+        "project_number": 839,
+        "address_type": "city",
+        "person_id": 2250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37793807484822,
+          32.968818115244076
+        ]
+      },
+      "properties": {
+        "name": "Project 0840",
+        "project_number": 840,
+        "address_type": "city",
+        "person_id": 2251
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38238340627097,
+          32.96593198021968
+        ]
+      },
+      "properties": {
+        "name": "Project 0841",
+        "project_number": 841,
+        "address_type": "city",
+        "person_id": 2252
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.93691964199966,
+          31.673731549903938
+        ]
+      },
+      "properties": {
+        "name": "Project 0842",
+        "project_number": 842,
+        "address_type": "city",
+        "person_id": 2253
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.243898956182484,
+          32.56522124609512
+        ]
+      },
+      "properties": {
+        "name": "Project 0844",
+        "project_number": 844,
+        "address_type": "city",
+        "person_id": 2255
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.181375420006816,
+          32.94175828432308
+        ]
+      },
+      "properties": {
+        "name": "Project 0845",
+        "project_number": 845,
+        "address_type": "city",
+        "person_id": 2256
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0867611,
+          32.9906192
+        ]
+      },
+      "properties": {
+        "name": "Project 0847",
+        "project_number": 847,
+        "address_type": "street",
+        "person_id": 2261
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.62244153258677,
+          33.22083960822545
+        ]
+      },
+      "properties": {
+        "name": "Project 0848",
+        "project_number": 848,
+        "address_type": "city",
+        "person_id": 2262
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16294019426961,
+          32.8992546528837
+        ]
+      },
+      "properties": {
+        "name": "Project 0849",
+        "project_number": 849,
+        "address_type": "city",
+        "person_id": 2263
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.40834344936563,
+          33.05326188562262
+        ]
+      },
+      "properties": {
+        "name": "Project 0850",
+        "project_number": 850,
+        "address_type": "city",
+        "person_id": 2264
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0955132,
+          32.9377006
+        ]
+      },
+      "properties": {
+        "name": "Project 0852",
+        "project_number": 852,
+        "address_type": "street",
+        "person_id": 2266
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6088094,
+          33.169461
+        ]
+      },
+      "properties": {
+        "name": "Project 0853",
+        "project_number": 853,
+        "address_type": "city",
+        "person_id": 2267
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.541545769653716,
+          31.574186065069025
+        ]
+      },
+      "properties": {
+        "name": "Project 0854",
+        "project_number": 854,
+        "address_type": "city",
+        "person_id": 2268
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9060209,
+          32.3480333
+        ]
+      },
+      "properties": {
+        "name": "Project 0855",
+        "project_number": 855,
+        "address_type": "city",
+        "person_id": 2269
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6784685,
+          31.7575803
+        ]
+      },
+      "properties": {
+        "name": "Project 0856",
+        "project_number": 856,
+        "address_type": "street",
+        "person_id": 2270
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9466635,
+          32.5707746
+        ]
+      },
+      "properties": {
+        "name": "Project 0857",
+        "project_number": 857,
+        "address_type": "street",
+        "person_id": 2271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2208147,
+          31.2581131
+        ]
+      },
+      "properties": {
+        "name": "Project 0859",
+        "project_number": 859,
+        "address_type": "street",
+        "person_id": 2274
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2208147,
+          31.2581131
+        ]
+      },
+      "properties": {
+        "name": "Project 0860",
+        "project_number": 860,
+        "address_type": "street",
+        "person_id": 2275
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.834026900076786,
+          32.04608630892303
+        ]
+      },
+      "properties": {
+        "name": "Project 0862",
+        "project_number": 862,
+        "address_type": "city",
+        "person_id": 2278
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9459773,
+          31.3299457
+        ]
+      },
+      "properties": {
+        "name": "Project 0863",
+        "project_number": 863,
+        "address_type": "street",
+        "person_id": 2279
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2715486,
+          32.9926502
+        ]
+      },
+      "properties": {
+        "name": "Project 0864",
+        "project_number": 864,
+        "address_type": "street",
+        "person_id": 2280
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.344791236640795,
+          32.941606899096016
+        ]
+      },
+      "properties": {
+        "name": "Project 0866",
+        "project_number": 866,
+        "address_type": "city",
+        "person_id": 2282
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.851322312526676,
+          32.056443940054805
+        ]
+      },
+      "properties": {
+        "name": "Project 0867",
+        "project_number": 867,
+        "address_type": "city",
+        "person_id": 2283
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2657116,
+          32.87946
+        ]
+      },
+      "properties": {
+        "name": "Project 0868",
+        "project_number": 868,
+        "address_type": "city",
+        "person_id": 2284
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.96474935468514,
+          32.78523543368773
+        ]
+      },
+      "properties": {
+        "name": "Project 0870",
+        "project_number": 870,
+        "address_type": "city",
+        "person_id": 2286
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91868221598259,
+          32.42889326142625
+        ]
+      },
+      "properties": {
+        "name": "Project 0871",
+        "project_number": 871,
+        "address_type": "city",
+        "person_id": 2287
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.923245,
+          32.426245
+        ]
+      },
+      "properties": {
+        "name": "Project 0872",
+        "project_number": 872,
+        "address_type": "street",
+        "person_id": 2288
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9355858,
+          32.013791
+        ]
+      },
+      "properties": {
+        "name": "Project 0873",
+        "project_number": 873,
+        "address_type": "street",
+        "person_id": 2289
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.54563666124663,
+          33.24964646972094
+        ]
+      },
+      "properties": {
+        "name": "Project 0876",
+        "project_number": 876,
+        "address_type": "city",
+        "person_id": 2292
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.27912142071923,
+          32.9769005559811
+        ]
+      },
+      "properties": {
+        "name": "Project 0878",
+        "project_number": 878,
+        "address_type": "city",
+        "person_id": 2294
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.874250509289425,
+          32.37811110844906
+        ]
+      },
+      "properties": {
+        "name": "Project 0880",
+        "project_number": 880,
+        "address_type": "city",
+        "person_id": 2296
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87637984921251,
+          32.37939288050828
+        ]
+      },
+      "properties": {
+        "name": "Project 0881",
+        "project_number": 881,
+        "address_type": "city",
+        "person_id": 2297
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87221678875558,
+          32.38097772281598
+        ]
+      },
+      "properties": {
+        "name": "Project 0882",
+        "project_number": 882,
+        "address_type": "city",
+        "person_id": 2298
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2372331,
+          32.9048063
+        ]
+      },
+      "properties": {
+        "name": "Project 0883",
+        "project_number": 883,
+        "address_type": "street",
+        "person_id": 2299
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.57372088970286,
+          31.441337508003187
+        ]
+      },
+      "properties": {
+        "name": "Project 0884",
+        "project_number": 884,
+        "address_type": "city",
+        "person_id": 2300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.835158767183536,
+          32.04462857881604
+        ]
+      },
+      "properties": {
+        "name": "Project 0885",
+        "project_number": 885,
+        "address_type": "city",
+        "person_id": 2301
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.33943981852188,
+          32.939840549112944
+        ]
+      },
+      "properties": {
+        "name": "Project 0886",
+        "project_number": 886,
+        "address_type": "city",
+        "person_id": 2302
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2222937,
+          31.2668488
+        ]
+      },
+      "properties": {
+        "name": "Project 0888",
+        "project_number": 888,
+        "address_type": "street",
+        "person_id": 2304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.21095263684594,
+          32.95670247935717
+        ]
+      },
+      "properties": {
+        "name": "Project 0889",
+        "project_number": 889,
+        "address_type": "city",
+        "person_id": 2305
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0700661,
+          32.7116599
+        ]
+      },
+      "properties": {
+        "name": "Project 0890",
+        "project_number": 890,
+        "address_type": "city",
+        "person_id": 2306
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0774877,
+          32.9410391
+        ]
+      },
+      "properties": {
+        "name": "Project 0891",
+        "project_number": 891,
+        "address_type": "street",
+        "person_id": 2307
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0680053,
+          32.8126013
+        ]
+      },
+      "properties": {
+        "name": "Project 0892",
+        "project_number": 892,
+        "address_type": "street",
+        "person_id": 2308
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32171587490675,
+          32.74249021277061
+        ]
+      },
+      "properties": {
+        "name": "Project 0893",
+        "project_number": 893,
+        "address_type": "city",
+        "person_id": 2309
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5105981,
+          32.7831498
+        ]
+      },
+      "properties": {
+        "name": "Project 0894",
+        "project_number": 894,
+        "address_type": "street",
+        "person_id": 2310
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1497665,
+          31.7899706
+        ]
+      },
+      "properties": {
+        "name": "Project 0896",
+        "project_number": 896,
+        "address_type": "street",
+        "person_id": 2313
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18390046330182,
+          32.547252346297725
+        ]
+      },
+      "properties": {
+        "name": "Project 0897",
+        "project_number": 897,
+        "address_type": "city",
+        "person_id": 2314
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.88233660489146,
+          31.431992007907553
+        ]
+      },
+      "properties": {
+        "name": "Project 0899",
+        "project_number": 899,
+        "address_type": "city",
+        "person_id": 2316
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8854882731374,
+          31.434655603111462
+        ]
+      },
+      "properties": {
+        "name": "Project 0901",
+        "project_number": 901,
+        "address_type": "city",
+        "person_id": 2318
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2575682,
+          32.9927356
+        ]
+      },
+      "properties": {
+        "name": "Project 0904",
+        "project_number": 904,
+        "address_type": "street",
+        "person_id": 2321
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.442448,
+          32.72107
+        ]
+      },
+      "properties": {
+        "name": "Project 0905",
+        "project_number": 905,
+        "address_type": "city",
+        "person_id": 2322
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2779251,
+          33.0033155
+        ]
+      },
+      "properties": {
+        "name": "Project 0906",
+        "project_number": 906,
+        "address_type": "street",
+        "person_id": 2323
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.58373598246347,
+          31.675383472216154
+        ]
+      },
+      "properties": {
+        "name": "Project 0907",
+        "project_number": 907,
+        "address_type": "city",
+        "person_id": 2324
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.183094539087094,
+          32.548910672007146
+        ]
+      },
+      "properties": {
+        "name": "Project 0909",
+        "project_number": 909,
+        "address_type": "city",
+        "person_id": 2326
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9128417,
+          32.0760148
+        ]
+      },
+      "properties": {
+        "name": "Project 0910",
+        "project_number": 910,
+        "address_type": "street",
+        "person_id": 2327
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.17517918497514,
+          32.80433980362249
+        ]
+      },
+      "properties": {
+        "name": "Project 0911",
+        "project_number": 911,
+        "address_type": "city",
+        "person_id": 2328
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3748507,
+          32.8881275
+        ]
+      },
+      "properties": {
+        "name": "Project 0913",
+        "project_number": 913,
+        "address_type": "city",
+        "person_id": 2330
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7883154,
+          31.9596768
+        ]
+      },
+      "properties": {
+        "name": "Project 0914",
+        "project_number": 914,
+        "address_type": "street",
+        "person_id": 2331
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.93851028094084,
+          31.678820019712333
+        ]
+      },
+      "properties": {
+        "name": "Project 0915",
+        "project_number": 915,
+        "address_type": "city",
+        "person_id": 2332
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3327355,
+          32.5295419
+        ]
+      },
+      "properties": {
+        "name": "Project 0917",
+        "project_number": 917,
+        "address_type": "street",
+        "person_id": 2334
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18306399960825,
+          32.747593298851456
+        ]
+      },
+      "properties": {
+        "name": "Project 0918",
+        "project_number": 918,
+        "address_type": "city",
+        "person_id": 2335
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30158569357815,
+          32.65550963454547
+        ]
+      },
+      "properties": {
+        "name": "Project 0919",
+        "project_number": 919,
+        "address_type": "city",
+        "person_id": 2336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8746356,
+          32.3850625
+        ]
+      },
+      "properties": {
+        "name": "Project 0920",
+        "project_number": 920,
+        "address_type": "street",
+        "person_id": 2337
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.611414281525256,
+          32.926587424719685
+        ]
+      },
+      "properties": {
+        "name": "Project 0921",
+        "project_number": 921,
+        "address_type": "city",
+        "person_id": 2338
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30692016579146,
+          32.96608844213288
+        ]
+      },
+      "properties": {
+        "name": "Project 0922",
+        "project_number": 922,
+        "address_type": "city",
+        "person_id": 2339
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.185089047856664,
+          32.548876986969745
+        ]
+      },
+      "properties": {
+        "name": "Project 0923",
+        "project_number": 923,
+        "address_type": "city",
+        "person_id": 2340
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.36942730525702,
+          32.774999721419476
+        ]
+      },
+      "properties": {
+        "name": "Project 0924",
+        "project_number": 924,
+        "address_type": "city",
+        "person_id": 2341
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.400616315188955,
+          31.24805475668084
+        ]
+      },
+      "properties": {
+        "name": "Project 0925",
+        "project_number": 925,
+        "address_type": "city",
+        "person_id": 2342
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.34334741813868,
+          32.942659387027135
+        ]
+      },
+      "properties": {
+        "name": "Project 0926",
+        "project_number": 926,
+        "address_type": "city",
+        "person_id": 2343
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38290739044716,
+          32.96674903677868
+        ]
+      },
+      "properties": {
+        "name": "Project 0927",
+        "project_number": 927,
+        "address_type": "city",
+        "person_id": 2344
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6050384,
+          32.9722968
+        ]
+      },
+      "properties": {
+        "name": "Project 0928",
+        "project_number": 928,
+        "address_type": "city",
+        "person_id": 2345
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.121245776211985,
+          32.91485404118659
+        ]
+      },
+      "properties": {
+        "name": "Project 0929",
+        "project_number": 929,
+        "address_type": "city",
+        "person_id": 2346
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0739845,
+          32.7122777
+        ]
+      },
+      "properties": {
+        "name": "Project 0930",
+        "project_number": 930,
+        "address_type": "city",
+        "person_id": 2347
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0480895603905,
+          32.693812311370024
+        ]
+      },
+      "properties": {
+        "name": "Project 0931",
+        "project_number": 931,
+        "address_type": "city",
+        "person_id": 2348
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.188771167502345,
+          32.9451449954305
+        ]
+      },
+      "properties": {
+        "name": "Project 0932",
+        "project_number": 932,
+        "address_type": "city",
+        "person_id": 2349
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.274154408234644,
+          32.92988104818902
+        ]
+      },
+      "properties": {
+        "name": "Project 0933",
+        "project_number": 933,
+        "address_type": "city",
+        "person_id": 2350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1023754,
+          32.9797999
+        ]
+      },
+      "properties": {
+        "name": "Project 0934",
+        "project_number": 934,
+        "address_type": "city",
+        "person_id": 2351
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.17178315715513,
+          32.80501934538074
+        ]
+      },
+      "properties": {
+        "name": "Project 0936",
+        "project_number": 936,
+        "address_type": "city",
+        "person_id": 2354
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8631959,
+          32.1698571
+        ]
+      },
+      "properties": {
+        "name": "Project 0937",
+        "project_number": 937,
+        "address_type": "street",
+        "person_id": 2355
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.40893384208786,
+          32.88556587028456
+        ]
+      },
+      "properties": {
+        "name": "Project 0938",
+        "project_number": 938,
+        "address_type": "city",
+        "person_id": 2356
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16875592098899,
+          32.89960574352844
+        ]
+      },
+      "properties": {
+        "name": "Project 0939",
+        "project_number": 939,
+        "address_type": "city",
+        "person_id": 2357
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.718948,
+          31.7865092
+        ]
+      },
+      "properties": {
+        "name": "Project 0940",
+        "project_number": 940,
+        "address_type": "city",
+        "person_id": 2358
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9152671,
+          32.0627717
+        ]
+      },
+      "properties": {
+        "name": "Project 0944",
+        "project_number": 944,
+        "address_type": "street",
+        "person_id": 2362
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.17573865726597,
+          32.782702105396254
+        ]
+      },
+      "properties": {
+        "name": "Project 0945",
+        "project_number": 945,
+        "address_type": "city",
+        "person_id": 2363
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.04802891205365,
+          32.69143999230901
+        ]
+      },
+      "properties": {
+        "name": "Project 0946",
+        "project_number": 946,
+        "address_type": "city",
+        "person_id": 2364
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6784685,
+          31.7575803
+        ]
+      },
+      "properties": {
+        "name": "Project 0947",
+        "project_number": 947,
+        "address_type": "street",
+        "person_id": 2365
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.276,
+          32.9143548
+        ]
+      },
+      "properties": {
+        "name": "Project 0948",
+        "project_number": 948,
+        "address_type": "street",
+        "person_id": 2366
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.62069685872677,
+          33.2229863044123
+        ]
+      },
+      "properties": {
+        "name": "Project 0949",
+        "project_number": 949,
+        "address_type": "city",
+        "person_id": 2368
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.86031434606388,
+          31.951290765033903
+        ]
+      },
+      "properties": {
+        "name": "Project 0953",
+        "project_number": 953,
+        "address_type": "city",
+        "person_id": 2372
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2553858,
+          33.0132427
+        ]
+      },
+      "properties": {
+        "name": "Project 0954",
+        "project_number": 954,
+        "address_type": "street",
+        "person_id": 2373
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37074144423344,
+          32.894085331364195
+        ]
+      },
+      "properties": {
+        "name": "Project 0956",
+        "project_number": 956,
+        "address_type": "city",
+        "person_id": 2375
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.789515,
+          31.9294063
+        ]
+      },
+      "properties": {
+        "name": "Project 0957",
+        "project_number": 957,
+        "address_type": "street",
+        "person_id": 2376
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8421915,
+          32.2767193
+        ]
+      },
+      "properties": {
+        "name": "Project 0958",
+        "project_number": 958,
+        "address_type": "street",
+        "person_id": 2377
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5427591,
+          32.9874369
+        ]
+      },
+      "properties": {
+        "name": "Project 0960",
+        "project_number": 960,
+        "address_type": "street",
+        "person_id": 2379
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91100054167641,
+          32.29447849648397
+        ]
+      },
+      "properties": {
+        "name": "Project 0961",
+        "project_number": 961,
+        "address_type": "city",
+        "person_id": 2380
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.913936925402076,
+          32.2996933674644
+        ]
+      },
+      "properties": {
+        "name": "Project 0962",
+        "project_number": 962,
+        "address_type": "city",
+        "person_id": 2381
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.343692440776266,
+          32.93891870995426
+        ]
+      },
+      "properties": {
+        "name": "Project 0964",
+        "project_number": 964,
+        "address_type": "city",
+        "person_id": 2383
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7910275,
+          31.8146751
+        ]
+      },
+      "properties": {
+        "name": "Project 0965",
+        "project_number": 965,
+        "address_type": "city",
+        "person_id": 2384
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.925545,
+          32.1483172
+        ]
+      },
+      "properties": {
+        "name": "Project 0966",
+        "project_number": 966,
+        "address_type": "street",
+        "person_id": 2385
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.081223,
+          32.9448019
+        ]
+      },
+      "properties": {
+        "name": "Project 0968",
+        "project_number": 968,
+        "address_type": "street",
+        "person_id": 2387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2848413,
+          32.9012369
+        ]
+      },
+      "properties": {
+        "name": "Project 0969",
+        "project_number": 969,
+        "address_type": "street",
+        "person_id": 2388
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.27942755176492,
+          32.97354135404668
+        ]
+      },
+      "properties": {
+        "name": "Project 0970",
+        "project_number": 970,
+        "address_type": "city",
+        "person_id": 2389
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16592942522341,
+          32.979257160825746
+        ]
+      },
+      "properties": {
+        "name": "Project 0971",
+        "project_number": 971,
+        "address_type": "city",
+        "person_id": 2390
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.163342323455815,
+          32.98023853095499
+        ]
+      },
+      "properties": {
+        "name": "Project 0972",
+        "project_number": 972,
+        "address_type": "city",
+        "person_id": 2391
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2664999,
+          32.9918777
+        ]
+      },
+      "properties": {
+        "name": "Project 0973",
+        "project_number": 973,
+        "address_type": "street",
+        "person_id": 2392
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8528678,
+          31.93141
+        ]
+      },
+      "properties": {
+        "name": "Project 0974",
+        "project_number": 974,
+        "address_type": "city",
+        "person_id": 2393
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3421369029437,
+          32.745066410757296
+        ]
+      },
+      "properties": {
+        "name": "Project 0975",
+        "project_number": 975,
+        "address_type": "city",
+        "person_id": 2394
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5214375,
+          32.7799861
+        ]
+      },
+      "properties": {
+        "name": "Project 0977",
+        "project_number": 977,
+        "address_type": "street",
+        "person_id": 2396
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2856783,
+          33.0174525
+        ]
+      },
+      "properties": {
+        "name": "Project 0978",
+        "project_number": 978,
+        "address_type": "street",
+        "person_id": 2397
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16618942346275,
+          32.950331378791894
+        ]
+      },
+      "properties": {
+        "name": "Project 0979",
+        "project_number": 979,
+        "address_type": "city",
+        "person_id": 2398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5006493,
+          32.9775883
+        ]
+      },
+      "properties": {
+        "name": "Project 0980",
+        "project_number": 980,
+        "address_type": "street",
+        "person_id": 2399
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1007653,
+          32.99921
+        ]
+      },
+      "properties": {
+        "name": "Project 0981",
+        "project_number": 981,
+        "address_type": "street",
+        "person_id": 2400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1019322,
+          32.9977898
+        ]
+      },
+      "properties": {
+        "name": "Project 0982",
+        "project_number": 982,
+        "address_type": "street",
+        "person_id": 2401
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.637927161853256,
+          31.373542410576256
+        ]
+      },
+      "properties": {
+        "name": "Project 0983",
+        "project_number": 983,
+        "address_type": "city",
+        "person_id": 2402
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4948121,
+          32.5014681
+        ]
+      },
+      "properties": {
+        "name": "Project 0984",
+        "project_number": 984,
+        "address_type": "city",
+        "person_id": 2403
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.31650508245846,
+          31.137945099212295
+        ]
+      },
+      "properties": {
+        "name": "Project 0985",
+        "project_number": 985,
+        "address_type": "city",
+        "person_id": 2404
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6445876,
+          33.2217095
+        ]
+      },
+      "properties": {
+        "name": "Project 0986",
+        "project_number": 986,
+        "address_type": "street",
+        "person_id": 2406
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30325226779179,
+          32.86033442096886
+        ]
+      },
+      "properties": {
+        "name": "Project 0987",
+        "project_number": 987,
+        "address_type": "city",
+        "person_id": 2407
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3612558,
+          32.9113891
+        ]
+      },
+      "properties": {
+        "name": "Project 0988",
+        "project_number": 988,
+        "address_type": "street",
+        "person_id": 2408
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38337041550477,
+          32.96585956801345
+        ]
+      },
+      "properties": {
+        "name": "Project 0989",
+        "project_number": 989,
+        "address_type": "city",
+        "person_id": 2409
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.882183,
+          32.2788788
+        ]
+      },
+      "properties": {
+        "name": "Project 0990",
+        "project_number": 990,
+        "address_type": "street",
+        "person_id": 2410
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.345687725663346,
+          32.94502706796499
+        ]
+      },
+      "properties": {
+        "name": "Project 0991",
+        "project_number": 991,
+        "address_type": "city",
+        "person_id": 2411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8779578,
+          31.9642085
+        ]
+      },
+      "properties": {
+        "name": "Project 0992",
+        "project_number": 992,
+        "address_type": "street",
+        "person_id": 2412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7515384,
+          31.8229621
+        ]
+      },
+      "properties": {
+        "name": "Project 0993",
+        "project_number": 993,
+        "address_type": "street",
+        "person_id": 2413
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5481529,
+          33.2127911
+        ]
+      },
+      "properties": {
+        "name": "Project 0994",
+        "project_number": 994,
+        "address_type": "city",
+        "person_id": 2414
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5420174,
+          33.217123
+        ]
+      },
+      "properties": {
+        "name": "Project 0995",
+        "project_number": 995,
+        "address_type": "city",
+        "person_id": 2415
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.49283723389756,
+          32.49140958251003
+        ]
+      },
+      "properties": {
+        "name": "Project 0996",
+        "project_number": 996,
+        "address_type": "city",
+        "person_id": 2416
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1417238,
+          32.7568244
+        ]
+      },
+      "properties": {
+        "name": "Project 0997",
+        "project_number": 997,
+        "address_type": "street",
+        "person_id": 2417
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.255027532853376,
+          32.98452359244396
+        ]
+      },
+      "properties": {
+        "name": "Project 0998",
+        "project_number": 998,
+        "address_type": "city",
+        "person_id": 2418
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6445876,
+          33.2217095
+        ]
+      },
+      "properties": {
+        "name": "Project 0999",
+        "project_number": 999,
+        "address_type": "street",
+        "person_id": 2419
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.875934,
+          31.9396603
+        ]
+      },
+      "properties": {
+        "name": "Project 1000",
+        "project_number": 1000,
+        "address_type": "street",
+        "person_id": 2420
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6443144,
+          33.2280314
+        ]
+      },
+      "properties": {
+        "name": "Project 1002",
+        "project_number": 1002,
+        "address_type": "city",
+        "person_id": 2422
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.204495304129715,
+          31.25794396195798
+        ]
+      },
+      "properties": {
+        "name": "Project 1003",
+        "project_number": 1003,
+        "address_type": "city",
+        "person_id": 2423
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7569257,
+          31.6145786
+        ]
+      },
+      "properties": {
+        "name": "Project 1004",
+        "project_number": 1004,
+        "address_type": "street",
+        "person_id": 2424
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.31636816130233,
+          32.93441892848303
+        ]
+      },
+      "properties": {
+        "name": "Project 1007",
+        "project_number": 1007,
+        "address_type": "city",
+        "person_id": 2427
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32000482899337,
+          32.934829062578814
+        ]
+      },
+      "properties": {
+        "name": "Project 1008",
+        "project_number": 1008,
+        "address_type": "city",
+        "person_id": 2428
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.76982817267522,
+          33.181352430382404
+        ]
+      },
+      "properties": {
+        "name": "Project 1009",
+        "project_number": 1009,
+        "address_type": "city",
+        "person_id": 2429
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.31788411744296,
+          32.93757712058344
+        ]
+      },
+      "properties": {
+        "name": "Project 1011",
+        "project_number": 1011,
+        "address_type": "city",
+        "person_id": 2431
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9259373,
+          32.2465045
+        ]
+      },
+      "properties": {
+        "name": "Project 1012",
+        "project_number": 1012,
+        "address_type": "street",
+        "person_id": 2432
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.048178204274876,
+          32.69066052709065
+        ]
+      },
+      "properties": {
+        "name": "Project 1013",
+        "project_number": 1013,
+        "address_type": "city",
+        "person_id": 2433
+      }
     }
   ]
 }
