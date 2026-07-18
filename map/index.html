@@ -114,11 +114,7 @@
           pointToLayer: (feature, latlng) =>
             L.marker(latlng, { icon: companyIcon }),
           onEachFeature: (feature, layer) => {
-            const p = feature.properties || {};
-            layer.bindPopup(
-              `<strong>${p.name || "Project"}</strong><br/>` +
-                `type: ${p.address_type || "—"}`
-            );
+            layer.bindPopup("<strong>פרויקט סולארי</strong>");
           },
         }).addTo(map);
 
