@@ -1,0 +1,35 @@
+{
+  "next_project_number": 4,
+  "persons": {
+    "9": {
+      "person_id": 9,
+      "project_number": 1,
+      "address": "כזיב 36, Ma'alot-Tarshiha, Israel",
+      "lat": 33.025438,
+      "lon": 35.2812102,
+      "address_type": "street",
+      "city_key": "מעלות תרשיחא",
+      "geocode_display": "כזיב, סביונים, מעלה חסון, מעלות תרשיחא, נפת עכו, מחוז הצפון, 2104302, ישראל"
+    },
+    "19": {
+      "person_id": 19,
+      "project_number": 2,
+      "address": "שובה 61",
+      "lat": 31.4500142,
+      "lon": 34.5454341,
+      "address_type": "street",
+      "city_key": "מועצה אזורית שדות נגב",
+      "geocode_display": "שובה, מועצה אזורית שדות נגב, נפת באר שבע, מחוז הדרום, ישראל"
+    },
+    "20": {
+      "person_id": 20,
+      "project_number": 3,
+      "address": "כלנית 130",
+      "lat": 32.8749932,
+      "lon": 35.4527711,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מרום הגליל",
+      "geocode_display": "כלנית, מועצה אזורית מרום הגליל, נפת צפת, מחוז הצפון, ישראל"
+    }
+  }
+}

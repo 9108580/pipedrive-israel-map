@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2812102,
+          33.025438
+        ]
+      },
+      "properties": {
+        "name": "Project 0001",
+        "project_number": 1,
+        "address_type": "street",
+        "person_id": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5454341,
+          31.4500142
+        ]
+      },
+      "properties": {
+        "name": "Project 0002",
+        "project_number": 2,
+        "address_type": "street",
+        "person_id": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4527711,
+          32.8749932
+        ]
+      },
+      "properties": {
+        "name": "Project 0003",
+        "project_number": 3,
+        "address_type": "street",
+        "person_id": 20
+      }
+    }
+  ]
+}
