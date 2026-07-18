@@ -37,12 +37,15 @@ def save_state(state: dict[str, Any], path: Path | None = None) -> None:
 
 
 def place_label(rec: dict[str, Any]) -> str:
-    """Human-readable settlement / village name for map labels."""
+    """Human-readable settlement / village name for map labels (prefer Hebrew)."""
     disp = (rec.get("geocode_display") or "").strip()
     city_key = (rec.get("city_key") or "").strip()
     parts = [p.strip() for p in disp.split(",") if p.strip()]
+    addr = (rec.get("address") or "").strip()
 
     skip_sub = ("מועצה", "נפת", "מחוז", "שטח", "ישראל", "israel", "الأراضي")
+    he_re = re.compile(r"[\u0590-\u05FF]")
+    ar_re = re.compile(r"[\u0600-\u06FF]")
 
     def usable(part: str) -> bool:
         low = part.lower()
@@ -50,32 +53,65 @@ def place_label(rec: dict[str, Any]) -> str:
             return False
         return not any(s in low for s in skip_sub)
 
-    # City-level geocodes: first display segment is usually the settlement
-    if rec.get("address_type") == "city" and parts and usable(parts[0]):
-        return parts[0]
+    def score(part: str) -> int:
+        """Higher = better label; prefer Hebrew over Arabic/Latin."""
+        if not usable(part):
+            return -1
+        s = 0
+        if he_re.search(part):
+            s += 10
+        if ar_re.search(part):
+            s -= 5
+        if re.search(r"[A-Za-z]", part) and not he_re.search(part):
+            s -= 1
+        return s
 
-    # Prefer a display segment that matches city_key (when city_key is not a council)
+    candidates: list[str] = []
+    if rec.get("address_type") == "city" and parts:
+        candidates.append(parts[0])
     if city_key and "מועצה" not in city_key:
+        candidates.append(city_key)
         for p in parts:
             if city_key in p.lower() or p.lower() in city_key:
-                if usable(p):
-                    return p
-
-    for p in parts:
-        if usable(p):
-            return p
-
-    if city_key and "מועצה" not in city_key:
-        return city_key
-
-    addr = (rec.get("address") or "").strip()
+                candidates.append(p)
+    candidates.extend(parts)
     if addr:
         head = addr.split(",")[0].strip()
-        # Drop trailing house numbers for label
         head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", head).strip()
         if head:
-            return head
-    return city_key or "ישראל"
+            candidates.append(head)
+
+    # Deduplicate while preserving order
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for c in candidates:
+        if c and c not in seen:
+            seen.add(c)
+            ordered.append(c)
+
+    best = ""
+    best_score = -1
+    for c in ordered:
+        sc = score(c)
+        if sc > best_score:
+            best_score = sc
+            best = c
+
+    if not best:
+        best = city_key or "ישראל"
+
+    # Arabic / Latin → Hebrew via offline cache from Nominatim accept-language=he
+    cache_path = config.DATA_DIR / "place_he.json"
+    if cache_path.exists():
+        try:
+            cache = json.loads(cache_path.read_text(encoding="utf-8"))
+            mapped = cache.get(best)
+            if mapped and he_re.search(mapped):
+                return mapped
+        except Exception:
+            pass
+
+    return best
 
 
 def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:

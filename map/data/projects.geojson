@@ -66,7 +66,7 @@
         "project_number": 4,
         "address_type": "city",
         "person_id": 21,
-        "place": "الرامة"
+        "place": "ראמה"
       }
     },
     {
@@ -219,7 +219,7 @@
         "project_number": 13,
         "address_type": "city",
         "person_id": 30,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -236,7 +236,7 @@
         "project_number": 14,
         "address_type": "city",
         "person_id": 31,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -253,7 +253,7 @@
         "project_number": 15,
         "address_type": "city",
         "person_id": 32,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -270,7 +270,7 @@
         "project_number": 16,
         "address_type": "city",
         "person_id": 33,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -287,7 +287,7 @@
         "project_number": 17,
         "address_type": "street",
         "person_id": 34,
-        "place": "ساجور"
+        "place": "סאג'ור"
       }
     },
     {
@@ -304,7 +304,7 @@
         "project_number": 18,
         "address_type": "city",
         "person_id": 35,
-        "place": "رمانة"
+        "place": "אל-בטוף"
       }
     },
     {
@@ -321,7 +321,7 @@
         "project_number": 19,
         "address_type": "city",
         "person_id": 36,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -355,7 +355,7 @@
         "project_number": 21,
         "address_type": "city",
         "person_id": 38,
-        "place": "جولس"
+        "place": "גולס"
       }
     },
     {
@@ -389,7 +389,7 @@
         "project_number": 23,
         "address_type": "city",
         "person_id": 40,
-        "place": "العزير"
+        "place": "אל-בטוף"
       }
     },
     {
@@ -457,7 +457,7 @@
         "project_number": 27,
         "address_type": "city",
         "person_id": 44,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -474,7 +474,7 @@
         "project_number": 28,
         "address_type": "city",
         "person_id": 45,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -508,7 +508,7 @@
         "project_number": 30,
         "address_type": "city",
         "person_id": 47,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -525,7 +525,7 @@
         "project_number": 31,
         "address_type": "city",
         "person_id": 48,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -593,7 +593,7 @@
         "project_number": 35,
         "address_type": "city",
         "person_id": 52,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -678,7 +678,7 @@
         "project_number": 40,
         "address_type": "city",
         "person_id": 57,
-        "place": "كفر مندا"
+        "place": "כפר מנדא"
       }
     },
     {
@@ -729,7 +729,7 @@
         "project_number": 43,
         "address_type": "city",
         "person_id": 60,
-        "place": "جت"
+        "place": "ג'ת"
       }
     },
     {
@@ -746,7 +746,7 @@
         "project_number": 44,
         "address_type": "city",
         "person_id": 61,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -814,7 +814,7 @@
         "project_number": 48,
         "address_type": "city",
         "person_id": 65,
-        "place": "دير حنا"
+        "place": "דיר חנא"
       }
     },
     {
@@ -831,7 +831,7 @@
         "project_number": 49,
         "address_type": "city",
         "person_id": 66,
-        "place": "طوبا"
+        "place": "טובא"
       }
     },
     {
@@ -899,7 +899,7 @@
         "project_number": 53,
         "address_type": "city",
         "person_id": 70,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -967,7 +967,7 @@
         "project_number": 57,
         "address_type": "street",
         "person_id": 74,
-        "place": "جت"
+        "place": "ג'ת"
       }
     },
     {
@@ -1001,7 +1001,7 @@
         "project_number": 59,
         "address_type": "city",
         "person_id": 76,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -1018,7 +1018,7 @@
         "project_number": 60,
         "address_type": "city",
         "person_id": 77,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -1035,7 +1035,7 @@
         "project_number": 61,
         "address_type": "city",
         "person_id": 78,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -1052,7 +1052,7 @@
         "project_number": 62,
         "address_type": "city",
         "person_id": 79,
-        "place": "طرعان"
+        "place": "טורעאן"
       }
     },
     {
@@ -1069,7 +1069,7 @@
         "project_number": 63,
         "address_type": "city",
         "person_id": 80,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -1137,7 +1137,7 @@
         "project_number": 67,
         "address_type": "city",
         "person_id": 84,
-        "place": "البعينة"
+        "place": "בועניה נוגידאת"
       }
     },
     {
@@ -1154,7 +1154,7 @@
         "project_number": 68,
         "address_type": "city",
         "person_id": 85,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -1222,7 +1222,7 @@
         "project_number": 72,
         "address_type": "city",
         "person_id": 89,
-        "place": "شفا عمرو"
+        "place": "שפרעם"
       }
     },
     {
@@ -1273,7 +1273,7 @@
         "project_number": 75,
         "address_type": "city",
         "person_id": 92,
-        "place": "كفر مندا"
+        "place": "כפר מנדא"
       }
     },
     {
@@ -1358,7 +1358,7 @@
         "project_number": 80,
         "address_type": "city",
         "person_id": 97,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -1528,7 +1528,7 @@
         "project_number": 90,
         "address_type": "city",
         "person_id": 107,
-        "place": "سلامة‎"
+        "place": "סלמה"
       }
     },
     {
@@ -1562,7 +1562,7 @@
         "project_number": 92,
         "address_type": "city",
         "person_id": 109,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -1698,7 +1698,7 @@
         "project_number": 100,
         "address_type": "city",
         "person_id": 147,
-        "place": "كفر ياسيف"
+        "place": "כפר יאסיף"
       }
     },
     {
@@ -1783,7 +1783,7 @@
         "project_number": 105,
         "address_type": "city",
         "person_id": 152,
-        "place": "البقيعة"
+        "place": "פקיעין"
       }
     },
     {
@@ -1800,7 +1800,7 @@
         "project_number": 106,
         "address_type": "city",
         "person_id": 153,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -1851,7 +1851,7 @@
         "project_number": 109,
         "address_type": "city",
         "person_id": 156,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -2021,7 +2021,7 @@
         "project_number": 119,
         "address_type": "city",
         "person_id": 166,
-        "place": "الرامة"
+        "place": "ראמה"
       }
     },
     {
@@ -2191,7 +2191,7 @@
         "project_number": 129,
         "address_type": "city",
         "person_id": 180,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -2276,7 +2276,7 @@
         "project_number": 134,
         "address_type": "city",
         "person_id": 185,
-        "place": "مشيرفة"
+        "place": "מושיירפה"
       }
     },
     {
@@ -2412,7 +2412,7 @@
         "project_number": 142,
         "address_type": "city",
         "person_id": 193,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -2429,7 +2429,7 @@
         "project_number": 143,
         "address_type": "city",
         "person_id": 194,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -2565,7 +2565,7 @@
         "project_number": 151,
         "address_type": "city",
         "person_id": 202,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -2752,7 +2752,7 @@
         "project_number": 162,
         "address_type": "city",
         "person_id": 213,
-        "place": "بسمة طبعون"
+        "place": "בסמת טבעון"
       }
     },
     {
@@ -2854,7 +2854,7 @@
         "project_number": 168,
         "address_type": "city",
         "person_id": 219,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -2973,7 +2973,7 @@
         "project_number": 175,
         "address_type": "city",
         "person_id": 226,
-        "place": "إبطن"
+        "place": "מועצה אזורית זבולון"
       }
     },
     {
@@ -3024,7 +3024,7 @@
         "project_number": 178,
         "address_type": "city",
         "person_id": 229,
-        "place": "مشيرفة"
+        "place": "מושיירפה"
       }
     },
     {
@@ -3092,7 +3092,7 @@
         "project_number": 182,
         "address_type": "city",
         "person_id": 233,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -3194,7 +3194,7 @@
         "project_number": 188,
         "address_type": "city",
         "person_id": 1499,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3211,7 +3211,7 @@
         "project_number": 189,
         "address_type": "city",
         "person_id": 1500,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3228,7 +3228,7 @@
         "project_number": 190,
         "address_type": "city",
         "person_id": 1501,
-        "place": "جولس"
+        "place": "ג'ולס"
       }
     },
     {
@@ -3262,7 +3262,7 @@
         "project_number": 192,
         "address_type": "city",
         "person_id": 1503,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3313,7 +3313,7 @@
         "project_number": 195,
         "address_type": "city",
         "person_id": 1506,
-        "place": "يانوح"
+        "place": "ינוח"
       }
     },
     {
@@ -3330,7 +3330,7 @@
         "project_number": 196,
         "address_type": "city",
         "person_id": 1507,
-        "place": "جت"
+        "place": "ג'נסור"
       }
     },
     {
@@ -3347,7 +3347,7 @@
         "project_number": 197,
         "address_type": "city",
         "person_id": 1508,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3364,7 +3364,7 @@
         "project_number": 198,
         "address_type": "city",
         "person_id": 1509,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3398,7 +3398,7 @@
         "project_number": 200,
         "address_type": "street",
         "person_id": 1511,
-        "place": "سلامة‎"
+        "place": "סלמה"
       }
     },
     {
@@ -3415,7 +3415,7 @@
         "project_number": 201,
         "address_type": "city",
         "person_id": 1512,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3551,7 +3551,7 @@
         "project_number": 209,
         "address_type": "city",
         "person_id": 1520,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3585,7 +3585,7 @@
         "project_number": 211,
         "address_type": "city",
         "person_id": 1522,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3619,7 +3619,7 @@
         "project_number": 213,
         "address_type": "city",
         "person_id": 1524,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3636,7 +3636,7 @@
         "project_number": 214,
         "address_type": "city",
         "person_id": 1525,
-        "place": "جولس"
+        "place": "ג'ולס"
       }
     },
     {
@@ -3653,7 +3653,7 @@
         "project_number": 215,
         "address_type": "city",
         "person_id": 1526,
-        "place": "جولس"
+        "place": "ג'ולס ת.ד"
       }
     },
     {
@@ -3670,7 +3670,7 @@
         "project_number": 216,
         "address_type": "city",
         "person_id": 1527,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3687,7 +3687,7 @@
         "project_number": 217,
         "address_type": "city",
         "person_id": 1528,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -3704,7 +3704,7 @@
         "project_number": 218,
         "address_type": "city",
         "person_id": 1529,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3721,7 +3721,7 @@
         "project_number": 219,
         "address_type": "city",
         "person_id": 1530,
-        "place": "جولس"
+        "place": "ג'ולס ת.ד"
       }
     },
     {
@@ -3738,7 +3738,7 @@
         "project_number": 220,
         "address_type": "city",
         "person_id": 1531,
-        "place": "الجش"
+        "place": "ג'ש"
       }
     },
     {
@@ -3755,7 +3755,7 @@
         "project_number": 221,
         "address_type": "city",
         "person_id": 1532,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3772,7 +3772,7 @@
         "project_number": 222,
         "address_type": "city",
         "person_id": 1533,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3789,7 +3789,7 @@
         "project_number": 223,
         "address_type": "city",
         "person_id": 1534,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3806,7 +3806,7 @@
         "project_number": 224,
         "address_type": "city",
         "person_id": 1535,
-        "place": "يركا"
+        "place": "ירכא"
       }
     },
     {
@@ -3823,7 +3823,7 @@
         "project_number": 225,
         "address_type": "city",
         "person_id": 1536,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3840,7 +3840,7 @@
         "project_number": 226,
         "address_type": "city",
         "person_id": 1537,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3874,7 +3874,7 @@
         "project_number": 228,
         "address_type": "city",
         "person_id": 1539,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3891,7 +3891,7 @@
         "project_number": 229,
         "address_type": "city",
         "person_id": 1540,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3925,7 +3925,7 @@
         "project_number": 231,
         "address_type": "city",
         "person_id": 1542,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3942,7 +3942,7 @@
         "project_number": 232,
         "address_type": "city",
         "person_id": 1543,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -3959,7 +3959,7 @@
         "project_number": 233,
         "address_type": "city",
         "person_id": 1544,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3976,7 +3976,7 @@
         "project_number": 234,
         "address_type": "city",
         "person_id": 1545,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -3993,7 +3993,7 @@
         "project_number": 235,
         "address_type": "city",
         "person_id": 1546,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4010,7 +4010,7 @@
         "project_number": 236,
         "address_type": "city",
         "person_id": 1547,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4078,7 +4078,7 @@
         "project_number": 240,
         "address_type": "city",
         "person_id": 1551,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4095,7 +4095,7 @@
         "project_number": 241,
         "address_type": "city",
         "person_id": 1552,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4112,7 +4112,7 @@
         "project_number": 242,
         "address_type": "city",
         "person_id": 1553,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4180,7 +4180,7 @@
         "project_number": 246,
         "address_type": "city",
         "person_id": 1557,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4231,7 +4231,7 @@
         "project_number": 249,
         "address_type": "city",
         "person_id": 1560,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -4248,7 +4248,7 @@
         "project_number": 250,
         "address_type": "city",
         "person_id": 1561,
-        "place": "جولس"
+        "place": "גולס"
       }
     },
     {
@@ -4265,7 +4265,7 @@
         "project_number": 251,
         "address_type": "city",
         "person_id": 1562,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4299,7 +4299,7 @@
         "project_number": 253,
         "address_type": "city",
         "person_id": 1564,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4333,7 +4333,7 @@
         "project_number": 255,
         "address_type": "city",
         "person_id": 1566,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4384,7 +4384,7 @@
         "project_number": 258,
         "address_type": "city",
         "person_id": 1569,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4418,7 +4418,7 @@
         "project_number": 260,
         "address_type": "city",
         "person_id": 1571,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4452,7 +4452,7 @@
         "project_number": 262,
         "address_type": "city",
         "person_id": 1573,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4486,7 +4486,7 @@
         "project_number": 264,
         "address_type": "city",
         "person_id": 1575,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4520,7 +4520,7 @@
         "project_number": 266,
         "address_type": "city",
         "person_id": 1577,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4537,7 +4537,7 @@
         "project_number": 267,
         "address_type": "city",
         "person_id": 1578,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4554,7 +4554,7 @@
         "project_number": 268,
         "address_type": "city",
         "person_id": 1579,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4571,7 +4571,7 @@
         "project_number": 269,
         "address_type": "city",
         "person_id": 1580,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -4588,7 +4588,7 @@
         "project_number": 270,
         "address_type": "city",
         "person_id": 1581,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -4622,7 +4622,7 @@
         "project_number": 272,
         "address_type": "city",
         "person_id": 1583,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4639,7 +4639,7 @@
         "project_number": 273,
         "address_type": "city",
         "person_id": 1584,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4690,7 +4690,7 @@
         "project_number": 276,
         "address_type": "city",
         "person_id": 1587,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4707,7 +4707,7 @@
         "project_number": 277,
         "address_type": "city",
         "person_id": 1588,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4741,7 +4741,7 @@
         "project_number": 279,
         "address_type": "city",
         "person_id": 1590,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4758,7 +4758,7 @@
         "project_number": 280,
         "address_type": "city",
         "person_id": 1591,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4775,7 +4775,7 @@
         "project_number": 281,
         "address_type": "city",
         "person_id": 1592,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4792,7 +4792,7 @@
         "project_number": 282,
         "address_type": "city",
         "person_id": 1593,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4843,7 +4843,7 @@
         "project_number": 285,
         "address_type": "city",
         "person_id": 1596,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4877,7 +4877,7 @@
         "project_number": 287,
         "address_type": "city",
         "person_id": 1598,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4894,7 +4894,7 @@
         "project_number": 288,
         "address_type": "city",
         "person_id": 1599,
-        "place": "إعبلين"
+        "place": "עיבלין"
       }
     },
     {
@@ -4911,7 +4911,7 @@
         "project_number": 289,
         "address_type": "city",
         "person_id": 1600,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -4962,7 +4962,7 @@
         "project_number": 292,
         "address_type": "city",
         "person_id": 1603,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4979,7 +4979,7 @@
         "project_number": 293,
         "address_type": "city",
         "person_id": 1604,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -4996,7 +4996,7 @@
         "project_number": 294,
         "address_type": "city",
         "person_id": 1605,
-        "place": "المغار"
+        "place": "מגאר"
       }
     },
     {
@@ -5013,7 +5013,7 @@
         "project_number": 295,
         "address_type": "city",
         "person_id": 1606,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -5115,7 +5115,7 @@
         "project_number": 301,
         "address_type": "city",
         "person_id": 1612,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5132,7 +5132,7 @@
         "project_number": 302,
         "address_type": "city",
         "person_id": 1613,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5149,7 +5149,7 @@
         "project_number": 303,
         "address_type": "city",
         "person_id": 1614,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -5251,7 +5251,7 @@
         "project_number": 309,
         "address_type": "city",
         "person_id": 1620,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5302,7 +5302,7 @@
         "project_number": 312,
         "address_type": "city",
         "person_id": 1623,
-        "place": "لبونة"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -5353,7 +5353,7 @@
         "project_number": 315,
         "address_type": "city",
         "person_id": 1629,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5404,7 +5404,7 @@
         "project_number": 318,
         "address_type": "city",
         "person_id": 1632,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -5489,7 +5489,7 @@
         "project_number": 323,
         "address_type": "city",
         "person_id": 1637,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -5506,7 +5506,7 @@
         "project_number": 324,
         "address_type": "city",
         "person_id": 1638,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -5523,7 +5523,7 @@
         "project_number": 325,
         "address_type": "city",
         "person_id": 1639,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -5540,7 +5540,7 @@
         "project_number": 326,
         "address_type": "city",
         "person_id": 1640,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5574,7 +5574,7 @@
         "project_number": 328,
         "address_type": "city",
         "person_id": 1642,
-        "place": "جولس"
+        "place": "גולס"
       }
     },
     {
@@ -5642,7 +5642,7 @@
         "project_number": 332,
         "address_type": "city",
         "person_id": 1646,
-        "place": "الرامة"
+        "place": "ראמה"
       }
     },
     {
@@ -5659,7 +5659,7 @@
         "project_number": 333,
         "address_type": "city",
         "person_id": 1647,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5676,7 +5676,7 @@
         "project_number": 334,
         "address_type": "city",
         "person_id": 1648,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -5727,7 +5727,7 @@
         "project_number": 337,
         "address_type": "city",
         "person_id": 1651,
-        "place": "ירושלים | القدس"
+        "place": "ירושלים"
       }
     },
     {
@@ -5795,7 +5795,7 @@
         "project_number": 341,
         "address_type": "city",
         "person_id": 1655,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -5812,7 +5812,7 @@
         "project_number": 342,
         "address_type": "city",
         "person_id": 1656,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -5897,7 +5897,7 @@
         "project_number": 347,
         "address_type": "city",
         "person_id": 1661,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -5914,7 +5914,7 @@
         "project_number": 348,
         "address_type": "city",
         "person_id": 1662,
-        "place": "سخنين"
+        "place": "סח'נין"
       }
     },
     {
@@ -5982,7 +5982,7 @@
         "project_number": 352,
         "address_type": "city",
         "person_id": 1666,
-        "place": "كفر ياسيف"
+        "place": "כפר יאסיף"
       }
     },
     {
@@ -6186,7 +6186,7 @@
         "project_number": 364,
         "address_type": "city",
         "person_id": 1678,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -6254,7 +6254,7 @@
         "project_number": 368,
         "address_type": "city",
         "person_id": 1682,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -6339,7 +6339,7 @@
         "project_number": 373,
         "address_type": "city",
         "person_id": 1688,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -6492,7 +6492,7 @@
         "project_number": 382,
         "address_type": "city",
         "person_id": 1698,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -6509,7 +6509,7 @@
         "project_number": 383,
         "address_type": "city",
         "person_id": 1699,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -6560,7 +6560,7 @@
         "project_number": 386,
         "address_type": "street",
         "person_id": 1702,
-        "place": "ירושלים | القدس"
+        "place": "שופן"
       }
     },
     {
@@ -6577,7 +6577,7 @@
         "project_number": 387,
         "address_type": "city",
         "person_id": 1703,
-        "place": "مجد الكروم"
+        "place": "מג'ד אל-כרום"
       }
     },
     {
@@ -6594,7 +6594,7 @@
         "project_number": 388,
         "address_type": "city",
         "person_id": 1704,
-        "place": "سالم مخرج"
+        "place": "כביש שירות - גדר ההפרדה"
       }
     },
     {
@@ -6628,7 +6628,7 @@
         "project_number": 390,
         "address_type": "city",
         "person_id": 1706,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -6645,7 +6645,7 @@
         "project_number": 391,
         "address_type": "city",
         "person_id": 1707,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -6679,7 +6679,7 @@
         "project_number": 393,
         "address_type": "city",
         "person_id": 1709,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -6696,7 +6696,7 @@
         "project_number": 394,
         "address_type": "city",
         "person_id": 1710,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -6747,7 +6747,7 @@
         "project_number": 397,
         "address_type": "city",
         "person_id": 1713,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -6764,7 +6764,7 @@
         "project_number": 398,
         "address_type": "city",
         "person_id": 1714,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -6832,7 +6832,7 @@
         "project_number": 402,
         "address_type": "street",
         "person_id": 1718,
-        "place": "מורדות טבריה"
+        "place": "טבריה"
       }
     },
     {
@@ -6883,7 +6883,7 @@
         "project_number": 405,
         "address_type": "city",
         "person_id": 1721,
-        "place": "عرابة"
+        "place": "עראבה"
       }
     },
     {
@@ -6900,7 +6900,7 @@
         "project_number": 406,
         "address_type": "city",
         "person_id": 1722,
-        "place": "المغار"
+        "place": "מגאר"
       }
     },
     {
@@ -7019,7 +7019,7 @@
         "project_number": 413,
         "address_type": "city",
         "person_id": 1730,
-        "place": "زيمر‎"
+        "place": "זמר"
       }
     },
     {
@@ -7036,7 +7036,7 @@
         "project_number": 414,
         "address_type": "city",
         "person_id": 1731,
-        "place": "عرابة"
+        "place": "עראבה"
       }
     },
     {
@@ -7053,7 +7053,7 @@
         "project_number": 415,
         "address_type": "city",
         "person_id": 1732,
-        "place": "مجد الكروم"
+        "place": "מג'ד אל-כרום"
       }
     },
     {
@@ -7087,7 +7087,7 @@
         "project_number": 417,
         "address_type": "city",
         "person_id": 1735,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -7155,7 +7155,7 @@
         "project_number": 421,
         "address_type": "city",
         "person_id": 1739,
-        "place": "منطقة صناعية"
+        "place": "רהט"
       }
     },
     {
@@ -7240,7 +7240,7 @@
         "project_number": 426,
         "address_type": "city",
         "person_id": 1744,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -7325,7 +7325,7 @@
         "project_number": 431,
         "address_type": "city",
         "person_id": 1749,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -7359,7 +7359,7 @@
         "project_number": 433,
         "address_type": "city",
         "person_id": 1751,
-        "place": "معاوية/ مركز"
+        "place": "בסמה"
       }
     },
     {
@@ -7478,7 +7478,7 @@
         "project_number": 440,
         "address_type": "city",
         "person_id": 1758,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -7512,7 +7512,7 @@
         "project_number": 442,
         "address_type": "city",
         "person_id": 1760,
-        "place": "عرابة"
+        "place": "עראבה"
       }
     },
     {
@@ -7614,7 +7614,7 @@
         "project_number": 448,
         "address_type": "city",
         "person_id": 1766,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -7716,7 +7716,7 @@
         "project_number": 454,
         "address_type": "city",
         "person_id": 1772,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -7733,7 +7733,7 @@
         "project_number": 455,
         "address_type": "street",
         "person_id": 1773,
-        "place": "الرامة"
+        "place": "ראמה"
       }
     },
     {
@@ -7767,7 +7767,7 @@
         "project_number": 457,
         "address_type": "city",
         "person_id": 1775,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -7818,7 +7818,7 @@
         "project_number": 460,
         "address_type": "city",
         "person_id": 1778,
-        "place": "بسمة"
+        "place": "בסמה"
       }
     },
     {
@@ -7869,7 +7869,7 @@
         "project_number": 463,
         "address_type": "city",
         "person_id": 1781,
-        "place": "الرينة"
+        "place": "ריינה"
       }
     },
     {
@@ -7954,7 +7954,7 @@
         "project_number": 468,
         "address_type": "city",
         "person_id": 1786,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -7971,7 +7971,7 @@
         "project_number": 469,
         "address_type": "city",
         "person_id": 1787,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -7988,7 +7988,7 @@
         "project_number": 470,
         "address_type": "city",
         "person_id": 1788,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -8107,7 +8107,7 @@
         "project_number": 477,
         "address_type": "city",
         "person_id": 1795,
-        "place": "دبورية"
+        "place": "דבוריה"
       }
     },
     {
@@ -8158,7 +8158,7 @@
         "project_number": 480,
         "address_type": "city",
         "person_id": 1798,
-        "place": "إعبلين"
+        "place": "עיבלין"
       }
     },
     {
@@ -8175,7 +8175,7 @@
         "project_number": 481,
         "address_type": "city",
         "person_id": 1799,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -8209,7 +8209,7 @@
         "project_number": 483,
         "address_type": "city",
         "person_id": 1801,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -8328,7 +8328,7 @@
         "project_number": 490,
         "address_type": "city",
         "person_id": 1808,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -8362,7 +8362,7 @@
         "project_number": 492,
         "address_type": "city",
         "person_id": 1810,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -8396,7 +8396,7 @@
         "project_number": 494,
         "address_type": "city",
         "person_id": 1812,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -8464,7 +8464,7 @@
         "project_number": 498,
         "address_type": "street",
         "person_id": 1816,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -8566,7 +8566,7 @@
         "project_number": 504,
         "address_type": "street",
         "person_id": 1822,
-        "place": "فسوطة"
+        "place": "פסוטה63"
       }
     },
     {
@@ -8600,7 +8600,7 @@
         "project_number": 506,
         "address_type": "city",
         "person_id": 1824,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -8651,7 +8651,7 @@
         "project_number": 509,
         "address_type": "city",
         "person_id": 1827,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -9144,7 +9144,7 @@
         "project_number": 538,
         "address_type": "city",
         "person_id": 1856,
-        "place": "كفر مندا"
+        "place": "מנדא"
       }
     },
     {
@@ -9161,7 +9161,7 @@
         "project_number": 539,
         "address_type": "city",
         "person_id": 1857,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -9212,7 +9212,7 @@
         "project_number": 542,
         "address_type": "city",
         "person_id": 1860,
-        "place": "البعنة"
+        "place": "בענה"
       }
     },
     {
@@ -9229,7 +9229,7 @@
         "project_number": 543,
         "address_type": "street",
         "person_id": 1861,
-        "place": "رأس العين"
+        "place": "ראס אל עין"
       }
     },
     {
@@ -9246,7 +9246,7 @@
         "project_number": 544,
         "address_type": "city",
         "person_id": 1862,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -9399,7 +9399,7 @@
         "project_number": 553,
         "address_type": "city",
         "person_id": 1871,
-        "place": "عسفيا"
+        "place": "עספיא"
       }
     },
     {
@@ -9416,7 +9416,7 @@
         "project_number": 554,
         "address_type": "city",
         "person_id": 1872,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -9433,7 +9433,7 @@
         "project_number": 555,
         "address_type": "city",
         "person_id": 1873,
-        "place": "عسفيا"
+        "place": "עספיא"
       }
     },
     {
@@ -9467,7 +9467,7 @@
         "project_number": 557,
         "address_type": "city",
         "person_id": 1875,
-        "place": "بئر المكسور"
+        "place": "ביר אל מכסור"
       }
     },
     {
@@ -9484,7 +9484,7 @@
         "project_number": 558,
         "address_type": "city",
         "person_id": 1876,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -9586,7 +9586,7 @@
         "project_number": 564,
         "address_type": "city",
         "person_id": 1882,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -9603,7 +9603,7 @@
         "project_number": 565,
         "address_type": "city",
         "person_id": 1883,
-        "place": "كيسرى-كفر سميع"
+        "place": "כיסרא-סמיע"
       }
     },
     {
@@ -9654,7 +9654,7 @@
         "project_number": 568,
         "address_type": "city",
         "person_id": 1886,
-        "place": "جولس"
+        "place": "גולס"
       }
     },
     {
@@ -9671,7 +9671,7 @@
         "project_number": 569,
         "address_type": "city",
         "person_id": 1887,
-        "place": "البقيعة"
+        "place": "פקיעין"
       }
     },
     {
@@ -9739,7 +9739,7 @@
         "project_number": 573,
         "address_type": "city",
         "person_id": 1891,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -9773,7 +9773,7 @@
         "project_number": 575,
         "address_type": "city",
         "person_id": 1893,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -9790,7 +9790,7 @@
         "project_number": 576,
         "address_type": "city",
         "person_id": 1894,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -9841,7 +9841,7 @@
         "project_number": 579,
         "address_type": "city",
         "person_id": 1897,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -10028,7 +10028,7 @@
         "project_number": 590,
         "address_type": "street",
         "person_id": 1908,
-        "place": "سلامة‎"
+        "place": "סלמה"
       }
     },
     {
@@ -10130,7 +10130,7 @@
         "project_number": 596,
         "address_type": "city",
         "person_id": 1914,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -10147,7 +10147,7 @@
         "project_number": 597,
         "address_type": "city",
         "person_id": 1915,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -10249,7 +10249,7 @@
         "project_number": 603,
         "address_type": "street",
         "person_id": 1921,
-        "place": "אזור תעשייה כרמיאל"
+        "place": "כרמיאל"
       }
     },
     {
@@ -10334,7 +10334,7 @@
         "project_number": 608,
         "address_type": "city",
         "person_id": 1926,
-        "place": "ירושלים | القدس"
+        "place": "כרם אברהם"
       }
     },
     {
@@ -10521,7 +10521,7 @@
         "project_number": 619,
         "address_type": "street",
         "person_id": 1959,
-        "place": "קניון חוצות כרמיאל"
+        "place": "כרמיאל"
       }
     },
     {
@@ -10640,7 +10640,7 @@
         "project_number": 626,
         "address_type": "street",
         "person_id": 1970,
-        "place": "يانوح"
+        "place": "ינוח"
       }
     },
     {
@@ -10657,7 +10657,7 @@
         "project_number": 627,
         "address_type": "city",
         "person_id": 1971,
-        "place": "سلامة‎"
+        "place": "מועצה אזורית משגב"
       }
     },
     {
@@ -10827,7 +10827,7 @@
         "project_number": 637,
         "address_type": "city",
         "person_id": 1981,
-        "place": "شفا عمرو"
+        "place": "שפרעם"
       }
     },
     {
@@ -10861,7 +10861,7 @@
         "project_number": 639,
         "address_type": "city",
         "person_id": 1983,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -10963,7 +10963,7 @@
         "project_number": 645,
         "address_type": "city",
         "person_id": 1989,
-        "place": "طوبا الزنغرية"
+        "place": "טובא זנגריה"
       }
     },
     {
@@ -11048,7 +11048,7 @@
         "project_number": 650,
         "address_type": "city",
         "person_id": 1994,
-        "place": "المغار"
+        "place": "מגאר"
       }
     },
     {
@@ -11065,7 +11065,7 @@
         "project_number": 651,
         "address_type": "city",
         "person_id": 1995,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11099,7 +11099,7 @@
         "project_number": 653,
         "address_type": "city",
         "person_id": 1997,
-        "place": "يركا"
+        "place": "ירכא"
       }
     },
     {
@@ -11150,7 +11150,7 @@
         "project_number": 656,
         "address_type": "city",
         "person_id": 2000,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -11184,7 +11184,7 @@
         "project_number": 658,
         "address_type": "city",
         "person_id": 2002,
-        "place": "المغار"
+        "place": "מגאר"
       }
     },
     {
@@ -11235,7 +11235,7 @@
         "project_number": 661,
         "address_type": "city",
         "person_id": 2005,
-        "place": "جولس"
+        "place": "ג'ולס"
       }
     },
     {
@@ -11252,7 +11252,7 @@
         "project_number": 662,
         "address_type": "city",
         "person_id": 2006,
-        "place": "سالم مخرج"
+        "place": "כביש שירות - גדר ההפרדה"
       }
     },
     {
@@ -11269,7 +11269,7 @@
         "project_number": 663,
         "address_type": "city",
         "person_id": 2007,
-        "place": "جديدة-المكر"
+        "place": "ג׳דיידה-מכר"
       }
     },
     {
@@ -11286,7 +11286,7 @@
         "project_number": 664,
         "address_type": "city",
         "person_id": 2008,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11303,7 +11303,7 @@
         "project_number": 665,
         "address_type": "city",
         "person_id": 2009,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11320,7 +11320,7 @@
         "project_number": 666,
         "address_type": "city",
         "person_id": 2010,
-        "place": "دبورية"
+        "place": "דבוריה"
       }
     },
     {
@@ -11354,7 +11354,7 @@
         "project_number": 668,
         "address_type": "city",
         "person_id": 2012,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11371,7 +11371,7 @@
         "project_number": 669,
         "address_type": "city",
         "person_id": 2013,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -11405,7 +11405,7 @@
         "project_number": 671,
         "address_type": "city",
         "person_id": 2015,
-        "place": "فسوطة"
+        "place": "פסוטה"
       }
     },
     {
@@ -11439,7 +11439,7 @@
         "project_number": 673,
         "address_type": "street",
         "person_id": 2017,
-        "place": "מכבים"
+        "place": "מודיעין-מכבים-רעות"
       }
     },
     {
@@ -11456,7 +11456,7 @@
         "project_number": 674,
         "address_type": "city",
         "person_id": 2018,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -11490,7 +11490,7 @@
         "project_number": 676,
         "address_type": "city",
         "person_id": 2020,
-        "place": "طرعان"
+        "place": "טורעאן"
       }
     },
     {
@@ -11524,7 +11524,7 @@
         "project_number": 678,
         "address_type": "city",
         "person_id": 2022,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11541,7 +11541,7 @@
         "project_number": 679,
         "address_type": "city",
         "person_id": 2023,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11575,7 +11575,7 @@
         "project_number": 681,
         "address_type": "city",
         "person_id": 2026,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11609,7 +11609,7 @@
         "project_number": 683,
         "address_type": "city",
         "person_id": 2028,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -11626,7 +11626,7 @@
         "project_number": 684,
         "address_type": "city",
         "person_id": 2029,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -11660,7 +11660,7 @@
         "project_number": 686,
         "address_type": "city",
         "person_id": 2031,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -11694,7 +11694,7 @@
         "project_number": 688,
         "address_type": "city",
         "person_id": 2033,
-        "place": "جولس"
+        "place": "גולס"
       }
     },
     {
@@ -11728,7 +11728,7 @@
         "project_number": 690,
         "address_type": "city",
         "person_id": 2035,
-        "place": "لبونة"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -11779,7 +11779,7 @@
         "project_number": 693,
         "address_type": "city",
         "person_id": 2038,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -11881,7 +11881,7 @@
         "project_number": 699,
         "address_type": "city",
         "person_id": 2044,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -11966,7 +11966,7 @@
         "project_number": 704,
         "address_type": "city",
         "person_id": 2049,
-        "place": "طمرة‎"
+        "place": "טמרה"
       }
     },
     {
@@ -11983,7 +11983,7 @@
         "project_number": 705,
         "address_type": "city",
         "person_id": 2050,
-        "place": "إبطن"
+        "place": "מועצה אזורית זבולון"
       }
     },
     {
@@ -12034,7 +12034,7 @@
         "project_number": 708,
         "address_type": "city",
         "person_id": 2054,
-        "place": "طمرة‎"
+        "place": "טמרה"
       }
     },
     {
@@ -12051,7 +12051,7 @@
         "project_number": 709,
         "address_type": "city",
         "person_id": 2055,
-        "place": "طمرة‎"
+        "place": "טמרה"
       }
     },
     {
@@ -12153,7 +12153,7 @@
         "project_number": 715,
         "address_type": "city",
         "person_id": 2065,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -12204,7 +12204,7 @@
         "project_number": 718,
         "address_type": "city",
         "person_id": 2068,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -12221,7 +12221,7 @@
         "project_number": 719,
         "address_type": "city",
         "person_id": 2069,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -12289,7 +12289,7 @@
         "project_number": 723,
         "address_type": "city",
         "person_id": 2073,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -12323,7 +12323,7 @@
         "project_number": 725,
         "address_type": "city",
         "person_id": 2078,
-        "place": "израиль"
+        "place": "ישראל"
       }
     },
     {
@@ -12425,7 +12425,7 @@
         "project_number": 731,
         "address_type": "city",
         "person_id": 2087,
-        "place": "طمرة‎"
+        "place": "טמרה"
       }
     },
     {
@@ -12442,7 +12442,7 @@
         "project_number": 732,
         "address_type": "city",
         "person_id": 2088,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -12476,7 +12476,7 @@
         "project_number": 734,
         "address_type": "city",
         "person_id": 2090,
-        "place": "حرفيش"
+        "place": "חורפיש"
       }
     },
     {
@@ -12833,7 +12833,7 @@
         "project_number": 755,
         "address_type": "city",
         "person_id": 2134,
-        "place": "بسمة طبعون"
+        "place": "בסמת טבעון"
       }
     },
     {
@@ -12901,7 +12901,7 @@
         "project_number": 759,
         "address_type": "city",
         "person_id": 2138,
-        "place": "كابول"
+        "place": "כאבול"
       }
     },
     {
@@ -12935,7 +12935,7 @@
         "project_number": 761,
         "address_type": "city",
         "person_id": 2140,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -13139,7 +13139,7 @@
         "project_number": 773,
         "address_type": "city",
         "person_id": 2165,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -13207,7 +13207,7 @@
         "project_number": 777,
         "address_type": "city",
         "person_id": 2169,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -13377,7 +13377,7 @@
         "project_number": 787,
         "address_type": "city",
         "person_id": 2179,
-        "place": "أم الفحم"
+        "place": "אום אל-פחם"
       }
     },
     {
@@ -13394,7 +13394,7 @@
         "project_number": 788,
         "address_type": "city",
         "person_id": 2180,
-        "place": "أم الفحم"
+        "place": "אום אל-פחם"
       }
     },
     {
@@ -13411,7 +13411,7 @@
         "project_number": 789,
         "address_type": "city",
         "person_id": 2181,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -13445,7 +13445,7 @@
         "project_number": 791,
         "address_type": "city",
         "person_id": 2184,
-        "place": "دير الأسد"
+        "place": "דיר אל אסד"
       }
     },
     {
@@ -13530,7 +13530,7 @@
         "project_number": 796,
         "address_type": "city",
         "person_id": 2189,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -13564,7 +13564,7 @@
         "project_number": 798,
         "address_type": "city",
         "person_id": 2195,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -13632,7 +13632,7 @@
         "project_number": 802,
         "address_type": "city",
         "person_id": 2200,
-        "place": "صندلة"
+        "place": "מועצה אזורית גלבוע"
       }
     },
     {
@@ -13683,7 +13683,7 @@
         "project_number": 805,
         "address_type": "city",
         "person_id": 2203,
-        "place": "المزرعة"
+        "place": "אל-מזרעה"
       }
     },
     {
@@ -13734,7 +13734,7 @@
         "project_number": 808,
         "address_type": "city",
         "person_id": 2210,
-        "place": "فسوطة"
+        "place": "פסוטה"
       }
     },
     {
@@ -13768,7 +13768,7 @@
         "project_number": 810,
         "address_type": "city",
         "person_id": 2212,
-        "place": "الكمانة الغربية"
+        "place": "מועצה אזורית משגב"
       }
     },
     {
@@ -13853,7 +13853,7 @@
         "project_number": 815,
         "address_type": "city",
         "person_id": 2220,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -13904,7 +13904,7 @@
         "project_number": 818,
         "address_type": "city",
         "person_id": 2223,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -13955,7 +13955,7 @@
         "project_number": 821,
         "address_type": "city",
         "person_id": 2228,
-        "place": "عيلوط"
+        "place": "עלוט"
       }
     },
     {
@@ -13972,7 +13972,7 @@
         "project_number": 822,
         "address_type": "city",
         "person_id": 2230,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14074,7 +14074,7 @@
         "project_number": 828,
         "address_type": "city",
         "person_id": 2238,
-        "place": "أبو سنان"
+        "place": "אבו סנאן"
       }
     },
     {
@@ -14176,7 +14176,7 @@
         "project_number": 834,
         "address_type": "city",
         "person_id": 2244,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14193,7 +14193,7 @@
         "project_number": 835,
         "address_type": "city",
         "person_id": 2245,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14244,7 +14244,7 @@
         "project_number": 838,
         "address_type": "city",
         "person_id": 2249,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14261,7 +14261,7 @@
         "project_number": 839,
         "address_type": "city",
         "person_id": 2250,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -14278,7 +14278,7 @@
         "project_number": 840,
         "address_type": "city",
         "person_id": 2251,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14295,7 +14295,7 @@
         "project_number": 841,
         "address_type": "city",
         "person_id": 2252,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -14329,7 +14329,7 @@
         "project_number": 843,
         "address_type": "city",
         "person_id": 2254,
-        "place": "جولس"
+        "place": "אלקובה"
       }
     },
     {
@@ -14363,7 +14363,7 @@
         "project_number": 845,
         "address_type": "city",
         "person_id": 2256,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -14584,7 +14584,7 @@
         "project_number": 858,
         "address_type": "city",
         "person_id": 2273,
-        "place": "عيلبون"
+        "place": "אבו הבר"
       }
     },
     {
@@ -14720,7 +14720,7 @@
         "project_number": 866,
         "address_type": "city",
         "person_id": 2282,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -15060,7 +15060,7 @@
         "project_number": 886,
         "address_type": "city",
         "person_id": 2302,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -15111,7 +15111,7 @@
         "project_number": 889,
         "address_type": "city",
         "person_id": 2305,
-        "place": "يركا"
+        "place": "ירכא"
       }
     },
     {
@@ -15128,7 +15128,7 @@
         "project_number": 890,
         "address_type": "city",
         "person_id": 2306,
-        "place": "عسفيا"
+        "place": "עספיא"
       }
     },
     {
@@ -15162,7 +15162,7 @@
         "project_number": 892,
         "address_type": "street",
         "person_id": 2308,
-        "place": "רובע מפרץ חיפה"
+        "place": "חיפה"
       }
     },
     {
@@ -15196,7 +15196,7 @@
         "project_number": 894,
         "address_type": "street",
         "person_id": 2310,
-        "place": "טבריה עילית"
+        "place": "טבריה"
       }
     },
     {
@@ -15247,7 +15247,7 @@
         "project_number": 897,
         "address_type": "city",
         "person_id": 2314,
-        "place": "زلفة الشرقية"
+        "place": "מושיירפה"
       }
     },
     {
@@ -15383,7 +15383,7 @@
         "project_number": 905,
         "address_type": "city",
         "person_id": 2322,
-        "place": "Кфар Кама"
+        "place": "כפר כמא"
       }
     },
     {
@@ -15451,7 +15451,7 @@
         "project_number": 909,
         "address_type": "city",
         "person_id": 2326,
-        "place": "زلفة الشرقية"
+        "place": "מושיירפה"
       }
     },
     {
@@ -15485,7 +15485,7 @@
         "project_number": 911,
         "address_type": "city",
         "person_id": 2328,
-        "place": "شفا عمرو"
+        "place": "שפרעם"
       }
     },
     {
@@ -15519,7 +15519,7 @@
         "project_number": 913,
         "address_type": "city",
         "person_id": 2330,
-        "place": "سلامة‎"
+        "place": "סלמה"
       }
     },
     {
@@ -15604,7 +15604,7 @@
         "project_number": 918,
         "address_type": "city",
         "person_id": 2335,
-        "place": "كعبية طباش حجاجرة‎"
+        "place": "כעביה צפון"
       }
     },
     {
@@ -15672,7 +15672,7 @@
         "project_number": 922,
         "address_type": "city",
         "person_id": 2339,
-        "place": "كسرى أ‘"
+        "place": "כסרא"
       }
     },
     {
@@ -15689,7 +15689,7 @@
         "project_number": 923,
         "address_type": "city",
         "person_id": 2340,
-        "place": "زلفة الشرقية"
+        "place": "מושיירפה"
       }
     },
     {
@@ -15706,7 +15706,7 @@
         "project_number": 924,
         "address_type": "city",
         "person_id": 2341,
-        "place": "طرعان"
+        "place": "טורעאן"
       }
     },
     {
@@ -15740,7 +15740,7 @@
         "project_number": 926,
         "address_type": "city",
         "person_id": 2343,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -15757,7 +15757,7 @@
         "project_number": 927,
         "address_type": "city",
         "person_id": 2344,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -15774,7 +15774,7 @@
         "project_number": 928,
         "address_type": "city",
         "person_id": 2345,
-        "place": "طوبا الزنغرية"
+        "place": "טובא זנגריה"
       }
     },
     {
@@ -15791,7 +15791,7 @@
         "project_number": 929,
         "address_type": "city",
         "person_id": 2346,
-        "place": "Judeida Makr"
+        "place": "מועצה אזורית משגב"
       }
     },
     {
@@ -15808,7 +15808,7 @@
         "project_number": 930,
         "address_type": "city",
         "person_id": 2347,
-        "place": "عسفيا"
+        "place": "עספיא"
       }
     },
     {
@@ -15825,7 +15825,7 @@
         "project_number": 931,
         "address_type": "city",
         "person_id": 2348,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -15842,7 +15842,7 @@
         "project_number": 932,
         "address_type": "city",
         "person_id": 2349,
-        "place": "جولس"
+        "place": "ג'וליס"
       }
     },
     {
@@ -15859,7 +15859,7 @@
         "project_number": 933,
         "address_type": "city",
         "person_id": 2350,
-        "place": "البعنة"
+        "place": "בענה"
       }
     },
     {
@@ -15876,7 +15876,7 @@
         "project_number": 934,
         "address_type": "city",
         "person_id": 2351,
-        "place": "المزرعة"
+        "place": "אל-מזרעה"
       }
     },
     {
@@ -15910,7 +15910,7 @@
         "project_number": 936,
         "address_type": "city",
         "person_id": 2354,
-        "place": "شفا عمرو"
+        "place": "שפרעם"
       }
     },
     {
@@ -15944,7 +15944,7 @@
         "project_number": 938,
         "address_type": "city",
         "person_id": 2356,
-        "place": "المغار"
+        "place": "מגאר"
       }
     },
     {
@@ -16080,7 +16080,7 @@
         "project_number": 946,
         "address_type": "city",
         "person_id": 2364,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     },
     {
@@ -16250,7 +16250,7 @@
         "project_number": 956,
         "address_type": "city",
         "person_id": 2375,
-        "place": "سلامة‎"
+        "place": "מועצה אזורית משגב"
       }
     },
     {
@@ -16386,7 +16386,7 @@
         "project_number": 964,
         "address_type": "city",
         "person_id": 2383,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -16607,7 +16607,7 @@
         "project_number": 977,
         "address_type": "street",
         "person_id": 2396,
-        "place": "מורדות טבריה"
+        "place": "טבריה"
       }
     },
     {
@@ -16641,7 +16641,7 @@
         "project_number": 979,
         "address_type": "city",
         "person_id": 2398,
-        "place": "كفر ياسيف"
+        "place": "כפר יאסיף"
       }
     },
     {
@@ -16777,7 +16777,7 @@
         "project_number": 987,
         "address_type": "city",
         "person_id": 2407,
-        "place": "سخنين"
+        "place": "סח'נין"
       }
     },
     {
@@ -16811,7 +16811,7 @@
         "project_number": 989,
         "address_type": "city",
         "person_id": 2409,
-        "place": "بيت جن"
+        "place": "בית ג'ן"
       }
     },
     {
@@ -16845,7 +16845,7 @@
         "project_number": 991,
         "address_type": "city",
         "person_id": 2411,
-        "place": "ساجور"
+        "place": "סאג׳ור"
       }
     },
     {
@@ -16964,7 +16964,7 @@
         "project_number": 998,
         "address_type": "city",
         "person_id": 2418,
-        "place": "يانوح جت"
+        "place": "יאנוח - ג'ת"
       }
     },
     {
@@ -17117,7 +17117,7 @@
         "project_number": 1007,
         "address_type": "city",
         "person_id": 2427,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -17134,7 +17134,7 @@
         "project_number": 1008,
         "address_type": "city",
         "person_id": 2428,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -17185,7 +17185,7 @@
         "project_number": 1011,
         "address_type": "city",
         "person_id": 2431,
-        "place": "نحف"
+        "place": "נחף"
       }
     },
     {
@@ -17219,7 +17219,7 @@
         "project_number": 1013,
         "address_type": "city",
         "person_id": 2433,
-        "place": "دالية الكرمل"
+        "place": "דלית אל-כרמל"
       }
     }
   ]
