@@ -32,23 +32,20 @@
       box-sizing: border-box;
     }
     .place-label {
-      background: rgba(255, 255, 255, 0.92);
-      border: 1px solid #1e6fd9;
-      border-radius: 6px;
-      color: #123;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 1.2;
-      padding: 2px 7px;
-      white-space: nowrap;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-      pointer-events: none;
+      background: rgba(255, 255, 255, 0.95) !important;
+      border: 1.5px solid #1e6fd9 !important;
+      border-radius: 6px !important;
+      color: #123 !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      line-height: 1.25 !important;
+      padding: 3px 8px !important;
+      white-space: nowrap !important;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) !important;
       direction: rtl;
-      transform: translate(-50%, -120%);
     }
-    .place-label-wrap {
-      background: transparent !important;
-      border: none !important;
+    .leaflet-tooltip-top.place-label::before {
+      border-top-color: #1e6fd9 !important;
     }
   </style>
 </head>
@@ -89,7 +86,7 @@
     });
 
     const labelsLayer = L.layerGroup().addTo(map);
-    const LABEL_MIN_ZOOM = 10;
+    const LABEL_MIN_ZOOM = 9;
 
     function escapeHtml(text) {
       return String(text)
@@ -129,18 +126,20 @@
       labelsLayer.clearLayers();
       if (map.getZoom() < LABEL_MIN_ZOOM) return;
       for (const c of centroids) {
-        const icon = L.divIcon({
-          className: "place-label-wrap",
-          html: `<div class="place-label">${escapeHtml(c.place)}</div>`,
-          iconSize: [0, 0],
-          iconAnchor: [0, 0],
-        });
-        L.marker([c.lat, c.lon], {
-          icon,
+        const m = L.circleMarker([c.lat, c.lon], {
+          radius: 0,
+          opacity: 0,
+          fillOpacity: 0,
           interactive: false,
-          keyboard: false,
-          zIndexOffset: 1000,
-        }).addTo(labelsLayer);
+        });
+        m.bindTooltip(c.place, {
+          permanent: true,
+          direction: "top",
+          offset: [0, -8],
+          className: "place-label",
+          opacity: 1,
+        });
+        m.addTo(labelsLayer);
       }
     }
 
