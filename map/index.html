@@ -26,8 +26,10 @@
     .leaflet-popup-content { direction: rtl; text-align: right; }
     .leaflet-marker-icon.company-marker {
       border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+      border: 2px solid #2e9b4a;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
       background: #fff;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -61,9 +63,9 @@
     const companyIcon = L.icon({
       iconUrl: "marker-logo.png",
       iconRetinaUrl: "marker-logo-2x.png",
-      iconSize: [36, 36],
-      iconAnchor: [18, 18],
-      popupAnchor: [0, -18],
+      iconSize: [18, 18],
+      iconAnchor: [9, 9],
+      popupAnchor: [0, -10],
       className: "company-marker",
     });
 
