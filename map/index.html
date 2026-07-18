@@ -31,6 +31,25 @@
       background: #fff;
       box-sizing: border-box;
     }
+    .place-label {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid #1e6fd9;
+      border-radius: 6px;
+      color: #123;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+      padding: 2px 7px;
+      white-space: nowrap;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+      pointer-events: none;
+      direction: rtl;
+      transform: translate(-50%, -120%);
+    }
+    .place-label-wrap {
+      background: transparent !important;
+      border: none !important;
+    }
   </style>
 </head>
 <body>
@@ -69,19 +88,84 @@
       className: "company-marker",
     });
 
+    const labelsLayer = L.layerGroup().addTo(map);
+    const LABEL_MIN_ZOOM = 10;
+
+    function escapeHtml(text) {
+      return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function buildPlaceCentroids(features) {
+      const groups = new Map();
+      for (const f of features) {
+        const place = (f.properties && f.properties.place) || "";
+        if (!place) continue;
+        const [lon, lat] = f.geometry.coordinates;
+        if (!groups.has(place)) {
+          groups.set(place, { lat: 0, lon: 0, n: 0 });
+        }
+        const g = groups.get(place);
+        g.lat += lat;
+        g.lon += lon;
+        g.n += 1;
+      }
+      const out = [];
+      for (const [place, g] of groups) {
+        out.push({
+          place,
+          lat: g.lat / g.n,
+          lon: g.lon / g.n,
+          count: g.n,
+        });
+      }
+      return out;
+    }
+
+    function renderPlaceLabels(centroids) {
+      labelsLayer.clearLayers();
+      if (map.getZoom() < LABEL_MIN_ZOOM) return;
+      for (const c of centroids) {
+        const icon = L.divIcon({
+          className: "place-label-wrap",
+          html: `<div class="place-label">${escapeHtml(c.place)}</div>`,
+          iconSize: [0, 0],
+          iconAnchor: [0, 0],
+        });
+        L.marker([c.lat, c.lon], {
+          icon,
+          interactive: false,
+          keyboard: false,
+          zIndexOffset: 1000,
+        }).addTo(labelsLayer);
+      }
+    }
+
     fetch("data/projects.geojson?ts=" + Date.now())
       .then((r) => r.json())
       .then((geojson) => {
+        const features = geojson.features || [];
+        const centroids = buildPlaceCentroids(features);
+
         const layer = L.geoJSON(geojson, {
           pointToLayer: (feature, latlng) =>
             L.marker(latlng, { icon: companyIcon }),
           onEachFeature: (feature, layer) => {
-            layer.bindPopup("<strong>פרויקט סולארי</strong>");
+            const place = (feature.properties && feature.properties.place) || "";
+            const title = place
+              ? `<strong>פרויקט סולארי</strong><br/>${escapeHtml(place)}`
+              : "<strong>פרויקט סולארי</strong>";
+            layer.bindPopup(title);
           },
         }).addTo(map);
 
-        const n = (geojson.features || []).length;
-        if (n > 0) {
+        renderPlaceLabels(centroids);
+        map.on("zoomend", () => renderPlaceLabels(centroids));
+
+        if (features.length > 0) {
           try {
             map.fitBounds(layer.getBounds().pad(0.08));
           } catch (_) {}

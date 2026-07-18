@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -35,6 +36,48 @@ def save_state(state: dict[str, Any], path: Path | None = None) -> None:
     tmp.replace(p)
 
 
+def place_label(rec: dict[str, Any]) -> str:
+    """Human-readable settlement / village name for map labels."""
+    disp = (rec.get("geocode_display") or "").strip()
+    city_key = (rec.get("city_key") or "").strip()
+    parts = [p.strip() for p in disp.split(",") if p.strip()]
+
+    skip_sub = ("מועצה", "נפת", "מחוז", "שטח", "ישראל", "israel", "الأراضي")
+
+    def usable(part: str) -> bool:
+        low = part.lower()
+        if part.isdigit() or len(part) < 2:
+            return False
+        return not any(s in low for s in skip_sub)
+
+    # City-level geocodes: first display segment is usually the settlement
+    if rec.get("address_type") == "city" and parts and usable(parts[0]):
+        return parts[0]
+
+    # Prefer a display segment that matches city_key (when city_key is not a council)
+    if city_key and "מועצה" not in city_key:
+        for p in parts:
+            if city_key in p.lower() or p.lower() in city_key:
+                if usable(p):
+                    return p
+
+    for p in parts:
+        if usable(p):
+            return p
+
+    if city_key and "מועצה" not in city_key:
+        return city_key
+
+    addr = (rec.get("address") or "").strip()
+    if addr:
+        head = addr.split(",")[0].strip()
+        # Drop trailing house numbers for label
+        head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", head).strip()
+        if head:
+            return head
+    return city_key or "ישראל"
+
+
 def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
     features = []
     persons = state.get("persons") or {}
@@ -47,6 +90,7 @@ def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
         if rec.get("lat") is None or rec.get("lon") is None:
             continue
         num = int(rec["project_number"])
+        place = place_label(rec)
         features.append(
             {
                 "type": "Feature",
@@ -59,6 +103,7 @@ def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
                     "project_number": num,
                     "address_type": rec.get("address_type", "unknown"),
                     "person_id": rec.get("person_id"),
+                    "place": place,
                 },
             }
         )
