@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1014,
+  "next_project_number": 1015,
   "persons": {
     "9": {
       "person_id": 9,
@@ -10313,6 +10313,16 @@
       "address_type": "city",
       "city_key": "دالية الكرمل",
       "geocode_display": "دالية الكرمل, נפת חיפה, מחוז חיפה, ישראל"
+    },
+    "2434": {
+      "person_id": 2434,
+      "project_number": 1014,
+      "address": "Srigim-Li On, Israel",
+      "lat": 31.677255485245347,
+      "lon": 34.93444557143832,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מטה יהודה",
+      "geocode_display": "שריגים (לי־און), מועצה אזורית מטה יהודה, נפת ירושלים, מחוז ירושלים, ישראל"
     }
   }
 }
