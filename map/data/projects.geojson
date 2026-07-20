@@ -6,14 +6,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.282886,
-          33.022941
+          35.287032,
+          33.015873
         ]
       },
       "properties": {
         "name": "Project 0001",
         "project_number": 1,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 9,
         "place": "מעלות תרשיחא"
       }
@@ -40,14 +40,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.441891,
-          33.004923
+          35.45242,
+          32.874469
         ]
       },
       "properties": {
         "name": "Project 0003",
         "project_number": 3,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 20,
         "place": "כלנית"
       }
@@ -74,8 +74,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.478342,
-          32.472459
+          35.471201,
+          32.447261
         ]
       },
       "properties": {
@@ -125,14 +125,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.288607,
-          33.043556
+          35.290884,
+          33.073706
         ]
       },
       "properties": {
         "name": "Project 0008",
         "project_number": 8,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 25,
         "place": "אבן מנחם"
       }
@@ -142,8 +142,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.287357,
-          33.037423
+          35.334638,
+          33.013718
         ]
       },
       "properties": {
@@ -159,8 +159,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.286864,
-          33.043493
+          35.286323,
+          33.08938
         ]
       },
       "properties": {
@@ -176,16 +176,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.209789,
-          31.260636
+          35.17044,
+          32.471977
         ]
       },
       "properties": {
         "name": "Project 0011",
         "project_number": 11,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 28,
-        "place": "ערד"
+        "place": "שקד"
       }
     },
     {
@@ -227,8 +227,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.246145,
-          32.968721
+          35.184933,
+          32.953063
         ]
       },
       "properties": {
@@ -236,7 +236,7 @@
         "project_number": 14,
         "address_type": "city",
         "person_id": 31,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -312,8 +312,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.245777,
-          32.967988
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -321,7 +321,7 @@
         "project_number": 19,
         "address_type": "city",
         "person_id": 36,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -363,8 +363,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.438774,
-          32.030279
+          35.448687,
+          31.987799
         ]
       },
       "properties": {
@@ -397,8 +397,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.592464,
-          31.520155
+          35.441653,
+          32.016614
         ]
       },
       "properties": {
@@ -414,8 +414,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.007084,
-          32.801222
+          35.441601,
+          32.044058
         ]
       },
       "properties": {
@@ -423,7 +423,7 @@
         "project_number": 25,
         "address_type": "city",
         "person_id": 42,
-        "place": "קפה פאזל"
+        "place": "פצאל"
       }
     },
     {
@@ -431,8 +431,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.597057,
-          31.521122
+          35.438958,
+          32.016695
         ]
       },
       "properties": {
@@ -482,16 +482,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.015923,
-          31.894542
+          35.171408,
+          31.749983
         ]
       },
       "properties": {
         "name": "Project 0029",
         "project_number": 29,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 46,
-        "place": "מודיעין-מכבים-רעות"
+        "place": "גבעת משואה"
       }
     },
     {
@@ -550,14 +550,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.291126,
-          33.040748
+          35.293274,
+          33.073172
         ]
       },
       "properties": {
         "name": "Project 0033",
         "project_number": 33,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 50,
         "place": "אבן מנחם"
       }
@@ -567,14 +567,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.292012,
-          33.041657
+          35.318841,
+          33.085213
         ]
       },
       "properties": {
         "name": "Project 0034",
         "project_number": 34,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 51,
         "place": "שתולה"
       }
@@ -584,8 +584,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.245666,
-          32.967266
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -593,7 +593,7 @@
         "project_number": 35,
         "address_type": "city",
         "person_id": 52,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -635,14 +635,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.867195,
-          31.379171
+          34.87758,
+          31.223551
         ]
       },
       "properties": {
         "name": "Project 0038",
         "project_number": 38,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 55,
         "place": "נבטים"
       }
@@ -720,8 +720,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.039364,
-          32.386098
+          35.246932,
+          32.968527
         ]
       },
       "properties": {
@@ -729,7 +729,7 @@
         "project_number": 43,
         "address_type": "city",
         "person_id": 60,
-        "place": "ג'ת"
+        "place": "ג׳ת"
       }
     },
     {
@@ -788,8 +788,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.438277,
-          32.04097
+          35.423141,
+          32.163849
         ]
       },
       "properties": {
@@ -822,8 +822,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.590644,
-          32.966281
+          35.228325,
+          31.729397
         ]
       },
       "properties": {
@@ -907,14 +907,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.739337,
-          31.736099
+          34.744374,
+          31.707694
         ]
       },
       "properties": {
         "name": "Project 0054",
         "project_number": 54,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 71,
         "place": "אביגדור"
       }
@@ -941,14 +941,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.742621,
-          31.734767
+          34.744286,
+          31.708485
         ]
       },
       "properties": {
         "name": "Project 0056",
         "project_number": 56,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 73,
         "place": "אביגדור"
       }
@@ -958,16 +958,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.033872,
-          32.387262
+          35.246465,
+          32.967581
         ]
       },
       "properties": {
         "name": "Project 0057",
         "project_number": 57,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 74,
-        "place": "ג'ת"
+        "place": "ג׳ת"
       }
     },
     {
@@ -1111,8 +1111,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.572464,
-          32.686975
+          35.587102,
+          32.662148
         ]
       },
       "properties": {
@@ -1145,8 +1145,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.24807,
-          32.968213
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -1154,7 +1154,7 @@
         "project_number": 68,
         "address_type": "city",
         "person_id": 85,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -1162,16 +1162,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.644716,
-          31.795136
+          34.843256,
+          32.296872
         ]
       },
       "properties": {
         "name": "Project 0069",
         "project_number": 69,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 86,
-        "place": "אשדוד"
+        "place": "אקסודוס"
       }
     },
     {
@@ -1179,8 +1179,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.284643,
-          33.036618
+          35.255884,
+          33.015524
         ]
       },
       "properties": {
@@ -1247,8 +1247,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.608809,
-          33.169461
+          35.603886,
+          33.00814
         ]
       },
       "properties": {
@@ -1366,8 +1366,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.763718,
-          31.979577
+          35.467122,
+          31.909694
         ]
       },
       "properties": {
@@ -1519,8 +1519,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.300289,
-          32.887623
+          35.376204,
+          32.887982
         ]
       },
       "properties": {
@@ -1740,8 +1740,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.465593,
-          32.730336
+          35.439312,
+          32.787876
         ]
       },
       "properties": {
@@ -1791,8 +1791,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.183879,
-          32.851329
+          35.197806,
+          32.850895
         ]
       },
       "properties": {
@@ -1859,8 +1859,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.285363,
-          33.0362
+          35.255633,
+          33.013702
         ]
       },
       "properties": {
@@ -1978,14 +1978,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.701393,
-          33.032191
+          35.747565,
+          33.197406
         ]
       },
       "properties": {
         "name": "Project 0117",
         "project_number": 117,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 164,
         "place": "אודם"
       }
@@ -1995,8 +1995,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.237991,
-          32.725009
+          35.235625,
+          32.748812
         ]
       },
       "properties": {
@@ -2029,8 +2029,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.286402,
-          33.036166
+          35.261577,
+          32.957607
         ]
       },
       "properties": {
@@ -2046,8 +2046,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.287065,
-          33.036629
+          35.26195,
+          32.959243
         ]
       },
       "properties": {
@@ -2148,14 +2148,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.140238,
-          32.549923
+          34.935781,
+          32.015729
         ]
       },
       "properties": {
         "name": "Project 0127",
         "project_number": 127,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 178,
         "place": "ברקת"
       }
@@ -2335,14 +2335,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.159577,
-          32.978267
+          35.175617,
+          32.907215
         ]
       },
       "properties": {
         "name": "Project 0138",
         "project_number": 138,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 189,
         "place": "אחיהוד"
       }
@@ -2386,8 +2386,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.445611,
-          33.005346
+          35.475192,
+          33.08877
         ]
       },
       "properties": {
@@ -2454,8 +2454,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.615951,
-          33.192326
+          35.620508,
+          33.217292
         ]
       },
       "properties": {
@@ -2471,8 +2471,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.623744,
-          33.190042
+          35.625899,
+          33.221054
         ]
       },
       "properties": {
@@ -2505,8 +2505,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.622376,
-          33.190005
+          35.622417,
+          33.221605
         ]
       },
       "properties": {
@@ -2522,8 +2522,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.6216,
-          33.189691
+          35.621043,
+          33.218015
         ]
       },
       "properties": {
@@ -2607,14 +2607,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.282005,
-          33.04274
+          35.282668,
+          33.087922
         ]
       },
       "properties": {
         "name": "Project 0154",
         "project_number": 154,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 205,
         "place": "שומרה"
       }
@@ -2675,8 +2675,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.610591,
-          33.170473
+          35.544562,
+          33.212086
         ]
       },
       "properties": {
@@ -2684,7 +2684,7 @@
         "project_number": 158,
         "address_type": "city",
         "person_id": 209,
-        "place": "שמורת טבע מרגליות"
+        "place": "מרגליות"
       }
     },
     {
@@ -2692,8 +2692,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.609701,
-          33.168778
+          35.561844,
+          33.04742
         ]
       },
       "properties": {
@@ -2896,8 +2896,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.299793,
-          32.886166
+          35.361043,
+          32.907586
         ]
       },
       "properties": {
@@ -2905,7 +2905,7 @@
         "project_number": 171,
         "address_type": "city",
         "person_id": 222,
-        "place": "פרשת המים"
+        "place": "כמון"
       }
     },
     {
@@ -3032,8 +3032,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.437995,
-          33.00047
+          35.392292,
+          32.903028
         ]
       },
       "properties": {
@@ -3100,8 +3100,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.239329,
-          32.724783
+          35.211052,
+          32.673029
         ]
       },
       "properties": {
@@ -3219,8 +3219,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.15642,
-          32.97222
+          34.753252,
+          32.043405
         ]
       },
       "properties": {
@@ -3228,7 +3228,7 @@
         "project_number": 190,
         "address_type": "city",
         "person_id": 1501,
-        "place": "ג'ולס"
+        "place": "עולש"
       }
     },
     {
@@ -3236,8 +3236,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.764965,
-          31.977463
+          35.467587,
+          31.904905
         ]
       },
       "properties": {
@@ -3287,8 +3287,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.768132,
-          31.977095
+          35.466024,
+          31.907311
         ]
       },
       "properties": {
@@ -3389,14 +3389,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.299274,
-          32.885182
+          35.374938,
+          32.888971
         ]
       },
       "properties": {
         "name": "Project 0200",
         "project_number": 200,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1511,
         "place": "סלמה"
       }
@@ -3423,8 +3423,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.764361,
-          31.980348
+          35.46868,
+          31.90501
         ]
       },
       "properties": {
@@ -3440,8 +3440,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.437846,
-          32.030238
+          35.44771,
+          31.988521
         ]
       },
       "properties": {
@@ -3474,8 +3474,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.988362,
-          31.715661
+          35.09462,
+          31.784464
         ]
       },
       "properties": {
@@ -3525,14 +3525,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.290244,
-          32.88883
+          35.236216,
+          32.850867
         ]
       },
       "properties": {
         "name": "Project 0208",
         "project_number": 208,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1519,
         "place": "מנוף"
       }
@@ -3627,8 +3627,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.159294,
-          32.972118
+          34.753306,
+          32.044499
         ]
       },
       "properties": {
@@ -3636,7 +3636,7 @@
         "project_number": 214,
         "address_type": "city",
         "person_id": 1525,
-        "place": "ג'ולס"
+        "place": "עולש"
       }
     },
     {
@@ -4120,8 +4120,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.284357,
-          33.037477
+          35.25561,
+          33.016319
         ]
       },
       "properties": {
@@ -4154,16 +4154,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.964893,
-          32.475337
+          34.903826,
+          32.137556
         ]
       },
       "properties": {
         "name": "Project 0245",
         "project_number": 245,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1556,
-        "place": "פרדס חנה-כרכור"
+        "place": "עדנים"
       }
     },
     {
@@ -4205,8 +4205,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.609908,
-          33.173796
+          35.570088,
+          32.989773
         ]
       },
       "properties": {
@@ -4358,8 +4358,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.226236,
-          32.934751
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -4596,8 +4596,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.207971,
-          32.93247
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -4800,8 +4800,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.446967,
-          33.004624
+          35.497434,
+          33.050681
         ]
       },
       "properties": {
@@ -4919,8 +4919,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.759317,
-          31.612861
+          34.762276,
+          31.576866
         ]
       },
       "properties": {
@@ -5038,8 +5038,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.756742,
-          31.614436
+          34.763544,
+          31.575975
         ]
       },
       "properties": {
@@ -5055,8 +5055,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.121198,
-          33.004953
+          35.113388,
+          33.037442
         ]
       },
       "properties": {
@@ -5072,8 +5072,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.008298,
-          32.802499
+          35.440271,
+          32.043555
         ]
       },
       "properties": {
@@ -5081,7 +5081,7 @@
         "project_number": 299,
         "address_type": "city",
         "person_id": 1610,
-        "place": "קפה פאזל"
+        "place": "פצאל"
       }
     },
     {
@@ -5174,8 +5174,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.624665,
-          33.189419
+          35.624982,
+          33.222762
         ]
       },
       "properties": {
@@ -5259,8 +5259,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.008297,
-          32.800943
+          35.438231,
+          32.042694
         ]
       },
       "properties": {
@@ -5268,7 +5268,7 @@
         "project_number": 310,
         "address_type": "city",
         "person_id": 1621,
-        "place": "קפה פאזל"
+        "place": "פצאל"
       }
     },
     {
@@ -5276,14 +5276,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.620515,
-          31.618492
+          34.643278,
+          31.67331
         ]
       },
       "properties": {
         "name": "Project 0311",
         "project_number": 311,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1622,
         "place": "אנדרטת חללי קרבות גוליס"
       }
@@ -5378,8 +5378,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.788913,
-          32.057224
+          35.395927,
+          32.100803
         ]
       },
       "properties": {
@@ -5395,8 +5395,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.240231,
-          32.852909
+          35.193896,
+          32.853536
         ]
       },
       "properties": {
@@ -5412,8 +5412,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.20906,
-          31.259679
+          35.16767,
+          32.473254
         ]
       },
       "properties": {
@@ -5446,8 +5446,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.77157,
-          31.979823
+          35.465469,
+          31.905208
         ]
       },
       "properties": {
@@ -5616,8 +5616,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.208249,
-          31.772019
+          34.97449,
+          32.154376
         ]
       },
       "properties": {
@@ -5701,8 +5701,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.291935,
-          33.040675
+          35.323043,
+          33.066837
         ]
       },
       "properties": {
@@ -5752,8 +5752,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.290979,
-          33.041267
+          35.324684,
+          33.06675
         ]
       },
       "properties": {
@@ -5820,16 +5820,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.793276,
-          32.054038
+          35.262428,
+          32.958142
         ]
       },
       "properties": {
         "name": "Project 0343",
         "project_number": 343,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1657,
-        "place": "תל־אביב–יפו"
+        "place": "לפידות"
       }
     },
     {
@@ -5990,8 +5990,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.21733,
-          31.766595
+          34.976178,
+          32.796191
         ]
       },
       "properties": {
@@ -6007,8 +6007,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.6049,
-          33.176406
+          35.467715,
+          31.905952
         ]
       },
       "properties": {
@@ -6016,7 +6016,7 @@
         "project_number": 354,
         "address_type": "city",
         "person_id": 1668,
-        "place": "תל נעמה"
+        "place": "נעמה"
       }
     },
     {
@@ -6024,16 +6024,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.767318,
-          31.97257
+          34.947578,
+          29.554147
         ]
       },
       "properties": {
         "name": "Project 0355",
         "project_number": 355,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1669,
-        "place": "ראשון לציון"
+        "place": "נעמה"
       }
     },
     {
@@ -6194,8 +6194,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.620413,
-          31.618178
+          34.671704,
+          31.62946
         ]
       },
       "properties": {
@@ -6517,14 +6517,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.360178,
-          32.540702
+          35.437093,
+          32.552936
         ]
       },
       "properties": {
         "name": "Project 0384",
         "project_number": 384,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1700,
         "place": "בית השיטה"
       }
@@ -6585,8 +6585,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.200507,
-          32.540974
+          35.154434,
+          32.552999
         ]
       },
       "properties": {
@@ -6594,7 +6594,7 @@
         "project_number": 388,
         "address_type": "city",
         "person_id": 1704,
-        "place": "כביש שירות - גדר ההפרדה"
+        "place": "מושיירפה"
       }
     },
     {
@@ -6653,8 +6653,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.356559,
-          32.543508
+          35.440609,
+          32.553285
         ]
       },
       "properties": {
@@ -6704,8 +6704,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.290884,
-          33.040267
+          35.325136,
+          33.065245
         ]
       },
       "properties": {
@@ -6755,8 +6755,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.246145,
-          32.968721
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -6764,7 +6764,7 @@
         "project_number": 398,
         "address_type": "city",
         "person_id": 1714,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -7095,8 +7095,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.284645,
-          33.038263
+          35.255147,
+          33.015029
         ]
       },
       "properties": {
@@ -7112,8 +7112,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.931068,
-          32.631552
+          34.908611,
+          32.506654
         ]
       },
       "properties": {
@@ -7248,8 +7248,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.93569,
-          32.639881
+          34.961509,
+          32.726352
         ]
       },
       "properties": {
@@ -7265,8 +7265,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.297907,
-          32.884268
+          35.233875,
+          32.825466
         ]
       },
       "properties": {
@@ -7299,8 +7299,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.766572,
-          31.981732
+          35.465053,
+          31.907521
         ]
       },
       "properties": {
@@ -7350,8 +7350,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.077089,
-          32.556205
+          35.1048328,
+          32.5323092
         ]
       },
       "properties": {
@@ -7367,8 +7367,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.74013,
-          31.735679
+          34.747349,
+          31.710159
         ]
       },
       "properties": {
@@ -7384,8 +7384,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.803904,
-          32.056074
+          35.229871,
+          31.654809
         ]
       },
       "properties": {
@@ -7537,8 +7537,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.286464,
-          33.037549
+          35.256503,
+          33.01363
         ]
       },
       "properties": {
@@ -7656,14 +7656,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.358114,
-          32.549412
+          35.43702,
+          32.586998
         ]
       },
       "properties": {
         "name": "Project 0451",
         "project_number": 451,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1769,
         "place": "מולדת"
       }
@@ -7690,8 +7690,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.215345,
-          31.77598
+          35.300892,
+          32.052677
         ]
       },
       "properties": {
@@ -7741,16 +7741,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.592924,
-          31.526025
+          34.758617,
+          31.620431
         ]
       },
       "properties": {
         "name": "Project 0456",
         "project_number": 456,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1774,
-        "place": "שדרות"
+        "place": "נחל לכיש"
       }
     },
     {
@@ -7775,8 +7775,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.357115,
-          32.549579
+          35.439399,
+          32.584606
         ]
       },
       "properties": {
@@ -7809,8 +7809,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.076193,
-          32.557095
+          35.1048328,
+          32.5323092
         ]
       },
       "properties": {
@@ -7826,14 +7826,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.298216,
-          32.884956
+          35.234845,
+          32.828366
         ]
       },
       "properties": {
         "name": "Project 0461",
         "project_number": 461,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1779,
         "place": "מורשת"
       }
@@ -7911,8 +7911,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.289945,
-          33.040973
+          35.321865,
+          33.063703
         ]
       },
       "properties": {
@@ -8013,8 +8013,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301146,
-          32.886914
+          35.237226,
+          32.900412
         ]
       },
       "properties": {
@@ -8081,8 +8081,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.355666,
-          32.543333
+          35.242592,
+          32.561039
         ]
       },
       "properties": {
@@ -8115,8 +8115,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.435179,
-          32.032169
+          35.444689,
+          31.986556
         ]
       },
       "properties": {
@@ -8234,8 +8234,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.285705,
-          33.038123
+          35.255993,
+          33.014663
         ]
       },
       "properties": {
@@ -8285,8 +8285,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.479132,
-          32.472799
+          35.476587,
+          32.451786
         ]
       },
       "properties": {
@@ -8472,16 +8472,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.730413,
-          31.87945
+          34.594262,
+          31.53077
         ]
       },
       "properties": {
         "name": "Project 0499",
         "project_number": 499,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1817,
-        "place": "יבנה"
+        "place": "סתוונית"
       }
     },
     {
@@ -8506,8 +8506,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.773316,
-          31.978444
+          35.46662,
+          31.905535
         ]
       },
       "properties": {
@@ -8591,8 +8591,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.246145,
-          32.968721
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -8600,7 +8600,7 @@
         "project_number": 506,
         "address_type": "city",
         "person_id": 1824,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -8727,8 +8727,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.571094,
-          32.684799
+          35.580031,
+          32.662177
         ]
       },
       "properties": {
@@ -8736,7 +8736,7 @@
         "project_number": 514,
         "address_type": "city",
         "person_id": 1832,
-        "place": "צומת אשדות יעקב אחוד"
+        "place": "אשדות יעקב איחוד"
       }
     },
     {
@@ -8744,8 +8744,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.119424,
-          32.988567
+          35.098203,
+          32.957571
         ]
       },
       "properties": {
@@ -8795,8 +8795,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.700955,
-          33.02075
+          35.750977,
+          32.855219
         ]
       },
       "properties": {
@@ -8846,8 +8846,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.625454,
-          33.188949
+          35.652216,
+          33.243145
         ]
       },
       "properties": {
@@ -8965,8 +8965,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.238846,
-          32.723625
+          35.306953,
+          32.656635
         ]
       },
       "properties": {
@@ -9101,8 +9101,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.357335,
-          32.538878
+          35.441268,
+          32.553802
         ]
       },
       "properties": {
@@ -9152,8 +9152,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.238445,
-          32.849961
+          35.19633,
+          32.851847
         ]
       },
       "properties": {
@@ -9220,14 +9220,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.299794,
-          32.884539
+          35.372264,
+          32.913289
         ]
       },
       "properties": {
         "name": "Project 0543",
         "project_number": 543,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1861,
         "place": "ראס אל עין"
       }
@@ -9271,8 +9271,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.701633,
-          33.021246
+          35.754942,
+          32.850196
         ]
       },
       "properties": {
@@ -9288,14 +9288,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.611049,
-          33.174466
+          35.571858,
+          32.987805
         ]
       },
       "properties": {
         "name": "Project 0547",
         "project_number": 547,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1865,
         "place": "מחניים"
       }
@@ -9356,8 +9356,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.783811,
-          32.060645
+          35.126639,
+          31.955564
         ]
       },
       "properties": {
@@ -9365,7 +9365,7 @@
         "project_number": 551,
         "address_type": "city",
         "person_id": 1869,
-        "place": "טלמון"
+        "place": "נריה"
       }
     },
     {
@@ -9373,16 +9373,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.775041,
-          32.015648
+          35.104676,
+          31.694499
         ]
       },
       "properties": {
         "name": "Project 0552",
         "project_number": 552,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1870,
-        "place": "חולון"
+        "place": "הדס"
       }
     },
     {
@@ -9441,8 +9441,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.784215,
-          32.061526
+          35.124067,
+          31.953207
         ]
       },
       "properties": {
@@ -9450,7 +9450,7 @@
         "project_number": 556,
         "address_type": "city",
         "person_id": 1874,
-        "place": "טלמון"
+        "place": "נריה"
       }
     },
     {
@@ -9509,8 +9509,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.300205,
-          32.885224
+          35.235073,
+          32.825601
         ]
       },
       "properties": {
@@ -9577,8 +9577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.240141,
-          32.851996
+          35.197422,
+          32.849854
         ]
       },
       "properties": {
@@ -9628,8 +9628,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.69986,
-          33.021453
+          35.68816,
+          32.890848
         ]
       },
       "properties": {
@@ -9764,8 +9764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.246145,
-          32.968721
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -9773,7 +9773,7 @@
         "project_number": 575,
         "address_type": "city",
         "person_id": 1893,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -9815,8 +9815,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.446695,
-          32.996825
+          35.437746,
+          32.945346
         ]
       },
       "properties": {
@@ -9866,8 +9866,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.300757,
-          32.886255
+          35.252074,
+          32.901563
         ]
       },
       "properties": {
@@ -9985,14 +9985,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.288152,
-          33.039261
+          35.33372,
+          33.014017
         ]
       },
       "properties": {
         "name": "Project 0588",
         "project_number": 588,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1906,
         "place": "אלקוש"
       }
@@ -10002,8 +10002,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.28874,
-          33.038671
+          35.342437,
+          33.019242
         ]
       },
       "properties": {
@@ -10019,14 +10019,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301043,
-          32.888053
+          35.374851,
+          32.888128
         ]
       },
       "properties": {
         "name": "Project 0590",
         "project_number": 590,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1908,
         "place": "סלמה"
       }
@@ -10036,8 +10036,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.591604,
-          31.520572
+          35.440775,
+          32.017358
         ]
       },
       "properties": {
@@ -10087,8 +10087,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.217231,
-          31.77004
+          35.475269,
+          31.80911
         ]
       },
       "properties": {
@@ -10274,16 +10274,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.888928,
-          32.086762
+          35.501995,
+          32.968673
         ]
       },
       "properties": {
         "name": "Project 0605",
         "project_number": 605,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1923,
-        "place": "פתח תקווה"
+        "place": "צפת"
       }
     },
     {
@@ -10308,8 +10308,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.457949,
-          32.857885
+          34.794206,
+          31.838635
         ]
       },
       "properties": {
@@ -10317,7 +10317,7 @@
         "project_number": 607,
         "address_type": "city",
         "person_id": 1925,
-        "place": "מרר"
+        "place": "גבעות מרר"
       }
     },
     {
@@ -10325,8 +10325,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.216275,
-          31.776003
+          35.327294,
+          33.041101
         ]
       },
       "properties": {
@@ -10334,7 +10334,7 @@
         "project_number": 608,
         "address_type": "city",
         "person_id": 1926,
-        "place": "כרם אברהם"
+        "place": "הר מתת"
       }
     },
     {
@@ -10376,8 +10376,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.442536,
-          33.005129
+          35.407607,
+          33.052353
         ]
       },
       "properties": {
@@ -10512,16 +10512,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301359,
-          32.906723
+          35.361012,
+          32.915594
         ]
       },
       "properties": {
         "name": "Project 0619",
         "project_number": 619,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1959,
-        "place": "כרמיאל"
+        "place": "כמון"
       }
     },
     {
@@ -10648,8 +10648,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301277,
-          32.887258
+          35.376006,
+          32.888405
         ]
       },
       "properties": {
@@ -10699,8 +10699,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.281554,
-          33.042127
+          35.287405,
+          33.088757
         ]
       },
       "properties": {
@@ -10733,8 +10733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.622659,
-          33.18917
+          35.622992,
+          33.223541
         ]
       },
       "properties": {
@@ -10835,8 +10835,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.931745,
-          32.640703
+          34.942879,
+          32.690212
         ]
       },
       "properties": {
@@ -10971,8 +10971,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.302264,
-          32.884344
+          35.231955,
+          32.903378
         ]
       },
       "properties": {
@@ -10988,8 +10988,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.287481,
-          33.037274
+          35.255311,
+          33.014283
         ]
       },
       "properties": {
@@ -11226,8 +11226,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.155465,
-          32.972518
+          34.753817,
+          32.046372
         ]
       },
       "properties": {
@@ -11235,7 +11235,7 @@
         "project_number": 661,
         "address_type": "city",
         "person_id": 2005,
-        "place": "ג'ולס"
+        "place": "עולש"
       }
     },
     {
@@ -11243,8 +11243,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.201349,
-          32.545259
+          35.150364,
+          32.552211
         ]
       },
       "properties": {
@@ -11252,7 +11252,7 @@
         "project_number": 662,
         "address_type": "city",
         "person_id": 2006,
-        "place": "כביש שירות - גדר ההפרדה"
+        "place": "מושיירפה"
       }
     },
     {
@@ -11379,8 +11379,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.183745,
-          32.955232
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -11634,8 +11634,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.183307,
-          32.958339
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -11668,8 +11668,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.18378,
-          32.95308
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -11753,14 +11753,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.288029,
-          33.03977
+          35.321253,
+          33.062892
         ]
       },
       "properties": {
         "name": "Project 0692",
         "project_number": 692,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2037,
         "place": "נטועה"
       }
@@ -11787,14 +11787,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.287378,
-          33.040369
+          35.321664,
+          33.065002
         ]
       },
       "properties": {
         "name": "Project 0694",
         "project_number": 694,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2039,
         "place": "נטועה"
       }
@@ -11821,14 +11821,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.286679,
-          33.039788
+          35.285737,
+          33.086399
         ]
       },
       "properties": {
         "name": "Project 0696",
         "project_number": 696,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2041,
         "place": "שומרה"
       }
@@ -11855,16 +11855,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.010358,
-          32.800036
+          34.949131,
+          32.200313
         ]
       },
       "properties": {
         "name": "Project 0698",
         "project_number": 698,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2043,
-        "place": "חיפה"
+        "place": "54347240"
       }
     },
     {
@@ -11872,8 +11872,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.246145,
-          32.968721
+          35.18544,
+          32.953024
         ]
       },
       "properties": {
@@ -11881,7 +11881,7 @@
         "project_number": 699,
         "address_type": "city",
         "person_id": 2044,
-        "place": "יאנוח - ג'ת"
+        "place": "ירכא"
       }
     },
     {
@@ -11906,14 +11906,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.445661,
-          33.004176
+          35.500293,
+          33.050297
         ]
       },
       "properties": {
         "name": "Project 0701",
         "project_number": 701,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2046,
         "place": "עלמה"
       }
@@ -12246,8 +12246,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.285847,
-          33.039006
+          35.255411,
+          33.015841
         ]
       },
       "properties": {
@@ -12263,8 +12263,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.286674,
-          33.038565
+          35.256089,
+          33.01393
         ]
       },
       "properties": {
@@ -12297,8 +12297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.700808,
-          33.021738
+          35.752059,
+          32.852224
         ]
       },
       "properties": {
@@ -12314,8 +12314,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.918554,
-          32.082321
+          34.849867,
+          30.822823
         ]
       },
       "properties": {
@@ -12892,8 +12892,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.239031,
-          32.88069
+          35.201028,
+          32.848468
         ]
       },
       "properties": {
@@ -12960,8 +12960,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.121541,
-          33.00311
+          35.111488,
+          33.086337
         ]
       },
       "properties": {
@@ -12994,16 +12994,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.803235,
-          32.066972
+          35.549826,
+          33.100815
         ]
       },
       "properties": {
         "name": "Project 0765",
         "project_number": 765,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2157,
-        "place": "תל־אביב–יפו"
+        "place": "מועצה אזורית מבואות החרמון"
       }
     },
     {
@@ -13045,8 +13045,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.694843,
-          33.031632
+          35.770632,
+          33.178934
         ]
       },
       "properties": {
@@ -13164,8 +13164,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.353394,
-          32.542068
+          35.261932,
+          32.524934
         ]
       },
       "properties": {
@@ -13181,8 +13181,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.599279,
-          31.52526
+          35.255229,
+          32.90229
         ]
       },
       "properties": {
@@ -13190,7 +13190,7 @@
         "project_number": 776,
         "address_type": "city",
         "person_id": 2168,
-        "place": "הדקל"
+        "place": "צורית"
       }
     },
     {
@@ -13283,8 +13283,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.150657,
-          33.000901
+          35.218929,
+          32.995339
         ]
       },
       "properties": {
@@ -13538,8 +13538,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.694559,
-          33.0301
+          35.767349,
+          33.178874
         ]
       },
       "properties": {
@@ -13623,8 +13623,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.354797,
-          32.541134
+          35.332892,
+          32.524646
         ]
       },
       "properties": {
@@ -13708,8 +13708,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.284527,
-          33.039987
+          35.306431,
+          33.003478
         ]
       },
       "properties": {
@@ -13759,8 +13759,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.302204,
-          32.887419
+          35.332586,
+          32.908646
         ]
       },
       "properties": {
@@ -13810,8 +13810,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.69979,
-          33.032268
+          35.684028,
+          33.130466
         ]
       },
       "properties": {
@@ -13861,14 +13861,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.866635,
-          31.378937
+          34.819025,
+          31.413629
         ]
       },
       "properties": {
         "name": "Project 0816",
         "project_number": 816,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2221,
         "place": "דביר"
       }
@@ -13878,8 +13878,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.769516,
-          31.973755
+          35.469705,
+          31.905672
         ]
       },
       "properties": {
@@ -14014,8 +14014,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.605122,
-          33.177183
+          35.46794,
+          31.908817
         ]
       },
       "properties": {
@@ -14023,7 +14023,7 @@
         "project_number": 825,
         "address_type": "city",
         "person_id": 2233,
-        "place": "תל נעמה"
+        "place": "נעמה"
       }
     },
     {
@@ -14133,14 +14133,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.750535,
-          31.618179
+          34.707785,
+          31.695118
         ]
       },
       "properties": {
         "name": "Project 0832",
         "project_number": 832,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2242,
         "place": "מרכז שפירא"
       }
@@ -14150,14 +14150,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.353888,
-          32.543433
+          35.259532,
+          32.524524
         ]
       },
       "properties": {
         "name": "Project 0833",
         "project_number": 833,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2243,
         "place": "רם און"
       }
@@ -14303,8 +14303,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.981177,
-          31.713791
+          34.936298,
+          31.675178
         ]
       },
       "properties": {
@@ -14312,7 +14312,7 @@
         "project_number": 842,
         "address_type": "city",
         "person_id": 2253,
-        "place": "שריגים"
+        "place": "שריגים (לי־און)"
       }
     },
     {
@@ -14337,8 +14337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.356961,
-          32.540085
+          35.242385,
+          32.564261
         ]
       },
       "properties": {
@@ -14405,8 +14405,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.62439,
-          33.188675
+          35.623802,
+          33.223904
         ]
       },
       "properties": {
@@ -14422,8 +14422,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.146971,
-          32.99387
+          35.167743,
+          32.903498
         ]
       },
       "properties": {
@@ -14439,8 +14439,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.446507,
-          33.003299
+          35.411279,
+          33.0551
         ]
       },
       "properties": {
@@ -14507,8 +14507,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.612434,
-          31.618608
+          34.535031,
+          31.569388
         ]
       },
       "properties": {
@@ -14541,14 +14541,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.72683,
-          31.738725
+          34.678466,
+          31.755005
         ]
       },
       "properties": {
         "name": "Project 0856",
         "project_number": 856,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2270,
         "place": "שדה עוזיהו"
       }
@@ -14643,8 +14643,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.840659,
-          32.048222
+          35.514632,
+          32.365015
         ]
       },
       "properties": {
@@ -14728,8 +14728,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.848262,
-          32.052268
+          34.883279,
+          32.186635
         ]
       },
       "properties": {
@@ -14745,8 +14745,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301435,
-          32.884149
+          35.268691,
+          32.880859
         ]
       },
       "properties": {
@@ -14779,8 +14779,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.010259,
-          32.801414
+          35.318158,
+          32.988026
         ]
       },
       "properties": {
@@ -14788,7 +14788,7 @@
         "project_number": 870,
         "address_type": "city",
         "person_id": 2286,
-        "place": "אצטדיון סמי עופר"
+        "place": "סמיע"
       }
     },
     {
@@ -14881,8 +14881,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.605711,
-          33.177734
+          35.546929,
+          33.248894
         ]
       },
       "properties": {
@@ -15238,8 +15238,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.182979,
-          32.548644
+          35.159571,
+          32.554488
         ]
       },
       "properties": {
@@ -15272,8 +15272,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.865646,
-          31.379447
+          34.885326,
+          31.432339
         ]
       },
       "properties": {
@@ -15289,8 +15289,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.866265,
-          31.378921
+          34.882757,
+          31.435
         ]
       },
       "properties": {
@@ -15306,8 +15306,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.866426,
-          31.380757
+          34.882858,
+          31.433376
         ]
       },
       "properties": {
@@ -15442,8 +15442,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.185751,
-          32.549253
+          35.1484,
+          32.552438
         ]
       },
       "properties": {
@@ -15510,8 +15510,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.302567,
-          32.886388
+          35.375312,
+          32.888221
         ]
       },
       "properties": {
@@ -15527,16 +15527,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.77346,
-          31.975181
+          35.479081,
+          32.812115
         ]
       },
       "properties": {
         "name": "Project 0914",
         "project_number": 914,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2331,
-        "place": "ראשון לציון"
+        "place": "ארבל"
       }
     },
     {
@@ -15544,8 +15544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.983052,
-          31.713675
+          34.932922,
+          31.67939
         ]
       },
       "properties": {
@@ -15553,7 +15553,7 @@
         "project_number": 915,
         "address_type": "city",
         "person_id": 2332,
-        "place": "שריגים"
+        "place": "שריגים (לי־און)"
       }
     },
     {
@@ -15612,8 +15612,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.239832,
-          32.724366
+          35.305521,
+          32.658003
         ]
       },
       "properties": {
@@ -15646,8 +15646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.607831,
-          33.170063
+          35.606872,
+          32.931322
         ]
       },
       "properties": {
@@ -15663,8 +15663,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.302512,
-          32.967592
+          35.317446,
+          32.987655
         ]
       },
       "properties": {
@@ -15672,7 +15672,7 @@
         "project_number": 922,
         "address_type": "city",
         "person_id": 2339,
-        "place": "כסרא"
+        "place": "מסעף כסרא סומיע"
       }
     },
     {
@@ -15680,8 +15680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.185286,
-          32.545001
+          35.148866,
+          32.551668
         ]
       },
       "properties": {
@@ -15714,8 +15714,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.400933,
-          31.24626
+          34.95185,
+          31.669684
         ]
       },
       "properties": {
@@ -15723,7 +15723,7 @@
         "project_number": 925,
         "address_type": "city",
         "person_id": 2342,
-        "place": "ישע"
+        "place": "גבעת ישעיהו"
       }
     },
     {
@@ -15782,8 +15782,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.301984,
-          32.885124
+          35.171999,
+          32.931039
         ]
       },
       "properties": {
@@ -15791,7 +15791,7 @@
         "project_number": 929,
         "address_type": "city",
         "person_id": 2346,
-        "place": "מועצה אזורית משגב"
+        "place": "ג׳דיידה-מכר"
       }
     },
     {
@@ -15952,8 +15952,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.145322,
-          32.99379
+          35.162174,
+          32.900686
         ]
       },
       "properties": {
@@ -16054,8 +16054,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.240212,
-          32.725261
+          35.174243,
+          32.778821
         ]
       },
       "properties": {
@@ -16088,14 +16088,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.727661,
-          31.739865
+          34.678723,
+          31.758253
         ]
       },
       "properties": {
         "name": "Project 0947",
         "project_number": 947,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2365,
         "place": "שדה עוזיהו"
       }
@@ -16122,8 +16122,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.6235,
-          33.187975
+          35.622965,
+          33.22011
         ]
       },
       "properties": {
@@ -16241,8 +16241,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.302603,
-          32.885629
+          35.374608,
+          32.889243
         ]
       },
       "properties": {
@@ -16496,8 +16496,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.145625,
-          32.996013
+          35.167344,
+          32.980353
         ]
       },
       "properties": {
@@ -16513,8 +16513,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.136049,
-          32.993191
+          35.160823,
+          32.978243
         ]
       },
       "properties": {
@@ -16700,8 +16700,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.869113,
-          31.378453
+          34.635058,
+          31.369201
         ]
       },
       "properties": {
@@ -16734,8 +16734,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.331347,
-          31.195956
+          34.315164,
+          31.142128
         ]
       },
       "properties": {
@@ -16785,14 +16785,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.303468,
-          32.88536
+          35.358538,
+          32.915033
         ]
       },
       "properties": {
         "name": "Project 0988",
         "project_number": 988,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 2408,
         "place": "כמון"
       }
@@ -16887,8 +16887,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.606937,
-          33.169226
+          35.546257,
+          33.214957
         ]
       },
       "properties": {
@@ -16896,7 +16896,7 @@
         "project_number": 994,
         "address_type": "city",
         "person_id": 2414,
-        "place": "שמורת טבע מרגליות"
+        "place": "מרגליות"
       }
     },
     {
@@ -16904,8 +16904,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.606362,
-          33.17022
+          35.542183,
+          33.21706
         ]
       },
       "properties": {
@@ -16913,7 +16913,7 @@
         "project_number": 995,
         "address_type": "city",
         "person_id": 2415,
-        "place": "שמורת טבע מרגליות"
+        "place": "מרגליות"
       }
     },
     {
@@ -17142,8 +17142,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.697023,
-          33.029652
+          35.771731,
+          33.180992
         ]
       },
       "properties": {

@@ -50,15 +50,23 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                 break
 
             pid = str(person["person_id"])
-            if not full and pid in persons_map:
-                skipped += 1
-                continue
-            if full and pid in persons_map and persons_map[pid].get("lat") is not None:
-                skipped += 1
-                continue
-
             address = person["address"]
             existing = persons_map.get(pid) or {}
+
+            # Incremental: skip only when same address already has coordinates.
+            # Re-process when missing, no coords, or Pipedrive address changed.
+            if not full and pid in persons_map:
+                same_addr = (existing.get("address") or "").strip() == address.strip()
+                has_coords = existing.get("lat") is not None and existing.get("lon") is not None
+                if same_addr and has_coords:
+                    skipped += 1
+                    continue
+            if full and pid in persons_map and persons_map[pid].get("lat") is not None:
+                same_addr = (existing.get("address") or "").strip() == address.strip()
+                if same_addr:
+                    skipped += 1
+                    continue
+
             project_number = int(existing.get("project_number") or next_num)
             if "project_number" not in existing:
                 next_num = max(next_num, project_number + 1)
