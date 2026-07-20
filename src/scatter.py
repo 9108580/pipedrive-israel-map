@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 import random
 import time
+from collections import defaultdict
 from typing import Sequence
 
 import requests
@@ -14,7 +15,6 @@ from .geocode import haversine_m
 
 log = logging.getLogger(__name__)
 
-# Primary public instance only — other mirrors often hang 50s+
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
 ]
@@ -22,7 +22,7 @@ OVERPASS_MIRRORS = [
 _SKIP_BUILDINGS = {
     "garage", "garages", "carport", "shed", "hut", "roof", "barn", "farm",
     "greenhouse", "industrial", "warehouse", "construction", "ruins",
-    "collapsed", "service", "toilet", "kiosk",
+    "collapsed", "service", "toilet", "kiosk", "cabin", "container",
 }
 
 
@@ -71,13 +71,14 @@ class ResidentialScatter:
         if key in self._cache:
             return self._cache[key]
 
+        # Prefer residential landuse buildings when possible
         query = f"""
         [out:json][timeout:40];
         (
           way["building"](around:{radius_m},{lat},{lon});
           node["building"](around:{radius_m},{lat},{lon});
         );
-        out center 250;
+        out center 300;
         """
         points: list[tuple[float, float]] = []
         seen: set[tuple[float, float]] = set()
@@ -97,11 +98,20 @@ class ResidentialScatter:
                 seen.add(pt)
                 points.append(pt)
 
+        dense = _filter_dense_cluster(points, neighbor_m=90.0, min_neighbors=2)
+        if len(dense) >= 8:
+            points = dense
+            log.info(
+                "Overpass buildings near %.4f,%.4f r=%sm -> %s dense",
+                lat, lon, radius_m, len(points),
+            )
+        else:
+            log.info(
+                "Overpass buildings near %.4f,%.4f r=%sm -> %s (low density)",
+                lat, lon, radius_m, len(points),
+            )
+
         self._cache[key] = points
-        log.info(
-            "Overpass buildings near %.4f,%.4f r=%sm -> %s",
-            lat, lon, radius_m, len(points),
-        )
         return points
 
     def fetch_buildings_expanding(
@@ -152,22 +162,56 @@ class ResidentialScatter:
         lon: float,
         occupied: Sequence[tuple[float, float]],
         seed: str | int,
-        max_snap_m: float = 120.0,
+        max_snap_m: float = 150.0,
     ) -> tuple[float, float]:
         candidates = self.fetch_buildings_expanding(lat, lon)
         if not candidates:
             return lat, lon
-        nearby = [
+        # Never keep the exact same empty-field coordinate even if OSM lists it
+        pool = [
             (clat, clon)
             for clat, clon in candidates
+            if haversine_m(lat, lon, clat, clon) > 5.0
+        ] or candidates
+        nearby = [
+            (clat, clon)
+            for clat, clon in pool
             if haversine_m(lat, lon, clat, clon) <= max_snap_m
         ]
-        pool = nearby or candidates
-        pool_sorted = sorted(pool, key=lambda p: haversine_m(lat, lon, p[0], p[1]))
-        for clat, clon in pool_sorted:
+        use = nearby or pool
+        # Prefer denser-looking points: more neighbors within 80m
+        def density(p: tuple[float, float]) -> tuple[int, float]:
+            n = sum(1 for q in candidates if haversine_m(p[0], p[1], q[0], q[1]) < 80)
+            dist = haversine_m(lat, lon, p[0], p[1])
+            return (-n, dist)
+
+        use_sorted = sorted(use, key=density)
+        for clat, clon in use_sorted:
             if _far_enough(clat, clon, occupied):
                 return clat, clon
         return self.pick_point(lat, lon, occupied, seed=seed)
+
+
+def _filter_dense_cluster(
+    points: list[tuple[float, float]],
+    neighbor_m: float = 90.0,
+    min_neighbors: int = 2,
+) -> list[tuple[float, float]]:
+    """Keep buildings that sit in a fabric of neighbors (skip lonely field sheds)."""
+    if len(points) < 5:
+        return points
+    kept: list[tuple[float, float]] = []
+    for i, p in enumerate(points):
+        n = 0
+        for j, q in enumerate(points):
+            if i == j:
+                continue
+            if haversine_m(p[0], p[1], q[0], q[1]) <= neighbor_m:
+                n += 1
+                if n >= min_neighbors:
+                    kept.append(p)
+                    break
+    return kept or points
 
 
 def _far_enough(
