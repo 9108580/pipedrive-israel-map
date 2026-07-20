@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1014,
+  "next_project_number": 1016,
   "persons": {
     "9": {
       "person_id": 9,
@@ -3798,11 +3798,11 @@
       "person_id": 1654,
       "project_number": 340,
       "address": "חמרה 53",
-      "lat": 32.885938,
-      "lon": 35.298812,
-      "address_type": "street",
-      "city_key": "מועצה אזורית משגב",
-      "geocode_display": "המרעה, כמון, מועצה אזורית משגב, נפת עכו, מחוז הצפון, ישראל",
+      "lat": 32.200017,
+      "lon": 35.437587,
+      "address_type": "city",
+      "city_key": "מועצה אזורית ערבות הירדן",
+      "geocode_display": "חמרה, מועצה אזורית ערבות הירדן, שטח C, יהודה ושומרון, الأراضي الفلسطينية",
       "snapped_to_building": true
     },
     "1655": {
@@ -7850,11 +7850,11 @@
       "person_id": 2048,
       "project_number": 703,
       "address": "Hamra",
-      "lat": 31.684401,
-      "lon": 34.581038,
+      "lat": 32.198364,
+      "lon": 35.439901,
       "address_type": "city",
-      "city_key": "אשקלון",
-      "geocode_display": "חמרא, עיר היין, אשקלון, נפת אשקלון, מחוז הדרום, 7861842, ישראל",
+      "city_key": "מועצה אזורית ערבות הירדן",
+      "geocode_display": "חמרה, מועצה אזורית ערבות הירדן, שטח C, יהודה ושומרון, الأراضي الفلسطينية",
       "snapped_to_building": true
     },
     "2049": {
@@ -11325,6 +11325,28 @@
       "address_type": "city",
       "city_key": "دالية الكرمل",
       "geocode_display": "دالية الكرمل, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2434": {
+      "person_id": 2434,
+      "project_number": 1014,
+      "address": "Srigim-Li On, Israel",
+      "lat": 31.675752,
+      "lon": 34.937094,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מטה יהודה",
+      "geocode_display": "שריגים (לי־און), מועצה אזורית מטה יהודה, נפת ירושלים, מחוז ירושלים, ישראל",
+      "snapped_to_building": true
+    },
+    "2435": {
+      "person_id": 2435,
+      "project_number": 1015,
+      "address": "Ofra Haza St 13, Kiryat Motzkin, Israel",
+      "lat": 32.839193,
+      "lon": 35.080801,
+      "address_type": "city",
+      "city_key": "קריית מוצקין",
+      "geocode_display": "קריית מוצקין, נפת חיפה, מחוז חיפה, ישראל",
       "snapped_to_building": true
     }
   }

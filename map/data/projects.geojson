@@ -5769,16 +5769,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.298812,
-          32.885938
+          35.437587,
+          32.200017
         ]
       },
       "properties": {
         "name": "Project 0340",
         "project_number": 340,
-        "address_type": "street",
+        "address_type": "city",
         "person_id": 1654,
-        "place": "המרעה"
+        "place": "חמרה"
       }
     },
     {
@@ -11940,8 +11940,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.581038,
-          31.684401
+          35.439901,
+          32.198364
         ]
       },
       "properties": {
@@ -11949,7 +11949,7 @@
         "project_number": 703,
         "address_type": "city",
         "person_id": 2048,
-        "place": "חמרא"
+        "place": "חמרה"
       }
     },
     {
@@ -17220,6 +17220,40 @@
         "address_type": "city",
         "person_id": 2433,
         "place": "דלית אל-כרמל"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.937094,
+          31.675752
+        ]
+      },
+      "properties": {
+        "name": "Project 1014",
+        "project_number": 1014,
+        "address_type": "city",
+        "person_id": 2434,
+        "place": "שריגים (לי־און)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.080801,
+          32.839193
+        ]
+      },
+      "properties": {
+        "name": "Project 1015",
+        "project_number": 1015,
+        "address_type": "city",
+        "person_id": 2435,
+        "place": "קריית מוצקין"
       }
     }
   ]

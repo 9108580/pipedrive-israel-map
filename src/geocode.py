@@ -110,6 +110,9 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "hazeva": "חצבה",
     "hatzeva": "חצבה",
     "חצבה": "חצבה",
+    # Moshav Hamra (Jordan Valley) — not Ashkelon street חמרא / Kammon המרעה
+    "hamra": "חמרה",
+    "חמרה": "חמרה",
 }
 
 _FOREIGN = re.compile(
@@ -194,7 +197,12 @@ def is_city_only_address(address: str) -> bool:
         core = strip_trailing_num(parts[0])
         return len(core.split()) <= 3
 
-    # Re-add Israel case: text had country stripped, so \"Hazeva, Israel\" → one part already.
+    # \"12, רם און\" / \"12, Ram-On\" → plot number + settlement (no street name)
+    if len(parts) >= 2 and re.fullmatch(r"\d+[א-תA-Za-z]?", parts[0]):
+        rest = strip_trailing_num(parts[1])
+        if rest and len(rest.split()) <= 3 and not street_kw.search(rest):
+            return True
+
     # \"Street 5, City\" → street
     if re.search(r"\d", parts[0]) and len(parts) >= 2:
         return False
@@ -222,6 +230,9 @@ def extract_settlement(address: str) -> str:
             return core
         return text
     if len(parts) >= 2:
+        # "12, רם און" → settlement is the named part, not the plot number
+        if re.fullmatch(r"\d+[א-תA-Za-z]?", parts[0]):
+            return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", parts[1]).strip() or parts[1]
         # Prefer last non-numeric part
         for part in reversed(parts):
             if not re.fullmatch(r"\d+", part.replace(" ", "")):
