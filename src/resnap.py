@@ -71,9 +71,13 @@ def resnap(*, force: bool = False, limit: int | None = None) -> None:
             old_lat, old_lon = float(rec["lat"]), float(rec["lon"])
             atype = rec.get("address_type") or "city"
             if atype == "street":
-                new_lat, new_lon = scatter.snap_to_building(old_lat, old_lon, occupied, seed=pid)
+                new_lat, new_lon = scatter.snap_to_building(
+                    old_lat, old_lon, occupied, seed=pid, candidates=buildings
+                )
             else:
-                new_lat, new_lon = scatter.pick_point(clat, clon, occupied, seed=pid)
+                new_lat, new_lon = scatter.pick_point(
+                    clat, clon, occupied, seed=pid, candidates=buildings
+                )
             rec["lat"], rec["lon"] = new_lat, new_lon
             rec["snapped_to_building"] = True
             occupied.append((new_lat, new_lon))

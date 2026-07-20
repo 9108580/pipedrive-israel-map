@@ -107,6 +107,9 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "tomer": "תומר",
     "uman": "אומן",
     "אומן": "אומן",
+    "hazeva": "חצבה",
+    "hatzeva": "חצבה",
+    "חצבה": "חצבה",
 }
 
 _FOREIGN = re.compile(
@@ -145,18 +148,62 @@ def _in_region(lat: float, lon: float) -> bool:
 
 
 def is_city_only_address(address: str) -> bool:
-    """Heuristic: True when address looks like settlement name only."""
+    """True for settlement / settlement+plot — not a named street address.
+
+    Rules:
+    - One word (optionally + house/plot number) → settlement, never a street.
+      e.g. \"חצבה\", \"חצבה 429\", \"Hazeva\"
+    - Settlement + country only → settlement.
+      e.g. \"Hazeva, Israel\", \"חצבה 429, Israel\"
+    - Street keywords or \"street-num, city\" → not city-only.
+      e.g. \"כזיב 36, Maalot\", \"Wald St 18, Rishon\"
+    """
     text = address.strip()
     text = re.sub(r",?\s*(Israel|ישראל)\s*$", "", text, flags=re.IGNORECASE).strip()
-    text = text.strip(" ,")
+    text = _POSTAL.sub("", text)
+    text = re.sub(r"\s+", " ", text).strip(" ,")
     if not text:
         return True
-    if re.search(r"\d", text):
+
+    street_kw = re.compile(
+        r"\b("
+        r"st|street|rd|road|ave|avenue|blvd|boulevard|lane|dr|drive|way|court|"
+        r"רחוב|רח'|דרך|סמטה|סמטת|שדרות|שד'|"
+        r"derech|derakh|sderot|simtat"
+        r")\b",
+        re.I,
+    )
+    if street_kw.search(text):
         return False
+
     parts = [p.strip() for p in text.split(",") if p.strip()]
+    country_re = re.compile(r"^(Israel|ישראל)$", re.I)
+
+    def strip_trailing_num(s: str) -> str:
+        return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", s).strip()
+
+    # Single segment: \"Name\" or \"Name 429\" → settlement
     if len(parts) <= 1:
+        core = strip_trailing_num(parts[0] if parts else text)
+        words = [w for w in core.split() if w]
+        return len(words) <= 3
+
+    # Only country left after strip was already removed; multi remaining parts:
+    # If every part after the first is a country name → settlement (+ optional plot)
+    if len(parts) >= 2 and all(country_re.match(p) for p in parts[1:]):
+        core = strip_trailing_num(parts[0])
+        return len(core.split()) <= 3
+
+    # Re-add Israel case: text had country stripped, so \"Hazeva, Israel\" → one part already.
+    # \"Street 5, City\" → street
+    if re.search(r"\d", parts[0]) and len(parts) >= 2:
+        return False
+
+    # Multi-part, no digits, no street kw → city / region list
+    if not re.search(r"\d", text):
         return True
-    return True  # multi-part, no digits → city / region
+
+    return False
 
 
 def extract_settlement(address: str) -> str:
@@ -168,11 +215,18 @@ def extract_settlement(address: str) -> str:
     if not text:
         return ""
     parts = [p.strip() for p in text.split(",") if p.strip()]
+    if len(parts) <= 1:
+        # "חצבה 429" / "Hazeva 12" → settlement name without plot number
+        core = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", text).strip()
+        if core and len(core.split()) <= 4:
+            return core
+        return text
     if len(parts) >= 2:
         # Prefer last non-numeric part
         for part in reversed(parts):
             if not re.fullmatch(r"\d+", part.replace(" ", "")):
-                return part
+                # Also strip trailing plot number from that part
+                return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", part).strip() or part
     # "Street 5 City" without commas — take trailing words after house number
     m = re.search(
         r"^(?:.*?\d+[א-תA-Za-z]?\s+)(.+)$",

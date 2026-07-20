@@ -17,6 +17,9 @@ log = logging.getLogger(__name__)
 
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
+    "https://lz4.overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter",
 ]
 
 _SKIP_BUILDINGS = {
@@ -42,27 +45,32 @@ class ResidentialScatter:
             time.sleep(wait)
         self._last_call = time.monotonic()
 
-    def _query_overpass(self, query: str) -> list[dict]:
+    def _query_overpass(self, query: str) -> list[dict] | None:
+        """Try each mirror once. Returns None if all mirrors failed."""
         last_exc: Exception | None = None
-        for attempt in range(4):
+        for url in OVERPASS_MIRRORS:
             self._throttle()
-            url = OVERPASS_MIRRORS[0]
             try:
-                r = self.session.post(url, data={"data": query}, timeout=60)
+                r = self.session.post(url, data={"data": query}, timeout=45)
                 if r.status_code in (429, 502, 503, 504):
-                    wait = min(45, 5 * (attempt + 1))
-                    log.warning("Overpass HTTP %s, sleep %ss", r.status_code, wait)
+                    wait = 3 if r.status_code == 429 else 1
+                    log.warning(
+                        "Overpass HTTP %s (%s), sleep %ss",
+                        r.status_code,
+                        url.split("/")[2],
+                        wait,
+                    )
                     time.sleep(wait)
                     continue
                 r.raise_for_status()
                 return (r.json() or {}).get("elements") or []
             except Exception as exc:
                 last_exc = exc
-                log.warning("Overpass failed: %s", exc)
-                time.sleep(min(30, 4 * (attempt + 1)))
+                log.warning("Overpass failed (%s): %s", url.split("/")[2], exc)
+                time.sleep(1)
         if last_exc:
             log.warning("Overpass gave up: %s", last_exc)
-        return []
+        return None
 
     def fetch_buildings(
         self, lat: float, lon: float, radius_m: int = 900
@@ -71,18 +79,24 @@ class ResidentialScatter:
         if key in self._cache:
             return self._cache[key]
 
-        # Prefer residential landuse buildings when possible
+        # Lighter query: ways only, capped, short timeout
         query = f"""
-        [out:json][timeout:40];
-        (
-          way["building"](around:{radius_m},{lat},{lon});
-          node["building"](around:{radius_m},{lat},{lon});
-        );
-        out center 300;
+        [out:json][timeout:25];
+        way["building"](around:{radius_m},{lat},{lon});
+        out center 200;
         """
+        elements = self._query_overpass(query)
+        if elements is None:
+            # Do not cache transport failures — allow retry later
+            log.info(
+                "Overpass unavailable near %.4f,%.4f r=%sm",
+                lat, lon, radius_m,
+            )
+            return []
+
         points: list[tuple[float, float]] = []
         seen: set[tuple[float, float]] = set()
-        for el in self._query_overpass(query):
+        for el in elements:
             tags = el.get("tags") or {}
             btype = (tags.get("building") or "").lower()
             if btype in _SKIP_BUILDINGS:
@@ -111,19 +125,21 @@ class ResidentialScatter:
                 lat, lon, radius_m, len(points),
             )
 
+        # Cache real answers only (including genuine empty)
         self._cache[key] = points
         return points
 
     def fetch_buildings_expanding(
         self, lat: float, lon: float
     ) -> list[tuple[float, float]]:
-        for radius in (600, 1000, 1800, 3000, 5000):
+        best: list[tuple[float, float]] = []
+        for radius in (500, 900, 1500, 2500):
             pts = self.fetch_buildings(lat, lon, radius_m=radius)
+            if len(pts) > len(best):
+                best = pts
             if len(pts) >= 15:
                 return pts
-            if pts and radius >= 3000:
-                return pts
-        return []
+        return best
 
     def pick_point(
         self,
@@ -131,23 +147,24 @@ class ResidentialScatter:
         lon: float,
         occupied: Sequence[tuple[float, float]],
         seed: str | int,
+        candidates: Sequence[tuple[float, float]] | None = None,
     ) -> tuple[float, float]:
-        candidates = self.fetch_buildings_expanding(lat, lon)
-        if not candidates:
+        pool = list(candidates) if candidates is not None else self.fetch_buildings_expanding(lat, lon)
+        if not pool:
             log.warning("No OSM buildings near %.5f,%.5f — keeping center", lat, lon)
             return lat, lon
 
         rng = random.Random(str(seed))
-        order = list(range(len(candidates)))
+        order = list(range(len(pool)))
         rng.shuffle(order)
         for i in order:
-            clat, clon = candidates[i]
+            clat, clon = pool[i]
             if _far_enough(clat, clon, occupied):
                 return clat, clon
 
-        best = candidates[0]
+        best = pool[0]
         best_score = -1.0
-        for clat, clon in candidates:
+        for clat, clon in pool:
             if not occupied:
                 return clat, clon
             nearest = min(haversine_m(clat, clon, o[0], o[1]) for o in occupied)
@@ -163,16 +180,17 @@ class ResidentialScatter:
         occupied: Sequence[tuple[float, float]],
         seed: str | int,
         max_snap_m: float = 150.0,
+        candidates: Sequence[tuple[float, float]] | None = None,
     ) -> tuple[float, float]:
-        candidates = self.fetch_buildings_expanding(lat, lon)
-        if not candidates:
+        pool_all = list(candidates) if candidates is not None else self.fetch_buildings_expanding(lat, lon)
+        if not pool_all:
             return lat, lon
         # Never keep the exact same empty-field coordinate even if OSM lists it
         pool = [
             (clat, clon)
-            for clat, clon in candidates
+            for clat, clon in pool_all
             if haversine_m(lat, lon, clat, clon) > 5.0
-        ] or candidates
+        ] or pool_all
         nearby = [
             (clat, clon)
             for clat, clon in pool
@@ -181,7 +199,7 @@ class ResidentialScatter:
         use = nearby or pool
         # Prefer denser-looking points: more neighbors within 80m
         def density(p: tuple[float, float]) -> tuple[int, float]:
-            n = sum(1 for q in candidates if haversine_m(p[0], p[1], q[0], q[1]) < 80)
+            n = sum(1 for q in pool_all if haversine_m(p[0], p[1], q[0], q[1]) < 80)
             dist = haversine_m(lat, lon, p[0], p[1])
             return (-n, dist)
 
@@ -189,7 +207,7 @@ class ResidentialScatter:
         for clat, clon in use_sorted:
             if _far_enough(clat, clon, occupied):
                 return clat, clon
-        return self.pick_point(lat, lon, occupied, seed=seed)
+        return self.pick_point(lat, lon, occupied, seed=seed, candidates=pool_all)
 
 
 def _filter_dense_cluster(
