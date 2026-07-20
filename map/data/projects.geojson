@@ -17221,23 +17221,6 @@
         "person_id": 2433,
         "place": "דלית אל-כרמל"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.93444557143832,
-          31.677255485245347
-        ]
-      },
-      "properties": {
-        "name": "Project 1014",
-        "project_number": 1014,
-        "address_type": "city",
-        "person_id": 2434,
-        "place": "שריגים (לי־און)"
-      }
     }
   ]
 }
