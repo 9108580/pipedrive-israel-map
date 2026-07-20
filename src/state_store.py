@@ -100,12 +100,31 @@ def place_label(rec: dict[str, Any]) -> str:
     if not best:
         best = city_key or "ישראל"
 
+    # Never label with regional council alone — fall back to address settlement
+    if "מועצה" in (best or "") or best_score < 0:
+        if addr:
+            head = addr.split(",")[0].strip()
+            head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", head).strip()
+            parts_addr = [p.strip() for p in addr.split(",") if p.strip()]
+            if parts_addr and re.fullmatch(r"\d+[א-תA-Za-z]?", parts_addr[0]) and len(parts_addr) > 1:
+                head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", parts_addr[1]).strip() or head
+            if head and "מועצה" not in head:
+                best = head
+        for p in parts:
+            if usable(p) and he_re.search(p):
+                best = p
+                break
+
     # Arabic / Latin → Hebrew via offline cache from Nominatim accept-language=he
     cache_path = config.DATA_DIR / "place_he.json"
     if cache_path.exists():
         try:
             cache = json.loads(cache_path.read_text(encoding="utf-8"))
             mapped = cache.get(best)
+            if mapped and he_re.search(mapped):
+                return mapped
+            # also try normalized keys
+            mapped = cache.get(best.strip())
             if mapped and he_re.search(mapped):
                 return mapped
         except Exception:

@@ -48,7 +48,7 @@
       box-sizing: border-box;
     }
     .place-label {
-      background: rgba(255, 255, 255, 0.95) !important;
+      background: rgba(255, 255, 255, 0.96) !important;
       border: 1.5px solid #1e6fd9 !important;
       border-radius: 6px !important;
       color: #123 !important;
@@ -59,9 +59,13 @@
       white-space: nowrap !important;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) !important;
       direction: rtl;
+      pointer-events: none !important;
     }
     .leaflet-tooltip-top.place-label::before {
       border-top-color: #1e6fd9 !important;
+    }
+    .leaflet-tooltip-pane {
+      z-index: 650;
     }
   </style>
 </head>
@@ -119,20 +123,25 @@
         if (!place) continue;
         const [lon, lat] = f.geometry.coordinates;
         if (!groups.has(place)) {
-          groups.set(place, { lat: 0, lon: 0, n: 0 });
+          groups.set(place, { lats: [], lons: [] });
         }
         const g = groups.get(place);
-        g.lat += lat;
-        g.lon += lon;
-        g.n += 1;
+        g.lats.push(lat);
+        g.lons.push(lon);
       }
+      const median = (arr) => {
+        const s = arr.slice().sort((a, b) => a - b);
+        const m = Math.floor(s.length / 2);
+        return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+      };
       const out = [];
       for (const [place, g] of groups) {
         out.push({
           place,
-          lat: g.lat / g.n,
-          lon: g.lon / g.n,
-          count: g.n,
+          // Median resists outliers (e.g. one point geocoded to another city)
+          lat: median(g.lats),
+          lon: median(g.lons),
+          count: g.lats.length,
         });
       }
       return out;
@@ -141,22 +150,50 @@
     function renderPlaceLabels(centroids) {
       labelsLayer.clearLayers();
       if (map.getZoom() < LABEL_MIN_ZOOM) return;
-      for (const c of centroids) {
+      // Only labels in view — avoids 300+ permanent tooltips fighting each other
+      const bounds = map.getBounds().pad(0.15);
+      const visible = centroids.filter((c) => bounds.contains([c.lat, c.lon]));
+      for (const c of visible) {
         const m = L.circleMarker([c.lat, c.lon], {
           radius: 0,
           opacity: 0,
           fillOpacity: 0,
           interactive: false,
+          pane: "tooltipPane",
         });
+        // Lift label above dense marker clusters (36px icons)
         m.bindTooltip(c.place, {
           permanent: true,
           direction: "top",
-          offset: [0, -8],
+          offset: [0, -28],
           className: "place-label",
           opacity: 1,
         });
         m.addTo(labelsLayer);
       }
+      // #region agent log
+      fetch("http://127.0.0.1:7844/ingest/ff481c39-c965-404b-8ec7-323c9b8cce3b", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Debug-Session-Id": "cdbd90",
+        },
+        body: JSON.stringify({
+          sessionId: "cdbd90",
+          runId: "labels-map",
+          hypothesisId: "C",
+          location: "index.html:renderPlaceLabels",
+          message: "rendered viewport place labels",
+          data: {
+            zoom: map.getZoom(),
+            totalCentroids: centroids.length,
+            visible: visible.length,
+            places: visible.map((c) => c.place),
+          },
+          timestamp: Date.now(),
+        }),
+      }).catch(() => {});
+      // #endregion
     }
 
     fetch("data/projects.geojson?ts=" + Date.now())
@@ -178,7 +215,7 @@
         }).addTo(map);
 
         renderPlaceLabels(centroids);
-        map.on("zoomend", () => renderPlaceLabels(centroids));
+        map.on("zoomend moveend", () => renderPlaceLabels(centroids));
 
         if (features.length > 0) {
           try {

@@ -113,6 +113,9 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     # Moshav Hamra (Jordan Valley) — not Ashkelon street חמרא / Kammon המרעה
     "hamra": "חמרה",
     "חמרה": "חמרה",
+    "naama": "נעמה",
+    "na'ama": "נעמה",
+    "נעמה": "נעמה",
 }
 
 _FOREIGN = re.compile(
@@ -183,7 +186,8 @@ def is_city_only_address(address: str) -> bool:
     country_re = re.compile(r"^(Israel|ישראל)$", re.I)
 
     def strip_trailing_num(s: str) -> str:
-        return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", s).strip()
+        # "נעמה 79ב" / "נעמה 79 ב" / "Name 12"
+        return re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", s).strip()
 
     # Single segment: \"Name\" or \"Name 429\" → settlement
     if len(parts) <= 1:
@@ -224,20 +228,20 @@ def extract_settlement(address: str) -> str:
         return ""
     parts = [p.strip() for p in text.split(",") if p.strip()]
     if len(parts) <= 1:
-        # "חצבה 429" / "Hazeva 12" → settlement name without plot number
-        core = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", text).strip()
+        # "חצבה 429" / "נעמה 79ב" / "נעמה 79 ב" → settlement without plot
+        core = re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", text).strip()
         if core and len(core.split()) <= 4:
             return core
         return text
     if len(parts) >= 2:
         # "12, רם און" → settlement is the named part, not the plot number
         if re.fullmatch(r"\d+[א-תA-Za-z]?", parts[0]):
-            return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", parts[1]).strip() or parts[1]
+            return re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", parts[1]).strip() or parts[1]
         # Prefer last non-numeric part
         for part in reversed(parts):
             if not re.fullmatch(r"\d+", part.replace(" ", "")):
                 # Also strip trailing plot number from that part
-                return re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", part).strip() or part
+                return re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", part).strip() or part
     # "Street 5 City" without commas — take trailing words after house number
     m = re.search(
         r"^(?:.*?\d+[א-תA-Za-z]?\s+)(.+)$",
@@ -326,6 +330,16 @@ def build_query_candidates(address: str) -> list[str]:
             add(first_word)
             add(f"{first_word}, Israel")
         return candidates
+
+    # Prefer settlement name BEFORE full "Name 79" string (avoids street collisions:
+    # e.g. נעמה 79ב → Eilat street vs Jordan Valley moshav)
+    if settlement:
+        add(settlement)
+        add(f"{settlement}, Israel")
+        add(no_apos_sett)
+    if aliased and aliased != settlement:
+        add(aliased)
+        add(f"{aliased}, Israel")
 
     add(cleaned)
     if "israel" not in cleaned.lower() and "ישראל" not in cleaned:

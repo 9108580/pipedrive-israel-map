@@ -7,13 +7,14 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "full = rescan missing; incremental = new only"
+        description: "incremental = new/changed only (default nightly); full = missing coords; repair = full settlement drift audit"
         required: true
         default: incremental
         type: choice
         options:
           - incremental
           - full
+          - repair
       limit:
         description: "Optional max new points (empty = no limit)"
         required: false
@@ -57,23 +58,17 @@ jobs:
         run: |
           MODE="${{ github.event.inputs.mode || 'incremental' }}"
           LIMIT="${{ github.event.inputs.limit }}"
-          ARGS="--${MODE}"
-          if [ -n "$LIMIT" ]; then
-            ARGS="$ARGS --limit $LIMIT"
+          if [ "$MODE" = "repair" ]; then
+            echo "Running: python -m src.audit_repair"
+            python -m src.audit_repair
+          else
+            ARGS="--${MODE}"
+            if [ -n "$LIMIT" ]; then
+              ARGS="$ARGS --limit $LIMIT"
+            fi
+            echo "Running: python -m src.sync $ARGS"
+            python -m src.sync $ARGS
           fi
-          echo "Running: python -m src.sync $ARGS"
-          python -m src.sync $ARGS
-
-      - name: Audit and repair gaps / bad settlement pins
-        id: audit
-        continue-on-error: true
-        env:
-          PIPEDRIVE_API_TOKEN: ${{ secrets.PIPEDRIVE_API_TOKEN }}
-          PIPEDRIVE_COMPANY_DOMAIN: ${{ secrets.PIPEDRIVE_COMPANY_DOMAIN }}
-          USER_AGENT: pipedrive-israel-map/1.0 (github-actions)
-        run: |
-          echo "Running: python -m src.audit_repair"
-          python -m src.audit_repair
 
       - name: Commit updated map data
         if: always()
@@ -103,8 +98,8 @@ jobs:
         if: always()
         uses: actions/deploy-pages@v4
 
-      - name: Fail job if sync or audit failed
-        if: steps.sync.outcome == 'failure' || steps.audit.outcome == 'failure'
+      - name: Fail job if sync failed
+        if: steps.sync.outcome == 'failure'
         run: |
-          echo "Sync/audit failed — check logs above. Map was still deployed if possible."
+          echo "Sync failed — check logs above. Map was still deployed if possible."
           exit 1
