@@ -92,9 +92,9 @@ def sync(full: bool = False, limit: int | None = None) -> int:
             city_key = (geo.city or address.split(",")[-1]).strip().lower()
             lat, lon = geo.lat, geo.lon
             address_type = "city" if geo.is_city_level else "street"
+            occupied = _occupied_near_city(state, city_key)
 
             if geo.is_city_level:
-                occupied = _occupied_near_city(state, city_key)
                 lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
                 log.info(
                     "Scattered city-level person %s near %s -> %.5f,%.5f",
@@ -102,6 +102,10 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                     city_key,
                     lat,
                     lon,
+                )
+            else:
+                lat, lon = scatter.snap_to_building(
+                    geo.lat, geo.lon, occupied, seed=pid
                 )
 
             persons_map[pid] = {
@@ -113,6 +117,7 @@ def sync(full: bool = False, limit: int | None = None) -> int:
                 "address_type": address_type,
                 "city_key": city_key,
                 "geocode_display": geo.display_name,
+                "snapped_to_building": True,
             }
             if project_number >= next_num:
                 next_num = project_number + 1
