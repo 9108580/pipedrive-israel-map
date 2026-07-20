@@ -37,24 +37,41 @@ def save_state(state: dict[str, Any], path: Path | None = None) -> None:
 
 
 def place_label(rec: dict[str, Any]) -> str:
-    """Human-readable settlement / village name for map labels (prefer Hebrew)."""
+    """Human-readable settlement / village name for map labels (prefer Hebrew).
+
+    Never returns country-only labels like ישראל / Israel.
+    For street addresses prefers the city/town token from geocode display.
+    """
     disp = (rec.get("geocode_display") or "").strip()
     city_key = (rec.get("city_key") or "").strip()
     parts = [p.strip() for p in disp.split(",") if p.strip()]
     addr = (rec.get("address") or "").strip()
+    atype = rec.get("address_type") or "city"
 
-    skip_sub = ("מועצה", "נפת", "מחוז", "שטח", "ישראל", "israel", "الأراضي")
+    skip_sub = (
+        "מועצה",
+        "נפת",
+        "מחוז",
+        "שטח",
+        "ישראל",
+        "israel",
+        "израиль",
+        "الأراضي",
+        "palestine",
+    )
     he_re = re.compile(r"[\u0590-\u05FF]")
     ar_re = re.compile(r"[\u0600-\u06FF]")
+    banned = {"ישראל", "israel", "израиль", "palestine"}
 
     def usable(part: str) -> bool:
-        low = part.lower()
-        if part.isdigit() or len(part) < 2:
+        low = part.lower().strip()
+        if not part or part.isdigit() or len(part) < 2:
+            return False
+        if low in banned:
             return False
         return not any(s in low for s in skip_sub)
 
     def score(part: str) -> int:
-        """Higher = better label; prefer Hebrew over Arabic/Latin."""
         if not usable(part):
             return -1
         s = 0
@@ -64,24 +81,55 @@ def place_label(rec: dict[str, Any]) -> str:
             s -= 5
         if re.search(r"[A-Za-z]", part) and not he_re.search(part):
             s -= 1
+        # Prefer real locality names over 1–2 letter street stubs
+        if len(part) <= 2:
+            s -= 4
         return s
 
+    def from_address() -> str:
+        if not addr:
+            return ""
+        # Cyrillic / alias-normalized settlement (Басмат-Табун → בסמת טבעון)
+        try:
+            from .geocode import extract_settlement, normalize_pipedrive_address
+
+            norm = normalize_pipedrive_address(addr)
+            if norm:
+                sett = extract_settlement(norm) or norm.split(",")[0].strip()
+                if sett and sett.lower() not in banned and not re.search(r"[\u0400-\u04FF]", sett):
+                    return sett
+        except Exception:
+            pass
+        parts_addr = [p.strip() for p in addr.split(",") if p.strip()]
+        head = parts_addr[0] if parts_addr else addr
+        head = re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", head).strip()
+        if parts_addr and re.fullmatch(r"\d+[א-תA-Za-z]?", parts_addr[0]) and len(parts_addr) > 1:
+            head = re.sub(r"\s+\d+\s*[א-תA-Za-z]?\s*$", "", parts_addr[1]).strip()
+        if head.lower() in banned or "израиль" in head.lower():
+            return ""
+        # Prefer not publishing raw Cyrillic on the public map
+        if re.search(r"[\u0400-\u04FF]", head):
+            return ""
+        return head
+
     candidates: list[str] = []
-    if rec.get("address_type") == "city" and parts:
+    # Street pins: prefer city (later parts) over street name (first part)
+    if atype == "street" and parts:
+        for p in reversed(parts):
+            if usable(p):
+                candidates.append(p)
+    if atype == "city" and parts:
         candidates.append(parts[0])
-    if city_key and "מועצה" not in city_key:
+    if city_key and "מועצה" not in city_key and city_key.lower() not in banned:
         candidates.append(city_key)
         for p in parts:
             if city_key in p.lower() or p.lower() in city_key:
                 candidates.append(p)
     candidates.extend(parts)
-    if addr:
-        head = addr.split(",")[0].strip()
-        head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", head).strip()
-        if head:
-            candidates.append(head)
+    addr_head = from_address()
+    if addr_head:
+        candidates.append(addr_head)
 
-    # Deduplicate while preserving order
     seen: set[str] = set()
     ordered: list[str] = []
     for c in candidates:
@@ -97,39 +145,32 @@ def place_label(rec: dict[str, Any]) -> str:
             best_score = sc
             best = c
 
-    if not best:
-        best = city_key or "ישראל"
+    if not best or best.lower() in banned or "מועצה" in best or best_score < 0:
+        if addr_head and addr_head.lower() not in banned:
+            best = addr_head
+        else:
+            for p in parts:
+                if usable(p) and he_re.search(p) and len(p) >= 3:
+                    best = p
+                    break
 
-    # Never label with regional council alone — fall back to address settlement
-    if "מועצה" in (best or "") or best_score < 0:
-        if addr:
-            head = addr.split(",")[0].strip()
-            head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", head).strip()
-            parts_addr = [p.strip() for p in addr.split(",") if p.strip()]
-            if parts_addr and re.fullmatch(r"\d+[א-תA-Za-z]?", parts_addr[0]) and len(parts_addr) > 1:
-                head = re.sub(r"\s+\d+[א-תA-Za-z]?\s*$", "", parts_addr[1]).strip() or head
-            if head and "מועצה" not in head:
-                best = head
-        for p in parts:
-            if usable(p) and he_re.search(p):
-                best = p
-                break
+    if not best or best.lower() in banned:
+        best = addr_head or (parts[0] if parts and usable(parts[0]) else "")
 
-    # Arabic / Latin → Hebrew via offline cache from Nominatim accept-language=he
+    # Arabic / Latin → Hebrew via offline cache
     cache_path = config.DATA_DIR / "place_he.json"
-    if cache_path.exists():
+    if best and cache_path.exists():
         try:
             cache = json.loads(cache_path.read_text(encoding="utf-8"))
-            mapped = cache.get(best)
-            if mapped and he_re.search(mapped):
-                return mapped
-            # also try normalized keys
-            mapped = cache.get(best.strip())
-            if mapped and he_re.search(mapped):
+            mapped = cache.get(best) or cache.get(best.strip())
+            if mapped and he_re.search(mapped) and mapped.lower() not in banned:
                 return mapped
         except Exception:
             pass
 
+    # Absolute last resort — never publish "ישראל" as a village label
+    if not best or best.lower() in banned:
+        return addr_head or "—"
     return best
 
 

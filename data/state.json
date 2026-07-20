@@ -5302,7 +5302,8 @@
       "address_type": "city",
       "city_key": "מועצה אזורית גלבוע",
       "geocode_display": "אומן, מועצה אזורית גלבוע, נפת יזרעאל, מחוז הצפון, ישראל",
-      "snapped_to_building": true
+      "snapped_to_building": true,
+      "error": null
     },
     "1795": {
       "person_id": 1795,
@@ -5489,7 +5490,7 @@
       "address": "Gad St, Acre, Israel",
       "lat": 32.930894,
       "lon": 35.079142,
-      "address_type": "city",
+      "address_type": "street",
       "city_key": "עכו",
       "geocode_display": "גד, נווה אביב, נווה יוני נתניהו, עכו, נפת עכו, מחוז הצפון, 2431106, ישראל",
       "snapped_to_building": true
@@ -5588,11 +5589,11 @@
       "person_id": 1820,
       "project_number": 502,
       "address": "הרב הכהן הנזיר 5ב",
-      "lat": 31.188318,
-      "lon": 34.842383,
-      "address_type": "city",
-      "city_key": "شقيب السلام",
-      "geocode_display": "ב׳, شقيب السلام, נפת באר שבע, מחוז הדרום, 8441410, ישראל",
+      "lat": 32.309449,
+      "lon": 34.878724,
+      "address_type": "street",
+      "city_key": "נתניה",
+      "geocode_display": "הכהן דוד הנזיר, משכנות זבולון, נתניה, נפת השרון, מחוז המרכז, 4250609, ישראל",
       "snapped_to_building": true
     },
     "1821": {
@@ -5601,7 +5602,7 @@
       "address": "Gad St, Acre, Israel",
       "lat": 32.926064,
       "lon": 35.077424,
-      "address_type": "city",
+      "address_type": "street",
       "city_key": "עכו",
       "geocode_display": "גד, נווה אביב, נווה יוני נתניהו, עכו, נפת עכו, מחוז הצפון, 2431106, ישראל",
       "snapped_to_building": true
@@ -6777,7 +6778,8 @@
       "address_type": "city",
       "city_key": "מועצה אזורית מעלה יוסף",
       "geocode_display": "הר מתת, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
-      "snapped_to_building": true
+      "snapped_to_building": true,
+      "error": null
     },
     "1927": {
       "person_id": 1927,
@@ -8078,12 +8080,13 @@
       "person_id": 2078,
       "project_number": 725,
       "address": "Басмат-Табун, Израиль",
-      "lat": 30.822823,
-      "lon": 34.849867,
+      "lat": 32.737326,
+      "lon": 35.154114,
       "address_type": "city",
-      "city_key": "израиль",
-      "geocode_display": "ישראל",
-      "snapped_to_building": true
+      "city_key": "بسمة طبعون",
+      "geocode_display": "بسمة طبعون, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "error": null
     },
     "2079": {
       "person_id": 2079,

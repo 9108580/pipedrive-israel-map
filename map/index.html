@@ -171,29 +171,6 @@
         });
         m.addTo(labelsLayer);
       }
-      // #region agent log
-      fetch("http://127.0.0.1:7844/ingest/ff481c39-c965-404b-8ec7-323c9b8cce3b", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Debug-Session-Id": "cdbd90",
-        },
-        body: JSON.stringify({
-          sessionId: "cdbd90",
-          runId: "labels-map",
-          hypothesisId: "C",
-          location: "index.html:renderPlaceLabels",
-          message: "rendered viewport place labels",
-          data: {
-            zoom: map.getZoom(),
-            totalCentroids: centroids.length,
-            visible: visible.length,
-            places: visible.map((c) => c.place),
-          },
-          timestamp: Date.now(),
-        }),
-      }).catch(() => {});
-      // #endregion
     }
 
     fetch("data/projects.geojson?ts=" + Date.now())

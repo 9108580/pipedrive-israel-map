@@ -116,6 +116,15 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "naama": "נעמה",
     "na'ama": "נעמה",
     "נעמה": "נעמה",
+    # Basmat Tiv'on / Basmat Tab'un (also Cyrillic Pipedrive entries)
+    "basmat tabun": "בסמת טבעון",
+    "basmat tivon": "בסמת טבעון",
+    "basmat tab'un": "בסמת טבעון",
+    "basmat tiv'on": "בסמת טבעון",
+    "בסמת טבעון": "בסמת טבעון",
+    "басмат табун": "בסמת טבעון",
+    "басмат-табун": "בסמת טבעון",
+    "басмат тивон": "בסמת טבעון",
 }
 
 _FOREIGN = re.compile(
@@ -124,6 +133,11 @@ _FOREIGN = re.compile(
 )
 _POSTAL = re.compile(r"\b\d{5,7}\b")
 _APOSTROPHE = re.compile(r"['`´’׳]")
+_CYRILLIC = re.compile(r"[\u0400-\u04FF]")
+_COUNTRY_ONLY = re.compile(
+    r"^(Israel|ישראל|Palestine|الأراضي الفلسطينية)\s*$",
+    re.I,
+)
 
 
 def _norm_key(text: str) -> str:
@@ -132,6 +146,35 @@ def _norm_key(text: str) -> str:
     t = re.sub(r"[\-_/]+", " ", t)
     t = re.sub(r"\s+", " ", t)
     return t
+
+
+def normalize_pipedrive_address(address: str) -> str:
+    """Normalize noisy CRM addresses (Cyrillic country suffix, known aliases)."""
+    text = address.strip()
+    # Strip Russian/English/Hebrew country-only tails
+    text = re.sub(
+        r",?\s*(Израиль|Israel|ישראל)\s*$",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    ).strip(" ,")
+    if not text:
+        return address.strip()
+
+    # Whole-line / first-segment alias (handles Cyrillic settlement names)
+    key = _norm_key(text)
+    if key in SETTLEMENT_ALIASES:
+        return SETTLEMENT_ALIASES[key]
+    head = text.split(",")[0].strip()
+    head_key = _norm_key(head)
+    if head_key in SETTLEMENT_ALIASES:
+        rest = ",".join(p.strip() for p in text.split(",")[1:] if p.strip())
+        he = SETTLEMENT_ALIASES[head_key]
+        return f"{he}, {rest}" if rest else he
+
+    # Cyrillic with no alias yet — still return stripped text (geocoder may fail;
+    # callers should treat empty geocode as error rather than pinning to Israel)
+    return text
 
 
 SETTLEMENT_ALIASES: dict[str, str] = {
@@ -423,9 +466,15 @@ class NominatimGeocoder:
                 continue
             cls = (hit.get("class") or "").lower()
             typ = (hit.get("type") or "").lower()
-            name = _norm_key(hit.get("name") or hit.get("display_name") or "")
+            display = (hit.get("display_name") or "").strip()
+            # Never pin a CRM contact to the country centroid
+            if typ in ("country", "nation") or _COUNTRY_ONLY.match(display.split(",")[0].strip()):
+                continue
+            if cls == "boundary" and typ in ("country", "nation"):
+                continue
+            name = _norm_key(hit.get("name") or display)
             score = 0.0
-            if cls in ("place", "boundary"):
+            if cls in ("place", "boundary") and typ not in ("country", "nation"):
                 score += 8
             if typ in (
                 "city",
@@ -447,7 +496,7 @@ class NominatimGeocoder:
                 score += 5
             # Hebrew queries: prefer results whose display contains Hebrew letters
             if re.search(r"[\u0590-\u05FF]", query) and re.search(
-                r"[\u0590-\u05FF]", hit.get("display_name") or ""
+                r"[\u0590-\u05FF]", display
             ):
                 score += 2
             try:
@@ -481,7 +530,7 @@ class NominatimGeocoder:
         )
 
     def geocode(self, address: str) -> GeocodeResult | None:
-        query = address.strip()
+        query = normalize_pipedrive_address(address.strip())
         if not query:
             return None
 

@@ -59,6 +59,8 @@ jobs:
           MODE="${{ github.event.inputs.mode || 'incremental' }}"
           LIMIT="${{ github.event.inputs.limit }}"
           if [ "$MODE" = "repair" ]; then
+            echo "Running: python -m src.qa_repair"
+            python -m src.qa_repair
             echo "Running: python -m src.audit_repair"
             python -m src.audit_repair
           else

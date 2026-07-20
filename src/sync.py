@@ -8,7 +8,7 @@ import sys
 from typing import Any
 
 from . import config
-from .geocode import NominatimGeocoder
+from .geocode import NominatimGeocoder, is_city_only_address
 from .pipedrive_client import PipedriveClient
 from .scatter import ResidentialScatter
 from .state_store import load_state, save_state, write_geojson
@@ -99,7 +99,11 @@ def sync(full: bool = False, limit: int | None = None) -> int:
 
             city_key = (geo.city or address.split(",")[-1]).strip().lower()
             lat, lon = geo.lat, geo.lon
-            address_type = "city" if geo.is_city_level else "street"
+            # Trust address shape over Nominatim class: street keywords → street pin
+            if not is_city_only_address(address):
+                address_type = "street"
+            else:
+                address_type = "city" if geo.is_city_level else "street"
             occupied = _occupied_near_city(state, city_key)
 
             if geo.is_city_level:
