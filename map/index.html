@@ -67,9 +67,71 @@
     .leaflet-tooltip-pane {
       z-index: 650;
     }
+    /* Search box */
+    #search-box {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 320px;
+      max-width: 90vw;
+    }
+    #search-input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 15px;
+      border: 2px solid #1e6fd9;
+      border-radius: 8px;
+      outline: none;
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      direction: rtl;
+    }
+    #search-input:focus {
+      border-color: #0d4ea6;
+      box-shadow: 0 2px 12px rgba(30,111,217,0.4);
+    }
+    #search-input::placeholder {
+      color: #888;
+    }
+    #search-results {
+      width: 100%;
+      max-height: 220px;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #1e6fd9;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      direction: rtl;
+    }
+    #search-results .sr-item {
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+    }
+    #search-results .sr-item:hover,
+    #search-results .sr-item.active {
+      background: #e8f0fe;
+    }
+    #search-results .sr-count {
+      color: #666;
+      font-size: 12px;
+      margin-right: 6px;
+    }
   </style>
 </head>
 <body>
+  <div id="search-box">
+    <input id="search-input" type="text" placeholder="חיפוש יישוב / Search settlement..." autocomplete="off" />
+    <div id="search-results"></div>
+  </div>
   <div id="map"></div>
 
   <script
@@ -199,6 +261,118 @@
             map.fitBounds(layer.getBounds().pad(0.08));
           } catch (_) {}
         }
+
+        // --- Search ---
+        const searchInput = document.getElementById("search-input");
+        const searchResults = document.getElementById("search-results");
+        let activeIdx = -1;
+
+        // Transliteration map for Russian → Hebrew common city names
+        const ruToHe = {
+          "тель-авив": "תל אביב", "тель авив": "תל אביב",
+          "хайфа": "חיפה", "иерусалим": "ירושלים",
+          "ашдод": "אשדוד", "ашкелон": "אשקלון",
+          "беэр-шева": "באר שבע", "беэр шева": "באר שבע",
+          "нетания": "נתניה", "герцлия": "הרצליה",
+          "кармиэль": "כרמיאל", "акко": "עכו",
+          "нагария": "נהריה", "нахария": "נהריה",
+          "петах-тиква": "פתח תקווה", "петах тиква": "פתח תקווה",
+          "кирьят-шмона": "קרית שמונה",
+          "арад": "ערד", "афула": "עפולה",
+          "лод": "לוד", "рамле": "רמלה", "рамла": "רמלה",
+          "реховот": "רחובות", "ришон-ле-цион": "ראשון לציון",
+          "бат-ям": "בת ים", "холон": "חולון",
+          "раанана": "רעננה", "кфар-саба": "כפר סבא",
+          "маалот": "מעלות תרשיחא", "маалот-таршиха": "מעלות תרשיחא",
+          "джулис": "ג'וליס", "бейт-джан": "Beit Jann",
+          "тверия": "טבריה", "цфат": "צפת", "назарет": "נצרת",
+          "кирьят-ата": "קרית אתא",
+        };
+
+        function normalize(s) {
+          return s.trim().toLowerCase().replace(/[-_]/g, " ");
+        }
+
+        function searchPlaces(query) {
+          if (!query.trim()) return [];
+          const q = normalize(query);
+          // Try Russian transliteration
+          const heQuery = ruToHe[q] || null;
+          const matches = [];
+          for (const c of centroids) {
+            const placeLow = normalize(c.place);
+            const hit =
+              placeLow.includes(q) ||
+              (heQuery && placeLow.includes(normalize(heQuery)));
+            if (hit) matches.push(c);
+          }
+          matches.sort((a, b) => b.count - a.count);
+          return matches.slice(0, 15);
+        }
+
+        function renderResults(items) {
+          activeIdx = -1;
+          if (!items.length) {
+            searchResults.style.display = "none";
+            return;
+          }
+          searchResults.innerHTML = items
+            .map(
+              (c, i) =>
+                `<div class="sr-item" data-idx="${i}">${escapeHtml(c.place)}<span class="sr-count">(${c.count})</span></div>`
+            )
+            .join("");
+          searchResults.style.display = "block";
+        }
+
+        function flyToPlace(c) {
+          map.flyTo([c.lat, c.lon], 14, { duration: 0.8 });
+          searchResults.style.display = "none";
+          searchInput.value = c.place;
+        }
+
+        searchInput.addEventListener("input", () => {
+          const items = searchPlaces(searchInput.value);
+          renderResults(items);
+        });
+
+        searchResults.addEventListener("click", (e) => {
+          const el = e.target.closest(".sr-item");
+          if (!el) return;
+          const idx = parseInt(el.dataset.idx, 10);
+          const items = searchPlaces(searchInput.value);
+          if (items[idx]) flyToPlace(items[idx]);
+        });
+
+        searchInput.addEventListener("keydown", (e) => {
+          const items = searchResults.querySelectorAll(".sr-item");
+          if (!items.length) return;
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            activeIdx = Math.min(activeIdx + 1, items.length - 1);
+            items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            activeIdx = Math.max(activeIdx - 1, 0);
+            items.forEach((el, i) => el.classList.toggle("active", i === activeIdx));
+          } else if (e.key === "Enter") {
+            e.preventDefault();
+            const results = searchPlaces(searchInput.value);
+            if (activeIdx >= 0 && results[activeIdx]) {
+              flyToPlace(results[activeIdx]);
+            } else if (results.length === 1) {
+              flyToPlace(results[0]);
+            }
+          } else if (e.key === "Escape") {
+            searchResults.style.display = "none";
+          }
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!document.getElementById("search-box").contains(e.target)) {
+            searchResults.style.display = "none";
+          }
+        });
       })
       .catch((err) => {
         console.error(err);
