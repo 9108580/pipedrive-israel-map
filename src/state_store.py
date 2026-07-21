@@ -171,6 +171,17 @@ def place_label(rec: dict[str, Any]) -> str:
     # Absolute last resort — never publish "ישראל" as a village label
     if not best or best.lower() in banned:
         return addr_head or "—"
+
+    # Neighborhood / spelling aliases (e.g. חלמיש→ערד, Tkuma→תקומה)
+    try:
+        from .geocode import apply_alias
+
+        aliased = apply_alias(best)
+        if aliased and aliased != best:
+            best = aliased
+    except Exception:
+        pass
+
     return best
 
 

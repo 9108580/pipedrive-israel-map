@@ -54,7 +54,14 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "qatsrin": "קצרין",
     "katsrin": "קצרין",
     "har adar": "הר אדר",
-    "halamish": "חלמיש",
+    # Arad neighborhood (not West Bank settlement) — map to parent city
+    "halamish": "ערד",
+    "חלמיש": "ערד",
+    # Sdot Negev — Tkuma often mis-resolved near Zimrat
+    "tkuma": "תקומה",
+    "tequma": "תקומה",
+    "tkuma israel": "תקומה",
+    "תקומה": "תקומה",
     "kfar ha-oranim": "כפר האורנים",
     "kdumim": "קדומים",
     "ets efraim": "עץ אפרים",

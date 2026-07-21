@@ -2752,7 +2752,7 @@
         "project_number": 162,
         "address_type": "city",
         "person_id": 213,
-        "place": "Basmat Tab'un"
+        "place": "בסמת טבעון"
       }
     },
     {
@@ -5302,7 +5302,7 @@
         "project_number": 312,
         "address_type": "city",
         "person_id": 1623,
-        "place": "Giv'at Ze'ev"
+        "place": "גבעת זאב"
       }
     },
     {
@@ -9033,8 +9033,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.552543,
-          31.447281
+          34.5775724,
+          31.4485605
         ]
       },
       "properties": {
@@ -11728,7 +11728,7 @@
         "project_number": 690,
         "address_type": "city",
         "person_id": 2035,
-        "place": "Giv'at Ze'ev"
+        "place": "גבעת זאב"
       }
     },
     {
@@ -13419,8 +13419,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.552893,
-          31.44832
+          34.5779224,
+          31.4488105
         ]
       },
       "properties": {
@@ -13904,7 +13904,7 @@
         "project_number": 818,
         "address_type": "city",
         "person_id": 2223,
-        "place": "Sajur"
+        "place": "סאג'ור"
       }
     },
     {
@@ -14329,7 +14329,7 @@
         "project_number": 843,
         "address_type": "city",
         "person_id": 2254,
-        "place": "Julis"
+        "place": "ג'וליס"
       }
     },
     {
@@ -14584,7 +14584,7 @@
         "project_number": 858,
         "address_type": "city",
         "person_id": 2273,
-        "place": "Eilabun"
+        "place": "עילבון"
       }
     },
     {
@@ -16182,7 +16182,7 @@
         "project_number": 952,
         "address_type": "city",
         "person_id": 2371,
-        "place": "חלמיש"
+        "place": "ערד"
       }
     },
     {
@@ -17049,7 +17049,7 @@
         "project_number": 1003,
         "address_type": "city",
         "person_id": 2423,
-        "place": "חלמיש"
+        "place": "ערד"
       }
     },
     {
