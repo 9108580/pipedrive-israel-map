@@ -7780,13 +7780,13 @@
     "2043": {
       "person_id": 2043,
       "project_number": 698,
-      "address": "54347240",
-      "lat": 32.200313,
-      "lon": 34.949131,
+      "address": "באר שבע",
+      "lat": 31.2508829,
+      "lon": 34.7912803,
       "address_type": "city",
-      "city_key": "54347240",
-      "geocode_display": "כביש חוצה ישראל, מועצה אזורית דרום השרון, נפת פתח תקווה, מחוז המרכז, 4445810, ישראל",
-      "snapped_to_building": true
+      "city_key": "באר שבע",
+      "geocode_display": "באר שבע, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": false
     },
     "2044": {
       "person_id": 2044,
