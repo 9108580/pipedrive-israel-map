@@ -127,23 +127,23 @@
     }
     /* Live map stats — hi-res company sun logo */
     #map-stats {
-      --sun-size: min(176px, 34vw);
+      --sun-size: min(168px, 32vw);
       position: absolute;
-      top: 58px;
-      right: 12px;
+      top: 70px;
+      /* Closer to Israel (not stuck over Jordan/Syria) */
+      right: auto;
+      left: 54%;
       z-index: 1000;
       width: var(--sun-size);
       height: var(--sun-size);
       margin: 0;
       padding: 0;
       border: none;
-      border-radius: 50%;
+      /* No circular crop — arched brand text must stay fully visible */
+      border-radius: 0;
       background:
-        url("logo-hires.png") center / 104% 104% no-repeat;
-      box-shadow:
-        0 8px 22px rgba(0, 0, 0, 0.3),
-        0 0 0 2px rgba(255, 255, 255, 0.9),
-        0 0 0 5px rgba(30, 111, 217, 0.25);
+        url("logo-hires.png") center / contain no-repeat;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
       direction: rtl;
       text-align: center;
       pointer-events: none;
@@ -151,16 +151,16 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      overflow: hidden;
+      overflow: visible;
     }
     #map-stats .stats-inner {
-      /* Lower half: keep arched brand text מומחי אנרגיה סולארית clear */
-      width: 78%;
-      max-width: 140px;
-      margin: 0 0 10px;
-      padding: 6px 7px 5px;
-      border-radius: 12px;
-      background: rgba(255, 252, 240, 0.9);
+      /* Lower half only — leave top arc מומחי אנרגיה סולארית clear */
+      width: 70%;
+      max-width: 118px;
+      margin: 0 0 14px;
+      padding: 5px 6px 4px;
+      border-radius: 10px;
+      background: rgba(255, 252, 240, 0.92);
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
       box-shadow:
@@ -170,7 +170,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 4px;
+      gap: 3px;
     }
     #map-stats .stat-row {
       display: flex;
@@ -181,11 +181,11 @@
     }
     #map-stats .stat-row + .stat-row {
       margin-top: 0;
-      padding-top: 4px;
+      padding-top: 3px;
       border-top: 1px solid rgba(30, 111, 217, 0.22);
     }
     #map-stats .stat-label {
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 700;
       color: #1e3a5f;
       line-height: 1.15;
@@ -193,7 +193,7 @@
       max-width: 100%;
     }
     #map-stats .stat-value {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 800;
       color: #0b4fad;
       line-height: 1.05;
@@ -205,23 +205,24 @@
     }
     @media (max-width: 640px) {
       #map-stats {
-        --sun-size: min(132px, 38vw);
+        --sun-size: min(128px, 36vw);
         top: auto;
         bottom: 52px;
-        right: 8px;
+        left: auto;
+        right: 10px;
       }
       #map-stats .stats-inner {
-        width: 82%;
-        margin-bottom: 7px;
-        padding: 4px 5px 4px;
-        gap: 3px;
-        border-radius: 10px;
+        width: 76%;
+        margin-bottom: 10px;
+        padding: 4px 5px 3px;
+        gap: 2px;
+        border-radius: 8px;
       }
       #map-stats .stat-row + .stat-row {
         padding-top: 3px;
       }
-      #map-stats .stat-label { font-size: 8px; }
-      #map-stats .stat-value { font-size: 14px; }
+      #map-stats .stat-label { font-size: 7px; }
+      #map-stats .stat-value { font-size: 13px; }
     }
   </style>
 </head>
