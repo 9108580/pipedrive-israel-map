@@ -358,12 +358,8 @@
 
         if (features.length > 0) {
           try {
-            // Tighter pad + slight zoom-in so Israel fills more of the view
-            map.fitBounds(layer.getBounds().pad(0.02));
-            const z = map.getZoom();
-            if (Number.isFinite(z)) {
-              map.setZoom(Math.min(18, z + 0.6), { animate: false });
-            }
+            // Slightly closer than the very first view, but not tight
+            map.fitBounds(layer.getBounds().pad(0.06));
           } catch (_) {}
         }
 
