@@ -59,21 +59,24 @@ def _occupied(
 
 
 def _apply_geo(
-    persons: dict[str, Any],
-    pid: str,
+    records: dict[str, Any],
+    key: str,
     address: str,
     project_number: int,
     geo: Any,
     scatter: ResidentialScatter,
+    *,
+    deal_id: int | None = None,
+    person_id: int | None = None,
+    title: str = "",
 ) -> None:
     city_key = (geo.city or address.split(",")[-1]).strip().lower()
-    occupied = _occupied(persons, city_key, pid)
+    occupied = _occupied(records, city_key, key)
     if geo.is_city_level:
-        lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
+        lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=key)
     else:
-        lat, lon = scatter.snap_to_building(geo.lat, geo.lon, occupied, seed=pid)
-    persons[pid] = {
-        "person_id": int(pid) if pid.isdigit() else pid,
+        lat, lon = scatter.snap_to_building(geo.lat, geo.lon, occupied, seed=key)
+    rec: dict[str, Any] = {
         "project_number": project_number,
         "address": address,
         "lat": lat,
@@ -83,6 +86,13 @@ def _apply_geo(
         "geocode_display": geo.display_name,
         "snapped_to_building": True,
     }
+    if deal_id is not None:
+        rec["deal_id"] = deal_id
+        rec["person_id"] = person_id
+        rec["title"] = title
+    else:
+        rec["person_id"] = int(key) if key.isdigit() else key
+    records[key] = rec
 
 
 def audit_and_repair(
@@ -96,7 +106,11 @@ def audit_and_repair(
     geocoder = NominatimGeocoder()
     scatter = ResidentialScatter()
     state = load_state()
-    persons: dict[str, Any] = state.setdefault("persons", {})
+    use_deals = bool(state.get("deals"))
+    if use_deals:
+        records: dict[str, Any] = state.setdefault("deals", {})
+    else:
+        records = state.setdefault("persons", {})
     next_num = int(state.get("next_project_number") or 1)
 
     stats = {
@@ -110,7 +124,6 @@ def audit_and_repair(
         "ok": 0,
     }
 
-    # Cache settlement geocode results (lat, lon, display, is_city)
     sett_cache: dict[str, Any] = {}
 
     def settlement_anchor(address: str):
@@ -118,21 +131,44 @@ def audit_and_repair(
         key = sett.strip().lower()
         if key in sett_cache:
             return sett_cache[key]
-        # Prefer settlement-only query for city-level addresses
         q = sett if is_city_only_address(address) else address
         geo = geocoder.geocode(q if is_city_only_address(address) else sett)
         sett_cache[key] = geo
         return geo
 
+    if use_deals:
+        persons_index = client.persons_address_index()
+        items = [
+            {
+                "key": str(d["deal_id"]),
+                "address": d["address"],
+                "deal_id": int(d["deal_id"]),
+                "person_id": int(d["person_id"]),
+                "title": d.get("title") or "",
+            }
+            for d in client.iter_deals_with_address(persons_index)
+        ]
+    else:
+        items = [
+            {
+                "key": str(p["person_id"]),
+                "address": p["address"],
+                "deal_id": None,
+                "person_id": int(p["person_id"]),
+                "title": "",
+            }
+            for p in client.iter_persons_with_address()
+        ]
+
     processed = 0
-    for person in client.iter_persons_with_address():
+    for item in items:
         if limit is not None and processed >= limit:
             break
         processed += 1
         stats["pd_with_address"] += 1
-        pid = str(person["person_id"])
-        address = (person.get("address") or "").strip()
-        existing = persons.get(pid)
+        key = item["key"]
+        address = (item.get("address") or "").strip()
+        existing = records.get(key)
         need = False
         reason = ""
 
@@ -170,7 +206,7 @@ def audit_and_repair(
                 "A",
                 "audit:need",
                 "needs repair (dry-run)",
-                {"person_id": pid, "reason": reason, "address": address[:80]},
+                {"key": key, "reason": reason, "address": address[:80]},
             )
             continue
 
@@ -178,28 +214,34 @@ def audit_and_repair(
         if existing is None or "project_number" not in (existing or {}):
             next_num = max(next_num, project_number + 1)
 
-        log.info("Repair %s (%s): %s", pid, reason, address[:70])
+        log.info("Repair %s (%s): %s", key, reason, address[:70])
         try:
             geo = geocoder.geocode(address)
         except Exception as exc:
-            log.exception("Geocode error %s: %s", pid, exc)
+            log.exception("Geocode error %s: %s", key, exc)
             stats["failed"] += 1
             continue
         if not geo:
             stats["failed"] += 1
-            persons[pid] = {
-                "person_id": int(pid) if pid.isdigit() else pid,
+            fail_rec: dict[str, Any] = {
                 "project_number": project_number,
                 "address": address,
                 "lat": None,
                 "lon": None,
                 "error": "geocode_failed",
             }
+            if item["deal_id"] is not None:
+                fail_rec["deal_id"] = item["deal_id"]
+                fail_rec["person_id"] = item["person_id"]
+                fail_rec["title"] = item["title"]
+            else:
+                fail_rec["person_id"] = item["person_id"]
+            records[key] = fail_rec
             _dlog(
                 "B",
                 "audit:fail",
                 "geocode failed",
-                {"person_id": pid, "reason": reason, "address": address[:80]},
+                {"key": key, "reason": reason, "address": address[:80]},
             )
             continue
 
@@ -208,7 +250,17 @@ def audit_and_repair(
             "lon": (existing or {}).get("lon"),
             "display": ((existing or {}).get("geocode_display") or "")[:70],
         }
-        _apply_geo(persons, pid, address, project_number, geo, scatter)
+        _apply_geo(
+            records,
+            key,
+            address,
+            project_number,
+            geo,
+            scatter,
+            deal_id=item["deal_id"],
+            person_id=item["person_id"],
+            title=item["title"],
+        )
         if project_number >= next_num:
             next_num = project_number + 1
         stats["added_or_fixed"] += 1
@@ -217,14 +269,14 @@ def audit_and_repair(
             "audit:fixed",
             "repaired point",
             {
-                "person_id": pid,
+                "key": key,
                 "reason": reason,
                 "address": address[:80],
                 "old": old,
-                "new_lat": persons[pid]["lat"],
-                "new_lon": persons[pid]["lon"],
-                "new_display": (persons[pid].get("geocode_display") or "")[:80],
-                "place": place_label(persons[pid]),
+                "new_lat": records[key]["lat"],
+                "new_lon": records[key]["lon"],
+                "new_display": (records[key].get("geocode_display") or "")[:80],
+                "place": place_label(records[key]),
             },
         )
 
@@ -234,10 +286,9 @@ def audit_and_repair(
             write_geojson(state)
             log.info("Progress %s", stats)
 
-    # Orphans in state without coords count as coverage holes in geojson already
-    mapped = sum(1 for r in persons.values() if r.get("lat") is not None)
+    mapped = sum(1 for r in records.values() if r.get("lat") is not None)
     stats["mapped"] = mapped
-    stats["state_total"] = len(persons)
+    stats["state_total"] = len(records)
 
     state["next_project_number"] = next_num
     save_state(state)

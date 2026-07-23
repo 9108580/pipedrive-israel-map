@@ -185,3 +185,70 @@ class PipedriveClient:
                 "name": person.get("name") or "",
                 "address": address,
             }
+
+    def persons_address_index(self) -> dict[int, dict[str, Any]]:
+        """person_id -> {name, address} for everyone who has an address."""
+        out: dict[int, dict[str, Any]] = {}
+        for person in self.iter_persons_with_address():
+            pid = person.get("person_id")
+            if pid is None:
+                continue
+            out[int(pid)] = {
+                "name": person.get("name") or "",
+                "address": person.get("address") or "",
+            }
+        return out
+
+    def iter_deals(self, status: str = "all_not_deleted", limit: int = 500) -> Iterator[dict[str, Any]]:
+        start = 0
+        while True:
+            data = self._get(
+                "/deals",
+                {"start": start, "limit": limit, "status": status},
+            )
+            items = data.get("data") or []
+            if not items:
+                break
+            for deal in items:
+                yield deal
+            more = (data.get("additional_data") or {}).get("pagination") or {}
+            if not more.get("more_items_in_collection"):
+                break
+            start = more.get("next_start", start + limit)
+
+    @staticmethod
+    def deal_person_id(deal: dict[str, Any]) -> int | None:
+        raw = deal.get("person_id")
+        if raw is None:
+            return None
+        if isinstance(raw, dict):
+            raw = raw.get("value")
+        try:
+            return int(raw) if raw is not None else None
+        except (TypeError, ValueError):
+            return None
+
+    def iter_deals_with_address(
+        self, persons_index: dict[int, dict[str, Any]] | None = None
+    ) -> Iterator[dict[str, Any]]:
+        """Yield deals that can be mapped via linked person address."""
+        index = persons_index if persons_index is not None else self.persons_address_index()
+        for deal in self.iter_deals():
+            deal_id = deal.get("id")
+            if deal_id is None:
+                continue
+            pid = self.deal_person_id(deal)
+            if not pid or pid not in index:
+                continue
+            info = index[pid]
+            address = (info.get("address") or "").strip()
+            if not address:
+                continue
+            yield {
+                "deal_id": int(deal_id),
+                "title": deal.get("title") or "",
+                "person_id": pid,
+                "person_name": info.get("name") or "",
+                "address": address,
+                "status": deal.get("status") or "",
+            }

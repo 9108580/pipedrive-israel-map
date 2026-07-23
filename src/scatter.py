@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import math
 import random
 import time
 from collections import defaultdict
@@ -239,3 +240,31 @@ def _far_enough(
         if haversine_m(lat, lon, olat, olon) < config.MIN_POINT_DISTANCE_M:
             return False
     return True
+
+
+def offset_near(
+    lat: float,
+    lon: float,
+    occupied: Sequence[tuple[float, float]],
+    seed: str | int,
+    radius_m: float = 55.0,
+) -> tuple[float, float]:
+    """Place a sibling pin near an existing one without calling Overpass.
+
+    Used when one person has several deals/systems at the same address.
+    """
+    rng = random.Random(str(seed))
+    cos_lat = max(0.2, math.cos(math.radians(lat)))
+    for _ in range(48):
+        angle = rng.random() * 2 * math.pi
+        dist = radius_m * (0.35 + 0.65 * rng.random())
+        dlat = (dist * math.cos(angle)) / 111_320.0
+        dlon = (dist * math.sin(angle)) / (111_320.0 * cos_lat)
+        nlat, nlon = lat + dlat, lon + dlon
+        if _far_enough(nlat, nlon, occupied):
+            return nlat, nlon
+    # Last resort: still nudge so markers are not pixel-stacked
+    angle = rng.random() * 2 * math.pi
+    dlat = (radius_m * math.cos(angle)) / 111_320.0
+    dlon = (radius_m * math.sin(angle)) / (111_320.0 * cos_lat)
+    return lat + dlat, lon + dlon

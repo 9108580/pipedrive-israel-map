@@ -17,7 +17,7 @@ from .geocode import (
     normalize_pipedrive_address,
 )
 from .scatter import ResidentialScatter
-from .state_store import load_state, place_label, save_state, write_geojson
+from .state_store import load_state, map_records, place_label, save_state, write_geojson
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("qa_repair")
@@ -72,7 +72,7 @@ def qa_repair(*, limit: int | None = None) -> dict[str, int]:
     geocoder = NominatimGeocoder()
     scatter = ResidentialScatter()
     state = load_state()
-    persons: dict[str, Any] = state.setdefault("persons", {})
+    persons: dict[str, Any] = map_records(state)
     stats = {"scanned": 0, "flagged": 0, "fixed": 0, "failed": 0, "ok": 0}
     sett_cache: dict[str, Any] = {}
 

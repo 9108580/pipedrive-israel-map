@@ -21,7 +21,8 @@ def load_state(path: Path | None = None) -> dict[str, Any]:
     if not p.exists():
         return {
             "next_project_number": 1,
-            "persons": {},  # person_id -> project record
+            "deals": {},  # deal_id -> project record (one pin per deal/system)
+            "persons": {},  # legacy; kept for migration / repair fallback
         }
     with p.open(encoding="utf-8") as f:
         return json.load(f)
@@ -185,12 +186,20 @@ def place_label(rec: dict[str, Any]) -> str:
     return best
 
 
+def map_records(state: dict[str, Any]) -> dict[str, Any]:
+    """Active map pins: prefer deals (1 pin per system), else legacy persons."""
+    deals = state.get("deals")
+    if isinstance(deals, dict) and deals:
+        return deals
+    return state.setdefault("persons", {})
+
+
 def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
     features = []
-    persons = state.get("persons") or {}
+    records = map_records(state)
     # Stable order by project number
     items = sorted(
-        persons.values(),
+        records.values(),
         key=lambda x: int(x.get("project_number") or 0),
     )
     for rec in items:
@@ -198,6 +207,15 @@ def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
             continue
         num = int(rec["project_number"])
         place = place_label(rec)
+        props: dict[str, Any] = {
+            "name": f"Project {num:04d}",
+            "project_number": num,
+            "address_type": rec.get("address_type", "unknown"),
+            "person_id": rec.get("person_id"),
+            "place": place,
+        }
+        if rec.get("deal_id") is not None:
+            props["deal_id"] = rec.get("deal_id")
         features.append(
             {
                 "type": "Feature",
@@ -205,13 +223,7 @@ def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
                     "type": "Point",
                     "coordinates": [rec["lon"], rec["lat"]],
                 },
-                "properties": {
-                    "name": f"Project {num:04d}",
-                    "project_number": num,
-                    "address_type": rec.get("address_type", "unknown"),
-                    "person_id": rec.get("person_id"),
-                    "place": place,
-                },
+                "properties": props,
             }
         )
     return {"type": "FeatureCollection", "features": features}

@@ -6,7 +6,7 @@ import logging
 import re
 
 from src.scatter import ResidentialScatter
-from src.state_store import load_state, place_label, save_state, write_geojson
+from src.state_store import load_state, map_records, place_label, save_state, write_geojson
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("resnap")
@@ -29,7 +29,7 @@ def settlement_key(rec: dict) -> str:
 
 def resnap(*, force: bool = False, limit: int | None = None) -> None:
     state = load_state()
-    persons = state.get("persons") or {}
+    persons = map_records(state)
     scatter = ResidentialScatter()
 
     items = sorted(

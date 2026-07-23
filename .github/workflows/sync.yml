@@ -56,6 +56,8 @@ jobs:
           PIPEDRIVE_COMPANY_DOMAIN: ${{ secrets.PIPEDRIVE_COMPANY_DOMAIN }}
           USER_AGENT: pipedrive-israel-map/1.0 (github-actions)
         run: |
+          # One pin per Pipedrive deal/system. Incremental also migrates legacy
+          # person pins → deals on first run after deploy.
           MODE="${{ github.event.inputs.mode || 'incremental' }}"
           LIMIT="${{ github.event.inputs.limit }}"
           if [ "$MODE" = "repair" ]; then
