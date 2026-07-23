@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1016,
+  "next_project_number": 1018,
   "persons": {
     "9": {
       "person_id": 9,
@@ -7780,13 +7780,13 @@
     "2043": {
       "person_id": 2043,
       "project_number": 698,
-      "address": "באר שבע",
-      "lat": 31.2508829,
-      "lon": 34.7912803,
+      "address": "54347240",
+      "lat": 32.210491,
+      "lon": 34.978905,
       "address_type": "city",
-      "city_key": "באר שבע",
-      "geocode_display": "באר שבע, נפת באר שבע, מחוז הדרום, ישראל",
-      "snapped_to_building": false
+      "city_key": "54347240",
+      "geocode_display": "כביש חוצה ישראל, מועצה אזורית דרום השרון, נפת פתח תקווה, מחוז המרכז, 4060056, ישראל",
+      "snapped_to_building": true
     },
     "2044": {
       "person_id": 2044,
@@ -11330,6 +11330,28 @@
       "address_type": "city",
       "city_key": "קריית מוצקין",
       "geocode_display": "קריית מוצקין, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2436": {
+      "person_id": 2436,
+      "project_number": 1016,
+      "address": "Abu Snan, Israel",
+      "lat": 32.973609,
+      "lon": 35.154972,
+      "address_type": "city",
+      "city_key": "أبو سنان",
+      "geocode_display": "أبو سنان, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2437": {
+      "person_id": 2437,
+      "project_number": 1017,
+      "address": "Abu Snan, Israel",
+      "lat": 32.969924,
+      "lon": 35.157916,
+      "address_type": "city",
+      "city_key": "أبو سنان",
+      "geocode_display": "أبو سنان, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

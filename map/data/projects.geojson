@@ -11855,8 +11855,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.7912803,
-          31.2508829
+          34.978905,
+          32.210491
         ]
       },
       "properties": {
@@ -11864,7 +11864,7 @@
         "project_number": 698,
         "address_type": "city",
         "person_id": 2043,
-        "place": "באר שבע"
+        "place": "54347240"
       }
     },
     {
@@ -17254,6 +17254,40 @@
         "address_type": "city",
         "person_id": 2435,
         "place": "קריית מוצקין"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.154972,
+          32.973609
+        ]
+      },
+      "properties": {
+        "name": "Project 1016",
+        "project_number": 1016,
+        "address_type": "city",
+        "person_id": 2436,
+        "place": "Abu Snan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.157916,
+          32.969924
+        ]
+      },
+      "properties": {
+        "name": "Project 1017",
+        "project_number": 1017,
+        "address_type": "city",
+        "person_id": 2437,
+        "place": "Abu Snan"
       }
     }
   ]
