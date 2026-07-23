@@ -125,6 +125,64 @@
       font-size: 12px;
       margin-right: 6px;
     }
+    /* Live map stats — right side */
+    #map-stats {
+      position: absolute;
+      top: 72px;
+      right: 14px;
+      z-index: 1000;
+      min-width: 220px;
+      max-width: min(340px, calc(100vw - 28px));
+      padding: 16px 18px 14px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 2px solid #1e6fd9;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+      direction: rtl;
+      text-align: right;
+      pointer-events: none;
+      font-family: "Heebo", "Segoe UI", Tahoma, sans-serif;
+    }
+    #map-stats .stat-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    #map-stats .stat-row + .stat-row {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #d6e4f7;
+    }
+    #map-stats .stat-label {
+      font-size: 15px;
+      font-weight: 600;
+      color: #334155;
+      line-height: 1.35;
+    }
+    #map-stats .stat-value {
+      font-size: 34px;
+      font-weight: 800;
+      color: #0d4ea6;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+    @media (max-width: 640px) {
+      #map-stats {
+        top: auto;
+        bottom: 28px;
+        right: 10px;
+        left: auto;
+        padding: 12px 14px 10px;
+        min-width: 0;
+      }
+      #map-stats .stat-label { font-size: 13px; }
+      #map-stats .stat-value { font-size: 26px; }
+      #map-stats .stat-row + .stat-row {
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -132,6 +190,16 @@
     <input id="search-input" type="text" placeholder="חיפוש יישוב / Search settlement..." autocomplete="off" />
     <div id="search-results"></div>
   </div>
+  <aside id="map-stats" aria-live="polite" hidden>
+    <div class="stat-row">
+      <span class="stat-label">מספר יישובים</span>
+      <span class="stat-value" id="stat-places">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-label">פרויקטים שהסכימו לפרסום במפה</span>
+      <span class="stat-value" id="stat-projects">—</span>
+    </div>
+  </aside>
   <div id="map"></div>
 
   <script
@@ -240,6 +308,16 @@
       .then((geojson) => {
         const features = geojson.features || [];
         const centroids = buildPlaceCentroids(features);
+
+        // Live counters from GeoJSON (update on every data deploy)
+        const placesCount = centroids.length;
+        const projectsCount = features.length;
+        const placesEl = document.getElementById("stat-places");
+        const projectsEl = document.getElementById("stat-projects");
+        const statsEl = document.getElementById("map-stats");
+        if (placesEl) placesEl.textContent = placesCount.toLocaleString("he-IL");
+        if (projectsEl) projectsEl.textContent = projectsCount.toLocaleString("he-IL");
+        if (statsEl) statsEl.hidden = false;
 
         const layer = L.geoJSON(geojson, {
           pointToLayer: (feature, latlng) =>
