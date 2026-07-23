@@ -127,23 +127,22 @@
     }
     /* Live map stats — hi-res company sun logo */
     #map-stats {
-      --sun-size: min(168px, 32vw);
+      --sun-size: min(200px, 34vw);
       position: absolute;
-      top: 70px;
-      /* East of Israel pins — empty map over Jordan */
+      /* left/top set in JS from map pin bounds (just east of Israel) */
+      top: 72px;
       left: auto;
-      right: 10%;
+      right: 12%;
       z-index: 1000;
       width: var(--sun-size);
       height: var(--sun-size);
       margin: 0;
       padding: 0;
       border: none;
-      /* No circular crop — arched brand text must stay fully visible */
       border-radius: 0;
       background:
         url("logo-hires.png") center / contain no-repeat;
-      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+      box-shadow: none;
       direction: rtl;
       text-align: center;
       pointer-events: none;
@@ -152,15 +151,15 @@
       align-items: flex-end;
       justify-content: center;
       overflow: visible;
+      transition: left 0.25s ease, top 0.25s ease;
     }
     #map-stats .stats-inner {
-      /* Lower half only — leave top arc מומחי אנרגיה סולארית clear */
-      width: 70%;
-      max-width: 118px;
-      margin: 0 0 14px;
-      padding: 5px 6px 4px;
+      width: 68%;
+      max-width: 128px;
+      margin: 0 0 16px;
+      padding: 6px 7px 5px;
       border-radius: 10px;
-      background: rgba(255, 252, 240, 0.92);
+      background: rgba(255, 252, 240, 0.94);
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
       box-shadow:
@@ -185,7 +184,7 @@
       border-top: 1px solid rgba(30, 111, 217, 0.22);
     }
     #map-stats .stat-label {
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 700;
       color: #1e3a5f;
       line-height: 1.15;
@@ -193,7 +192,7 @@
       max-width: 100%;
     }
     #map-stats .stat-value {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 800;
       color: #0b4fad;
       line-height: 1.05;
@@ -205,11 +204,12 @@
     }
     @media (max-width: 640px) {
       #map-stats {
-        --sun-size: min(128px, 36vw);
-        top: auto;
+        --sun-size: min(136px, 38vw);
+        top: auto !important;
+        left: auto !important;
         bottom: 52px;
-        left: auto;
-        right: 10px;
+        right: 10px !important;
+        transition: none;
       }
       #map-stats .stats-inner {
         width: 76%;
@@ -362,6 +362,31 @@
         if (projectsEl) projectsEl.textContent = projectsCount.toLocaleString("he-IL");
         if (statsEl) statsEl.hidden = false;
 
+        function placeStatsBadge(layer) {
+          if (!statsEl || window.matchMedia("(max-width: 640px)").matches) return;
+          try {
+            const b = layer.getBounds();
+            if (!b || !b.isValid()) return;
+            // Just east of the densest pin cluster, mid-north of Israel
+            const east = b.getEast();
+            const north = b.getNorth();
+            const south = b.getSouth();
+            const lat = south + (north - south) * 0.72;
+            const lon = east + 0.22; // small gap over Jordan, not over pins
+            const pt = map.latLngToContainerPoint([lat, lon]);
+            const size = statsEl.offsetWidth || 200;
+            const mapSize = map.getSize();
+            let x = pt.x;
+            let y = pt.y - size * 0.35;
+            // Keep fully on screen
+            x = Math.max(8, Math.min(x, mapSize.x - size - 8));
+            y = Math.max(56, Math.min(y, mapSize.y - size - 8));
+            statsEl.style.left = Math.round(x) + "px";
+            statsEl.style.top = Math.round(y) + "px";
+            statsEl.style.right = "auto";
+          } catch (_) {}
+        }
+
         const layer = L.geoJSON(geojson, {
           pointToLayer: (feature, latlng) =>
             L.marker(latlng, { icon: companyIcon }),
@@ -375,13 +400,19 @@
         }).addTo(map);
 
         renderPlaceLabels(centroids);
-        map.on("zoomend moveend", () => renderPlaceLabels(centroids));
+        map.on("zoomend moveend", () => {
+          renderPlaceLabels(centroids);
+          placeStatsBadge(layer);
+        });
 
         if (features.length > 0) {
           try {
             map.fitBounds(layer.getBounds().pad(0.08));
           } catch (_) {}
         }
+        // After fitBounds layout settles
+        requestAnimationFrame(() => placeStatsBadge(layer));
+        setTimeout(() => placeStatsBadge(layer), 150);
 
         // --- Search ---
         const searchInput = document.getElementById("search-input");
