@@ -125,104 +125,69 @@
       font-size: 12px;
       margin-right: 6px;
     }
-    /* Live map stats — hi-res company sun logo */
+    /* Live map stats — right side (plain card, no logo) */
     #map-stats {
-      --sun-size: min(200px, 34vw);
       position: absolute;
-      /* left/top set in JS from map pin bounds (just east of Israel) */
       top: 72px;
-      left: auto;
-      right: 12%;
+      right: 14px;
       z-index: 1000;
-      width: var(--sun-size);
-      height: var(--sun-size);
-      margin: 0;
-      padding: 0;
-      border: none;
-      border-radius: 0;
-      background:
-        url("logo-hires.png") center / contain no-repeat;
-      box-shadow: none;
+      min-width: 220px;
+      max-width: min(340px, calc(100vw - 28px));
+      padding: 16px 18px 14px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 2px solid #1e6fd9;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
       direction: rtl;
-      text-align: center;
+      text-align: right;
       pointer-events: none;
       font-family: "Heebo", "Segoe UI", Tahoma, sans-serif;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      overflow: visible;
-      transition: left 0.25s ease, top 0.25s ease;
-    }
-    #map-stats .stats-inner {
-      width: 68%;
-      max-width: 128px;
-      margin: 0 0 16px;
-      padding: 6px 7px 5px;
-      border-radius: 10px;
-      background: rgba(255, 252, 240, 0.94);
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
-      box-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.16),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.65);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 3px;
     }
     #map-stats .stat-row {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 0;
-      width: 100%;
+      gap: 2px;
     }
     #map-stats .stat-row + .stat-row {
-      margin-top: 0;
-      padding-top: 3px;
-      border-top: 1px solid rgba(30, 111, 217, 0.22);
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #d6e4f7;
     }
     #map-stats .stat-label {
-      font-size: 9px;
-      font-weight: 700;
-      color: #1e3a5f;
-      line-height: 1.15;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
-      max-width: 100%;
+      font-size: 15px;
+      font-weight: 600;
+      color: #334155;
+      line-height: 1.35;
     }
     #map-stats .stat-value {
-      font-size: 18px;
+      font-size: 34px;
       font-weight: 800;
-      color: #0b4fad;
-      line-height: 1.05;
+      color: #0d4ea6;
+      line-height: 1.15;
       letter-spacing: -0.02em;
       font-variant-numeric: tabular-nums;
-      text-shadow:
-        0 1px 0 rgba(255, 255, 255, 0.75),
-        0 1px 6px rgba(249, 160, 27, 0.25);
+    }
+    .leaflet-marker-icon.sea-logo {
+      border: none !important;
+      background: transparent !important;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+      border-radius: 50%;
     }
     @media (max-width: 640px) {
       #map-stats {
-        --sun-size: min(136px, 38vw);
-        top: auto !important;
-        left: auto !important;
-        bottom: 52px;
-        right: 10px !important;
-        transition: none;
+        top: auto;
+        bottom: 28px;
+        right: 10px;
+        left: auto;
+        padding: 12px 14px 10px;
+        min-width: 0;
       }
-      #map-stats .stats-inner {
-        width: 76%;
-        margin-bottom: 10px;
-        padding: 4px 5px 3px;
-        gap: 2px;
-        border-radius: 8px;
-      }
+      #map-stats .stat-label { font-size: 13px; }
+      #map-stats .stat-value { font-size: 26px; }
       #map-stats .stat-row + .stat-row {
-        padding-top: 3px;
+        margin-top: 10px;
+        padding-top: 10px;
       }
-      #map-stats .stat-label { font-size: 7px; }
-      #map-stats .stat-value { font-size: 13px; }
     }
   </style>
 </head>
@@ -232,15 +197,13 @@
     <div id="search-results"></div>
   </div>
   <aside id="map-stats" aria-live="polite" hidden>
-    <div class="stats-inner">
-      <div class="stat-row">
-        <span class="stat-label">מספר יישובים</span>
-        <span class="stat-value" id="stat-places">—</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-label">פרויקטים שהסכימו<br/>לפרסום במפה</span>
-        <span class="stat-value" id="stat-projects">—</span>
-      </div>
+    <div class="stat-row">
+      <span class="stat-label">מספר יישובים</span>
+      <span class="stat-value" id="stat-places">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-label">פרויקטים שהסכימו לפרסום במפה</span>
+      <span class="stat-value" id="stat-projects">—</span>
     </div>
   </aside>
   <div id="map"></div>
@@ -256,6 +219,8 @@
       zoom: 8,
       minZoom: 7,
       maxZoom: 18,
+      zoomSnap: 0.25,
+      zoomDelta: 0.5,
     });
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -362,30 +327,19 @@
         if (projectsEl) projectsEl.textContent = projectsCount.toLocaleString("he-IL");
         if (statsEl) statsEl.hidden = false;
 
-        function placeStatsBadge(layer) {
-          if (!statsEl || window.matchMedia("(max-width: 640px)").matches) return;
-          try {
-            const b = layer.getBounds();
-            if (!b || !b.isValid()) return;
-            // Just east of the densest pin cluster, mid-north of Israel
-            const east = b.getEast();
-            const north = b.getNorth();
-            const south = b.getSouth();
-            const lat = south + (north - south) * 0.72;
-            const lon = east + 0.22; // small gap over Jordan, not over pins
-            const pt = map.latLngToContainerPoint([lat, lon]);
-            const size = statsEl.offsetWidth || 200;
-            const mapSize = map.getSize();
-            let x = pt.x;
-            let y = pt.y - size * 0.35;
-            // Keep fully on screen
-            x = Math.max(8, Math.min(x, mapSize.x - size - 8));
-            y = Math.max(56, Math.min(y, mapSize.y - size - 8));
-            statsEl.style.left = Math.round(x) + "px";
-            statsEl.style.top = Math.round(y) + "px";
-            statsEl.style.right = "auto";
-          } catch (_) {}
-        }
+        // Company logo floating on the Mediterranean (west of Israel)
+        const seaLogoSize = window.matchMedia("(max-width: 640px)").matches ? 96 : 148;
+        L.marker([32.45, 33.72], {
+          icon: L.icon({
+            iconUrl: "logo-hires.png",
+            iconSize: [seaLogoSize, seaLogoSize],
+            iconAnchor: [seaLogoSize / 2, seaLogoSize / 2],
+            className: "sea-logo",
+          }),
+          interactive: false,
+          keyboard: false,
+          zIndexOffset: -200,
+        }).addTo(map);
 
         const layer = L.geoJSON(geojson, {
           pointToLayer: (feature, latlng) =>
@@ -400,19 +354,18 @@
         }).addTo(map);
 
         renderPlaceLabels(centroids);
-        map.on("zoomend moveend", () => {
-          renderPlaceLabels(centroids);
-          placeStatsBadge(layer);
-        });
+        map.on("zoomend moveend", () => renderPlaceLabels(centroids));
 
         if (features.length > 0) {
           try {
-            map.fitBounds(layer.getBounds().pad(0.08));
+            // Tighter pad + slight zoom-in so Israel fills more of the view
+            map.fitBounds(layer.getBounds().pad(0.02));
+            const z = map.getZoom();
+            if (Number.isFinite(z)) {
+              map.setZoom(Math.min(18, z + 0.6), { animate: false });
+            }
           } catch (_) {}
         }
-        // After fitBounds layout settles
-        requestAnimationFrame(() => placeStatsBadge(layer));
-        setTimeout(() => placeStatsBadge(layer), 150);
 
         // --- Search ---
         const searchInput = document.getElementById("search-input");
