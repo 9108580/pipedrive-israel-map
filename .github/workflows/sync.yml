@@ -1,6 +1,13 @@
 name: Sync Pipedrive Israel map
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - "map/**"
+      - "src/**"
+      - "data/state.json"
+      - ".github/workflows/sync.yml"
   schedule:
     # Sunday-Thursday 06:00 UTC ~ 09:00 Israel (IDT, UTC+3)
     - cron: "0 6 * * 0-4"
