@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1079,
+  "next_project_number": 1081,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25238,6 +25238,32 @@
       "address_type": "city",
       "city_key": "أبو سنان",
       "geocode_display": "أبو سنان, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2665": {
+      "deal_id": 2665,
+      "person_id": 2438,
+      "title": "קטימה ג'בר",
+      "project_number": 1079,
+      "address": "Yanuh-Jat, Israel",
+      "lat": 32.993643,
+      "lon": 35.262864,
+      "address_type": "city",
+      "city_key": "يانوح جت",
+      "geocode_display": "يانوح جت, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2666": {
+      "deal_id": 2666,
+      "person_id": 2439,
+      "title": "אברהם מיכלשוילי",
+      "project_number": 1080,
+      "address": "Eliezer Kaplan St 39, Ramla, Israel",
+      "lat": 31.924405,
+      "lon": 34.861123,
+      "address_type": "street",
+      "city_key": "רמלה",
+      "geocode_display": "רמלה, נפת רמלה, מחוז המרכז, ישראל",
       "snapped_to_building": true
     }
   }

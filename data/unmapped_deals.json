@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T07:28:05.082746+00:00",
+  "generated_at": "2026-07-27T10:01:56.543161+00:00",
   "crm_deals_total": 1095,
-  "crm_deals_mappable": 1068,
-  "map_pins": 1068,
+  "crm_deals_mappable": 1070,
+  "map_pins": 1070,
   "sync": {
-    "added": 0,
+    "added": 2,
     "reused": 0,
     "skipped": 1068,
     "failed": 0
@@ -184,23 +184,9 @@
       "title": "רפאל שמואל",
       "add_time": "2026-07-06 07:48:23",
       "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2665,
-      "person_id": 2438,
-      "title": "קטימה ג'בר",
-      "add_time": "2026-07-26 04:58:07",
-      "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2666,
-      "person_id": 2439,
-      "title": "בת ציון מיכלשוילי",
-      "add_time": "2026-07-27 07:22:50",
-      "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 27,
+  "unmapped_total": 25,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }

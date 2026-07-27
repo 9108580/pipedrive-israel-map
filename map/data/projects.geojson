@@ -19224,6 +19224,42 @@
         "place": "Kabul",
         "deal_id": 2657
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.262864,
+          32.993643
+        ]
+      },
+      "properties": {
+        "name": "Project 1079",
+        "project_number": 1079,
+        "address_type": "city",
+        "person_id": 2438,
+        "place": "Yanuh-Jat",
+        "deal_id": 2665
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.861123,
+          31.924405
+        ]
+      },
+      "properties": {
+        "name": "Project 1080",
+        "project_number": 1080,
+        "address_type": "street",
+        "person_id": 2439,
+        "place": "רמלה",
+        "deal_id": 2666
+      }
     }
   ]
 }
