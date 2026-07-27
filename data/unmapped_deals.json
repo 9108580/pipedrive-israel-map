@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-07-27T07:27:25.983870+00:00",
+  "crm_deals_total": 1095,
+  "crm_deals_mappable": 1068,
+  "map_pins": 1068,
+  "sync": {
+    "added": 0,
+    "reused": 0,
+    "skipped": 1068,
+    "failed": 0
+  },
+  "unmapped_no_person": [
+    {
+      "deal_id": 114,
+      "title": "שוונפלד אורטופדיה בעמ",
+      "add_time": "2025-06-22 07:10:43",
+      "reason": "no_person"
+    },
+    {
+      "deal_id": 2317,
+      "title": "לקוח של אלון",
+      "add_time": "2025-09-28 10:34:52",
+      "reason": "no_person"
+    }
+  ],
+  "unmapped_no_address": [
+    {
+      "deal_id": 1680,
+      "person_id": 1625,
+      "title": "גדעון אדר 2 deal",
+      "add_time": "2025-06-23 10:50:03",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1683,
+      "person_id": 1627,
+      "title": "אברהם אבוקסיס deal",
+      "add_time": "2025-06-23 10:50:05",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1684,
+      "person_id": 1624,
+      "title": "יאיר יוסף deal",
+      "add_time": "2025-06-23 10:50:05",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1744,
+      "person_id": 1687,
+      "title": "רפאל שמואל deal",
+      "add_time": "2025-06-23 10:50:21",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1746,
+      "person_id": 1689,
+      "title": "מאיר איבגי deal",
+      "add_time": "2025-06-23 10:50:21",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1781,
+      "person_id": 1723,
+      "title": "עופר גרין deal",
+      "add_time": "2025-06-23 10:50:32",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1790,
+      "person_id": 1733,
+      "title": "ברוך יעקב deal",
+      "add_time": "2025-06-23 10:50:34",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 1797,
+      "person_id": 1723,
+      "title": "עופר גרין deal",
+      "add_time": "2025-06-23 10:50:36",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2191,
+      "person_id": 2024,
+      "title": "נועה כהן deal",
+      "add_time": "2025-08-02 08:30:19",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2229,
+      "person_id": 2060,
+      "title": "עראף מהנא",
+      "add_time": "2025-08-05 07:23:28",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2230,
+      "person_id": 2061,
+      "title": "תומר בן חמו",
+      "add_time": "2025-08-06 11:35:35",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2245,
+      "person_id": 2075,
+      "title": "משה משה דוגמא",
+      "add_time": "2025-08-13 10:27:03",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2246,
+      "person_id": 2076,
+      "title": "עדי בן ישי",
+      "add_time": "2025-08-13 11:43:22",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2272,
+      "person_id": 2106,
+      "title": "אור וקור - פאנלים בלבד",
+      "add_time": "2025-09-03 10:58:42",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2295,
+      "person_id": 2124,
+      "title": "אלון סולאר",
+      "add_time": "2025-09-16 12:09:56",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2324,
+      "person_id": 1733,
+      "title": "ברוך יעקב",
+      "add_time": "2025-09-30 06:12:58",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2409,
+      "person_id": 2226,
+      "title": "יהודה לוי",
+      "add_time": "2025-12-01 08:10:46",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2446,
+      "person_id": 2260,
+      "title": "איתי גיל",
+      "add_time": "2025-12-29 10:21:33",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2463,
+      "person_id": 2277,
+      "title": "יריב יאיר מלמד",
+      "add_time": "2026-01-08 09:15:28",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2545,
+      "person_id": 2353,
+      "title": "יואל זאבי",
+      "add_time": "2026-04-20 09:19:00",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2561,
+      "person_id": 2367,
+      "title": "עלי חלבי",
+      "add_time": "2026-05-07 12:19:43",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2618,
+      "person_id": 2405,
+      "title": "מלאק אם עלי פאלח גדיר",
+      "add_time": "2026-06-28 06:27:11",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2636,
+      "person_id": 1687,
+      "title": "רפאל שמואל",
+      "add_time": "2026-07-06 07:48:23",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2665,
+      "person_id": 2438,
+      "title": "קטימה ג'בר",
+      "add_time": "2026-07-26 04:58:07",
+      "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2666,
+      "person_id": 2439,
+      "title": "בת ציון מיכלשוילי",
+      "add_time": "2026-07-27 07:22:50",
+      "reason": "person_has_no_address"
+    }
+  ],
+  "unmapped_total": 27,
+  "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
+  "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
+}

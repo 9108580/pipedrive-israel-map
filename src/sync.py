@@ -3,7 +3,11 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
+import os
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 
 from . import config
@@ -40,6 +44,116 @@ def _person_anchor(
         if rec.get("person_id") == person_id and rec.get("lat") is not None:
             return rec
     return None
+
+
+def write_unmapped_report(
+    *,
+    client: PipedriveClient,
+    persons_index: dict[int, dict[str, Any]],
+    deals_map: dict[str, Any],
+    sync_stats: dict[str, int],
+) -> Path:
+    """List deals that cannot appear on the map (no person / no address).
+
+    Written every sync so Actions + the repo show *why* the public count
+    did not grow even though CRM gained deals.
+    """
+    mapped_ids = {int(k) for k in deals_map.keys()}
+    no_person: list[dict[str, Any]] = []
+    no_address: list[dict[str, Any]] = []
+    crm_mappable = 0
+    crm_total = 0
+
+    for deal in client.iter_deals():
+        crm_total += 1
+        did = int(deal["id"])
+        title = (deal.get("title") or "")[:120]
+        add_time = deal.get("add_time") or ""
+        pid = client.deal_person_id(deal)
+        if not pid:
+            if did not in mapped_ids:
+                no_person.append(
+                    {
+                        "deal_id": did,
+                        "title": title,
+                        "add_time": add_time,
+                        "reason": "no_person",
+                    }
+                )
+            continue
+        if pid not in persons_index:
+            if did not in mapped_ids:
+                no_address.append(
+                    {
+                        "deal_id": did,
+                        "person_id": pid,
+                        "title": title,
+                        "add_time": add_time,
+                        "reason": "person_has_no_address",
+                    }
+                )
+            continue
+        crm_mappable += 1
+
+    report = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "crm_deals_total": crm_total,
+        "crm_deals_mappable": crm_mappable,
+        "map_pins": sum(
+            1
+            for r in deals_map.values()
+            if r.get("lat") is not None and r.get("lon") is not None
+        ),
+        "sync": sync_stats,
+        "unmapped_no_person": no_person,
+        "unmapped_no_address": no_address,
+        "unmapped_total": len(no_person) + len(no_address),
+        "note_he": (
+            "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. "
+            "מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית."
+        ),
+        "note_ru": (
+            "Сделки без адреса у контакта не попадают на карту. "
+            "Заполните адрес в Pipedrive — следующий sync добавит их сам."
+        ),
+    }
+
+    config.DATA_DIR.mkdir(parents=True, exist_ok=True)
+    path = config.UNMAPPED_PATH
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    log.info(
+        "Unmapped report: no_address=%s no_person=%s → %s",
+        len(no_address),
+        len(no_person),
+        path,
+    )
+
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        lines = [
+            "## Sync Pipedrive → map",
+            "",
+            f"- CRM deals: **{crm_total}**",
+            f"- Mappable (person + address): **{crm_mappable}**",
+            f"- Pins on map: **{report['map_pins']}**",
+            f"- Added this run: **{sync_stats.get('added', 0)}** "
+            f"(reused={sync_stats.get('reused', 0)}, "
+            f"skipped={sync_stats.get('skipped', 0)}, "
+            f"geocode_failed={sync_stats.get('failed', 0)})",
+            f"- Unmapped (no address): **{len(no_address)}**",
+            f"- Unmapped (no person): **{len(no_person)}**",
+            "",
+        ]
+        if no_address[:10]:
+            lines.append("### Recent without address")
+            for row in sorted(no_address, key=lambda x: x.get("add_time") or "")[-10:]:
+                lines.append(
+                    f"- deal `{row['deal_id']}` {row.get('add_time','')} — {row.get('title','')}"
+                )
+            lines.append("")
+        Path(summary).write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    return path
 
 
 def migrate_persons_to_deals(
@@ -302,6 +416,18 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
     state["next_project_number"] = next_num
     save_state(state)
     out = write_geojson(state)
+    sync_stats = {
+        "added": added,
+        "reused": reused,
+        "skipped": skipped,
+        "failed": failed,
+    }
+    write_unmapped_report(
+        client=client,
+        persons_index=persons_index,
+        deals_map=deals_map,
+        sync_stats=sync_stats,
+    )
     log.info(
         "Done. added=%s reused=%s skipped=%s failed=%s next_number=%s geojson=%s",
         added,

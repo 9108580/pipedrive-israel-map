@@ -27,6 +27,7 @@ DATA_DIR = ROOT / "data"
 MAP_DATA_DIR = ROOT / "map" / "data"
 STATE_PATH = DATA_DIR / "state.json"
 GEOJSON_PATH = MAP_DATA_DIR / "projects.geojson"
+UNMAPPED_PATH = DATA_DIR / "unmapped_deals.json"
 
 # Israel-ish bounding box for geocode bias
 ISRAEL_VIEWBOX = "34.2,29.4,35.9,33.5"  # left,bottom,right,top
