@@ -19260,6 +19260,60 @@
         "place": "רמלה",
         "deal_id": 2666
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.294562,
+          32.997213
+        ]
+      },
+      "properties": {
+        "name": "Project 1081",
+        "project_number": 1081,
+        "address_type": "city",
+        "person_id": 2061,
+        "place": "חוסן",
+        "deal_id": 2230
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.906636,
+          32.138889
+        ]
+      },
+      "properties": {
+        "name": "Project 1082",
+        "project_number": 1082,
+        "address_type": "city",
+        "person_id": 2076,
+        "place": "עדנים",
+        "deal_id": 2246
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.284864,
+          32.940785
+        ]
+      },
+      "properties": {
+        "name": "Project 1083",
+        "project_number": 1083,
+        "address_type": "city",
+        "person_id": 2440,
+        "place": "Deir al-Asad",
+        "deal_id": 2667
+      }
     }
   ]
 }

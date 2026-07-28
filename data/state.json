@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1081,
+  "next_project_number": 1084,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25264,6 +25264,45 @@
       "address_type": "street",
       "city_key": "רמלה",
       "geocode_display": "רמלה, נפת רמלה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2230": {
+      "deal_id": 2230,
+      "person_id": 2061,
+      "title": "תומר בן חמו",
+      "project_number": 1081,
+      "address": "Hosen, Israel",
+      "lat": 32.997213,
+      "lon": 35.294562,
+      "address_type": "city",
+      "city_key": "חוסן",
+      "geocode_display": "חוסן, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2246": {
+      "deal_id": 2246,
+      "person_id": 2076,
+      "title": "עדי בן ישי",
+      "project_number": 1082,
+      "address": "Adanim, Israel",
+      "lat": 32.138889,
+      "lon": 34.906636,
+      "address_type": "city",
+      "city_key": "עדנים",
+      "geocode_display": "עדנים, מועצה אזורית דרום השרון, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2667": {
+      "deal_id": 2667,
+      "person_id": 2440,
+      "title": "דבאח סעיד חוסיין",
+      "project_number": 1083,
+      "address": "Deir al-Asad, Israel",
+      "lat": 32.940785,
+      "lon": 35.284864,
+      "address_type": "city",
+      "city_key": "دير الأسد",
+      "geocode_display": "دير الأسد, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
