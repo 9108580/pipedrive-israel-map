@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1084,
+  "next_project_number": 1087,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25304,6 +25304,36 @@
       "city_key": "دير الأسد",
       "geocode_display": "دير الأسد, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
+    },
+    "2668": {
+      "deal_id": 2668,
+      "person_id": 2441,
+      "title": "רתם נועה",
+      "project_number": 1084,
+      "address": "Matzuva, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "2669": {
+      "deal_id": 2669,
+      "person_id": 2442,
+      "title": "רפאל דיאמנט",
+      "project_number": 1085,
+      "address": "Yonatan",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
+    },
+    "2670": {
+      "deal_id": 2670,
+      "person_id": 2443,
+      "title": "ליעוז קלביר",
+      "project_number": 1086,
+      "address": "Yitshak Ben Zvi St 61, Kiryat Ata, Israel",
+      "lat": null,
+      "lon": null,
+      "error": "geocode_failed"
     }
   }
 }
