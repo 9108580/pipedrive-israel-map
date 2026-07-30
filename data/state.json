@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1087,
+  "next_project_number": 1097,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25311,9 +25311,12 @@
       "title": "רתם נועה",
       "project_number": 1084,
       "address": "Matzuva, Israel",
-      "lat": null,
-      "lon": null,
-      "error": "geocode_failed"
+      "lat": 33.060275,
+      "lon": 35.154833,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מטה אשר",
+      "geocode_display": "מצובה, מועצה אזורית מטה אשר, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
     },
     "2669": {
       "deal_id": 2669,
@@ -25321,19 +25324,158 @@
       "title": "רפאל דיאמנט",
       "project_number": 1085,
       "address": "Yonatan",
-      "lat": null,
-      "lon": null,
-      "error": "geocode_failed"
+      "lat": 32.938189,
+      "lon": 35.793497,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גולן",
+      "geocode_display": "יונתן, מועצה אזורית גולן, נפת רמת הגולן, מחוז הצפון, ישראל",
+      "snapped_to_building": true
     },
     "2670": {
       "deal_id": 2670,
       "person_id": 2443,
       "title": "ליעוז קלביר",
       "project_number": 1086,
-      "address": "Yitshak Ben Zvi St 61, Kiryat Ata, Israel",
-      "lat": null,
-      "lon": null,
-      "error": "geocode_failed"
+      "address": "Ha-Gefen St 9, Caesarea, Israel",
+      "lat": 32.509036,
+      "lon": 34.903258,
+      "address_type": "street",
+      "city_key": "מועצה אזורית חוף הכרמל",
+      "geocode_display": "קיסריה, מועצה אזורית חוף הכרמל, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "1744": {
+      "deal_id": 1744,
+      "person_id": 1687,
+      "title": "רפאל שמואל deal",
+      "project_number": 1087,
+      "address": "Shuva, Israel",
+      "lat": 31.450439,
+      "lon": 34.545794,
+      "address_type": "city",
+      "city_key": "מועצה אזורית שדות נגב",
+      "geocode_display": "שובה, מועצה אזורית שדות נגב, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true
+    },
+    "1746": {
+      "deal_id": 1746,
+      "person_id": 1689,
+      "title": "מאיר איבגי deal",
+      "project_number": 1088,
+      "address": "Netivot, Israel",
+      "lat": 31.422889,
+      "lon": 34.581939,
+      "address_type": "city",
+      "city_key": "נתיבות",
+      "geocode_display": "נתיבות, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true
+    },
+    "1781": {
+      "deal_id": 1781,
+      "person_id": 1723,
+      "title": "עופר גרין deal",
+      "project_number": 1089,
+      "address": "Netu'a, Israel",
+      "lat": 33.065745,
+      "lon": 35.320798,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "נטועה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "1790": {
+      "deal_id": 1790,
+      "person_id": 1733,
+      "title": "ברוך יעקב deal",
+      "project_number": 1090,
+      "address": "Kibuts Galuyot St 37, Herzliya, Israel",
+      "lat": 32.164811,
+      "lon": 34.834995,
+      "address_type": "street",
+      "city_key": "הרצליה",
+      "geocode_display": "הרצליה, נפת תל אביב, מחוז תל אביב, ישראל",
+      "snapped_to_building": true
+    },
+    "1797": {
+      "deal_id": 1797,
+      "person_id": 1723,
+      "title": "עופר גרין deal",
+      "project_number": 1091,
+      "address": "Netu'a, Israel",
+      "lat": 33.06610466274182,
+      "lon": 35.32120221004533,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "נטועה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "reused_person_geocode": true
+    },
+    "2272": {
+      "deal_id": 2272,
+      "person_id": 2106,
+      "title": "אור וקור - פאנלים בלבד",
+      "project_number": 1092,
+      "address": "Karmiel, Israel",
+      "lat": 32.919839,
+      "lon": 35.292372,
+      "address_type": "city",
+      "city_key": "כרמיאל",
+      "geocode_display": "כרמיאל, נפת עכו, מחוז הצפון, 2195106, ישראל",
+      "snapped_to_building": true
+    },
+    "2324": {
+      "deal_id": 2324,
+      "person_id": 1733,
+      "title": "ברוך יעקב",
+      "project_number": 1093,
+      "address": "Kibuts Galuyot St 37, Herzliya, Israel",
+      "lat": 32.164552369030446,
+      "lon": 34.83449770454614,
+      "address_type": "street",
+      "city_key": "הרצליה",
+      "geocode_display": "הרצליה, נפת תל אביב, מחוז תל אביב, ישראל",
+      "snapped_to_building": true,
+      "reused_person_geocode": true
+    },
+    "2446": {
+      "deal_id": 2446,
+      "person_id": 2260,
+      "title": "איתי גיל",
+      "project_number": 1094,
+      "address": "Metula, Israel",
+      "lat": 33.276847,
+      "lon": 35.581284,
+      "address_type": "city",
+      "city_key": "מטולה",
+      "geocode_display": "מטולה, נפת צפת, מחוז הצפון, 1029200, ישראל",
+      "snapped_to_building": true
+    },
+    "2618": {
+      "deal_id": 2618,
+      "person_id": 2405,
+      "title": "מלאק אם עלי פאלח גדיר",
+      "project_number": 1095,
+      "address": "Bir al-Maksur, Israel",
+      "lat": 32.780822,
+      "lon": 35.223784,
+      "address_type": "city",
+      "city_key": "ביר אל מכסור",
+      "geocode_display": "ביר אל מכסור, بئر المكسور, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2636": {
+      "deal_id": 2636,
+      "person_id": 1687,
+      "title": "רפאל שמואל",
+      "project_number": 1096,
+      "address": "Shuva, Israel",
+      "lat": 31.44994779875786,
+      "lon": 34.545856332719865,
+      "address_type": "city",
+      "city_key": "מועצה אזורית שדות נגב",
+      "geocode_display": "שובה, מועצה אזורית שדות נגב, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "reused_person_geocode": true
     }
   }
 }

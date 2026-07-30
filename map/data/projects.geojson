@@ -19314,6 +19314,240 @@
         "place": "Deir al-Asad",
         "deal_id": 2667
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.154833,
+          33.060275
+        ]
+      },
+      "properties": {
+        "name": "Project 1084",
+        "project_number": 1084,
+        "address_type": "city",
+        "person_id": 2441,
+        "place": "מצובה",
+        "deal_id": 2668
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.793497,
+          32.938189
+        ]
+      },
+      "properties": {
+        "name": "Project 1085",
+        "project_number": 1085,
+        "address_type": "city",
+        "person_id": 2442,
+        "place": "יונתן",
+        "deal_id": 2669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.903258,
+          32.509036
+        ]
+      },
+      "properties": {
+        "name": "Project 1086",
+        "project_number": 1086,
+        "address_type": "street",
+        "person_id": 2443,
+        "place": "קיסריה",
+        "deal_id": 2670
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.545794,
+          31.450439
+        ]
+      },
+      "properties": {
+        "name": "Project 1087",
+        "project_number": 1087,
+        "address_type": "city",
+        "person_id": 1687,
+        "place": "שובה",
+        "deal_id": 1744
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.581939,
+          31.422889
+        ]
+      },
+      "properties": {
+        "name": "Project 1088",
+        "project_number": 1088,
+        "address_type": "city",
+        "person_id": 1689,
+        "place": "נתיבות",
+        "deal_id": 1746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.320798,
+          33.065745
+        ]
+      },
+      "properties": {
+        "name": "Project 1089",
+        "project_number": 1089,
+        "address_type": "city",
+        "person_id": 1723,
+        "place": "נטועה",
+        "deal_id": 1781
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.834995,
+          32.164811
+        ]
+      },
+      "properties": {
+        "name": "Project 1090",
+        "project_number": 1090,
+        "address_type": "street",
+        "person_id": 1733,
+        "place": "הרצליה",
+        "deal_id": 1790
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32120221004533,
+          33.06610466274182
+        ]
+      },
+      "properties": {
+        "name": "Project 1091",
+        "project_number": 1091,
+        "address_type": "city",
+        "person_id": 1723,
+        "place": "נטועה",
+        "deal_id": 1797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.292372,
+          32.919839
+        ]
+      },
+      "properties": {
+        "name": "Project 1092",
+        "project_number": 1092,
+        "address_type": "city",
+        "person_id": 2106,
+        "place": "כרמיאל",
+        "deal_id": 2272
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.83449770454614,
+          32.164552369030446
+        ]
+      },
+      "properties": {
+        "name": "Project 1093",
+        "project_number": 1093,
+        "address_type": "street",
+        "person_id": 1733,
+        "place": "הרצליה",
+        "deal_id": 2324
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.581284,
+          33.276847
+        ]
+      },
+      "properties": {
+        "name": "Project 1094",
+        "project_number": 1094,
+        "address_type": "city",
+        "person_id": 2260,
+        "place": "מטולה",
+        "deal_id": 2446
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.223784,
+          32.780822
+        ]
+      },
+      "properties": {
+        "name": "Project 1095",
+        "project_number": 1095,
+        "address_type": "city",
+        "person_id": 2405,
+        "place": "ביר אל מכסור",
+        "deal_id": 2618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.545856332719865,
+          31.44994779875786
+        ]
+      },
+      "properties": {
+        "name": "Project 1096",
+        "project_number": 1096,
+        "address_type": "city",
+        "person_id": 1687,
+        "place": "שובה",
+        "deal_id": 2636
+      }
     }
   ]
 }
