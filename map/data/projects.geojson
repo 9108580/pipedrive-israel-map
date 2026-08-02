@@ -19548,6 +19548,60 @@
         "place": "שובה",
         "deal_id": 2636
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.621845,
+          33.22056
+        ]
+      },
+      "properties": {
+        "name": "Project 1097",
+        "project_number": 1097,
+        "address_type": "city",
+        "person_id": 2444,
+        "place": "הגושרים",
+        "deal_id": 2671
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.534923,
+          32.747003
+        ]
+      },
+      "properties": {
+        "name": "Project 1098",
+        "project_number": 1098,
+        "address_type": "street",
+        "person_id": 2445,
+        "place": "פוריה - נווה עובד",
+        "deal_id": 2672
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.236192782918444,
+          32.68242011920896
+        ]
+      },
+      "properties": {
+        "name": "Project 1099",
+        "project_number": 1099,
+        "address_type": "city",
+        "person_id": 1757,
+        "place": "מגדל העמק",
+        "deal_id": 2673
+      }
     }
   ]
 }

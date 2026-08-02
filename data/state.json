@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1097,
+  "next_project_number": 1100,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25474,6 +25474,46 @@
       "address_type": "city",
       "city_key": "מועצה אזורית שדות נגב",
       "geocode_display": "שובה, מועצה אזורית שדות נגב, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "reused_person_geocode": true
+    },
+    "2671": {
+      "deal_id": 2671,
+      "person_id": 2444,
+      "title": "ברק פרידמן",
+      "project_number": 1097,
+      "address": "HaGoshrim, Israel",
+      "lat": 33.22056,
+      "lon": 35.621845,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גליל עליון",
+      "geocode_display": "הגושרים, מועצה אזורית גליל עליון, נפת צפת, מחוז הצפון, 1222500, ישראל",
+      "snapped_to_building": true
+    },
+    "2672": {
+      "deal_id": 2672,
+      "person_id": 2445,
+      "title": "הדס גולן",
+      "project_number": 1098,
+      "address": "Ha-Meyasdim St 68, Poria - Neve Oved, Israel",
+      "lat": 32.747003,
+      "lon": 35.534923,
+      "address_type": "street",
+      "city_key": "מועצה אזורית עמק הירדן",
+      "geocode_display": "פוריה - נווה עובד, מועצה אזורית עמק הירדן, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2673": {
+      "deal_id": 2673,
+      "person_id": 1757,
+      "title": "קמינסקי יגאל",
+      "project_number": 1099,
+      "address": "Ha-Nesi'im St 30, Migdal HaEmek, Israel",
+      "lat": 32.68242011920896,
+      "lon": 35.236192782918444,
+      "address_type": "city",
+      "city_key": "מגדל העמק",
+      "geocode_display": "מגדל העמק, נפת יזרעאל, מחוז הצפון, ישראל",
       "snapped_to_building": true,
       "reused_person_geocode": true
     }
