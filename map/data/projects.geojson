@@ -19602,6 +19602,42 @@
         "place": "מגדל העמק",
         "deal_id": 2673
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.068489,
+          32.718515
+        ]
+      },
+      "properties": {
+        "name": "Project 1100",
+        "project_number": 1100,
+        "address_type": "street",
+        "person_id": 2446,
+        "place": "Isfiya",
+        "deal_id": 2674
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.686042,
+          32.994047
+        ]
+      },
+      "properties": {
+        "name": "Project 1101",
+        "project_number": 1101,
+        "address_type": "street",
+        "person_id": 2447,
+        "place": "קצרין",
+        "deal_id": 2675
+      }
     }
   ]
 }

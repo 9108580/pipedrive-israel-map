@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1100,
+  "next_project_number": 1102,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25516,6 +25516,32 @@
       "geocode_display": "מגדל העמק, נפת יזרעאל, מחוז הצפון, ישראל",
       "snapped_to_building": true,
       "reused_person_geocode": true
+    },
+    "2674": {
+      "deal_id": 2674,
+      "person_id": 2446,
+      "title": "אברהים חוסין",
+      "project_number": 1100,
+      "address": "אל-ענב 8, Isfiya, Israel",
+      "lat": 32.718515,
+      "lon": 35.068489,
+      "address_type": "street",
+      "city_key": "عسفيا",
+      "geocode_display": "عسفيا, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2675": {
+      "deal_id": 2675,
+      "person_id": 2447,
+      "title": "גבריאל הבה",
+      "project_number": 1101,
+      "address": "2 Dolev St, Katzrin",
+      "lat": 32.994047,
+      "lon": 35.686042,
+      "address_type": "street",
+      "city_key": "קצרין",
+      "geocode_display": "קצרין, נפת רמת הגולן, מחוז הצפון, ישראל",
+      "snapped_to_building": true
     }
   }
 }
