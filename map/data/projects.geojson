@@ -19638,6 +19638,60 @@
         "place": "קצרין",
         "deal_id": 2675
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.609632651738835,
+          33.174184709967726
+        ]
+      },
+      "properties": {
+        "name": "Project 1102",
+        "project_number": 1102,
+        "address_type": "city",
+        "person_id": 2267,
+        "place": "כפר בלום",
+        "deal_id": 2676
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.594675,
+          31.526734
+        ]
+      },
+      "properties": {
+        "name": "Project 1103",
+        "project_number": 1103,
+        "address_type": "street",
+        "person_id": 2448,
+        "place": "שדרות",
+        "deal_id": 2677
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.089759,
+          32.918917
+        ]
+      },
+      "properties": {
+        "name": "Project 1104",
+        "project_number": 1104,
+        "address_type": "street",
+        "person_id": 2449,
+        "place": "עכו",
+        "deal_id": 2678
+      }
     }
   ]
 }
