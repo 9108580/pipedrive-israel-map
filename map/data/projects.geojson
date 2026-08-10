@@ -19692,6 +19692,42 @@
         "place": "עכו",
         "deal_id": 2678
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.232801,
+          33.011835
+        ]
+      },
+      "properties": {
+        "name": "Project 1105",
+        "project_number": 1105,
+        "address_type": "street",
+        "person_id": 2450,
+        "place": "עין יעקב",
+        "deal_id": 2679
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.066944,
+          32.847233
+        ]
+      },
+      "properties": {
+        "name": "Project 1106",
+        "project_number": 1106,
+        "address_type": "street",
+        "person_id": 2451,
+        "place": "קריית ים",
+        "deal_id": 2680
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1105,
+  "next_project_number": 1107,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25581,6 +25581,32 @@
       "address_type": "street",
       "city_key": "עכו",
       "geocode_display": "עכו, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2679": {
+      "deal_id": 2679,
+      "person_id": 2450,
+      "title": "לירז יעקב",
+      "project_number": 1105,
+      "address": "HaDekel St 331, Ein Ya'akov, Israel",
+      "lat": 33.011835,
+      "lon": 35.232801,
+      "address_type": "street",
+      "city_key": "עין יעקב",
+      "geocode_display": "עין יעקב, נפת עכו, מחוז הצפון, 2513500, ישראל",
+      "snapped_to_building": true
+    },
+    "2680": {
+      "deal_id": 2680,
+      "person_id": 2451,
+      "title": "דורון אתר",
+      "project_number": 1106,
+      "address": "Tsiporen St 5, Kiryat Yam, Israel",
+      "lat": 32.847233,
+      "lon": 35.066944,
+      "address_type": "street",
+      "city_key": "קריית ים",
+      "geocode_display": "קריית ים, נפת חיפה, מחוז חיפה, ישראל",
       "snapped_to_building": true
     }
   }
