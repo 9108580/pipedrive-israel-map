@@ -19728,6 +19728,42 @@
         "place": "קריית ים",
         "deal_id": 2680
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.544572,
+          32.732243
+        ]
+      },
+      "properties": {
+        "name": "Project 1107",
+        "project_number": 1107,
+        "address_type": "city",
+        "person_id": 2452,
+        "place": "פוריה עילית",
+        "deal_id": 2681
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.421162,
+          32.686905
+        ]
+      },
+      "properties": {
+        "name": "Project 1108",
+        "project_number": 1108,
+        "address_type": "street",
+        "person_id": 2453,
+        "place": "כפר תבור",
+        "deal_id": 2682
+      }
     }
   ]
 }

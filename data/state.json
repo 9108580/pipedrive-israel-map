@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1107,
+  "next_project_number": 1109,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25607,6 +25607,32 @@
       "address_type": "street",
       "city_key": "קריית ים",
       "geocode_display": "קריית ים, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2681": {
+      "deal_id": 2681,
+      "person_id": 2452,
+      "title": "יפת חיים מלספין",
+      "project_number": 1107,
+      "address": "Poria Illit, Israel",
+      "lat": 32.732243,
+      "lon": 35.544572,
+      "address_type": "city",
+      "city_key": "מועצה אזורית עמק הירדן",
+      "geocode_display": "פוריה עילית, מועצה אזורית עמק הירדן, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2682": {
+      "deal_id": 2682,
+      "person_id": 2453,
+      "title": "רפאל בן שלום",
+      "project_number": 1108,
+      "address": "אודם 2, Kfar Tavor, Israel",
+      "lat": 32.686905,
+      "lon": 35.421162,
+      "address_type": "street",
+      "city_key": "כפר תבור",
+      "geocode_display": "כפר תבור, נפת כנרת, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
