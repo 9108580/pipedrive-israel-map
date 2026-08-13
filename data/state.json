@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1109,
+  "next_project_number": 1110,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25633,6 +25633,19 @@
       "address_type": "street",
       "city_key": "כפר תבור",
       "geocode_display": "כפר תבור, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2683": {
+      "deal_id": 2683,
+      "person_id": 2454,
+      "title": "שמשון ג'ובאני",
+      "project_number": 1109,
+      "address": "דולב, Tsfat, Israel",
+      "lat": 32.971435,
+      "lon": 35.493947,
+      "address_type": "city",
+      "city_key": "צפת",
+      "geocode_display": "צפת, נפת צפת, מחוז הצפון, 1311502, ישראל",
       "snapped_to_building": true
     }
   }

@@ -19764,6 +19764,24 @@
         "place": "כפר תבור",
         "deal_id": 2682
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.493947,
+          32.971435
+        ]
+      },
+      "properties": {
+        "name": "Project 1109",
+        "project_number": 1109,
+        "address_type": "city",
+        "person_id": 2454,
+        "place": "צפת",
+        "deal_id": 2683
+      }
     }
   ]
 }
