@@ -132,6 +132,12 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "басмат табун": "בסמת טבעון",
     "басмат-табун": "בסמת טבעון",
     "басмат тивон": "בסמת טבעון",
+    # Moshav Neta'im (Gan Raveh) — "HaHayil St" otherwise matches a different החי"ל
+    "neta'im": "נטעים",
+    "netaim": "נטעים",
+    "neta im": "נטעים",
+    "nettaim": "נטעים",
+    "נטעים": "נטעים",
 }
 
 _FOREIGN = re.compile(

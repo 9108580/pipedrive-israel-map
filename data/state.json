@@ -4199,12 +4199,13 @@
       "person_id": 1693,
       "project_number": 377,
       "address": "HaHayil St, Neta'im, Israel",
-      "lat": 32.222931,
-      "lon": 34.862893,
-      "address_type": "city",
-      "city_key": "israel",
-      "geocode_display": "החי\"ל, מועצה אזורית גן רווה, נפת רחובות, מחוז המרכז, 7510002, ישראל",
-      "snapped_to_building": true
+      "lat": 31.945739,
+      "lon": 34.776264,
+      "address_type": "street",
+      "city_key": "נטעים",
+      "geocode_display": "נטעים, נפת רחובות, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "geocode_query": "החי\"ל, נטעים"
     },
     "1694": {
       "person_id": 1694,
@@ -15106,12 +15107,13 @@
       "title": "ליאור נאמן deal",
       "project_number": 377,
       "address": "HaHayil St, Neta'im, Israel",
-      "lat": 32.222931,
-      "lon": 34.862893,
-      "address_type": "city",
-      "city_key": "israel",
-      "geocode_display": "החי\"ל, מועצה אזורית גן רווה, נפת רחובות, מחוז המרכז, 7510002, ישראל",
-      "snapped_to_building": true
+      "lat": 31.945739,
+      "lon": 34.776264,
+      "address_type": "street",
+      "city_key": "נטעים",
+      "geocode_display": "נטעים, נפת רחובות, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "geocode_query": "החי\"ל, נטעים"
     },
     "1751": {
       "deal_id": 1751,

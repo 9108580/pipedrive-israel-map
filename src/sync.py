@@ -11,7 +11,12 @@ from pathlib import Path
 from typing import Any
 
 from . import config
-from .geocode import NominatimGeocoder, is_city_only_address
+from .geocode import (
+    NominatimGeocoder,
+    apply_alias,
+    extract_settlement,
+    is_city_only_address,
+)
 from .pipedrive_client import PipedriveClient
 from .scatter import ResidentialScatter, offset_near
 from .state_store import load_state, save_state, write_geojson
@@ -34,6 +39,20 @@ def _occupied_near_city(
         if rec.get("lat") is not None and rec.get("lon") is not None:
             out.append((float(rec["lat"]), float(rec["lon"])))
     return out
+
+
+_BAD_CITY_KEY = {"", "israel", "ישראל", "palestine", "израиль"}
+
+
+def _record_city_key(geo: Any, address: str) -> str:
+    """Never store country as city_key — that scatters pins across all of Israel."""
+    city = (getattr(geo, "city", None) or "").strip()
+    if city.lower() not in _BAD_CITY_KEY:
+        return city
+    sett = apply_alias(extract_settlement(address) or "")
+    if sett and sett.lower() not in _BAD_CITY_KEY:
+        return sett
+    return city
 
 
 def _person_anchor(
@@ -359,7 +378,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                     write_geojson(state)
                 continue
 
-            city_key = (geo.city or address.split(",")[-1]).strip().lower()
+            city_key = _record_city_key(geo, address)
             if not is_city_only_address(address):
                 address_type = "street"
             else:

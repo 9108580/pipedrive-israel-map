@@ -6720,16 +6720,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.862893,
-          32.222931
+          34.776264,
+          31.945739
         ]
       },
       "properties": {
         "name": "Project 0377",
         "project_number": 377,
-        "address_type": "city",
+        "address_type": "street",
         "person_id": 1693,
-        "place": "החי\"ל",
+        "place": "נטעים",
         "deal_id": 1750
       }
     },

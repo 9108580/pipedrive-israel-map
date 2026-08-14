@@ -62,8 +62,12 @@ def _needs_repair(pid: str, rec: dict[str, Any]) -> str | None:
     # Street-shaped address stored as city with tiny place token
     if not is_city_only_address(addr) and len(place) <= 2:
         return "street_as_tiny_place"
-    # City-only: settlement geocode must be nearby (checked later with cache)
+    # Settlement geocode must be nearby (checked later with cache).
+    # Also for street addresses: "HaHayil St, Neta'im" was pinned 30 km north.
     if is_city_only_address(addr):
+        return "check_settlement_drift"
+    sett = extract_settlement(normalize_pipedrive_address(addr) or addr)
+    if sett and sett.strip().lower() not in ("israel", "ישראל", "palestine"):
         return "check_settlement_drift"
     return None
 
@@ -90,10 +94,11 @@ def qa_repair(*, limit: int | None = None) -> dict[str, int]:
             addr = rec.get("address") or ""
             sett = extract_settlement(normalize_pipedrive_address(addr)) or normalize_pipedrive_address(addr)
             anchor = sett_geo(sett) if sett else None
+            max_m = 2500 if is_city_only_address(addr) else 12000
             if (
                 anchor
                 and haversine_m(float(rec["lat"]), float(rec["lon"]), float(anchor.lat), float(anchor.lon))
-                > 2500
+                > max_m
             ):
                 reason = "settlement_drift"
             else:
