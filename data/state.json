@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1110,
+  "next_project_number": 1111,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25648,6 +25648,19 @@
       "address_type": "city",
       "city_key": "צפת",
       "geocode_display": "צפת, נפת צפת, מחוז הצפון, 1311502, ישראל",
+      "snapped_to_building": true
+    },
+    "2684": {
+      "deal_id": 2684,
+      "person_id": 2455,
+      "title": "אחסאן בוראני",
+      "project_number": 1110,
+      "address": "Daliyat al-Karmel, Israel",
+      "lat": 32.695961,
+      "lon": 35.051487,
+      "address_type": "city",
+      "city_key": "دالية الكرمل",
+      "geocode_display": "دالية الكرمل, נפת חיפה, מחוז חיפה, ישראל",
       "snapped_to_building": true
     }
   }

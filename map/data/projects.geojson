@@ -19782,6 +19782,24 @@
         "place": "צפת",
         "deal_id": 2683
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.051487,
+          32.695961
+        ]
+      },
+      "properties": {
+        "name": "Project 1110",
+        "project_number": 1110,
+        "address_type": "city",
+        "person_id": 2455,
+        "place": "Daliyat al-Karmel",
+        "deal_id": 2684
+      }
     }
   ]
 }
