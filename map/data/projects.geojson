@@ -19800,6 +19800,24 @@
         "place": "Daliyat al-Karmel",
         "deal_id": 2684
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.292417,
+          32.91586
+        ]
+      },
+      "properties": {
+        "name": "Project 1111",
+        "project_number": 1111,
+        "address_type": "street",
+        "person_id": 2456,
+        "place": "כרמיאל",
+        "deal_id": 2685
+      }
     }
   ]
 }

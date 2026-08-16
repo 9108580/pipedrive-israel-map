@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1111,
+  "next_project_number": 1112,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25661,6 +25661,19 @@
       "address_type": "city",
       "city_key": "دالية الكرمل",
       "geocode_display": "دالية الكرمل, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2685": {
+      "deal_id": 2685,
+      "person_id": 2456,
+      "title": "איילה סלדינגר",
+      "project_number": 1111,
+      "address": "Gidron St 48, Karmiel, Israel",
+      "lat": 32.91586,
+      "lon": 35.292417,
+      "address_type": "street",
+      "city_key": "כרמיאל",
+      "geocode_display": "כרמיאל, נפת עכו, מחוז הצפון, 2195106, ישראל",
       "snapped_to_building": true
     }
   }
