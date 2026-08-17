@@ -19818,6 +19818,60 @@
         "place": "כרמיאל",
         "deal_id": 2685
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.815162,
+          31.877291
+        ]
+      },
+      "properties": {
+        "name": "Project 1112",
+        "project_number": 1112,
+        "address_type": "street",
+        "person_id": 2458,
+        "place": "כפר ביל\"ו",
+        "deal_id": 2687
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.81687,
+          31.876958
+        ]
+      },
+      "properties": {
+        "name": "Project 1113",
+        "project_number": 1113,
+        "address_type": "street",
+        "person_id": 2459,
+        "place": "כפר ביל\"ו",
+        "deal_id": 2688
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.678142,
+          33.242705
+        ]
+      },
+      "properties": {
+        "name": "Project 1114",
+        "project_number": 1114,
+        "address_type": "city",
+        "person_id": 2460,
+        "place": "שניר",
+        "deal_id": 2689
+      }
     }
   ]
 }

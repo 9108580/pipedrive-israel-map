@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1112,
+  "next_project_number": 1115,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25674,6 +25674,45 @@
       "address_type": "street",
       "city_key": "כרמיאל",
       "geocode_display": "כרמיאל, נפת עכו, מחוז הצפון, 2195106, ישראל",
+      "snapped_to_building": true
+    },
+    "2687": {
+      "deal_id": 2687,
+      "person_id": 2458,
+      "title": "עופר צפריר",
+      "project_number": 1112,
+      "address": "HaPa'amon St 51, Kfar Bilu, Israel",
+      "lat": 31.877291,
+      "lon": 34.815162,
+      "address_type": "street",
+      "city_key": "כפר ביל\"ו",
+      "geocode_display": "כפר ביל\"ו, נפת רמלה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2688": {
+      "deal_id": 2688,
+      "person_id": 2459,
+      "title": "צפריר חובב",
+      "project_number": 1113,
+      "address": "HaPa'amon St 51, Kfar Bilu, Israel",
+      "lat": 31.876958,
+      "lon": 34.81687,
+      "address_type": "street",
+      "city_key": "כפר ביל\"ו",
+      "geocode_display": "כפר ביל\"ו, נפת רמלה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2689": {
+      "deal_id": 2689,
+      "person_id": 2460,
+      "title": "גיא בן סימון",
+      "project_number": 1114,
+      "address": "Snir",
+      "lat": 33.242705,
+      "lon": 35.678142,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גליל עליון",
+      "geocode_display": "שניר, מועצה אזורית גליל עליון, נפת צפת, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
