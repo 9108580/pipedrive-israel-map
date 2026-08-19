@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1115,
+  "next_project_number": 1118,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25713,6 +25713,45 @@
       "address_type": "city",
       "city_key": "מועצה אזורית גליל עליון",
       "geocode_display": "שניר, מועצה אזורית גליל עליון, נפת צפת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2690": {
+      "deal_id": 2690,
+      "person_id": 2461,
+      "title": "אדלר אוראון",
+      "project_number": 1115,
+      "address": "134, Elifelet, Israel",
+      "lat": 32.947191,
+      "lon": 35.550345,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מבואות החרמון",
+      "geocode_display": "אליפלט, מועצה אזורית מבואות החרמון, נפת צפת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2691": {
+      "deal_id": 2691,
+      "person_id": 2462,
+      "title": "אלחנן וינשטיין",
+      "project_number": 1116,
+      "address": "Shomria, Israel",
+      "lat": 31.432745,
+      "lon": 34.881745,
+      "address_type": "city",
+      "city_key": "מועצה אזורית בני שמעון",
+      "geocode_display": "שומריה, מועצה אזורית בני שמעון, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true
+    },
+    "2692": {
+      "deal_id": 2692,
+      "person_id": 2463,
+      "title": "אנה פופובה",
+      "project_number": 1117,
+      "address": "Meron St 129, Kfar Vradim, Israel",
+      "lat": 32.993765,
+      "lon": 35.279422,
+      "address_type": "street",
+      "city_key": "כפר ורדים",
+      "geocode_display": "כפר ורדים, נפת עכו, מחוז הצפון, 2514700, ישראל",
       "snapped_to_building": true
     }
   }

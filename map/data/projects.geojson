@@ -19872,6 +19872,60 @@
         "place": "שניר",
         "deal_id": 2689
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.550345,
+          32.947191
+        ]
+      },
+      "properties": {
+        "name": "Project 1115",
+        "project_number": 1115,
+        "address_type": "city",
+        "person_id": 2461,
+        "place": "אליפלט",
+        "deal_id": 2690
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.881745,
+          31.432745
+        ]
+      },
+      "properties": {
+        "name": "Project 1116",
+        "project_number": 1116,
+        "address_type": "city",
+        "person_id": 2462,
+        "place": "שומריה",
+        "deal_id": 2691
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.279422,
+          32.993765
+        ]
+      },
+      "properties": {
+        "name": "Project 1117",
+        "project_number": 1117,
+        "address_type": "street",
+        "person_id": 2463,
+        "place": "כפר ורדים",
+        "deal_id": 2692
+      }
     }
   ]
 }
