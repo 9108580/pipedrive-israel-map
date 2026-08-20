@@ -19926,6 +19926,24 @@
         "place": "כפר ורדים",
         "deal_id": 2692
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.074644,
+          32.92792
+        ]
+      },
+      "properties": {
+        "name": "Project 1118",
+        "project_number": 1118,
+        "address_type": "street",
+        "person_id": 2464,
+        "place": "עכו",
+        "deal_id": 2693
+      }
     }
   ]
 }

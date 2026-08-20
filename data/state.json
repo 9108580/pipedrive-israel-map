@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1118,
+  "next_project_number": 1119,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25752,6 +25752,19 @@
       "address_type": "street",
       "city_key": "כפר ורדים",
       "geocode_display": "כפר ורדים, נפת עכו, מחוז הצפון, 2514700, ישראל",
+      "snapped_to_building": true
+    },
+    "2693": {
+      "deal_id": 2693,
+      "person_id": 2464,
+      "title": "ליאב לוי",
+      "project_number": 1118,
+      "address": "Shvil ha-Sapir 12, Akko, Israel",
+      "lat": 32.92792,
+      "lon": 35.074644,
+      "address_type": "street",
+      "city_key": "עכו",
+      "geocode_display": "עכו, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
