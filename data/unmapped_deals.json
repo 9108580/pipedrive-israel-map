@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-20T06:52:47.360388+00:00",
-  "crm_deals_total": 1123,
+  "generated_at": "2026-08-23T06:48:06.330354+00:00",
+  "crm_deals_total": 1122,
   "crm_deals_mappable": 1108,
   "map_pins": 1108,
   "sync": {
-    "added": 1,
+    "added": 0,
     "reused": 0,
-    "skipped": 1107,
+    "skipped": 1108,
     "failed": 0
   },
   "unmapped_no_person": [
@@ -107,16 +107,9 @@
       "title": "מוחמד חאתם נסראלדין",
       "add_time": "2026-08-16 08:15:33",
       "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2694,
-      "person_id": 2465,
-      "title": "בדיקה 20.8",
-      "add_time": "2026-08-20 06:50:50",
-      "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 15,
+  "unmapped_total": 14,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }
