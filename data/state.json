@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1119,
+  "next_project_number": 1122,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25765,6 +25765,45 @@
       "address_type": "street",
       "city_key": "עכו",
       "geocode_display": "עכו, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2695": {
+      "deal_id": 2695,
+      "person_id": 2466,
+      "title": "מורן הכט",
+      "project_number": 1119,
+      "address": "Kamon, Israel",
+      "lat": 32.907165,
+      "lon": 35.359658,
+      "address_type": "city",
+      "city_key": "מועצה אזורית משגב",
+      "geocode_display": "כמון, מועצה אזורית משגב, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2696": {
+      "deal_id": 2696,
+      "person_id": 2467,
+      "title": "עמנואל אטון",
+      "project_number": 1120,
+      "address": "התורמוס 101, Mei Ami, Israel",
+      "lat": 32.505102,
+      "lon": 35.147335,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מנשה",
+      "geocode_display": "מי עמי, מועצה אזורית מנשה, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2697": {
+      "deal_id": 2697,
+      "person_id": 2468,
+      "title": "מזאריב ראמי נאיף",
+      "project_number": 1121,
+      "address": "Zarzir, Israel",
+      "lat": 32.735742,
+      "lon": 35.193984,
+      "address_type": "city",
+      "city_key": "زرزير",
+      "geocode_display": "زرزير, נפת יזרעאל, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

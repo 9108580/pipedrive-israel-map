@@ -19944,6 +19944,60 @@
         "place": "עכו",
         "deal_id": 2693
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.359658,
+          32.907165
+        ]
+      },
+      "properties": {
+        "name": "Project 1119",
+        "project_number": 1119,
+        "address_type": "city",
+        "person_id": 2466,
+        "place": "כמון",
+        "deal_id": 2695
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.147335,
+          32.505102
+        ]
+      },
+      "properties": {
+        "name": "Project 1120",
+        "project_number": 1120,
+        "address_type": "street",
+        "person_id": 2467,
+        "place": "מי עמי",
+        "deal_id": 2696
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.193984,
+          32.735742
+        ]
+      },
+      "properties": {
+        "name": "Project 1121",
+        "project_number": 1121,
+        "address_type": "city",
+        "person_id": 2468,
+        "place": "Zarzir",
+        "deal_id": 2697
+      }
     }
   ]
 }
