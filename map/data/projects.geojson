@@ -19998,6 +19998,24 @@
         "place": "Zarzir",
         "deal_id": 2697
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.539588,
+          31.5738
+        ]
+      },
+      "properties": {
+        "name": "Project 1122",
+        "project_number": 1122,
+        "address_type": "city",
+        "person_id": 2469,
+        "place": "נתיב העשרה",
+        "deal_id": 2698
+      }
     }
   ]
 }

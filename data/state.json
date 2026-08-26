@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1122,
+  "next_project_number": 1123,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25804,6 +25804,19 @@
       "address_type": "city",
       "city_key": "زرزير",
       "geocode_display": "زرزير, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2698": {
+      "deal_id": 2698,
+      "person_id": 2469,
+      "title": "יעל בן צבי",
+      "project_number": 1122,
+      "address": "Netiv HaAsara, Israel",
+      "lat": 31.5738,
+      "lon": 34.539588,
+      "address_type": "city",
+      "city_key": "מועצה אזורית חוף אשקלון",
+      "geocode_display": "נתיב העשרה, מועצה אזורית חוף אשקלון, נפת אשקלון, מחוז הדרום, ישראל",
       "snapped_to_building": true
     }
   }
