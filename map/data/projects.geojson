@@ -20016,6 +20016,78 @@
         "place": "נתיב העשרה",
         "deal_id": 2698
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.118513,
+          33.086648
+        ]
+      },
+      "properties": {
+        "name": "Project 1123",
+        "project_number": 1123,
+        "address_type": "city",
+        "person_id": 2470,
+        "place": "ראש הנקרה",
+        "deal_id": 2699
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.256002,
+          33.01607
+        ]
+      },
+      "properties": {
+        "name": "Project 1124",
+        "project_number": 1124,
+        "address_type": "street",
+        "person_id": 2471,
+        "place": "מעונה",
+        "deal_id": 2700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32612,
+          32.780598
+        ]
+      },
+      "properties": {
+        "name": "Project 1125",
+        "project_number": 1125,
+        "address_type": "city",
+        "person_id": 2472,
+        "place": "בית רימון",
+        "deal_id": 2701
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.932296,
+          31.677385
+        ]
+      },
+      "properties": {
+        "name": "Project 1126",
+        "project_number": 1126,
+        "address_type": "street",
+        "person_id": 2473,
+        "place": "שריגים (לי־און)",
+        "deal_id": 2702
+      }
     }
   ]
 }

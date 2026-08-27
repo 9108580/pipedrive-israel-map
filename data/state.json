@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1123,
+  "next_project_number": 1127,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25817,6 +25817,58 @@
       "address_type": "city",
       "city_key": "מועצה אזורית חוף אשקלון",
       "geocode_display": "נתיב העשרה, מועצה אזורית חוף אשקלון, נפת אשקלון, מחוז הדרום, ישראל",
+      "snapped_to_building": true
+    },
+    "2699": {
+      "deal_id": 2699,
+      "person_id": 2470,
+      "title": "סאסו ברוש",
+      "project_number": 1123,
+      "address": "Rosh HaNikra, Israel",
+      "lat": 33.086648,
+      "lon": 35.118513,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מטה אשר",
+      "geocode_display": "ראש הנקרה, מועצה אזורית מטה אשר, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2700": {
+      "deal_id": 2700,
+      "person_id": 2471,
+      "title": "ציון עומר",
+      "project_number": 1124,
+      "address": "Tamar St 275, Me'ona, Israel",
+      "lat": 33.01607,
+      "lon": 35.256002,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "מעונה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2701": {
+      "deal_id": 2701,
+      "person_id": 2472,
+      "title": "איתן רבינוביץ",
+      "project_number": 1125,
+      "address": "26, Beit Rimon, Israel",
+      "lat": 32.780598,
+      "lon": 35.32612,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גליל תחתון",
+      "geocode_display": "בית רימון, מועצה אזורית גליל תחתון, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2702": {
+      "deal_id": 2702,
+      "person_id": 2473,
+      "title": "רותי אברמוביץ",
+      "project_number": 1126,
+      "address": "Eshkolot St 38, Srigim-Li On, Israel",
+      "lat": 31.677385,
+      "lon": 34.932296,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מטה יהודה",
+      "geocode_display": "שריגים (לי־און), מועצה אזורית מטה יהודה, נפת ירושלים, מחוז ירושלים, ישראל",
       "snapped_to_building": true
     }
   }
