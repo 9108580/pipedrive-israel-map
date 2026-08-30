@@ -20088,6 +20088,132 @@
         "place": "שריגים (לי־און)",
         "deal_id": 2702
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.040646,
+          32.523476
+        ]
+      },
+      "properties": {
+        "name": "Project 1127",
+        "project_number": 1127,
+        "address_type": "city",
+        "person_id": 2474,
+        "place": "כפר קרע",
+        "deal_id": 2703
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.039334,
+          32.52256
+        ]
+      },
+      "properties": {
+        "name": "Project 1128",
+        "project_number": 1128,
+        "address_type": "city",
+        "person_id": 2475,
+        "place": "כפר קרע",
+        "deal_id": 2704
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.036822,
+          32.522263
+        ]
+      },
+      "properties": {
+        "name": "Project 1129",
+        "project_number": 1129,
+        "address_type": "city",
+        "person_id": 2476,
+        "place": "כפר קרע",
+        "deal_id": 2705
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.35196,
+          32.93227
+        ]
+      },
+      "properties": {
+        "name": "Project 1130",
+        "project_number": 1130,
+        "address_type": "city",
+        "person_id": 2477,
+        "place": "סאג'ור",
+        "deal_id": 2706
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.25585,
+          33.014258
+        ]
+      },
+      "properties": {
+        "name": "Project 1131",
+        "project_number": 1131,
+        "address_type": "street",
+        "person_id": 2478,
+        "place": "מעונה",
+        "deal_id": 2707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.076209,
+          32.924314
+        ]
+      },
+      "properties": {
+        "name": "Project 1132",
+        "project_number": 1132,
+        "address_type": "street",
+        "person_id": 2479,
+        "place": "עכו",
+        "deal_id": 2708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.095789,
+          33.008305
+        ]
+      },
+      "properties": {
+        "name": "Project 1133",
+        "project_number": 1133,
+        "address_type": "street",
+        "person_id": 2480,
+        "place": "נהריה",
+        "deal_id": 2709
+      }
     }
   ]
 }

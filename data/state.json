@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1127,
+  "next_project_number": 1134,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25869,6 +25869,97 @@
       "address_type": "street",
       "city_key": "מועצה אזורית מטה יהודה",
       "geocode_display": "שריגים (לי־און), מועצה אזורית מטה יהודה, נפת ירושלים, מחוז ירושלים, ישראל",
+      "snapped_to_building": true
+    },
+    "2703": {
+      "deal_id": 2703,
+      "person_id": 2474,
+      "title": "כנאענה מוראד",
+      "project_number": 1127,
+      "address": "Kafr Qara, Israel",
+      "lat": 32.523476,
+      "lon": 35.040646,
+      "address_type": "city",
+      "city_key": "כפר קרע",
+      "geocode_display": "כפר קרע, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2704": {
+      "deal_id": 2704,
+      "person_id": 2475,
+      "title": "כנאענה מוראד 2",
+      "project_number": 1128,
+      "address": "Kafr Qara, Israel",
+      "lat": 32.52256,
+      "lon": 35.039334,
+      "address_type": "city",
+      "city_key": "כפר קרע",
+      "geocode_display": "כפר קרע, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2705": {
+      "deal_id": 2705,
+      "person_id": 2476,
+      "title": "רשאד כנעאני (רשאד תייסיר כנעאני)",
+      "project_number": 1129,
+      "address": "Kafr Qara, Israel",
+      "lat": 32.522263,
+      "lon": 35.036822,
+      "address_type": "city",
+      "city_key": "כפר קרע",
+      "geocode_display": "כפר קרע, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2706": {
+      "deal_id": 2706,
+      "person_id": 2477,
+      "title": "גאנם באסל אחמד",
+      "project_number": 1130,
+      "address": "Sajur, Israel",
+      "lat": 32.93227,
+      "lon": 35.35196,
+      "address_type": "city",
+      "city_key": "ساجور",
+      "geocode_display": "ساجور, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2707": {
+      "deal_id": 2707,
+      "person_id": 2478,
+      "title": "הדס בירן ייטב",
+      "project_number": 1131,
+      "address": "HaGefen St, Me'ona, Israel",
+      "lat": 33.014258,
+      "lon": 35.25585,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מעלה יוסף",
+      "geocode_display": "מעונה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2708": {
+      "deal_id": 2708,
+      "person_id": 2479,
+      "title": "לימור אוחנה",
+      "project_number": 1132,
+      "address": "Kdoshei Kahir St 4, Acre, Israel",
+      "lat": 32.924314,
+      "lon": 35.076209,
+      "address_type": "street",
+      "city_key": "עכו",
+      "geocode_display": "עכו, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2709": {
+      "deal_id": 2709,
+      "person_id": 2480,
+      "title": "מריו וליליאן נאופל",
+      "project_number": 1133,
+      "address": "Lotus St, Nahariyya, Israel",
+      "lat": 33.008305,
+      "lon": 35.095789,
+      "address_type": "street",
+      "city_key": "נהריה",
+      "geocode_display": "נהריה, נפת עכו, מחוז הצפון, 2221201, ישראל",
       "snapped_to_building": true
     }
   }
