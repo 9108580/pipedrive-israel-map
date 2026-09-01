@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1134,
+  "next_project_number": 1135,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25960,6 +25960,19 @@
       "address_type": "street",
       "city_key": "נהריה",
       "geocode_display": "נהריה, נפת עכו, מחוז הצפון, 2221201, ישראל",
+      "snapped_to_building": true
+    },
+    "2710": {
+      "deal_id": 2710,
+      "person_id": 2481,
+      "title": "איברהים טאהא",
+      "project_number": 1134,
+      "address": "Kafr Manda, Israel",
+      "lat": 32.81246,
+      "lon": 35.27167,
+      "address_type": "city",
+      "city_key": "كفر مندا",
+      "geocode_display": "كفر مندا, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

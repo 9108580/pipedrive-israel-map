@@ -20214,6 +20214,24 @@
         "place": "נהריה",
         "deal_id": 2709
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.27167,
+          32.81246
+        ]
+      },
+      "properties": {
+        "name": "Project 1134",
+        "project_number": 1134,
+        "address_type": "city",
+        "person_id": 2481,
+        "place": "Kafr Manda",
+        "deal_id": 2710
+      }
     }
   ]
 }
