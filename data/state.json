@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1135,
+  "next_project_number": 1136,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25973,6 +25973,19 @@
       "address_type": "city",
       "city_key": "كفر مندا",
       "geocode_display": "كفر مندا, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2711": {
+      "deal_id": 2711,
+      "person_id": 2482,
+      "title": "נרי שטרסמן",
+      "project_number": 1135,
+      "address": "Ma'ale ha-Tsofim St 7, Ramat Gan, Israel",
+      "lat": 32.068509,
+      "lon": 34.820071,
+      "address_type": "street",
+      "city_key": "רמת גן",
+      "geocode_display": "רמת גן, נפת תל אביב, מחוז תל אביב, ישראל",
       "snapped_to_building": true
     }
   }

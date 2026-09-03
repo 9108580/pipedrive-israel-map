@@ -20232,6 +20232,24 @@
         "place": "Kafr Manda",
         "deal_id": 2710
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.820071,
+          32.068509
+        ]
+      },
+      "properties": {
+        "name": "Project 1135",
+        "project_number": 1135,
+        "address_type": "street",
+        "person_id": 2482,
+        "place": "רמת גן",
+        "deal_id": 2711
+      }
     }
   ]
 }
