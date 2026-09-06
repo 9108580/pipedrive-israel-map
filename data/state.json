@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1136,
+  "next_project_number": 1138,
   "persons": {
     "9": {
       "person_id": 9,
@@ -25986,6 +25986,32 @@
       "address_type": "street",
       "city_key": "רמת גן",
       "geocode_display": "רמת גן, נפת תל אביב, מחוז תל אביב, ישראל",
+      "snapped_to_building": true
+    },
+    "2712": {
+      "deal_id": 2712,
+      "person_id": 2483,
+      "title": "שרון ושרית כץ",
+      "project_number": 1136,
+      "address": "Sderot HaNassi Herzog 56, Ma'alot Tarshiha, Israel",
+      "lat": 33.019403,
+      "lon": 35.278705,
+      "address_type": "street",
+      "city_key": "מעלות תרשיחא",
+      "geocode_display": "מעלות תרשיחא, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2713": {
+      "deal_id": 2713,
+      "person_id": 1934,
+      "title": "TEST",
+      "project_number": 1137,
+      "address": "Kziv St 36, Ma'alot-Tarshiha, Israel",
+      "lat": 33.01916,
+      "lon": 35.279524,
+      "address_type": "street",
+      "city_key": "מעלות תרשיחא",
+      "geocode_display": "מעלות תרשיחא, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

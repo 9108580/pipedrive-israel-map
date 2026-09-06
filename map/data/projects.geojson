@@ -20250,6 +20250,42 @@
         "place": "רמת גן",
         "deal_id": 2711
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.278705,
+          33.019403
+        ]
+      },
+      "properties": {
+        "name": "Project 1136",
+        "project_number": 1136,
+        "address_type": "street",
+        "person_id": 2483,
+        "place": "מעלות תרשיחא",
+        "deal_id": 2712
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.279524,
+          33.01916
+        ]
+      },
+      "properties": {
+        "name": "Project 1137",
+        "project_number": 1137,
+        "address_type": "street",
+        "person_id": 1934,
+        "place": "מעלות תרשיחא",
+        "deal_id": 2713
+      }
     }
   ]
 }
