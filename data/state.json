@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1138,
+  "next_project_number": 1141,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26012,6 +26012,45 @@
       "address_type": "street",
       "city_key": "מעלות תרשיחא",
       "geocode_display": "מעלות תרשיחא, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2714": {
+      "deal_id": 2714,
+      "person_id": 2484,
+      "title": "סטאס שיכמן",
+      "project_number": 1138,
+      "address": "Khavatselet St 15, Matan, Israel",
+      "lat": 32.157536,
+      "lon": 34.9767,
+      "address_type": "street",
+      "city_key": "מתן",
+      "geocode_display": "מתן, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2715": {
+      "deal_id": 2715,
+      "person_id": 2485,
+      "title": "אוריאל רביבו",
+      "project_number": 1139,
+      "address": "Harimon St 59, Israel",
+      "lat": 31.754748,
+      "lon": 35.155143,
+      "address_type": "street",
+      "city_key": "מועצה אזורית מטה יהודה",
+      "geocode_display": "רימון, מועצה אזורית מטה יהודה, נפת ירושלים, מחוז ירושלים, 9574320, ישראל",
+      "snapped_to_building": true
+    },
+    "2716": {
+      "deal_id": 2716,
+      "person_id": 2486,
+      "title": "אסמעל עבד אלרחם מחמוד",
+      "project_number": 1140,
+      "address": "נחף",
+      "lat": 32.926291,
+      "lon": 35.323403,
+      "address_type": "city",
+      "city_key": "نحف",
+      "geocode_display": "نحف, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
