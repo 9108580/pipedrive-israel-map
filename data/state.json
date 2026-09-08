@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1141,
+  "next_project_number": 1142,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26051,6 +26051,19 @@
       "address_type": "city",
       "city_key": "نحف",
       "geocode_display": "نحف, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2717": {
+      "deal_id": 2717,
+      "person_id": 2487,
+      "title": "סלים גרייס",
+      "project_number": 1141,
+      "address": "Fassuta, Israel",
+      "lat": 33.067123,
+      "lon": 35.323705,
+      "address_type": "city",
+      "city_key": "فسوطة",
+      "geocode_display": "فسوطة, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

@@ -20340,6 +20340,24 @@
         "place": "נחף",
         "deal_id": 2716
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.323705,
+          33.067123
+        ]
+      },
+      "properties": {
+        "name": "Project 1141",
+        "project_number": 1141,
+        "address_type": "city",
+        "person_id": 2487,
+        "place": "Fassuta",
+        "deal_id": 2717
+      }
     }
   ]
 }
