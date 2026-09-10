@@ -20358,6 +20358,60 @@
         "place": "Fassuta",
         "deal_id": 2717
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.42258,
+          32.690556
+        ]
+      },
+      "properties": {
+        "name": "Project 1142",
+        "project_number": 1142,
+        "address_type": "street",
+        "person_id": 2488,
+        "place": "כפר תבור",
+        "deal_id": 2718
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.422485,
+          32.686515
+        ]
+      },
+      "properties": {
+        "name": "Project 1143",
+        "project_number": 1143,
+        "address_type": "street",
+        "person_id": 2489,
+        "place": "כפר תבור",
+        "deal_id": 2719
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.903388,
+          32.512634
+        ]
+      },
+      "properties": {
+        "name": "Project 1144",
+        "project_number": 1144,
+        "address_type": "street",
+        "person_id": 2490,
+        "place": "קיסריה",
+        "deal_id": 2720
+      }
     }
   ]
 }

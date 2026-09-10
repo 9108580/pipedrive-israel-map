@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1142,
+  "next_project_number": 1145,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26064,6 +26064,45 @@
       "address_type": "city",
       "city_key": "فسوطة",
       "geocode_display": "فسوطة, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2718": {
+      "deal_id": 2718,
+      "person_id": 2488,
+      "title": "יחיאל סמון",
+      "project_number": 1142,
+      "address": "Narkis St 12, Kfar Tavor, Israel",
+      "lat": 32.690556,
+      "lon": 35.42258,
+      "address_type": "street",
+      "city_key": "כפר תבור",
+      "geocode_display": "כפר תבור, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2719": {
+      "deal_id": 2719,
+      "person_id": 2489,
+      "title": "דניאל אנג'ל",
+      "project_number": 1143,
+      "address": "Narkis St 10, Kfar Tavor, Israel",
+      "lat": 32.686515,
+      "lon": 35.422485,
+      "address_type": "street",
+      "city_key": "כפר תבור",
+      "geocode_display": "כפר תבור, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2720": {
+      "deal_id": 2720,
+      "person_id": 2490,
+      "title": "אורן שלגי",
+      "project_number": 1144,
+      "address": "HaZayit St 12, Caesarea, Israel",
+      "lat": 32.512634,
+      "lon": 34.903388,
+      "address_type": "street",
+      "city_key": "מועצה אזורית חוף הכרמל",
+      "geocode_display": "קיסריה, מועצה אזורית חוף הכרמל, נפת חדרה, מחוז חיפה, ישראל",
       "snapped_to_building": true
     }
   }
