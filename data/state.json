@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1145,
+  "next_project_number": 1146,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26103,6 +26103,19 @@
       "address_type": "street",
       "city_key": "מועצה אזורית חוף הכרמל",
       "geocode_display": "קיסריה, מועצה אזורית חוף הכרמל, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2721": {
+      "deal_id": 2721,
+      "person_id": 2491,
+      "title": "גומאריה בע\"מ",
+      "project_number": 1145,
+      "address": "HaMasger St 7, Hod Hasharon, Israel",
+      "lat": 32.151042,
+      "lon": 34.888928,
+      "address_type": "street",
+      "city_key": "הוד השרון",
+      "geocode_display": "הוד השרון, נפת פתח תקווה, מחוז המרכז, ישראל",
       "snapped_to_building": true
     }
   }

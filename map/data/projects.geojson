@@ -20412,6 +20412,24 @@
         "place": "קיסריה",
         "deal_id": 2720
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.888928,
+          32.151042
+        ]
+      },
+      "properties": {
+        "name": "Project 1145",
+        "project_number": 1145,
+        "address_type": "street",
+        "person_id": 2491,
+        "place": "הוד השרון",
+        "deal_id": 2721
+      }
     }
   ]
 }
