@@ -20430,6 +20430,24 @@
         "place": "הוד השרון",
         "deal_id": 2721
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.539033,
+          32.976466
+        ]
+      },
+      "properties": {
+        "name": "Project 1146",
+        "project_number": 1146,
+        "address_type": "street",
+        "person_id": 2492,
+        "place": "חצור הגלילית",
+        "deal_id": 2722
+      }
     }
   ]
 }

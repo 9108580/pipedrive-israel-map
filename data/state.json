@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1146,
+  "next_project_number": 1147,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26116,6 +26116,19 @@
       "address_type": "street",
       "city_key": "הוד השרון",
       "geocode_display": "הוד השרון, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2722": {
+      "deal_id": 2722,
+      "person_id": 2492,
+      "title": "משה קלמנטובסקי",
+      "project_number": 1146,
+      "address": "HaFikus St 2, Hatzor HaGlilit, Israel",
+      "lat": 32.976466,
+      "lon": 35.539033,
+      "address_type": "street",
+      "city_key": "חצור הגלילית",
+      "geocode_display": "חצור הגלילית, נפת צפת, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
