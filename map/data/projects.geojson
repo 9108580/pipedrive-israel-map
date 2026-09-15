@@ -20448,6 +20448,24 @@
         "place": "חצור הגלילית",
         "deal_id": 2722
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.326807,
+          32.781423
+        ]
+      },
+      "properties": {
+        "name": "Project 1147",
+        "project_number": 1147,
+        "address_type": "city",
+        "person_id": 2493,
+        "place": "בית רימון",
+        "deal_id": 2723
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1147,
+  "next_project_number": 1148,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26129,6 +26129,19 @@
       "address_type": "street",
       "city_key": "חצור הגלילית",
       "geocode_display": "חצור הגלילית, נפת צפת, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2723": {
+      "deal_id": 2723,
+      "person_id": 2493,
+      "title": "שי ויצמן",
+      "project_number": 1147,
+      "address": "Beit Rimon, Israel",
+      "lat": 32.781423,
+      "lon": 35.326807,
+      "address_type": "city",
+      "city_key": "מועצה אזורית גליל תחתון",
+      "geocode_display": "בית רימון, מועצה אזורית גליל תחתון, נפת יזרעאל, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }
