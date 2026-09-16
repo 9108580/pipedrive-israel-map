@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1148,
+  "next_project_number": 1150,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26142,6 +26142,32 @@
       "address_type": "city",
       "city_key": "מועצה אזורית גליל תחתון",
       "geocode_display": "בית רימון, מועצה אזורית גליל תחתון, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2724": {
+      "deal_id": 2724,
+      "person_id": 2494,
+      "title": "מאיר זילברשטיין",
+      "project_number": 1148,
+      "address": "Eshel St 7, Pardes Hanna-Karkur, Israel",
+      "lat": 32.472743,
+      "lon": 34.975862,
+      "address_type": "street",
+      "city_key": "פרדס חנה-כרכור",
+      "geocode_display": "פרדס חנה-כרכור, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2725": {
+      "deal_id": 2725,
+      "person_id": 2495,
+      "title": "יצחק זגורי",
+      "project_number": 1149,
+      "address": "HaRav Uziel St 141, Shlomi, Israel",
+      "lat": 33.071721,
+      "lon": 35.141751,
+      "address_type": "street",
+      "city_key": "שלומי",
+      "geocode_display": "שלומי, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

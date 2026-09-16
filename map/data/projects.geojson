@@ -20466,6 +20466,42 @@
         "place": "בית רימון",
         "deal_id": 2723
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.975862,
+          32.472743
+        ]
+      },
+      "properties": {
+        "name": "Project 1148",
+        "project_number": 1148,
+        "address_type": "street",
+        "person_id": 2494,
+        "place": "פרדס חנה-כרכור",
+        "deal_id": 2724
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.141751,
+          33.071721
+        ]
+      },
+      "properties": {
+        "name": "Project 1149",
+        "project_number": 1149,
+        "address_type": "street",
+        "person_id": 2495,
+        "place": "שלומי",
+        "deal_id": 2725
+      }
     }
   ]
 }
