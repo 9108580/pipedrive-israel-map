@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1150,
+  "next_project_number": 1152,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26168,6 +26168,32 @@
       "address_type": "street",
       "city_key": "שלומי",
       "geocode_display": "שלומי, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2726": {
+      "deal_id": 2726,
+      "person_id": 2496,
+      "title": "ואהב חרב ובניו",
+      "project_number": 1150,
+      "address": "Beit Jann, Israel",
+      "lat": 32.943248,
+      "lon": 35.371286,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2727": {
+      "deal_id": 2727,
+      "person_id": 2497,
+      "title": "שמואל בן מיכאל",
+      "project_number": 1151,
+      "address": "דרך הגורן, Sde Ya'akov, Israel",
+      "lat": 32.694265,
+      "lon": 35.140344,
+      "address_type": "street",
+      "city_key": "מועצה אזורית עמק יזרעאל",
+      "geocode_display": "שדה יעקב, מועצה אזורית עמק יזרעאל, נפת יזרעאל, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

@@ -20502,6 +20502,42 @@
         "place": "שלומי",
         "deal_id": 2725
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.371286,
+          32.943248
+        ]
+      },
+      "properties": {
+        "name": "Project 1150",
+        "project_number": 1150,
+        "address_type": "city",
+        "person_id": 2496,
+        "place": "Beit Jann",
+        "deal_id": 2726
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.140344,
+          32.694265
+        ]
+      },
+      "properties": {
+        "name": "Project 1151",
+        "project_number": 1151,
+        "address_type": "street",
+        "person_id": 2497,
+        "place": "שדה יעקב",
+        "deal_id": 2727
+      }
     }
   ]
 }
