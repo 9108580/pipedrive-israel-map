@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1152,
+  "next_project_number": 1155,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26194,6 +26194,45 @@
       "address_type": "street",
       "city_key": "מועצה אזורית עמק יזרעאל",
       "geocode_display": "שדה יעקב, מועצה אזורית עמק יזרעאל, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2728": {
+      "deal_id": 2728,
+      "person_id": 2498,
+      "title": "משית סגל",
+      "project_number": 1152,
+      "address": "Matityahu Dankner St 8, Netanya, Israel",
+      "lat": 32.329709,
+      "lon": 34.855655,
+      "address_type": "street",
+      "city_key": "נתניה",
+      "geocode_display": "נתניה, נפת השרון, מחוז המרכז, 42***, ישראל",
+      "snapped_to_building": true
+    },
+    "2729": {
+      "deal_id": 2729,
+      "person_id": 2499,
+      "title": "רכאב סעיד",
+      "project_number": 1153,
+      "address": "Isfiya, Israel",
+      "lat": 32.713313,
+      "lon": 35.067509,
+      "address_type": "city",
+      "city_key": "عسفيا",
+      "geocode_display": "عسفيا, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2730": {
+      "deal_id": 2730,
+      "person_id": 2500,
+      "title": "פבל נגורני",
+      "project_number": 1154,
+      "address": "Atsmon St 41, Hadera, Israel",
+      "lat": 32.440413,
+      "lon": 34.916439,
+      "address_type": "street",
+      "city_key": "חדרה",
+      "geocode_display": "חדרה, נפת חדרה, מחוז חיפה, ישראל",
       "snapped_to_building": true
     }
   }

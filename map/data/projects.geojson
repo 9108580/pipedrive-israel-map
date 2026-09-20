@@ -20538,6 +20538,60 @@
         "place": "שדה יעקב",
         "deal_id": 2727
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.855655,
+          32.329709
+        ]
+      },
+      "properties": {
+        "name": "Project 1152",
+        "project_number": 1152,
+        "address_type": "street",
+        "person_id": 2498,
+        "place": "נתניה",
+        "deal_id": 2728
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.067509,
+          32.713313
+        ]
+      },
+      "properties": {
+        "name": "Project 1153",
+        "project_number": 1153,
+        "address_type": "city",
+        "person_id": 2499,
+        "place": "Isfiya",
+        "deal_id": 2729
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916439,
+          32.440413
+        ]
+      },
+      "properties": {
+        "name": "Project 1154",
+        "project_number": 1154,
+        "address_type": "street",
+        "person_id": 2500,
+        "place": "חדרה",
+        "deal_id": 2730
+      }
     }
   ]
 }
