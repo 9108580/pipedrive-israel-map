@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1155,
+  "next_project_number": 1156,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26233,6 +26233,19 @@
       "address_type": "street",
       "city_key": "חדרה",
       "geocode_display": "חדרה, נפת חדרה, מחוז חיפה, ישראל",
+      "snapped_to_building": true
+    },
+    "2731": {
+      "deal_id": 2731,
+      "person_id": 2501,
+      "title": "איאד מוראד",
+      "project_number": 1155,
+      "address": "Hurfeish, Israel",
+      "lat": 33.011652,
+      "lon": 35.340609,
+      "address_type": "city",
+      "city_key": "حرفيش",
+      "geocode_display": "حرفيش, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

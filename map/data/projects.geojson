@@ -20592,6 +20592,24 @@
         "place": "חדרה",
         "deal_id": 2730
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.340609,
+          33.011652
+        ]
+      },
+      "properties": {
+        "name": "Project 1155",
+        "project_number": 1155,
+        "address_type": "city",
+        "person_id": 2501,
+        "place": "Hurfeish",
+        "deal_id": 2731
+      }
     }
   ]
 }
