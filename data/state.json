@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1156,
+  "next_project_number": 1158,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26246,6 +26246,32 @@
       "address_type": "city",
       "city_key": "حرفيش",
       "geocode_display": "حرفيش, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2732": {
+      "deal_id": 2732,
+      "person_id": 2502,
+      "title": "אבי ואתי גוטמן",
+      "project_number": 1156,
+      "address": "Hahermon St 10, Hod Hasharon, Israel",
+      "lat": 32.150882,
+      "lon": 34.886157,
+      "address_type": "street",
+      "city_key": "הוד השרון",
+      "geocode_display": "הוד השרון, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true
+    },
+    "2733": {
+      "deal_id": 2733,
+      "person_id": 2503,
+      "title": "מג'ד סויד",
+      "project_number": 1157,
+      "address": "Peki'in, Israel",
+      "lat": 32.958032,
+      "lon": 35.328528,
+      "address_type": "city",
+      "city_key": "البقيعة",
+      "geocode_display": "البقيعة, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true
     }
   }

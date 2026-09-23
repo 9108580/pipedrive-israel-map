@@ -20610,6 +20610,42 @@
         "place": "Hurfeish",
         "deal_id": 2731
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.886157,
+          32.150882
+        ]
+      },
+      "properties": {
+        "name": "Project 1156",
+        "project_number": 1156,
+        "address_type": "street",
+        "person_id": 2502,
+        "place": "הוד השרון",
+        "deal_id": 2732
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.328528,
+          32.958032
+        ]
+      },
+      "properties": {
+        "name": "Project 1157",
+        "project_number": 1157,
+        "address_type": "city",
+        "person_id": 2503,
+        "place": "Peki'in",
+        "deal_id": 2733
+      }
     }
   ]
 }
