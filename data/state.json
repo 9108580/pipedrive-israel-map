@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1158,
+  "next_project_number": 1159,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26272,6 +26272,19 @@
       "address_type": "city",
       "city_key": "البقيعة",
       "geocode_display": "البقيعة, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2734": {
+      "deal_id": 2734,
+      "person_id": 2504,
+      "title": "אלין שקד",
+      "project_number": 1158,
+      "address": "התפוח 59, Tel Mond, Israel",
+      "lat": 32.25361,
+      "lon": 34.914172,
+      "address_type": "street",
+      "city_key": "תל מונד",
+      "geocode_display": "תל מונד, נפת השרון, מחוז המרכז, 4060056, ישראל",
       "snapped_to_building": true
     }
   }

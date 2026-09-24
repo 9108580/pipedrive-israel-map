@@ -20646,6 +20646,24 @@
         "place": "Peki'in",
         "deal_id": 2733
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914172,
+          32.25361
+        ]
+      },
+      "properties": {
+        "name": "Project 1158",
+        "project_number": 1158,
+        "address_type": "street",
+        "person_id": 2504,
+        "place": "תל מונד",
+        "deal_id": 2734
+      }
     }
   ]
 }
