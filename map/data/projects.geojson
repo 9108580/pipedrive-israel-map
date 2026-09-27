@@ -20664,6 +20664,42 @@
         "place": "תל מונד",
         "deal_id": 2734
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.371286,
+          32.943248
+        ]
+      },
+      "properties": {
+        "name": "Project 1159",
+        "project_number": 1159,
+        "address_type": "city",
+        "person_id": 2505,
+        "place": "Beit Jann",
+        "deal_id": 2735
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916823,
+          32.255526
+        ]
+      },
+      "properties": {
+        "name": "Project 1160",
+        "project_number": 1160,
+        "address_type": "street",
+        "person_id": 2506,
+        "place": "תל מונד",
+        "deal_id": 2736
+      }
     }
   ]
 }

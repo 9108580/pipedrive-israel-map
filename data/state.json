@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1159,
+  "next_project_number": 1161,
   "persons": {
     "9": {
       "person_id": 9,
@@ -26282,6 +26282,32 @@
       "address": "התפוח 59, Tel Mond, Israel",
       "lat": 32.25361,
       "lon": 34.914172,
+      "address_type": "street",
+      "city_key": "תל מונד",
+      "geocode_display": "תל מונד, נפת השרון, מחוז המרכז, 4060056, ישראל",
+      "snapped_to_building": true
+    },
+    "2735": {
+      "deal_id": 2735,
+      "person_id": 2505,
+      "title": "רימי חלבי",
+      "project_number": 1159,
+      "address": "Beit Jann, Israel",
+      "lat": 32.943248,
+      "lon": 35.371286,
+      "address_type": "city",
+      "city_key": "بيت جن",
+      "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true
+    },
+    "2736": {
+      "deal_id": 2736,
+      "person_id": 2506,
+      "title": "גיא שני",
+      "project_number": 1160,
+      "address": "התפוח 23, Tel Mond, Israel",
+      "lat": 32.255526,
+      "lon": 34.916823,
       "address_type": "street",
       "city_key": "תל מונד",
       "geocode_display": "תל מונד, נפת השרון, מחוז המרכז, 4060056, ישראל",
