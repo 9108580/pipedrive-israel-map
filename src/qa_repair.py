@@ -17,6 +17,8 @@ from .geocode import (
     normalize_pipedrive_address,
 )
 from .scatter import ResidentialScatter
+from .roof_catalog import load_catalog, pick_roof, resolve_place_key
+from .scatter import BuildingLookupError, NoSuitableBuilding
 from .state_store import load_state, map_records, place_label, save_state, write_geojson
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")
@@ -134,17 +136,34 @@ def qa_repair(*, limit: int | None = None) -> dict[str, int]:
             continue
 
         city_only = is_city_only_address(addr)
-        atype = "city" if city_only else "street"
+        atype = "city" if city_only or geo.is_city_level else "street"
+        raw_city = (geo.city or "").strip().casefold()
+        fallback = (geo.display_name or "").split(",")[0].strip() if "מועצה" in raw_city else raw_city
+        place_key = resolve_place_key(addr, fallback, geo.display_name)
         occupied = [
             (float(p["lat"]), float(p["lon"]))
             for q, p in persons.items()
             if q != pid and p.get("lat") is not None
         ]
-        if atype == "city" or geo.is_city_level:
-            lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
-            atype = "city"
-        else:
-            lat, lon = scatter.snap_to_building(geo.lat, geo.lon, occupied, seed=pid)
+        try:
+            if atype == "city":
+                city_key = place_key
+                if city_key in load_catalog().get("places", {}):
+                    lat, lon = pick_roof(city_key, occupied, seed=pid)
+                    location_source = load_catalog()["places"][city_key].get("source", "microsoft_footprint")
+                else:
+                    lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=pid)
+                    location_source = "osm_building"
+            else:
+                lat, lon = scatter.snap_to_building(geo.lat, geo.lon, occupied, seed=pid)
+                location_source = "osm_building"
+        except BuildingLookupError:
+            raise
+        except NoSuitableBuilding as exc:
+            log.warning("QA roof unavailable for %s: %s", pid, exc)
+            rec.update({"lat": None, "lon": None, "snapped_to_building": False, "error": "roof_not_verified"})
+            stats["failed"] += 1
+            continue
 
         old = {
             "lat": rec.get("lat"),
@@ -158,9 +177,11 @@ def qa_repair(*, limit: int | None = None) -> dict[str, int]:
                 "lon": lon,
                 "address": addr,
                 "address_type": atype,
-                "city_key": (geo.city or "").strip().lower() or rec.get("city_key"),
+                "city_key": place_key or rec.get("city_key"),
                 "geocode_display": geo.display_name,
                 "snapped_to_building": True,
+                "location_source": location_source,
+                "location_precision": "settlement_approximate" if atype == "city" else "street_geocode",
                 "error": None,
             }
         )

@@ -17,6 +17,8 @@ from .geocode import (
 )
 from .pipedrive_client import PipedriveClient
 from .scatter import ResidentialScatter
+from .roof_catalog import load_catalog, pick_roof, resolve_place_key
+from .scatter import BuildingLookupError, NoSuitableBuilding
 from .state_store import load_state, place_label, save_state, write_geojson
 
 logging.basicConfig(
@@ -70,21 +72,32 @@ def _apply_geo(
     person_id: int | None = None,
     title: str = "",
 ) -> None:
-    city_key = (geo.city or address.split(",")[-1]).strip().lower()
+    raw_city = (geo.city or address.split(",")[-1]).strip().casefold()
+    fallback = (geo.display_name or "").split(",")[0].strip() if "מועצה" in raw_city else raw_city
+    city_key = resolve_place_key(address, fallback, geo.display_name)
     occupied = _occupied(records, city_key, key)
-    if geo.is_city_level:
-        lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=key)
+    approximate = geo.is_city_level or is_city_only_address(address)
+    if approximate:
+        if city_key.casefold() in load_catalog().get("places", {}):
+            lat, lon = pick_roof(city_key, occupied, seed=key)
+            location_source = load_catalog()["places"][city_key.casefold()].get("source", "microsoft_footprint")
+        else:
+            lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=key)
+            location_source = "osm_building"
     else:
         lat, lon = scatter.snap_to_building(geo.lat, geo.lon, occupied, seed=key)
+        location_source = "osm_building"
     rec: dict[str, Any] = {
         "project_number": project_number,
         "address": address,
         "lat": lat,
         "lon": lon,
-        "address_type": "city" if geo.is_city_level else "street",
+        "address_type": "city" if approximate else "street",
         "city_key": city_key,
         "geocode_display": geo.display_name,
         "snapped_to_building": True,
+        "location_source": location_source,
+        "location_precision": "settlement_approximate" if approximate else "street_geocode",
     }
     if deal_id is not None:
         rec["deal_id"] = deal_id
@@ -250,17 +263,19 @@ def audit_and_repair(
             "lon": (existing or {}).get("lon"),
             "display": ((existing or {}).get("geocode_display") or "")[:70],
         }
-        _apply_geo(
-            records,
-            key,
-            address,
-            project_number,
-            geo,
-            scatter,
-            deal_id=item["deal_id"],
-            person_id=item["person_id"],
-            title=item["title"],
-        )
+        try:
+            _apply_geo(
+                records, key, address, project_number, geo, scatter,
+                deal_id=item["deal_id"], person_id=item["person_id"], title=item["title"],
+            )
+        except BuildingLookupError:
+            raise
+        except NoSuitableBuilding as exc:
+            log.warning("No roof for %s: %s", key, exc)
+            if existing:
+                existing.update({"lat": None, "lon": None, "snapped_to_building": False, "error": "roof_not_verified"})
+            stats["failed"] += 1
+            continue
         if project_number >= next_num:
             next_num = project_number + 1
         stats["added_or_fixed"] += 1

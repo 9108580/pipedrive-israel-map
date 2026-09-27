@@ -349,7 +349,8 @@
             const title = place
               ? `<strong>פרויקט סולארי</strong><br/>${escapeHtml(place)}`
               : "<strong>פרויקט סולארי</strong>";
-            layer.bindPopup(title);
+            const approximate = feature.properties && feature.properties.approximate;
+            layer.bindPopup(title + (approximate ? "<br/><small>מיקום משוער בתוך היישוב</small>" : ""));
           },
         }).addTo(map);
 

@@ -213,6 +213,7 @@ def state_to_geojson(state: dict[str, Any]) -> dict[str, Any]:
             "address_type": rec.get("address_type", "unknown"),
             "person_id": rec.get("person_id"),
             "place": place,
+            "approximate": rec.get("location_precision") == "settlement_approximate" or rec.get("address_type") == "city",
         }
         if rec.get("deal_id") is not None:
             props["deal_id"] = rec.get("deal_id")

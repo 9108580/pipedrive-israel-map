@@ -20,6 +20,9 @@ REGION_BBOX = (29.3, 34.1, 33.5, 35.95)  # south, west, north, east
 
 # English / noisy Pipedrive spellings → Hebrew (or better Latin) settlement names
 _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
+    "adi": "עדי",
+    "caesarea": "קיסריה",
+    "kamon": "כמון",
     "netiv hagdud": "נתיב הגדוד",
     "fatsa'el": "פצאל",
     "fatsael": "פצאל",
@@ -45,7 +48,7 @@ _SETTLEMENT_ALIASES_RAW: dict[str, str] = {
     "beit aryeh-ofarim": "בית אריה עופרים",
     "beit aryeh ofarim": "בית אריה עופרים",
     "ateret": "עטרת",
-    "kfar rosh hanikra": "כפר ראש הנקרה",
+    "kfar rosh hanikra": "ראש הנקרה",
     "rosh hanikra": "ראש הנקרה",
     "tsurit": "צורית",
     "shalomi": "שלומי",

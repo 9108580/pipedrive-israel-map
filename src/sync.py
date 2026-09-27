@@ -18,7 +18,8 @@ from .geocode import (
     is_city_only_address,
 )
 from .pipedrive_client import PipedriveClient
-from .scatter import ResidentialScatter, offset_near
+from .roof_catalog import load_catalog, pick_roof, resolve_place_key
+from .scatter import NoSuitableBuilding, ResidentialScatter
 from .state_store import load_state, save_state, write_geojson
 
 logging.basicConfig(
@@ -181,7 +182,7 @@ def migrate_persons_to_deals(
 ) -> int:
     """Expand legacy person pins into one pin per deal. No new geocoding.
 
-    Sibling deals at the same address get a small offset so markers don't stack.
+    Sibling deals at the same address share the same roof coordinate.
     Returns number of deal records created.
     """
     if state.get("deals"):
@@ -215,8 +216,6 @@ def migrate_persons_to_deals(
         address = deal["address"]
         city_key = person_rec.get("city_key") or ""
         project_number = int(person_rec.get("project_number") or 0)
-        occupied = _occupied_near_city(deals_map, city_key)
-
         if pid not in person_primary:
             lat = float(person_rec["lat"])
             lon = float(person_rec["lon"])
@@ -226,12 +225,7 @@ def migrate_persons_to_deals(
             person_primary[pid] = did
         else:
             base = deals_map[person_primary[pid]]
-            lat, lon = offset_near(
-                float(base["lat"]),
-                float(base["lon"]),
-                occupied,
-                seed=f"deal-{did}",
-            )
+            lat, lon = float(base["lat"]), float(base["lon"])
             project_number = next_num
             next_num += 1
 
@@ -246,7 +240,9 @@ def migrate_persons_to_deals(
             "address_type": person_rec.get("address_type", "unknown"),
             "city_key": city_key,
             "geocode_display": person_rec.get("geocode_display"),
-            "snapped_to_building": person_rec.get("snapped_to_building", True),
+            "snapped_to_building": person_rec.get("snapped_to_building", False),
+            "location_precision": person_rec.get("location_precision"),
+            "location_source": person_rec.get("location_source"),
         }
         created += 1
 
@@ -319,13 +315,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
 
             if anchor and (anchor.get("address") or "").strip() == address.strip():
                 city_key = anchor.get("city_key") or ""
-                occupied = _occupied_near_city(deals_map, city_key)
-                lat, lon = offset_near(
-                    float(anchor["lat"]),
-                    float(anchor["lon"]),
-                    occupied,
-                    seed=f"deal-{did}",
-                )
+                lat, lon = float(anchor["lat"]), float(anchor["lon"])
                 deals_map[did] = {
                     "deal_id": int(did),
                     "person_id": pid,
@@ -337,7 +327,9 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                     "address_type": anchor.get("address_type", "unknown"),
                     "city_key": city_key,
                     "geocode_display": anchor.get("geocode_display"),
-                    "snapped_to_building": True,
+                    "snapped_to_building": bool(anchor.get("snapped_to_building")),
+                    "location_precision": anchor.get("location_precision"),
+                    "location_source": anchor.get("location_source"),
                     "reused_person_geocode": True,
                 }
                 if project_number >= next_num:
@@ -379,18 +371,35 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 continue
 
             city_key = _record_city_key(geo, address)
-            if not is_city_only_address(address):
-                address_type = "street"
-            else:
-                address_type = "city" if geo.is_city_level else "street"
+            first_label = (geo.display_name or "").split(",")[0].strip()
+            fallback = first_label if "מועצה" in city_key or city_key.lower() in _BAD_CITY_KEY else city_key
+            resolved_place = resolve_place_key(address, fallback, geo.display_name)
+            if resolved_place in load_catalog().get("places", {}):
+                city_key = resolved_place
+            address_type = "city" if is_city_only_address(address) or geo.is_city_level else "street"
             occupied = _occupied_near_city(deals_map, city_key)
 
-            if geo.is_city_level:
-                lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=did)
-            else:
-                lat, lon = scatter.snap_to_building(
-                    geo.lat, geo.lon, occupied, seed=did
-                )
+            try:
+                if address_type == "city":
+                    if city_key.strip().casefold() in load_catalog().get("places", {}):
+                        lat, lon = pick_roof(city_key, occupied, seed=did)
+                        location_source = load_catalog()["places"][city_key.strip().casefold()].get("source", "microsoft_footprint")
+                    else:
+                        lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=did)
+                        location_source = "osm_building"
+                else:
+                    lat, lon = scatter.snap_to_building(
+                        geo.lat, geo.lon, occupied, seed=did
+                    )
+                    location_source = "osm_building"
+                roof_verified = True
+                error = None
+            except NoSuitableBuilding as exc:
+                log.warning("Unverified roof for deal %s: %s", did, exc)
+                lat = lon = None
+                roof_verified = False
+                error = "roof_not_verified"
+                failed += 1
 
             deals_map[did] = {
                 "deal_id": int(did),
@@ -403,11 +412,15 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 "address_type": address_type,
                 "city_key": city_key,
                 "geocode_display": geo.display_name,
-                "snapped_to_building": True,
+                "snapped_to_building": roof_verified,
+                "location_precision": "settlement_approximate" if address_type == "city" else "street_geocode",
+                "location_source": location_source if roof_verified else None,
+                "error": error,
             }
             if project_number >= next_num:
                 next_num = project_number + 1
-            added += 1
+            if roof_verified:
+                added += 1
 
             if added % 5 == 0:
                 state["next_project_number"] = next_num
