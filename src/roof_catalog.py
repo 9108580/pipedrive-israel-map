@@ -16,8 +16,19 @@ from .scatter import NoSuitableBuilding
 def load_catalog() -> dict:
     path = config.DATA_DIR / "roof_candidates.json"
     if not path.exists():
-        return {"places": {}}
-    return json.loads(path.read_text(encoding="utf-8"))
+        catalog = {"places": {}}
+    else:
+        catalog = json.loads(path.read_text(encoding="utf-8"))
+    override_path = config.DATA_DIR / "roof_overrides.json"
+    if override_path.exists():
+        overrides = json.loads(override_path.read_text(encoding="utf-8"))
+        for name, override in overrides.get("places", {}).items():
+            base = catalog["places"].get(name, {})
+            roofs = list(dict.fromkeys(
+                tuple(p) for p in [*(base.get("roofs") or []), *(override.get("roofs") or [])]
+            ))
+            catalog["places"][name] = {**base, **override, "roofs": [list(p) for p in roofs]}
+    return catalog
 
 
 def _name_key(value: str) -> str:
@@ -45,7 +56,10 @@ def resolve_place_key(
         canonical = apply_alias(candidate)
         matched = by_name.get(_name_key(canonical))
         first_label = display.split(",")[0].strip()
-        if matched and (explicit or _name_key(candidate) == _name_key(first_label)):
+        # These CRM locality names are unambiguous; Nominatim has resolved
+        # them to a distant memorial, nature reserve, or road junction.
+        trusted_bare = _name_key(candidate) in {_name_key(x) for x in ("גוליס", "מרר", "כסרא")}
+        if matched and (explicit or _name_key(candidate) == _name_key(first_label) or trusted_bare):
             return matched
     return by_name.get(_name_key(fallback), fallback.strip().casefold())
 
@@ -62,3 +76,17 @@ def pick_roof(place_key: str, occupied: list[tuple[float, float]], seed: str | i
         if all(haversine_m(*point, *other) > 12 for other in occupied):
             return point
     return tuple(roofs[order[0]])
+
+
+def pick_nearest_roof(
+    place_key: str,
+    target: tuple[float, float],
+    occupied: list[tuple[float, float]],
+) -> tuple[float, float]:
+    """Use the nearest screened roof when an exact street roof is unavailable."""
+    entry = load_catalog().get("places", {}).get(place_key.strip().casefold()) or {}
+    roofs = entry.get("roofs") or []
+    if not roofs:
+        raise NoSuitableBuilding(f"No verified footprint catalog for {place_key!r}")
+    ordered = sorted((tuple(p) for p in roofs), key=lambda p: haversine_m(*p, *target))
+    return next((p for p in ordered if all(haversine_m(*p, *other) > 12 for other in occupied)), ordered[0])

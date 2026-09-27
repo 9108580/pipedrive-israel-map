@@ -272,10 +272,7 @@ def audit_and_repair(
             raise
         except NoSuitableBuilding as exc:
             log.warning("No roof for %s: %s", key, exc)
-            if existing:
-                existing.update({"lat": None, "lon": None, "snapped_to_building": False, "error": "roof_not_verified"})
-            stats["failed"] += 1
-            continue
+            raise
         if project_number >= next_num:
             next_num = project_number + 1
         stats["added_or_fixed"] += 1

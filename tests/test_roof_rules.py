@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 
 from src.geocode import haversine_m
-from src.roof_catalog import pick_roof, resolve_place_key
+from src.roof_catalog import pick_nearest_roof, pick_roof, resolve_place_key
 from src.scatter import NoSuitableBuilding, ResidentialScatter, _inside
 
 
@@ -70,6 +70,35 @@ class RoofRulesTest(unittest.TestCase):
                               "מגרש ספורט כפר ראש הנקרה", "מגרש ספורט כפר ראש הנקרה, ראש הנקרה", places),
             "ראש הנקרה",
         )
+
+    def test_known_bare_locality_beats_wrong_geocoder_landmark(self) -> None:
+        places = {"ג'וליס": {}, "מרר": {}, "כסרא": {}}
+        self.assertEqual(resolve_place_key("גוליס 136", "אנדרטת חללי קרבות גוליס", "אנדרטת חללי קרבות גוליס, הודיה", places), "ג'וליס")
+        self.assertEqual(resolve_place_key("מרר", "גבעות מרר", "גבעות מרר, ברנר", places), "מרר")
+        self.assertEqual(resolve_place_key("כסרא", "מסעף כסרא סומיע", "מסעף כסרא סומיע", places), "כסרא")
+
+    def test_street_fallback_uses_nearest_unoccupied_roof(self) -> None:
+        catalog = {"places": {"town": {"roofs": [[32.0, 35.0], [32.0005, 35.0]]}}}
+        with patch("src.roof_catalog.load_catalog", return_value=catalog):
+            self.assertEqual(pick_nearest_roof("town", (32.00001, 35.0), []), (32.0, 35.0))
+            self.assertEqual(pick_nearest_roof("town", (32.00001, 35.0), [(32.0, 35.0)]), (32.0005, 35.0))
+
+    def test_incomplete_audit_cannot_hide_or_publish_a_system(self) -> None:
+        from src.roof_audit import audit_roofs
+
+        rec = {"project_number": 1, "address": "Village", "address_type": "city", "lat": 32.0, "lon": 35.0}
+        state = {"deals": {"1": rec}}
+        with patch("src.roof_audit.load_state", return_value=state), \
+             patch("src.roof_audit.map_records", return_value=state["deals"]), \
+             patch("src.roof_audit._place_key", return_value="village"), \
+             patch("src.roof_audit.load_catalog", return_value={"places": {}}), \
+             patch("src.roof_audit.Path.mkdir"), \
+             patch("src.roof_audit.Path.write_text"), \
+             patch("src.roof_audit.save_state") as save:
+            with self.assertRaises(NoSuitableBuilding):
+                audit_roofs(apply=True)
+            save.assert_not_called()
+        self.assertEqual((rec["lat"], rec["lon"]), (32.0, 35.0))
 
 
 if __name__ == "__main__":

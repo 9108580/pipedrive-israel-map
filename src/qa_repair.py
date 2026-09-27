@@ -161,9 +161,7 @@ def qa_repair(*, limit: int | None = None) -> dict[str, int]:
             raise
         except NoSuitableBuilding as exc:
             log.warning("QA roof unavailable for %s: %s", pid, exc)
-            rec.update({"lat": None, "lon": None, "snapped_to_building": False, "error": "roof_not_verified"})
-            stats["failed"] += 1
-            continue
+            raise
 
         old = {
             "lat": rec.get("lat"),

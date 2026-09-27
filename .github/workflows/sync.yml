@@ -22,19 +22,16 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: sync-map
   cancel-in-progress: false
 
 jobs:
-  sync-and-deploy:
+  sync-and-commit:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -50,7 +47,6 @@ jobs:
 
       - name: Run sync
         id: sync
-        continue-on-error: true
         env:
           PIPEDRIVE_API_TOKEN: ${{ secrets.PIPEDRIVE_API_TOKEN }}
           PIPEDRIVE_COMPANY_DOMAIN: ${{ secrets.PIPEDRIVE_COMPANY_DOMAIN }}
@@ -74,8 +70,10 @@ jobs:
             python -m src.sync $ARGS
           fi
 
+      - name: Verify every system remains on a roof
+        run: python -m src.validate_map
+
       - name: Commit updated map data
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -88,24 +86,3 @@ jobs:
             git commit -m "chore: sync Pipedrive projects to map (added=${ADDED}, unmapped=${UNMAPPED})"
             git push
           fi
-
-      - name: Setup Pages
-        if: always()
-        uses: actions/configure-pages@v5
-
-      - name: Upload map artifact
-        if: always()
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: map
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        if: always()
-        uses: actions/deploy-pages@v4
-
-      - name: Fail job if sync failed
-        if: steps.sync.outcome == 'failure'
-        run: |
-          echo "Sync failed — check logs above. Map was still deployed if possible."
-          exit 1

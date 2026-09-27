@@ -766,6 +766,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.773952,
+          31.9714164
+        ]
+      },
+      "properties": {
+        "name": "Project 0042",
+        "project_number": 42,
+        "address_type": "street",
+        "person_id": 59,
+        "place": "ראשון לציון",
+        "approximate": true,
+        "deal_id": 56
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.2390014,
           32.9858909
         ]
@@ -3692,6 +3711,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.2915668,
+          32.8879273
+        ]
+      },
+      "properties": {
+        "name": "Project 0199",
+        "project_number": 199,
+        "address_type": "city",
+        "person_id": 1510,
+        "place": "כחול",
+        "approximate": true,
+        "deal_id": 1569
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.3746558,
           32.8891928
         ]
@@ -3913,6 +3951,25 @@
         "place": "Beit Jann",
         "approximate": true,
         "deal_id": 1579
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2917084,
+          32.8883325
+        ]
+      },
+      "properties": {
+        "name": "Project 0212",
+        "project_number": 212,
+        "address_type": "city",
+        "person_id": 1523,
+        "place": "כחול",
+        "approximate": true,
+        "deal_id": 1577
       }
     },
     {
@@ -5775,6 +5832,25 @@
         "place": "פצאל",
         "approximate": true,
         "deal_id": 1679
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1857761,
+          32.9443771
+        ]
+      },
+      "properties": {
+        "name": "Project 0311",
+        "project_number": 311,
+        "address_type": "city",
+        "person_id": 1622,
+        "place": "אנדרטת חללי קרבות גוליס",
+        "approximate": true,
+        "deal_id": 1678
       }
     },
     {
@@ -9829,6 +9905,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.0080054,
+          32.8024989
+        ]
+      },
+      "properties": {
+        "name": "Project 0525",
+        "project_number": 525,
+        "address_type": "street",
+        "person_id": 1843,
+        "place": "דרך בר יהודה",
+        "approximate": true,
+        "deal_id": 1904
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.0983907,
           32.7560301
         ]
@@ -10031,6 +10126,25 @@
         "place": "בית השיטה",
         "approximate": true,
         "deal_id": 1915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9000868,
+          32.3197753
+        ]
+      },
+      "properties": {
+        "name": "Project 0537",
+        "project_number": 537,
+        "address_type": "street",
+        "person_id": 1855,
+        "place": "הנרקיסים",
+        "approximate": true,
+        "deal_id": 1918
       }
     },
     {
@@ -10297,6 +10411,25 @@
         "place": "נריה",
         "approximate": true,
         "deal_id": 1931
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1046762,
+          31.6944992
+        ]
+      },
+      "properties": {
+        "name": "Project 0552",
+        "project_number": 552,
+        "address_type": "city",
+        "person_id": 1870,
+        "place": "הדס",
+        "approximate": true,
+        "deal_id": 1932
       }
     },
     {
@@ -11235,6 +11368,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.2773053,
+          33.0231372
+        ]
+      },
+      "properties": {
+        "name": "Project 0602",
+        "project_number": 602,
+        "address_type": "street",
+        "person_id": 1920,
+        "place": "מעלות תרשיחא",
+        "approximate": true,
+        "deal_id": 1985
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.2989576,
           32.9115029
         ]
@@ -11304,6 +11456,25 @@
         "place": "נהריה",
         "approximate": false,
         "deal_id": 1989
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4070536,
+          32.8868389
+        ]
+      },
+      "properties": {
+        "name": "Project 0607",
+        "project_number": 607,
+        "address_type": "city",
+        "person_id": 1925,
+        "place": "גבעות מרר",
+        "approximate": true,
+        "deal_id": 1987
       }
     },
     {
@@ -13071,6 +13242,25 @@
         "place": "Ibtin",
         "approximate": true,
         "deal_id": 2219
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1485576,
+          33.020631
+        ]
+      },
+      "properties": {
+        "name": "Project 0706",
+        "project_number": 706,
+        "address_type": "city",
+        "person_id": 2051,
+        "place": "כברי",
+        "approximate": true,
+        "deal_id": 2220
       }
     },
     {
@@ -17144,6 +17334,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.303543,
+          32.9646913
+        ]
+      },
+      "properties": {
+        "name": "Project 0922",
+        "project_number": 922,
+        "address_type": "city",
+        "person_id": 2339,
+        "place": "מסעף כסרא סומיע",
+        "approximate": true,
+        "deal_id": 2530
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.1595824,
           32.5524818
         ]
@@ -19348,6 +19557,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.1480217,
+          33.0223374
+        ]
+      },
+      "properties": {
+        "name": "Project 1040",
+        "project_number": 1040,
+        "address_type": "city",
+        "person_id": 2051,
+        "place": "כברי",
+        "approximate": true,
+        "deal_id": 2491
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.9432422,
           32.6880409
         ]
@@ -21146,6 +21374,44 @@
         "place": "רמת גן",
         "approximate": false,
         "deal_id": 2711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2802158,
+          33.0172403
+        ]
+      },
+      "properties": {
+        "name": "Project 1136",
+        "project_number": 1136,
+        "address_type": "street",
+        "person_id": 2483,
+        "place": "מעלות תרשיחא",
+        "approximate": true,
+        "deal_id": 2712
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2833873,
+          33.0209749
+        ]
+      },
+      "properties": {
+        "name": "Project 1137",
+        "project_number": 1137,
+        "address_type": "street",
+        "person_id": 1934,
+        "place": "מעלות תרשיחא",
+        "approximate": true,
+        "deal_id": 2713
       }
     },
     {

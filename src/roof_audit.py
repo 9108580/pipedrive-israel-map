@@ -14,7 +14,7 @@ from typing import Any
 
 from . import config
 from .geocode import haversine_m, is_city_only_address
-from .roof_catalog import load_catalog, pick_roof, resolve_place_key
+from .roof_catalog import load_catalog, pick_nearest_roof, pick_roof, resolve_place_key
 from .scatter import NoSuitableBuilding
 from .state_store import load_state, map_records, place_label, save_state, write_geojson
 
@@ -67,7 +67,9 @@ def audit_roofs(*, apply: bool = False, place: str | None = None, max_groups: in
                         new = tuple(match["roof"])
                         source = "microsoft_footprint"
                     else:
-                        raise NoSuitableBuilding("No screened roof within 150m of address")
+                        new = pick_nearest_roof(name, old, occupied)
+                        source = catalog[name].get("source", "microsoft_footprint")
+                        approximate = True
                 rec["lat"], rec["lon"] = new
                 rec["city_key"] = name
                 rec["snapped_to_building"] = True
@@ -79,10 +81,6 @@ def audit_roofs(*, apply: bool = False, place: str | None = None, max_groups: in
                 stats["moved" if moved_m > 2 else "unchanged"] += 1
                 status = "moved" if moved_m > 2 else "unchanged"
             except NoSuitableBuilding:
-                rec["lat"] = rec["lon"] = None
-                rec["snapped_to_building"] = False
-                rec["location_source"] = None
-                rec["error"] = "roof_not_verified"
                 stats["unresolved"] += 1
                 new = None
                 status = "unresolved"
@@ -97,6 +95,8 @@ def audit_roofs(*, apply: bool = False, place: str | None = None, max_groups: in
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps({"stats": stats, "changes": changes}, ensure_ascii=False, indent=2), encoding="utf-8")
     if apply:
+        if stats["unresolved"]:
+            raise NoSuitableBuilding(f"Refusing to publish an incomplete roof audit: {stats['unresolved']} unresolved")
         save_state(state)
         write_geojson(state)
     log.info("Roof audit %s: %s. Report: %s", "APPLIED" if apply else "DRY RUN", stats, report)

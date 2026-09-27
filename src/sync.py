@@ -18,7 +18,7 @@ from .geocode import (
     is_city_only_address,
 )
 from .pipedrive_client import PipedriveClient
-from .roof_catalog import load_catalog, pick_roof, resolve_place_key
+from .roof_catalog import load_catalog, pick_nearest_roof, pick_roof, resolve_place_key
 from .scatter import NoSuitableBuilding, ResidentialScatter
 from .state_store import load_state, save_state, write_geojson
 
@@ -347,28 +347,10 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 geo = geocoder.geocode(address)
             except Exception as exc:
                 log.exception("Unexpected geocode error for deal %s: %s", did, exc)
-                failed += 1
-                continue
+                raise
 
             if not geo:
-                failed += 1
-                deals_map[did] = {
-                    "deal_id": int(did),
-                    "person_id": pid,
-                    "title": deal.get("title") or "",
-                    "project_number": project_number,
-                    "address": address,
-                    "lat": None,
-                    "lon": None,
-                    "error": "geocode_failed",
-                }
-                if project_number >= next_num:
-                    next_num = project_number + 1
-                if (added + failed) % 10 == 0:
-                    state["next_project_number"] = next_num
-                    save_state(state)
-                    write_geojson(state)
-                continue
+                raise NoSuitableBuilding(f"No geocode for deal {did}; keeping the published map intact")
 
             city_key = _record_city_key(geo, address)
             first_label = (geo.display_name or "").split(",")[0].strip()
@@ -380,6 +362,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
             occupied = _occupied_near_city(deals_map, city_key)
 
             try:
+                approximate = address_type == "city"
                 if address_type == "city":
                     if city_key.strip().casefold() in load_catalog().get("places", {}):
                         lat, lon = pick_roof(city_key, occupied, seed=did)
@@ -388,18 +371,20 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                         lat, lon = scatter.pick_point(geo.lat, geo.lon, occupied, seed=did)
                         location_source = "osm_building"
                 else:
-                    lat, lon = scatter.snap_to_building(
-                        geo.lat, geo.lon, occupied, seed=did
-                    )
-                    location_source = "osm_building"
+                    try:
+                        lat, lon = scatter.snap_to_building(
+                            geo.lat, geo.lon, occupied, seed=did
+                        )
+                        location_source = "osm_building"
+                    except NoSuitableBuilding:
+                        lat, lon = pick_nearest_roof(city_key, (geo.lat, geo.lon), occupied)
+                        location_source = load_catalog()["places"][city_key].get("source", "microsoft_footprint")
+                        approximate = True
                 roof_verified = True
                 error = None
             except NoSuitableBuilding as exc:
                 log.warning("Unverified roof for deal %s: %s", did, exc)
-                lat = lon = None
-                roof_verified = False
-                error = "roof_not_verified"
-                failed += 1
+                raise
 
             deals_map[did] = {
                 "deal_id": int(did),
@@ -413,8 +398,8 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 "city_key": city_key,
                 "geocode_display": geo.display_name,
                 "snapped_to_building": roof_verified,
-                "location_precision": "settlement_approximate" if address_type == "city" else "street_geocode",
-                "location_source": location_source if roof_verified else None,
+                "location_precision": "settlement_approximate" if approximate else "street_geocode",
+                "location_source": location_source,
                 "error": error,
             }
             if project_number >= next_num:
