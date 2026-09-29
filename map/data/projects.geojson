@@ -21850,6 +21850,63 @@
         "approximate": false,
         "deal_id": 2736
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0579326,
+          32.6880602
+        ]
+      },
+      "properties": {
+        "name": "Project 1161",
+        "project_number": 1161,
+        "address_type": "city",
+        "person_id": 2507,
+        "place": "Daliyat al-Karmel",
+        "approximate": true,
+        "deal_id": 2737
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7715992,
+          33.1820659
+        ]
+      },
+      "properties": {
+        "name": "Project 1162",
+        "project_number": 1162,
+        "address_type": "city",
+        "person_id": 2508,
+        "place": "אל-רום",
+        "approximate": true,
+        "deal_id": 2738
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7738526,
+          33.1807121
+        ]
+      },
+      "properties": {
+        "name": "Project 1163",
+        "project_number": 1163,
+        "address_type": "city",
+        "person_id": 2509,
+        "place": "אל-רום",
+        "approximate": true,
+        "deal_id": 2739
+      }
     }
   ]
 }

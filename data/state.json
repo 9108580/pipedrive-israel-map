@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1161,
+  "next_project_number": 1164,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28612,6 +28612,54 @@
       "snapped_to_building": true,
       "location_precision": "street_geocode",
       "location_source": "microsoft_footprint"
+    },
+    "2737": {
+      "deal_id": 2737,
+      "person_id": 2507,
+      "title": "ביראני רביע",
+      "project_number": 1161,
+      "address": "Daliyat al-Karmel, Israel",
+      "lat": 32.6880602,
+      "lon": 35.0579326,
+      "address_type": "city",
+      "city_key": "دالية الكرمل",
+      "geocode_display": "دالية الكرمل, נפת חיפה, מחוז חיפה, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2738": {
+      "deal_id": 2738,
+      "person_id": 2508,
+      "title": "מינואי מירב אביה",
+      "project_number": 1162,
+      "address": "El-Rom",
+      "lat": 33.1820659,
+      "lon": 35.7715992,
+      "address_type": "city",
+      "city_key": "אל-רום",
+      "geocode_display": "אל-רום, מועצה אזורית גולן, נפת רמת הגולן, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2739": {
+      "deal_id": 2739,
+      "person_id": 2509,
+      "title": "רפאל מינאוי",
+      "project_number": 1163,
+      "address": "El-Rom",
+      "lat": 33.1807121,
+      "lon": 35.7738526,
+      "address_type": "city",
+      "city_key": "אל-רום",
+      "geocode_display": "אל-רום, מועצה אזורית גולן, נפת רמת הגולן, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
     }
   }
 }
