@@ -21907,6 +21907,44 @@
         "approximate": true,
         "deal_id": 2739
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2106386,
+          32.9553104
+        ]
+      },
+      "properties": {
+        "name": "Project 1164",
+        "project_number": 1164,
+        "address_type": "city",
+        "person_id": 2511,
+        "place": "Yarka",
+        "approximate": true,
+        "deal_id": 2741
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4664333,
+          32.7265002
+        ]
+      },
+      "properties": {
+        "name": "Project 1165",
+        "project_number": 1165,
+        "address_type": "city",
+        "person_id": 2512,
+        "place": "שרונה",
+        "approximate": true,
+        "deal_id": 2742
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1164,
+  "next_project_number": 1166,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28659,6 +28659,38 @@
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "osm_building",
+      "error": null
+    },
+    "2741": {
+      "deal_id": 2741,
+      "person_id": 2511,
+      "title": "סלאמה ראיד חסן",
+      "project_number": 1164,
+      "address": "Yarka, Israel",
+      "lat": 32.9553104,
+      "lon": 35.2106386,
+      "address_type": "city",
+      "city_key": "يركا",
+      "geocode_display": "يركا, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2742": {
+      "deal_id": 2742,
+      "person_id": 2512,
+      "title": "אלון פרץ",
+      "project_number": 1165,
+      "address": "39, Sharona, Israel",
+      "lat": 32.7265002,
+      "lon": 35.4664333,
+      "address_type": "city",
+      "city_key": "שרונה",
+      "geocode_display": "שרונה, מועצה אזורית גליל תחתון, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
       "error": null
     }
   }
