@@ -21945,6 +21945,25 @@
         "approximate": true,
         "deal_id": 2742
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.790079,
+          32.0465461
+        ]
+      },
+      "properties": {
+        "name": "Project 1166",
+        "project_number": 1166,
+        "address_type": "city",
+        "person_id": 2513,
+        "place": "תל־אביב–יפו",
+        "approximate": true,
+        "deal_id": 2743
+      }
     }
   ]
 }

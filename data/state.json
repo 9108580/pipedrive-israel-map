@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1166,
+  "next_project_number": 1167,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28688,6 +28688,22 @@
       "address_type": "city",
       "city_key": "שרונה",
       "geocode_display": "שרונה, מועצה אזורית גליל תחתון, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2743": {
+      "deal_id": 2743,
+      "person_id": 2513,
+      "title": "בר מירב מרים",
+      "project_number": 1166,
+      "address": "Keren Kayemet Le'Israel Blvd 118, Tel Aviv-Yafo, Israel",
+      "lat": 32.0465461,
+      "lon": 34.790079,
+      "address_type": "city",
+      "city_key": "תל־אביב–יפו",
+      "geocode_display": "תל־אביב–יפו, נפת תל אביב, מחוז תל אביב, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
