@@ -21964,6 +21964,25 @@
         "approximate": true,
         "deal_id": 2743
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7904826,
+          31.8893725
+        ]
+      },
+      "properties": {
+        "name": "Project 1167",
+        "project_number": 1167,
+        "address_type": "city",
+        "person_id": 2514,
+        "place": "רחובות",
+        "approximate": true,
+        "deal_id": 2744
+      }
     }
   ]
 }

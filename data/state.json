@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1167,
+  "next_project_number": 1168,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28704,6 +28704,22 @@
       "address_type": "city",
       "city_key": "תל־אביב–יפו",
       "geocode_display": "תל־אביב–יפו, נפת תל אביב, מחוז תל אביב, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2744": {
+      "deal_id": 2744,
+      "person_id": 2514,
+      "title": "ששי מזרחי",
+      "project_number": 1167,
+      "address": "HaTsanhanim St, Rehovot, Israel",
+      "lat": 31.8893725,
+      "lon": 34.7904826,
+      "address_type": "city",
+      "city_key": "רחובות",
+      "geocode_display": "רחובות, נפת רחובות, מחוז המרכז, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
