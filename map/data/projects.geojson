@@ -21983,6 +21983,63 @@
         "approximate": true,
         "deal_id": 2744
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3480349,
+          32.9432585
+        ]
+      },
+      "properties": {
+        "name": "Project 1168",
+        "project_number": 1168,
+        "address_type": "city",
+        "person_id": 2515,
+        "place": "סאג'ור",
+        "approximate": true,
+        "deal_id": 2745
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.88841136630169,
+          32.149760601378205
+        ]
+      },
+      "properties": {
+        "name": "Project 1169",
+        "project_number": 1169,
+        "address_type": "city",
+        "person_id": 2516,
+        "place": "הוד השרון",
+        "approximate": true,
+        "deal_id": 2746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.88826448877095,
+          31.94686229183589
+        ]
+      },
+      "properties": {
+        "name": "Project 1170",
+        "project_number": 1170,
+        "address_type": "city",
+        "person_id": 2517,
+        "place": "לוד",
+        "approximate": true,
+        "deal_id": 2747
+      }
     }
   ]
 }

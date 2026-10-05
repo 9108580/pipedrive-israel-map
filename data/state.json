@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1168,
+  "next_project_number": 1171,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28723,6 +28723,54 @@
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2745": {
+      "deal_id": 2745,
+      "person_id": 2515,
+      "title": "מוסטפא עסמאת נאהי",
+      "project_number": 1168,
+      "address": "Sajur, Israel",
+      "lat": 32.9432585,
+      "lon": 35.3480349,
+      "address_type": "city",
+      "city_key": "ساجور",
+      "geocode_display": "ساجور, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2746": {
+      "deal_id": 2746,
+      "person_id": 2516,
+      "title": "אסף ורויטל אגוזי",
+      "project_number": 1169,
+      "address": "Hahermon St 10, Hod Hasharon, Israel",
+      "lat": 32.149760601378205,
+      "lon": 34.88841136630169,
+      "address_type": "city",
+      "city_key": "הוד השרון",
+      "geocode_display": "הוד השרון, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2747": {
+      "deal_id": 2747,
+      "person_id": 2517,
+      "title": "יוסף קליין",
+      "project_number": 1170,
+      "address": "Arieh Ben Eliezer St, Lod, Israel",
+      "lat": 31.94686229183589,
+      "lon": 34.88826448877095,
+      "address_type": "city",
+      "city_key": "לוד",
+      "geocode_display": "לוד, נפת רמלה, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
       "error": null
     }
   }
