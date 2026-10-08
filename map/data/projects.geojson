@@ -22040,6 +22040,25 @@
         "approximate": true,
         "deal_id": 2747
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.63525529904333,
+          31.74089940463774
+        ]
+      },
+      "properties": {
+        "name": "Project 1171",
+        "project_number": 1171,
+        "address_type": "city",
+        "person_id": 2518,
+        "place": "ניצן ב׳",
+        "approximate": true,
+        "deal_id": 2748
+      }
     }
   ]
 }

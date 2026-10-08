@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1171,
+  "next_project_number": 1172,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28768,6 +28768,22 @@
       "address_type": "city",
       "city_key": "לוד",
       "geocode_display": "לוד, נפת רמלה, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2748": {
+      "deal_id": 2748,
+      "person_id": 2518,
+      "title": "משה ביטון",
+      "project_number": 1171,
+      "address": "Mish'ol Kohav HaYam, Nitzan Bet, Israel",
+      "lat": 31.74089940463774,
+      "lon": 34.63525529904333,
+      "address_type": "city",
+      "city_key": "מועצה אזורית חוף אשקלון",
+      "geocode_display": "ניצן ב׳, מועצה אזורית חוף אשקלון, נפת אשקלון, מחוז הדרום, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "osm_building",
