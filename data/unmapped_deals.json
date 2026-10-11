@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-08T13:06:37.995982+00:00",
-  "crm_deals_total": 1175,
-  "crm_deals_mappable": 1161,
-  "map_pins": 1161,
+  "generated_at": "2026-10-11T12:28:05.464642+00:00",
+  "crm_deals_total": 1179,
+  "crm_deals_mappable": 1165,
+  "map_pins": 1165,
   "sync": {
-    "added": 1,
+    "added": 4,
     "reused": 0,
-    "skipped": 1160,
+    "skipped": 1161,
     "failed": 0
   },
   "unmapped_no_person": [

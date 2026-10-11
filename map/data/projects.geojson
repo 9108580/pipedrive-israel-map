@@ -22059,6 +22059,82 @@
         "approximate": true,
         "deal_id": 2748
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1595814,
+          32.9600024
+        ]
+      },
+      "properties": {
+        "name": "Project 1172",
+        "project_number": 1172,
+        "address_type": "city",
+        "person_id": 2519,
+        "place": "Kafr Yasif",
+        "approximate": true,
+        "deal_id": 2749
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1698758,
+          32.9596134
+        ]
+      },
+      "properties": {
+        "name": "Project 1173",
+        "project_number": 1173,
+        "address_type": "city",
+        "person_id": 2520,
+        "place": "Kafr Yasif",
+        "approximate": true,
+        "deal_id": 2750
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8095985,
+          31.2553221
+        ]
+      },
+      "properties": {
+        "name": "Project 1174",
+        "project_number": 1174,
+        "address_type": "city",
+        "person_id": 2521,
+        "place": "באר-שבע",
+        "approximate": true,
+        "deal_id": 2751
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.924408704873876,
+          31.97877942141459
+        ]
+      },
+      "properties": {
+        "name": "Project 1175",
+        "project_number": 1175,
+        "address_type": "city",
+        "person_id": 2522,
+        "place": "כפר טרומן",
+        "approximate": true,
+        "deal_id": 2752
+      }
     }
   ]
 }
