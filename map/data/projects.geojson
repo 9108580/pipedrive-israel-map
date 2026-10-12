@@ -22135,6 +22135,139 @@
         "approximate": true,
         "deal_id": 2752
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0594023,
+          32.6949459
+        ]
+      },
+      "properties": {
+        "name": "Project 1176",
+        "project_number": 1176,
+        "address_type": "city",
+        "person_id": 2367,
+        "place": "Daliyat al-Karmel",
+        "approximate": true,
+        "deal_id": 2561
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2854738,
+          33.0869345
+        ]
+      },
+      "properties": {
+        "name": "Project 1177",
+        "project_number": 1177,
+        "address_type": "city",
+        "person_id": 2523,
+        "place": "שומרה",
+        "approximate": true,
+        "deal_id": 2753
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4982502,
+          32.9538998
+        ]
+      },
+      "properties": {
+        "name": "Project 1178",
+        "project_number": 1178,
+        "address_type": "city",
+        "person_id": 2211,
+        "place": "צפת",
+        "approximate": true,
+        "deal_id": 2754
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8716356,
+          32.0317051
+        ]
+      },
+      "properties": {
+        "name": "Project 1179",
+        "project_number": 1179,
+        "address_type": "city",
+        "person_id": 2524,
+        "place": "אור יהודה",
+        "approximate": true,
+        "deal_id": 2755
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1767087,
+          32.9423069
+        ]
+      },
+      "properties": {
+        "name": "Project 1180",
+        "project_number": 1180,
+        "address_type": "city",
+        "person_id": 2525,
+        "place": "ג'וליס",
+        "approximate": true,
+        "deal_id": 2756
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1799516,
+          32.9498625
+        ]
+      },
+      "properties": {
+        "name": "Project 1181",
+        "project_number": 1181,
+        "address_type": "city",
+        "person_id": 2526,
+        "place": "ג'וליס",
+        "approximate": true,
+        "deal_id": 2757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15167684374424,
+          31.750760334689424
+        ]
+      },
+      "properties": {
+        "name": "Project 1182",
+        "project_number": 1182,
+        "address_type": "city",
+        "person_id": 2527,
+        "place": "אורה",
+        "approximate": true,
+        "deal_id": 2758
+      }
     }
   ]
 }

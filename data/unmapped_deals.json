@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-11T12:28:05.464642+00:00",
-  "crm_deals_total": 1179,
-  "crm_deals_mappable": 1165,
-  "map_pins": 1165,
+  "generated_at": "2026-10-12T14:54:48.679072+00:00",
+  "crm_deals_total": 1185,
+  "crm_deals_mappable": 1172,
+  "map_pins": 1172,
   "sync": {
-    "added": 4,
-    "reused": 0,
-    "skipped": 1161,
+    "added": 7,
+    "reused": 1,
+    "skipped": 1165,
     "failed": 0
   },
   "unmapped_no_person": [
@@ -95,13 +95,6 @@
       "reason": "person_has_no_address"
     },
     {
-      "deal_id": 2561,
-      "person_id": 2367,
-      "title": "עלי חלבי",
-      "add_time": "2026-05-07 12:19:43",
-      "reason": "person_has_no_address"
-    },
-    {
       "deal_id": 2686,
       "person_id": 2457,
       "title": "מוחמד חאתם נסראלדין",
@@ -109,7 +102,7 @@
       "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 14,
+  "unmapped_total": 13,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }
