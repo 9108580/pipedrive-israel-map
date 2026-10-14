@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1183,
+  "next_project_number": 1184,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28964,6 +28964,22 @@
       "location_precision": "settlement_approximate",
       "location_source": "osm_building",
       "error": null
+    },
+    "2760": {
+      "deal_id": 2760,
+      "person_id": 1907,
+      "title": "זמירה אליהו",
+      "project_number": 1183,
+      "address": "Elkosh, Israel",
+      "lat": 33.0343686,
+      "lon": 35.3286029,
+      "address_type": "city",
+      "city_key": "אלקוש",
+      "geocode_display": "אלקוש, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "reused_person_geocode": true
     }
   }
 }

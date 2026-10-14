@@ -22268,6 +22268,25 @@
         "approximate": true,
         "deal_id": 2758
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3286029,
+          33.0343686
+        ]
+      },
+      "properties": {
+        "name": "Project 1183",
+        "project_number": 1183,
+        "address_type": "city",
+        "person_id": 1907,
+        "place": "אלקוש",
+        "approximate": true,
+        "deal_id": 2760
+      }
     }
   ]
 }
