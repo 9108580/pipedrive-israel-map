@@ -22287,6 +22287,25 @@
         "approximate": true,
         "deal_id": 2760
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9691933,
+          32.097158
+        ]
+      },
+      "properties": {
+        "name": "Project 1184",
+        "project_number": 1184,
+        "address_type": "city",
+        "person_id": 2530,
+        "place": "ראש העין",
+        "approximate": true,
+        "deal_id": 2762
+      }
     }
   ]
 }

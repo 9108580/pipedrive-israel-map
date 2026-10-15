@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1184,
+  "next_project_number": 1185,
   "persons": {
     "9": {
       "person_id": 9,
@@ -28980,6 +28980,22 @@
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
       "reused_person_geocode": true
+    },
+    "2762": {
+      "deal_id": 2762,
+      "person_id": 2530,
+      "title": "יעקב בן צור",
+      "project_number": 1184,
+      "address": "Keshet St 39, Rosh Haayin, Israel",
+      "lat": 32.097158,
+      "lon": 34.9691933,
+      "address_type": "city",
+      "city_key": "ראש העין",
+      "geocode_display": "ראש העין, נפת פתח תקווה, מחוז המרכז, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
     }
   }
 }
