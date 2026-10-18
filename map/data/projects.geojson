@@ -22306,6 +22306,82 @@
         "approximate": true,
         "deal_id": 2762
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3066998,
+          32.9785515
+        ]
+      },
+      "properties": {
+        "name": "Project 1185",
+        "project_number": 1185,
+        "address_type": "city",
+        "person_id": 2457,
+        "place": "Kisra-Sumei",
+        "approximate": true,
+        "deal_id": 2686
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5154389,
+          32.7867299
+        ]
+      },
+      "properties": {
+        "name": "Project 1186",
+        "project_number": 1186,
+        "address_type": "city",
+        "person_id": 2531,
+        "place": "טבריה",
+        "approximate": true,
+        "deal_id": 2763
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2717909,
+          32.9963398
+        ]
+      },
+      "properties": {
+        "name": "Project 1187",
+        "project_number": 1187,
+        "address_type": "city",
+        "person_id": 2532,
+        "place": "כפר ורדים",
+        "approximate": true,
+        "deal_id": 2764
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3611398,
+          32.8651213
+        ]
+      },
+      "properties": {
+        "name": "Project 1188",
+        "project_number": 1188,
+        "address_type": "city",
+        "person_id": 2533,
+        "place": "Deir Hana",
+        "approximate": true,
+        "deal_id": 2765
+      }
     }
   ]
 }
