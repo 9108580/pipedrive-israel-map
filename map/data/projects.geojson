@@ -22382,6 +22382,44 @@
         "approximate": true,
         "deal_id": 2765
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7453429,
+          31.7122428
+        ]
+      },
+      "properties": {
+        "name": "Project 1189",
+        "project_number": 1189,
+        "address_type": "city",
+        "person_id": 2534,
+        "place": "אביגדור",
+        "approximate": true,
+        "deal_id": 2766
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7962566,
+          31.2477274
+        ]
+      },
+      "properties": {
+        "name": "Project 1190",
+        "project_number": 1190,
+        "address_type": "city",
+        "person_id": 2535,
+        "place": "באר-שבע",
+        "approximate": true,
+        "deal_id": 2767
+      }
     }
   ]
 }

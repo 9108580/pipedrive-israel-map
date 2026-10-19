@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1189,
+  "next_project_number": 1191,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29056,6 +29056,38 @@
       "address_type": "city",
       "city_key": "دير حنا",
       "geocode_display": "محمية طبيعية دير حنا بركة, دير حنا, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2766": {
+      "deal_id": 2766,
+      "person_id": 2534,
+      "title": "רפאל לוי",
+      "project_number": 1189,
+      "address": "52, Avigdor, Israel",
+      "lat": 31.7122428,
+      "lon": 34.7453429,
+      "address_type": "city",
+      "city_key": "אביגדור",
+      "geocode_display": "אביגדור, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2767": {
+      "deal_id": 2767,
+      "person_id": 2535,
+      "title": "יוסף מימוני",
+      "project_number": 1190,
+      "address": "Beit Lekhem St 10, Be'er Sheva, Israel",
+      "lat": 31.2477274,
+      "lon": 34.7962566,
+      "address_type": "city",
+      "city_key": "באר-שבע",
+      "geocode_display": "באר-שבע, נפת באר שבע, מחוז הדרום, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
