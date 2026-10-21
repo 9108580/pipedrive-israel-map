@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1191,
+  "next_project_number": 1194,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29091,6 +29091,54 @@
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2768": {
+      "deal_id": 2768,
+      "person_id": 2536,
+      "title": "אייל חכמון",
+      "project_number": 1191,
+      "address": "Yas'ur, Israel",
+      "lat": 32.9098225,
+      "lon": 35.1755403,
+      "address_type": "city",
+      "city_key": "יסעור",
+      "geocode_display": "יסעור, מועצה אזורית מטה אשר, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2770": {
+      "deal_id": 2770,
+      "person_id": 2539,
+      "title": "ליאת שפרמן",
+      "project_number": 1192,
+      "address": "Amnon ve-Tamar St 26, Regba, Israel",
+      "lat": 32.9773059,
+      "lon": 35.1036048,
+      "address_type": "city",
+      "city_key": "רגבה",
+      "geocode_display": "רגבה, מועצה אזורית מטה אשר, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2771": {
+      "deal_id": 2771,
+      "person_id": 2540,
+      "title": "עמית הופרט",
+      "project_number": 1193,
+      "address": "Dishon, Israel",
+      "lat": 33.08137899999293,
+      "lon": 35.51577269429689,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מבואות החרמון",
+      "geocode_display": "דישון, מועצה אזורית מבואות החרמון, נפת צפת, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
       "error": null
     }
   }
