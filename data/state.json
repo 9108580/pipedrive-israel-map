@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1194,
+  "next_project_number": 1196,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29139,6 +29139,38 @@
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "osm_building",
+      "error": null
+    },
+    "2761": {
+      "deal_id": 2761,
+      "person_id": 2528,
+      "title": "טכנולוגיות ג'י אם אס בע\"מ",
+      "project_number": 1194,
+      "address": "Mi'ilya, Israel",
+      "lat": 33.0263689,
+      "lon": 35.27019355,
+      "address_type": "city",
+      "city_key": "معليا",
+      "geocode_display": "معليا, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2772": {
+      "deal_id": 2772,
+      "person_id": 2542,
+      "title": "עבד אל עאל כמאל וטטיאנה",
+      "project_number": 1195,
+      "address": "Mazra'a, Israel",
+      "lat": 32.989359,
+      "lon": 35.0981032,
+      "address_type": "city",
+      "city_key": "المزرعة",
+      "geocode_display": "المزرعة, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
       "error": null
     }
   }

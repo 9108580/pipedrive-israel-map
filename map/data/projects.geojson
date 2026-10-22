@@ -22477,6 +22477,44 @@
         "approximate": true,
         "deal_id": 2771
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.27019355,
+          33.0263689
+        ]
+      },
+      "properties": {
+        "name": "Project 1194",
+        "project_number": 1194,
+        "address_type": "city",
+        "person_id": 2528,
+        "place": "Mi'ilya",
+        "approximate": true,
+        "deal_id": 2761
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0981032,
+          32.989359
+        ]
+      },
+      "properties": {
+        "name": "Project 1195",
+        "project_number": 1195,
+        "address_type": "city",
+        "person_id": 2542,
+        "place": "Mazra'a",
+        "approximate": true,
+        "deal_id": 2772
+      }
     }
   ]
 }

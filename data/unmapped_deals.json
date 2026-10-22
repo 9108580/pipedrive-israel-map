@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T11:28:21.056327+00:00",
-  "crm_deals_total": 1197,
-  "crm_deals_mappable": 1183,
-  "map_pins": 1183,
+  "generated_at": "2026-10-22T11:35:26.421161+00:00",
+  "crm_deals_total": 1198,
+  "crm_deals_mappable": 1185,
+  "map_pins": 1185,
   "sync": {
-    "added": 3,
+    "added": 2,
     "reused": 0,
-    "skipped": 1180,
+    "skipped": 1183,
     "failed": 0
   },
   "unmapped_no_person": [
@@ -95,13 +95,6 @@
       "reason": "person_has_no_address"
     },
     {
-      "deal_id": 2761,
-      "person_id": 2528,
-      "title": "טכנולוגיות ג'י אם אס בע\"מ",
-      "add_time": "2026-10-14 11:36:23",
-      "reason": "person_has_no_address"
-    },
-    {
       "deal_id": 2769,
       "person_id": 2538,
       "title": "חשמלאות רכב ומיזוג",
@@ -109,7 +102,7 @@
       "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 14,
+  "unmapped_total": 13,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }
