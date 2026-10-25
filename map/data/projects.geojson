@@ -22515,6 +22515,63 @@
         "approximate": true,
         "deal_id": 2772
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.99312885,
+          32.35055585
+        ]
+      },
+      "properties": {
+        "name": "Project 1196",
+        "project_number": 1196,
+        "address_type": "city",
+        "person_id": 2543,
+        "place": "גן יאשיה",
+        "approximate": true,
+        "deal_id": 2773
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2838647,
+          30.7625992
+        ]
+      },
+      "properties": {
+        "name": "Project 1197",
+        "project_number": 1197,
+        "address_type": "city",
+        "person_id": 2544,
+        "place": "חצבה",
+        "approximate": true,
+        "deal_id": 2774
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4953329,
+          32.4988823
+        ]
+      },
+      "properties": {
+        "name": "Project 1198",
+        "project_number": 1198,
+        "address_type": "city",
+        "person_id": 2545,
+        "place": "בית שאן",
+        "approximate": true,
+        "deal_id": 2775
+      }
     }
   ]
 }
