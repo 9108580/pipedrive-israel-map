@@ -7,6 +7,10 @@ on:
       - "map/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Sync Pipedrive Israel map"]
+    types: [completed]
+    branches: [master]
 
 permissions:
   contents: read
@@ -15,10 +19,12 @@ permissions:
 
 concurrency:
   group: pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    # A failed sync must never publish its partial output.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -26,6 +32,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The sync commits new data after its triggering SHA; deploy that commit.
+          ref: master
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -46,3 +55,39 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify public map matches deployed data
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import time
+          import urllib.request
+
+          expected = Path("map/data/projects.geojson").read_bytes()
+          expected_hash = hashlib.sha256(expected).hexdigest()
+          expected_count = len(json.loads(expected)["features"])
+          base = os.environ["PAGE_URL"].rstrip("/")
+          for attempt in range(12):
+              try:
+                  request = urllib.request.Request(
+                      f"{base}/data/projects.geojson?verify={expected_hash}&attempt={attempt}",
+                      headers={"Cache-Control": "no-cache"},
+                  )
+                  with urllib.request.urlopen(request, timeout=20) as response:
+                      actual = response.read()
+                  if hashlib.sha256(actual).hexdigest() == expected_hash:
+                      print(f"Public map verified: {expected_count} projects, exact data match")
+                      break
+                  print(f"Public map not current yet (attempt {attempt + 1}/12)")
+              except Exception as exc:
+                  print(f"Public verification retry {attempt + 1}/12: {type(exc).__name__}")
+              if attempt < 11:
+                  time.sleep(10)
+          else:
+              raise SystemExit("Public map does not match deployed data")
+          PY
