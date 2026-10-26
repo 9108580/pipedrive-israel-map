@@ -22572,6 +22572,158 @@
         "approximate": true,
         "deal_id": 2775
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4433097,
+          31.9903981
+        ]
+      },
+      "properties": {
+        "name": "Project 1199",
+        "project_number": 1199,
+        "address_type": "city",
+        "person_id": 1625,
+        "place": "נתיב הגדוד",
+        "approximate": true,
+        "deal_id": 1680
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4897097,
+          32.5048534
+        ]
+      },
+      "properties": {
+        "name": "Project 1200",
+        "project_number": 1200,
+        "address_type": "city",
+        "person_id": 1627,
+        "place": "בית שאן",
+        "approximate": true,
+        "deal_id": 1683
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4652062,
+          31.9061178
+        ]
+      },
+      "properties": {
+        "name": "Project 1201",
+        "project_number": 1201,
+        "address_type": "city",
+        "person_id": 1624,
+        "place": "נעמה",
+        "approximate": true,
+        "deal_id": 1684
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4392927,
+          32.042905
+        ]
+      },
+      "properties": {
+        "name": "Project 1202",
+        "project_number": 1202,
+        "address_type": "city",
+        "person_id": 2024,
+        "place": "פצאל",
+        "approximate": true,
+        "deal_id": 2191
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2910271,
+          32.6129809
+        ]
+      },
+      "properties": {
+        "name": "Project 1203",
+        "project_number": 1203,
+        "address_type": "city",
+        "person_id": 2277,
+        "place": "עפולה",
+        "approximate": true,
+        "deal_id": 2463
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9330762,
+          31.6802174
+        ]
+      },
+      "properties": {
+        "name": "Project 1204",
+        "project_number": 1204,
+        "address_type": "city",
+        "person_id": 2353,
+        "place": "שריגים (לי־און)",
+        "approximate": true,
+        "deal_id": 2545
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3036106,
+          32.7072196
+        ]
+      },
+      "properties": {
+        "name": "Project 1205",
+        "project_number": 1205,
+        "address_type": "city",
+        "person_id": 2538,
+        "place": "נצרת",
+        "approximate": true,
+        "deal_id": 2769
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7509026,
+          31.6113318
+        ]
+      },
+      "properties": {
+        "name": "Project 1206",
+        "project_number": 1206,
+        "address_type": "city",
+        "person_id": 2546,
+        "place": "קרית גת",
+        "approximate": true,
+        "deal_id": 2776
+      }
     }
   ]
 }
