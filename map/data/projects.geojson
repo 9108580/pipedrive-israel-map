@@ -22724,6 +22724,63 @@
         "approximate": true,
         "deal_id": 2776
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6237064,
+          33.2190474
+        ]
+      },
+      "properties": {
+        "name": "Project 1207",
+        "project_number": 1207,
+        "address_type": "city",
+        "person_id": 2547,
+        "place": "הגושרים",
+        "approximate": true,
+        "deal_id": 2777
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3387288,
+          32.9424679
+        ]
+      },
+      "properties": {
+        "name": "Project 1208",
+        "project_number": 1208,
+        "address_type": "city",
+        "person_id": 2548,
+        "place": "סאג'ור",
+        "approximate": true,
+        "deal_id": 2778
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3806591,
+          32.9655633
+        ]
+      },
+      "properties": {
+        "name": "Project 1209",
+        "project_number": 1209,
+        "address_type": "city",
+        "person_id": 2549,
+        "place": "Beit Jann",
+        "approximate": true,
+        "deal_id": 2779
+      }
     }
   ]
 }
