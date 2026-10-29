@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1210,
+  "next_project_number": 1212,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29392,6 +29392,38 @@
       "address_type": "city",
       "city_key": "بيت جن",
       "geocode_display": "بيت جن, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2780": {
+      "deal_id": 2780,
+      "person_id": 2550,
+      "title": "רוני איבגי אזרן",
+      "project_number": 1210,
+      "address": "Beit Aryeh-Ofarim",
+      "lat": 32.0380934,
+      "lon": 35.0493731,
+      "address_type": "city",
+      "city_key": "בית אריה",
+      "geocode_display": "בית אריה, שטח C, יהודה ושומרון, الأراضي الفلسطينية",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2781": {
+      "deal_id": 2781,
+      "person_id": 2551,
+      "title": "אמיר קובי",
+      "project_number": 1211,
+      "address": "Ha-Brosh St 18, Tzurit, Israel",
+      "lat": 32.9066182,
+      "lon": 35.2542834,
+      "address_type": "city",
+      "city_key": "צורית",
+      "geocode_display": "צורית, מועצה אזורית משגב, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",

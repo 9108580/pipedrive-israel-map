@@ -22781,6 +22781,44 @@
         "approximate": true,
         "deal_id": 2779
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0493731,
+          32.0380934
+        ]
+      },
+      "properties": {
+        "name": "Project 1210",
+        "project_number": 1210,
+        "address_type": "city",
+        "person_id": 2550,
+        "place": "בית אריה",
+        "approximate": true,
+        "deal_id": 2780
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2542834,
+          32.9066182
+        ]
+      },
+      "properties": {
+        "name": "Project 1211",
+        "project_number": 1211,
+        "address_type": "city",
+        "person_id": 2551,
+        "place": "צורית",
+        "approximate": true,
+        "deal_id": 2781
+      }
     }
   ]
 }
