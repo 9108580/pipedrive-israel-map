@@ -22819,6 +22819,101 @@
         "approximate": true,
         "deal_id": 2781
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2793802,
+          32.6123909
+        ]
+      },
+      "properties": {
+        "name": "Project 1212",
+        "project_number": 1212,
+        "address_type": "city",
+        "person_id": 2552,
+        "place": "עפולה",
+        "approximate": true,
+        "deal_id": 2782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9099028,
+          32.5523692
+        ]
+      },
+      "properties": {
+        "name": "Project 1213",
+        "project_number": 1213,
+        "address_type": "city",
+        "person_id": 2553,
+        "place": "קיסריה",
+        "approximate": true,
+        "deal_id": 2783
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.222224,
+          32.7793078
+        ]
+      },
+      "properties": {
+        "name": "Project 1214",
+        "project_number": 1214,
+        "address_type": "city",
+        "person_id": 2554,
+        "place": "Bir al-Maksur",
+        "approximate": true,
+        "deal_id": 2784
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3064601,
+          32.9159625
+        ]
+      },
+      "properties": {
+        "name": "Project 1215",
+        "project_number": 1215,
+        "address_type": "city",
+        "person_id": 2555,
+        "place": "כרמיאל",
+        "approximate": true,
+        "deal_id": 2785
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2585041,
+          33.0149789
+        ]
+      },
+      "properties": {
+        "name": "Project 1216",
+        "project_number": 1216,
+        "address_type": "city",
+        "person_id": 2556,
+        "place": "מעלות תרשיחא",
+        "approximate": true,
+        "deal_id": 2786
+      }
     }
   ]
 }
