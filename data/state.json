@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1217,
+  "next_project_number": 1219,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29504,6 +29504,38 @@
       "address_type": "city",
       "city_key": "מעלות תרשיחא",
       "geocode_display": "מעלות תרשיחא, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2787": {
+      "deal_id": 2787,
+      "person_id": 2557,
+      "title": "שמואל אלוש",
+      "project_number": 1217,
+      "address": "Ha-Irusim St 9, Ahuzat Barak, Israel",
+      "lat": 32.634916217027026,
+      "lon": 35.33353189801285,
+      "address_type": "city",
+      "city_key": "מועצה אזורית עמק יזרעאל",
+      "geocode_display": "אחוזת ברק, מועצה אזורית עמק יזרעאל, נפת יזרעאל, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2788": {
+      "deal_id": 2788,
+      "person_id": 2558,
+      "title": "אלכסנדרה קמינסקי",
+      "project_number": 1218,
+      "address": "Tlalim St 6, Tzur Hadassah, Israel",
+      "lat": 31.7134157,
+      "lon": 35.0924879,
+      "address_type": "city",
+      "city_key": "צור הדסה",
+      "geocode_display": "צור הדסה, נפת ירושלים, מחוז ירושלים, 9987500, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",

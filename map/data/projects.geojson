@@ -22914,6 +22914,44 @@
         "approximate": true,
         "deal_id": 2786
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.33353189801285,
+          32.634916217027026
+        ]
+      },
+      "properties": {
+        "name": "Project 1217",
+        "project_number": 1217,
+        "address_type": "city",
+        "person_id": 2557,
+        "place": "אחוזת ברק",
+        "approximate": true,
+        "deal_id": 2787
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0924879,
+          31.7134157
+        ]
+      },
+      "properties": {
+        "name": "Project 1218",
+        "project_number": 1218,
+        "address_type": "city",
+        "person_id": 2558,
+        "place": "צור הדסה",
+        "approximate": true,
+        "deal_id": 2788
+      }
     }
   ]
 }
