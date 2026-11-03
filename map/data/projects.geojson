@@ -22952,6 +22952,25 @@
         "approximate": true,
         "deal_id": 2788
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2547449,
+          32.9173354
+        ]
+      },
+      "properties": {
+        "name": "Project 1219",
+        "project_number": 1219,
+        "address_type": "city",
+        "person_id": 2559,
+        "place": "Majd al-Krum",
+        "approximate": true,
+        "deal_id": 2789
+      }
     }
   ]
 }

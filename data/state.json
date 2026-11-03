@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1219,
+  "next_project_number": 1220,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29536,6 +29536,22 @@
       "address_type": "city",
       "city_key": "צור הדסה",
       "geocode_display": "צור הדסה, נפת ירושלים, מחוז ירושלים, 9987500, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2789": {
+      "deal_id": 2789,
+      "person_id": 2559,
+      "title": "שחאדה סוהיל",
+      "project_number": 1219,
+      "address": "Majd al-Krum, Israel",
+      "lat": 32.9173354,
+      "lon": 35.2547449,
+      "address_type": "city",
+      "city_key": "مجد الكروم",
+      "geocode_display": "مجد الكروم, נפת עכו, מחוז הצפון, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
