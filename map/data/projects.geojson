@@ -22971,6 +22971,25 @@
         "approximate": true,
         "deal_id": 2789
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2630419,
+          32.9923038
+        ]
+      },
+      "properties": {
+        "name": "Project 1220",
+        "project_number": 1220,
+        "address_type": "city",
+        "person_id": 2560,
+        "place": "כפר ורדים",
+        "approximate": true,
+        "deal_id": 2790
+      }
     }
   ]
 }

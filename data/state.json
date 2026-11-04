@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1220,
+  "next_project_number": 1221,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29552,6 +29552,22 @@
       "address_type": "city",
       "city_key": "مجد الكروم",
       "geocode_display": "مجد الكروم, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2790": {
+      "deal_id": 2790,
+      "person_id": 2560,
+      "title": "יוסף יצחק",
+      "project_number": 1220,
+      "address": "Lotem St 22, Kfar Vradim, Israel",
+      "lat": 32.9923038,
+      "lon": 35.2630419,
+      "address_type": "city",
+      "city_key": "כפר ורדים",
+      "geocode_display": "כפר ורדים, נפת עכו, מחוז הצפון, 2514700, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
