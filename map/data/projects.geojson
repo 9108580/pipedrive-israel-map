@@ -22990,6 +22990,63 @@
         "approximate": true,
         "deal_id": 2790
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.83197961803662,
+          30.88681696422885
+        ]
+      },
+      "properties": {
+        "name": "Project 1221",
+        "project_number": 1221,
+        "address_type": "city",
+        "person_id": 2561,
+        "place": "מרחב עם",
+        "approximate": true,
+        "deal_id": 2791
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6799046,
+          32.9915171
+        ]
+      },
+      "properties": {
+        "name": "Project 1222",
+        "project_number": 1222,
+        "address_type": "city",
+        "person_id": 2562,
+        "place": "קצרין",
+        "approximate": true,
+        "deal_id": 2792
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2549076,
+          32.9941575
+        ]
+      },
+      "properties": {
+        "name": "Project 1223",
+        "project_number": 1223,
+        "address_type": "city",
+        "person_id": 2563,
+        "place": "כפר ורדים",
+        "approximate": true,
+        "deal_id": 2793
+      }
     }
   ]
 }
