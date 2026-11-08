@@ -23047,6 +23047,101 @@
         "approximate": true,
         "deal_id": 2793
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2964932,
+          32.9974909
+        ]
+      },
+      "properties": {
+        "name": "Project 1224",
+        "project_number": 1224,
+        "address_type": "city",
+        "person_id": 2564,
+        "place": "חוסן",
+        "approximate": true,
+        "deal_id": 2794
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2519994,
+          32.9011526
+        ]
+      },
+      "properties": {
+        "name": "Project 1225",
+        "project_number": 1225,
+        "address_type": "city",
+        "person_id": 2565,
+        "place": "צורית",
+        "approximate": true,
+        "deal_id": 2795
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8826176,
+          32.2085828
+        ]
+      },
+      "properties": {
+        "name": "Project 1226",
+        "project_number": 1226,
+        "address_type": "city",
+        "person_id": 2566,
+        "place": "בצרה",
+        "approximate": true,
+        "deal_id": 2796
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.42060478710972,
+          32.51980533671207
+        ]
+      },
+      "properties": {
+        "name": "Project 1227",
+        "project_number": 1227,
+        "address_type": "city",
+        "person_id": 2567,
+        "place": "חפציבה",
+        "approximate": true,
+        "deal_id": 2797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7478718,
+          31.7103979
+        ]
+      },
+      "properties": {
+        "name": "Project 1228",
+        "project_number": 1228,
+        "address_type": "city",
+        "person_id": 2568,
+        "place": "אביגדור",
+        "approximate": true,
+        "deal_id": 2798
+      }
     }
   ]
 }
