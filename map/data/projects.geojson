@@ -23142,6 +23142,25 @@
         "approximate": true,
         "deal_id": 2798
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5765206,
+          33.2173589
+        ]
+      },
+      "properties": {
+        "name": "Project 1229",
+        "project_number": 1229,
+        "address_type": "city",
+        "person_id": 2569,
+        "place": "קרית שמונה",
+        "approximate": true,
+        "deal_id": 2799
+      }
     }
   ]
 }

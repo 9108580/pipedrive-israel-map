@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1229,
+  "next_project_number": 1230,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29696,6 +29696,22 @@
       "address_type": "city",
       "city_key": "אביגדור",
       "geocode_display": "אביגדור, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2799": {
+      "deal_id": 2799,
+      "person_id": 2569,
+      "title": "סחרד גוסיינוב",
+      "project_number": 1229,
+      "address": "Aliyat Hano'ar St 6, Qiryat Shemona, Israel",
+      "lat": 33.2173589,
+      "lon": 35.5765206,
+      "address_type": "city",
+      "city_key": "קרית שמונה",
+      "geocode_display": "קרית שמונה, נפת צפת, מחוז הצפון, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
