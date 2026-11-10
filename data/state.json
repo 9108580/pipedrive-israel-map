@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1230,
+  "next_project_number": 1231,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29716,6 +29716,22 @@
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
       "error": null
+    },
+    "2801": {
+      "deal_id": 2801,
+      "person_id": 1974,
+      "title": "סמדר אמסלם",
+      "project_number": 1230,
+      "address": "Shomera, Israel",
+      "lat": 33.0817046,
+      "lon": 35.2851623,
+      "address_type": "city",
+      "city_key": "שומרה",
+      "geocode_display": "שומרה, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "reused_person_geocode": true
     }
   }
 }

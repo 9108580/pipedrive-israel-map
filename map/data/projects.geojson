@@ -23161,6 +23161,25 @@
         "approximate": true,
         "deal_id": 2799
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2851623,
+          33.0817046
+        ]
+      },
+      "properties": {
+        "name": "Project 1230",
+        "project_number": 1230,
+        "address_type": "city",
+        "person_id": 1974,
+        "place": "שומרה",
+        "approximate": true,
+        "deal_id": 2801
+      }
     }
   ]
 }
