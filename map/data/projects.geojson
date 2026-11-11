@@ -23180,6 +23180,44 @@
         "approximate": true,
         "deal_id": 2801
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8332328,
+          32.0646941
+        ]
+      },
+      "properties": {
+        "name": "Project 1231",
+        "project_number": 1231,
+        "address_type": "city",
+        "person_id": 2571,
+        "place": "מצפה",
+        "approximate": true,
+        "deal_id": 2802
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5101787,
+          32.7063514
+        ]
+      },
+      "properties": {
+        "name": "Project 1232",
+        "project_number": 1232,
+        "address_type": "city",
+        "person_id": 2572,
+        "place": "יבנאל",
+        "approximate": true,
+        "deal_id": 2803
+      }
     }
   ]
 }

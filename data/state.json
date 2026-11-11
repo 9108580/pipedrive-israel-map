@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1231,
+  "next_project_number": 1233,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29732,6 +29732,38 @@
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
       "reused_person_geocode": true
+    },
+    "2802": {
+      "deal_id": 2802,
+      "person_id": 2571,
+      "title": "אלי (משית) הרוש",
+      "project_number": 1231,
+      "address": "רחוב נרקיס, Mitspe Aviv, Israel",
+      "lat": 32.0646941,
+      "lon": 34.8332328,
+      "address_type": "city",
+      "city_key": "רמת גן",
+      "geocode_display": "מצפה, הראשונים, הגפן, רמת גן, נפת תל אביב, מחוז תל אביב, 5251108, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2803": {
+      "deal_id": 2803,
+      "person_id": 2572,
+      "title": "סלמאן חסאן",
+      "project_number": 1232,
+      "address": "Beit-Gan, Yavne'el, Israel",
+      "lat": 32.7063514,
+      "lon": 35.5101787,
+      "address_type": "city",
+      "city_key": "יבנאל",
+      "geocode_display": "יבנאל, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
     }
   }
 }

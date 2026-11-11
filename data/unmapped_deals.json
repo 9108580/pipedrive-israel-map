@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-10T14:36:19.817423+00:00",
-  "crm_deals_total": 1225,
-  "crm_deals_mappable": 1220,
-  "map_pins": 1220,
+  "generated_at": "2026-11-11T13:51:14.204021+00:00",
+  "crm_deals_total": 1226,
+  "crm_deals_mappable": 1222,
+  "map_pins": 1222,
   "sync": {
-    "added": 1,
-    "reused": 1,
-    "skipped": 1219,
+    "added": 2,
+    "reused": 0,
+    "skipped": 1220,
     "failed": 0
   },
   "unmapped_no_person": [
@@ -38,16 +38,9 @@
       "title": "איתן ארשדי",
       "add_time": "2026-11-10 08:03:33",
       "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2802,
-      "person_id": 2571,
-      "title": "אלי (משית) הרוש",
-      "add_time": "2026-11-10 09:47:50",
-      "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 5,
+  "unmapped_total": 4,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }
