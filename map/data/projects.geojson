@@ -23218,6 +23218,101 @@
         "approximate": true,
         "deal_id": 2803
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.588463814902916,
+          31.326333034484087
+        ]
+      },
+      "properties": {
+        "name": "Project 1233",
+        "project_number": 1233,
+        "address_type": "city",
+        "person_id": 2573,
+        "place": "מסלול",
+        "approximate": true,
+        "deal_id": 2804
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0988308,
+          33.0087698
+        ]
+      },
+      "properties": {
+        "name": "Project 1234",
+        "project_number": 1234,
+        "address_type": "city",
+        "person_id": 2574,
+        "place": "נהריה",
+        "approximate": true,
+        "deal_id": 2805
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3107679,
+          33.0060087
+        ]
+      },
+      "properties": {
+        "name": "Project 1235",
+        "project_number": 1235,
+        "address_type": "city",
+        "person_id": 2575,
+        "place": "צוריאל",
+        "approximate": true,
+        "deal_id": 2806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19619582425932,
+          31.785937041226465
+        ]
+      },
+      "properties": {
+        "name": "Project 1236",
+        "project_number": 1236,
+        "address_type": "city",
+        "person_id": 2576,
+        "place": "יוסף בורג",
+        "approximate": true,
+        "deal_id": 2807
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.98782667708182,
+          32.129032086592076
+        ]
+      },
+      "properties": {
+        "name": "Project 1237",
+        "project_number": 1237,
+        "address_type": "city",
+        "person_id": 2577,
+        "place": "אורנית",
+        "approximate": true,
+        "deal_id": 2808
+      }
     }
   ]
 }

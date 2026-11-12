@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1233,
+  "next_project_number": 1238,
   "persons": {
     "9": {
       "person_id": 9,
@@ -29763,6 +29763,86 @@
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2804": {
+      "deal_id": 2804,
+      "person_id": 2573,
+      "title": "נורית עמרמי",
+      "project_number": 1233,
+      "address": "40, Maslul, Israel",
+      "lat": 31.326333034484087,
+      "lon": 34.588463814902916,
+      "address_type": "city",
+      "city_key": "מועצה אזורית מרחבים",
+      "geocode_display": "מסלול, מועצה אזורית מרחבים, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2805": {
+      "deal_id": 2805,
+      "person_id": 2574,
+      "title": "שחר גל",
+      "project_number": 1234,
+      "address": "Iris St 23, Nahariyya, Israel",
+      "lat": 33.0087698,
+      "lon": 35.0988308,
+      "address_type": "city",
+      "city_key": "נהריה",
+      "geocode_display": "נהריה, נפת עכו, מחוז הצפון, 2221201, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2806": {
+      "deal_id": 2806,
+      "person_id": 2575,
+      "title": "קובי דנינו",
+      "project_number": 1235,
+      "address": "1, Tzuriel, Israel",
+      "lat": 33.0060087,
+      "lon": 35.3107679,
+      "address_type": "city",
+      "city_key": "צוריאל",
+      "geocode_display": "צוריאל, מועצה אזורית מעלה יוסף, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null
+    },
+    "2807": {
+      "deal_id": 2807,
+      "person_id": 2576,
+      "title": "יונה כהן",
+      "project_number": 1236,
+      "address": "יוסף בורג 11, Israel",
+      "lat": 31.785937041226465,
+      "lon": 35.19619582425932,
+      "address_type": "city",
+      "city_key": "ירושלים",
+      "geocode_display": "יוסף בורג, ירושלים, קרית הממשלה, ירושלים | القدس, נפת ירושלים, מחוז ירושלים, 9432531, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null
+    },
+    "2808": {
+      "deal_id": 2808,
+      "person_id": 2577,
+      "title": "שקד משיח",
+      "project_number": 1237,
+      "address": "Amnon veTamar St 6, Oranit",
+      "lat": 32.129032086592076,
+      "lon": 34.98782667708182,
+      "address_type": "city",
+      "city_key": "אורנית",
+      "geocode_display": "אורנית, שטח C, יהודה ושומרון, الأراضي الفلسطينية",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
       "error": null
     }
   }
