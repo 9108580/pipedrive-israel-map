@@ -25,7 +25,21 @@ def validate() -> dict[str, int]:
         coords = visible[number]["geometry"]["coordinates"]
         if coords != [rec["lon"], rec["lat"]]:
             raise ValueError(f"System {number} has different state/map coordinates")
-    return {"systems": len(records), "visible": len(features)}
+    from .localities import registry
+    localities = registry()[0]
+    for number, rec in by_number.items():
+        props = visible[number]["properties"]
+        lid = rec.get("locality_id")
+        if lid and lid not in localities:
+            raise ValueError(f"Unknown locality ID for system {number}")
+        expected = localities[lid]["name"] if lid else ""
+        if props.get("locality_id") != lid or props.get("place") != expected:
+            raise ValueError(f"Noncanonical locality for system {number}")
+        if props.get("deal_id") != rec.get("deal_id"):
+            raise ValueError(f"Deal identity mismatch for system {number}")
+    return {"systems": len(records), "visible": len(features),
+            "localities": len({r["locality_id"] for r in records.values() if r.get("locality_id")}),
+            "unresolved_pins": sum(not r.get("locality_id") for r in records.values())}
 
 
 if __name__ == "__main__":

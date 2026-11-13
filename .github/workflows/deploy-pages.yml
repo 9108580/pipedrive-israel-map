@@ -41,6 +41,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Locality and roof regression tests
+        run: python -m unittest discover -s tests -v
+
       - name: Verify complete map
         run: python -m src.validate_map
 

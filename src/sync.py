@@ -291,6 +291,11 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
             did = str(deal["deal_id"])
             address = deal["address"]
             existing = deals_map.get(did) or {}
+            locality_meta = {k: v for k, v in deal.items()
+                             if k.startswith(("address_", "crm_", "locality_"))}
+            # Refresh identity even when geometry/address did not change.
+            if did in deals_map:
+                existing.update(locality_meta)
 
             if not full and did in deals_map:
                 same_addr = (existing.get("address") or "").strip() == address.strip()
@@ -331,6 +336,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                     "location_precision": anchor.get("location_precision"),
                     "location_source": anchor.get("location_source"),
                     "reused_person_geocode": True,
+                    **locality_meta,
                 }
                 if project_number >= next_num:
                     next_num = project_number + 1
@@ -401,6 +407,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 "location_precision": "settlement_approximate" if approximate else "street_geocode",
                 "location_source": location_source,
                 "error": error,
+                **locality_meta,
             }
             if project_number >= next_num:
                 next_num = project_number + 1
@@ -445,6 +452,12 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
         deals_map=deals_map,
         sync_stats=sync_stats,
     )
+    report = json.loads(config.UNMAPPED_PATH.read_text(encoding="utf-8"))
+    state["crm_summary"] = {"generated_at": report["generated_at"],
+                            "deals_total": report["crm_deals_total"],
+                            "without_address": report["unmapped_total"]}
+    save_state(state)
+    write_geojson(state)
     log.info(
         "Done. added=%s reused=%s skipped=%s failed=%s next_number=%s geojson=%s",
         added,

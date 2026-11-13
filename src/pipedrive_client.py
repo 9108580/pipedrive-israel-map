@@ -92,7 +92,7 @@ class PipedriveClient:
                 if not key:
                     continue
                 if key.endswith("_formatted_address"):
-                    keys.insert(0, key)
+                    keys.insert(0, key.removesuffix("_formatted_address"))
                     continue
                 if _is_address_component_key(key):
                     continue
@@ -174,6 +174,26 @@ class PipedriveClient:
                     return addr
         return ""
 
+    def get_person_location(self, person: dict[str, Any], field_keys: list[str]) -> dict[str, Any]:
+        """Keep original, formatted and structured locality; none may erase another."""
+        from .localities import resolve_locality
+        for candidate in field_keys:
+            key = candidate.removesuffix("_formatted_address")
+            raw = self._extract_address_value(person.get(key))
+            formatted = self._extract_address_value(person.get(f"{key}_formatted_address"))
+            if not raw and not formatted:
+                continue
+            city = person.get(f"{key}_locality") or ""
+            resolved = resolve_locality(raw=raw, formatted=formatted, locality=city,
+                                        person_id=person.get("id"))
+            return {"address_raw": raw, "address_formatted": formatted,
+                    "crm_locality": city, "locality_id": resolved["id"],
+                    "locality_name": resolved["name"], "locality_source": resolved["source"],
+                    "locality_reason": resolved["reason"]}
+        return {"address_raw": "", "address_formatted": "", "crm_locality": "",
+                "locality_id": None, "locality_name": "", "locality_source": "unresolved",
+                "locality_reason": "No CRM address"}
+
     def iter_persons_with_address(self) -> Iterator[dict[str, Any]]:
         keys = self.discover_address_fields()
         for person in self.iter_persons():
@@ -184,6 +204,7 @@ class PipedriveClient:
                 "person_id": person.get("id"),
                 "name": person.get("name") or "",
                 "address": address,
+                **self.get_person_location(person, keys),
             }
 
     def persons_address_index(self) -> dict[int, dict[str, Any]]:
@@ -196,6 +217,7 @@ class PipedriveClient:
             out[int(pid)] = {
                 "name": person.get("name") or "",
                 "address": person.get("address") or "",
+                **{k: v for k, v in person.items() if k.startswith(("address_", "crm_", "locality_"))},
             }
         return out
 
@@ -251,4 +273,5 @@ class PipedriveClient:
                 "person_name": info.get("name") or "",
                 "address": address,
                 "status": deal.get("status") or "",
+                **{k: v for k, v in info.items() if k.startswith(("address_", "crm_", "locality_"))},
             }

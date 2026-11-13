@@ -198,7 +198,7 @@
   </div>
   <aside id="map-stats" aria-live="polite" hidden>
     <div class="stat-row">
-      <span class="stat-label">מספר יישובים</span>
+      <span class="stat-label">יישובים מזוהים</span>
       <span class="stat-value" id="stat-places">—</span>
     </div>
     <div class="stat-row">
@@ -258,12 +258,13 @@
       const groups = new Map();
       for (const f of features) {
         const place = (f.properties && f.properties.place) || "";
-        if (!place) continue;
+        const localityId = f.properties && f.properties.locality_id;
+        if (!localityId || !place) continue;
         const [lon, lat] = f.geometry.coordinates;
-        if (!groups.has(place)) {
-          groups.set(place, { lats: [], lons: [] });
+        if (!groups.has(localityId)) {
+          groups.set(localityId, { place, lats: [], lons: [] });
         }
-        const g = groups.get(place);
+        const g = groups.get(localityId);
         g.lats.push(lat);
         g.lons.push(lon);
       }
@@ -273,9 +274,10 @@
         return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
       };
       const out = [];
-      for (const [place, g] of groups) {
+      for (const [localityId, g] of groups) {
         out.push({
-          place,
+          place: g.place,
+          localityId,
           // Median resists outliers (e.g. one point geocoded to another city)
           lat: median(g.lats),
           lon: median(g.lons),
@@ -325,7 +327,17 @@
         const statsEl = document.getElementById("map-stats");
         if (placesEl) placesEl.textContent = placesCount.toLocaleString("he-IL");
         if (projectsEl) projectsEl.textContent = projectsCount.toLocaleString("he-IL");
-        if (statsEl) statsEl.hidden = false;
+        if (statsEl) {
+          statsEl.hidden = false;
+          const unresolved = features.filter(f => !f.properties.locality_id).length;
+          const note = document.createElement("div");
+          note.id = "locality-note";
+          note.style.cssText = "font-size:12px;margin-top:6px;color:#555";
+          note.textContent = unresolved ? `${unresolved} פרויקטים עם יישוב לא מזוהה — אינם נספרים כיישוב נוסף` : "כל היישובים מאוחדים לפי סמל יישוב";
+          const noAddress = (geojson.crm_summary || {}).without_address || 0;
+          if (noAddress) note.textContent += ` · ${noAddress} עסקאות CRM ללא כתובת אינן מוצגות במפה`;
+          statsEl.appendChild(note);
+        }
 
         // Company logo floating on the Mediterranean (west of Israel)
         const seaLogoSize = window.matchMedia("(max-width: 640px)").matches ? 72 : 104;
@@ -348,7 +360,7 @@
             const place = (feature.properties && feature.properties.place) || "";
             const title = place
               ? `<strong>פרויקט סולארי</strong><br/>${escapeHtml(place)}`
-              : "<strong>פרויקט סולארי</strong>";
+              : "<strong>פרויקט סולארי</strong><br/>יישוב לא מזוהה";
             const approximate = feature.properties && feature.properties.approximate;
             layer.bindPopup(title + (approximate ? "<br/><small>מיקום משוער בתוך היישוב</small>" : ""));
           },

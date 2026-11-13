@@ -1,0 +1,64 @@
+{
+  "persons": {
+    "1507": {
+      "raw": "ג'נסור 215",
+      "locality_id": "262",
+      "evidence": "CRM deal 1562; owner email dated 2021-07-01 explicitly identifies Ginosar (message 17a6156ed1fd3390)."
+    },
+    "1510": {
+      "raw": "רח' כחול א.ת משגב",
+      "locality_id": "1724",
+      "evidence": "Raw CRM address explicitly identifies Misgav industrial area (Teradyon), CBS locality code 1724."
+    },
+    "1523": {
+      "raw": "רח' כחול א.ת משגב",
+      "locality_id": "1724",
+      "evidence": "Raw CRM address explicitly identifies Misgav industrial area (Teradyon), CBS locality code 1724."
+    },
+    "1667": {
+      "raw": "נעמי",
+      "locality_id": "3713",
+      "evidence": "CRM deal 1726; supplier invoice email dated 2023-08 identifies Yosef Dafna - Naama (message 18a4057cd28cb2b2)."
+    },
+    "1793": {
+      "raw": "מעלות כלנית",
+      "locality_id": "1063",
+      "evidence": "CRM locality Maalot-Tarshiha; handwritten raw address starts מעלות and identifies Kalanit as the street."
+    },
+    "1870": {
+      "raw": "הדס 20",
+      "locality_id": "1139",
+      "evidence": "Deal 1932: supplier invoice subject explicitly identifies Yechiel Abukarat, Karmiel, 2025-01-23 (message 194931af3218a85b)."
+    },
+    "2043": {
+      "raw": "54347240",
+      "locality_id": "9000",
+      "evidence": "CRM person 2043 has באר שבע in alternate field 5883d4ebe14b56a1b1df918ffdbef142c9453b8d; address and alternate field were swapped."
+    },
+    "60": {
+      "raw": "ג'ת",
+      "locality_id": null,
+      "evidence": "Bare גת/גת apostrophe name does not distinguish Jat in Galilee from Jat in the Triangle."
+    },
+    "74": {
+      "raw": "ג'ת 124",
+      "locality_id": null,
+      "evidence": "Bare גת/גת apostrophe name does not distinguish Jat in Galilee from Jat in the Triangle."
+    },
+    "1820": {
+      "raw": "הרב הכהן הנזיר 5ב",
+      "locality_id": "7400",
+      "evidence": "Public directory matches CRM name and address: https://private.b144.co.il/bezeq_phone/41140413447064594f150c13/"
+    },
+    "1825": {
+      "raw": "משגב",
+      "locality_id": "1724",
+      "evidence": "Saint Moritz factory in Teradyon industrial park: https://reutsaado.wixsite.com/drushim/--c64x"
+    },
+    "2558": {
+      "raw": "טללים 6",
+      "locality_id": null,
+      "evidence": "Contract lists only טללים 6; cannot distinguish street in Tzur Hadassah from Tlalim settlement."
+    }
+  }
+}
