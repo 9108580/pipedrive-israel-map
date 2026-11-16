@@ -867,8 +867,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.2390014,
-          32.9858909
+          35.2455695,
+          32.9821671
         ]
       },
       "properties": {
@@ -876,9 +876,9 @@
         "project_number": 43,
         "address_type": "city",
         "person_id": 60,
-        "place": "",
-        "locality_id": null,
-        "locality_status": "unresolved",
+        "place": "יאנוח-ג'ת",
+        "locality_id": "1295",
+        "locality_status": "resolved",
         "approximate": true,
         "deal_id": 59
       }
@@ -1161,8 +1161,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.2513198,
-          32.9667765
+          35.2420661,
+          32.9857593
         ]
       },
       "properties": {
@@ -1170,9 +1170,9 @@
         "project_number": 57,
         "address_type": "city",
         "person_id": 74,
-        "place": "",
-        "locality_id": null,
-        "locality_status": "unresolved",
+        "place": "יאנוח-ג'ת",
+        "locality_id": "1295",
+        "locality_status": "resolved",
         "approximate": true,
         "deal_id": 73
       }
@@ -25851,11 +25851,200 @@
         "approximate": true,
         "deal_id": 2813
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0962194,
+          33.0006045
+        ]
+      },
+      "properties": {
+        "name": "Project 1242",
+        "project_number": 1242,
+        "address_type": "city",
+        "person_id": 2578,
+        "place": "נהריה",
+        "locality_id": "9100",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2809
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3478348,
+          32.9414132
+        ]
+      },
+      "properties": {
+        "name": "Project 1243",
+        "project_number": 1243,
+        "address_type": "city",
+        "person_id": 2583,
+        "place": "סאג'ור",
+        "locality_id": "525",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5877624,
+          31.6764792
+        ]
+      },
+      "properties": {
+        "name": "Project 1244",
+        "project_number": 1244,
+        "address_type": "city",
+        "person_id": 2584,
+        "place": "אשקלון",
+        "locality_id": "7100",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9977578,
+          32.35463945
+        ]
+      },
+      "properties": {
+        "name": "Project 1245",
+        "project_number": 1245,
+        "address_type": "city",
+        "person_id": 2585,
+        "place": "גן יאשיה",
+        "locality_id": "734",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8443472,
+          31.9225479
+        ]
+      },
+      "properties": {
+        "name": "Project 1246",
+        "project_number": 1246,
+        "address_type": "city",
+        "person_id": 2586,
+        "place": "רמלה",
+        "locality_id": "8500",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2817
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2494461,
+          32.9835946
+        ]
+      },
+      "properties": {
+        "name": "Project 1247",
+        "project_number": 1247,
+        "address_type": "city",
+        "person_id": 2587,
+        "place": "יאנוח-ג'ת",
+        "locality_id": "1295",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4757342,
+          31.8082862
+        ]
+      },
+      "properties": {
+        "name": "Project 1248",
+        "project_number": 1248,
+        "address_type": "city",
+        "person_id": 2588,
+        "place": "בית הערבה",
+        "locality_id": "3645",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9832333,
+          32.4728057
+        ]
+      },
+      "properties": {
+        "name": "Project 1249",
+        "project_number": 1249,
+        "address_type": "city",
+        "person_id": 2589,
+        "place": "פרדס חנה-כרכור",
+        "locality_id": "7800",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.442256,
+          33.022676
+        ]
+      },
+      "properties": {
+        "name": "Project 1250",
+        "project_number": 1250,
+        "address_type": "city",
+        "person_id": 2590,
+        "place": "ג'ש (גוש חלב)",
+        "locality_id": "487",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2822
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-13T13:02:19.975074+00:00",
-    "deals_total": 1236,
-    "without_address": 5
+    "generated_at": "2026-11-16T15:18:01.863441+00:00",
+    "deals_total": 1244,
+    "without_address": 4
   }
 }
