@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1251,
+  "next_project_number": 1252,
   "persons": {
     "9": {
       "person_id": 9,
@@ -38734,11 +38734,34 @@
       "locality_name": "ג'ש (גוש חלב)",
       "locality_source": "crm_locality",
       "locality_reason": ""
+    },
+    "2823": {
+      "deal_id": 2823,
+      "person_id": 2591,
+      "title": "שני אלמה שליסמן",
+      "project_number": 1251,
+      "address": "מבצע עובדה, Tverya, Israel",
+      "lat": 32.7841601,
+      "lon": 35.5256768,
+      "address_type": "city",
+      "city_key": "טבריה",
+      "geocode_display": "טבריה, נפת כנרת, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null,
+      "address_raw": "מבצע עובדה, טבריה",
+      "address_formatted": "מבצע עובדה, Tverya, Israel",
+      "crm_locality": "Tverya",
+      "locality_id": "6700",
+      "locality_name": "טבריה",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-16T15:18:01.863441+00:00",
-    "deals_total": 1244,
+    "generated_at": "2026-11-17T15:43:44.059229+00:00",
+    "deals_total": 1245,
     "without_address": 4
   }
 }

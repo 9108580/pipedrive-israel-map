@@ -26040,11 +26040,32 @@
         "approximate": true,
         "deal_id": 2822
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5256768,
+          32.7841601
+        ]
+      },
+      "properties": {
+        "name": "Project 1251",
+        "project_number": 1251,
+        "address_type": "city",
+        "person_id": 2591,
+        "place": "טבריה",
+        "locality_id": "6700",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2823
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-16T15:18:01.863441+00:00",
-    "deals_total": 1244,
+    "generated_at": "2026-11-17T15:43:44.059229+00:00",
+    "deals_total": 1245,
     "without_address": 4
   }
 }
