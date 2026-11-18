@@ -26061,11 +26061,32 @@
         "approximate": true,
         "deal_id": 2823
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7858464,
+          31.2397176
+        ]
+      },
+      "properties": {
+        "name": "Project 1252",
+        "project_number": 1252,
+        "address_type": "city",
+        "person_id": 2592,
+        "place": "באר שבע",
+        "locality_id": "9000",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2824
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-17T15:43:44.059229+00:00",
-    "deals_total": 1245,
+    "generated_at": "2026-11-18T15:23:53.483840+00:00",
+    "deals_total": 1246,
     "without_address": 4
   }
 }

@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1252,
+  "next_project_number": 1253,
   "persons": {
     "9": {
       "person_id": 9,
@@ -38757,11 +38757,34 @@
       "locality_name": "טבריה",
       "locality_source": "crm_raw",
       "locality_reason": ""
+    },
+    "2824": {
+      "deal_id": 2824,
+      "person_id": 2592,
+      "title": "ברוך גיגי",
+      "project_number": 1252,
+      "address": "Yaffa Yarkoni St 7, Be'er Sheva, Israel",
+      "lat": 31.2397176,
+      "lon": 34.7858464,
+      "address_type": "city",
+      "city_key": "באר-שבע",
+      "geocode_display": "באר-שבע, נפת באר שבע, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null,
+      "address_raw": "יפה ירקוני 7, באר שבע, Israel",
+      "address_formatted": "Yaffa Yarkoni St 7, Be'er Sheva, Israel",
+      "crm_locality": "Be'er Sheva",
+      "locality_id": "9000",
+      "locality_name": "באר שבע",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-17T15:43:44.059229+00:00",
-    "deals_total": 1245,
+    "generated_at": "2026-11-18T15:23:53.483840+00:00",
+    "deals_total": 1246,
     "without_address": 4
   }
 }
