@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1253,
+  "next_project_number": 1254,
   "persons": {
     "9": {
       "person_id": 9,
@@ -38780,11 +38780,44 @@
       "locality_name": "באר שבע",
       "locality_source": "crm_raw",
       "locality_reason": ""
+    },
+    "2826": {
+      "deal_id": 2826,
+      "person_id": 2594,
+      "title": "פאדיה סלאם",
+      "project_number": 1253,
+      "address": "Kisra-Sumei, Israel",
+      "lat": 32.9665554,
+      "lon": 35.3011181,
+      "address_type": "city",
+      "city_key": "كيسرى-كفر سميع",
+      "geocode_display": "كيسرى-كفر سميع, נפת עכו, מחוז הצפון, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null,
+      "address_raw": "כיסרא סומיע, Israel",
+      "address_formatted": "Kisra-Sumei, Israel",
+      "crm_locality": "Kisra-Sumei",
+      "locality_id": "1296",
+      "locality_name": "כסרא-סמיע",
+      "locality_source": "crm_locality",
+      "locality_reason": ""
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-18T15:23:53.483840+00:00",
-    "deals_total": 1246,
+    "generated_at": "2026-11-19T17:40:10.466358+00:00",
+    "deals_total": 1248,
     "without_address": 4
+  },
+  "pending_deals": {
+    "2825": {
+      "deal_id": 2825,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-19T17:40:08.957739+00:00",
+      "last_failed_at": "2026-11-19T17:40:08.957739+00:00",
+      "previous_pin_preserved": false
+    }
   }
 }

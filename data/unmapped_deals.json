@@ -1,13 +1,24 @@
 {
-  "generated_at": "2026-11-18T15:23:53.483840+00:00",
-  "crm_deals_total": 1246,
-  "crm_deals_mappable": 1242,
-  "map_pins": 1242,
+  "deferred_deals": [
+    {
+      "deal_id": 2825,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-19T17:40:08.957739+00:00",
+      "last_failed_at": "2026-11-19T17:40:08.957739+00:00",
+      "previous_pin_preserved": false
+    }
+  ],
+  "deferred_total": 1,
+  "generated_at": "2026-11-19T17:40:10.466358+00:00",
+  "crm_deals_total": 1248,
+  "crm_deals_mappable": 1244,
+  "map_pins": 1243,
   "sync": {
     "added": 1,
     "reused": 0,
-    "skipped": 1241,
-    "failed": 0
+    "skipped": 1242,
+    "failed": 1
   },
   "unmapped_no_person": [
     {

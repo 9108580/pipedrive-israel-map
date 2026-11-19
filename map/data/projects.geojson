@@ -26082,11 +26082,32 @@
         "approximate": true,
         "deal_id": 2824
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3011181,
+          32.9665554
+        ]
+      },
+      "properties": {
+        "name": "Project 1253",
+        "project_number": 1253,
+        "address_type": "city",
+        "person_id": 2594,
+        "place": "כסרא-סמיע",
+        "locality_id": "1296",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2826
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-18T15:23:53.483840+00:00",
-    "deals_total": 1246,
+    "generated_at": "2026-11-19T17:40:10.466358+00:00",
+    "deals_total": 1248,
     "without_address": 4
   }
 }
