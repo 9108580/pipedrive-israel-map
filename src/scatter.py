@@ -113,6 +113,7 @@ class ResidentialScatter:
         self._last_call = 0.0
         self._cache: dict[str, list[tuple[float, float]]] = {}
         self.cache_dir = cache_dir
+        self._overpass_unavailable = False
 
     def _throttle(self) -> None:
         elapsed = time.monotonic() - self._last_call
@@ -126,12 +127,17 @@ class ResidentialScatter:
         cache_file = self.cache_dir / (hashlib.sha256(query.encode()).hexdigest() + ".json") if self.cache_dir else None
         if cache_file and cache_file.exists() and time.time() - cache_file.stat().st_mtime < 7 * 86400:
             return json.loads(cache_file.read_text(encoding="utf-8"))
+        # A complete mirror outage must not cost minutes for every deal.
+        # Verified caches still work; a fresh sync instance retries the service.
+        if self._overpass_unavailable:
+            raise BuildingLookupError("Overpass unavailable for this run; retry next sync")
         last_exc: Exception | None = None
         for url in OVERPASS_MIRRORS:
             self._throttle()
             try:
                 r = self.session.get(url, params={"data": query}, timeout=60)
                 if r.status_code in (429, 502, 503, 504):
+                    last_exc = RuntimeError(f"HTTP {r.status_code} from {url.split('/')[2]}")
                     wait = 3 if r.status_code == 429 else 1
                     log.warning(
                         "Overpass HTTP %s (%s), sleep %ss",
@@ -151,6 +157,7 @@ class ResidentialScatter:
                 last_exc = exc
                 log.warning("Overpass failed (%s): %s", url.split("/")[2], exc)
                 time.sleep(1)
+        self._overpass_unavailable = True
         raise BuildingLookupError(f"Overpass unavailable: {last_exc}")
 
     def fetch_buildings(

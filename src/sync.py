@@ -19,7 +19,7 @@ from .geocode import (
 )
 from .pipedrive_client import PipedriveClient
 from .roof_catalog import load_catalog, pick_nearest_roof, pick_roof, resolve_place_key
-from .scatter import NoSuitableBuilding, ResidentialScatter
+from .scatter import BuildingLookupError, NoSuitableBuilding, ResidentialScatter
 from .state_store import load_state, save_state, write_geojson
 
 logging.basicConfig(
@@ -66,12 +66,30 @@ def _person_anchor(
     return None
 
 
+def _defer_deal(state: dict[str, Any], deal: dict[str, Any], reason: str) -> None:
+    """Keep retry metadata separate from verified, published map records."""
+    pending = state.setdefault("pending_deals", {})
+    did = str(deal["deal_id"])
+    previous = pending.get(did, {})
+    now = datetime.now(timezone.utc).isoformat()
+    pending[did] = {
+        "deal_id": int(did),
+        "reason": reason,
+        "attempts": int(previous.get("attempts", 0)) + 1,
+        "first_failed_at": previous.get("first_failed_at", now),
+        "last_failed_at": now,
+        "previous_pin_preserved": did in state.get("deals", {}),
+    }
+    log.warning("Deferred deal %s (%s); retry on next sync", did, reason)
+
+
 def write_unmapped_report(
     *,
     client: PipedriveClient,
     persons_index: dict[int, dict[str, Any]],
     deals_map: dict[str, Any],
     sync_stats: dict[str, int],
+    pending_deals: dict[str, Any] | None = None,
 ) -> Path:
     """List deals that cannot appear on the map (no person / no address).
 
@@ -83,10 +101,12 @@ def write_unmapped_report(
     no_address: list[dict[str, Any]] = []
     crm_mappable = 0
     crm_total = 0
+    active_ids: set[str] = set()
 
     for deal in client.iter_deals():
         crm_total += 1
         did = int(deal["id"])
+        active_ids.add(str(did))
         title = (deal.get("title") or "")[:120]
         add_time = deal.get("add_time") or ""
         pid = client.deal_person_id(deal)
@@ -115,7 +135,14 @@ def write_unmapped_report(
             continue
         crm_mappable += 1
 
+    if pending_deals is not None:
+        for did in list(pending_deals):
+            if did not in active_ids:
+                del pending_deals[did]
+    deferred = list((pending_deals or {}).values())
     report = {
+        "deferred_deals": deferred,
+        "deferred_total": len(deferred),
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "crm_deals_total": crm_total,
         "crm_deals_mappable": crm_mappable,
@@ -148,6 +175,11 @@ def write_unmapped_report(
         path,
     )
 
+    if deferred:
+        log.warning("%s deals pending retry; verified pins are preserved", len(deferred))
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            print(f"::warning title=Map sync deferred::{len(deferred)} deals await retry; see sync summary and data/unmapped_deals.json")
+
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         lines = [
@@ -159,11 +191,19 @@ def write_unmapped_report(
             f"- Added this run: **{sync_stats.get('added', 0)}** "
             f"(reused={sync_stats.get('reused', 0)}, "
             f"skipped={sync_stats.get('skipped', 0)}, "
-            f"geocode_failed={sync_stats.get('failed', 0)})",
+            f"deferred_this_run={sync_stats.get('failed', 0)})",
             f"- Unmapped (no address): **{len(no_address)}**",
             f"- Unmapped (no person): **{len(no_person)}**",
             "",
         ]
+        if deferred:
+            lines.extend(["### Deferred for retry", "",
+                          "Existing verified pins are preserved. Unverified new pins are not published.", ""])
+            for row in deferred[:50]:
+                lines.append(f"- deal `{row['deal_id']}`: {row['reason']} (attempts={row['attempts']})")
+            if len(deferred) > 50:
+                lines.append(f"- Plus {len(deferred) - 50} entries in data/unmapped_deals.json")
+            lines.append("")
         if no_address[:10]:
             lines.append("### Recent without address")
             for row in sorted(no_address, key=lambda x: x.get("add_time") or "")[-10:]:
@@ -276,6 +316,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
 
     deals_map: dict[str, Any] = state.setdefault("deals", {})
     next_num = int(state.get("next_project_number") or 1)
+    pending = state.setdefault("pending_deals", {})
 
     added = 0
     skipped = 0
@@ -293,28 +334,25 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
             existing = deals_map.get(did) or {}
             locality_meta = {k: v for k, v in deal.items()
                              if k.startswith(("address_", "crm_", "locality_"))}
-            # Refresh identity even when geometry/address did not change.
-            if did in deals_map:
-                existing.update(locality_meta)
-
             if not full and did in deals_map:
                 same_addr = (existing.get("address") or "").strip() == address.strip()
                 has_coords = (
                     existing.get("lat") is not None and existing.get("lon") is not None
                 )
                 if same_addr and has_coords:
+                    existing.update(locality_meta)
+                    pending.pop(did, None)
                     skipped += 1
                     continue
             if full and did in deals_map and deals_map[did].get("lat") is not None:
                 same_addr = (existing.get("address") or "").strip() == address.strip()
                 if same_addr:
+                    existing.update(locality_meta)
+                    pending.pop(did, None)
                     skipped += 1
                     continue
 
             project_number = int(existing.get("project_number") or next_num)
-            if "project_number" not in existing:
-                next_num = max(next_num, project_number + 1)
-
             pid = int(deal["person_id"])
             anchor = _person_anchor(deals_map, pid)
 
@@ -340,6 +378,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 }
                 if project_number >= next_num:
                     next_num = project_number + 1
+                pending.pop(did, None)
                 added += 1
                 reused += 1
                 if added % 5 == 0:
@@ -356,7 +395,9 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 raise
 
             if not geo:
-                raise NoSuitableBuilding(f"No geocode for deal {did}; keeping the published map intact")
+                _defer_deal(state, deal, "geocode_unavailable")
+                failed += 1
+                continue
 
             city_key = _record_city_key(geo, address)
             first_label = (geo.display_name or "").split(",")[0].strip()
@@ -382,6 +423,8 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                             geo.lat, geo.lon, occupied, seed=did
                         )
                         location_source = "osm_building"
+                    except BuildingLookupError:
+                        raise
                     except NoSuitableBuilding:
                         lat, lon = pick_nearest_roof(city_key, (geo.lat, geo.lon), occupied)
                         location_source = load_catalog()["places"][city_key].get("source", "microsoft_footprint")
@@ -389,8 +432,10 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
                 roof_verified = True
                 error = None
             except NoSuitableBuilding as exc:
-                log.warning("Unverified roof for deal %s: %s", did, exc)
-                raise
+                reason = "building_service_unavailable" if isinstance(exc, BuildingLookupError) else "no_verified_roof"
+                _defer_deal(state, deal, reason)
+                failed += 1
+                continue
 
             deals_map[did] = {
                 "deal_id": int(did),
@@ -411,6 +456,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
             }
             if project_number >= next_num:
                 next_num = project_number + 1
+            pending.pop(did, None)
             if roof_verified:
                 added += 1
 
@@ -451,6 +497,7 @@ def sync(full: bool = False, limit: int | None = None, migrate_only: bool = Fals
         persons_index=persons_index,
         deals_map=deals_map,
         sync_stats=sync_stats,
+        pending_deals=pending,
     )
     report = json.loads(config.UNMAPPED_PATH.read_text(encoding="utf-8"))
     state["crm_summary"] = {"generated_at": report["generated_at"],
