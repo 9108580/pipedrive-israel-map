@@ -1,23 +1,23 @@
 {
   "deferred_deals": [
     {
-      "deal_id": 2825,
-      "reason": "building_service_unavailable",
+      "deal_id": 2831,
+      "reason": "geocode_unavailable",
       "attempts": 1,
-      "first_failed_at": "2026-11-19T17:40:08.957739+00:00",
-      "last_failed_at": "2026-11-19T17:40:08.957739+00:00",
+      "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
+      "last_failed_at": "2026-11-22T14:22:46.780934+00:00",
       "previous_pin_preserved": false
     }
   ],
   "deferred_total": 1,
-  "generated_at": "2026-11-19T17:40:10.466358+00:00",
-  "crm_deals_total": 1248,
-  "crm_deals_mappable": 1244,
-  "map_pins": 1243,
+  "generated_at": "2026-11-22T14:22:48.178244+00:00",
+  "crm_deals_total": 1253,
+  "crm_deals_mappable": 1248,
+  "map_pins": 1247,
   "sync": {
-    "added": 1,
+    "added": 4,
     "reused": 0,
-    "skipped": 1242,
+    "skipped": 1243,
     "failed": 1
   },
   "unmapped_no_person": [
@@ -49,9 +49,16 @@
       "title": "איתן ארשדי",
       "add_time": "2026-11-10 08:03:33",
       "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2829,
+      "person_id": 1956,
+      "title": "בדיקה",
+      "add_time": "2026-11-22 08:52:26",
+      "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 4,
+  "unmapped_total": 5,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }

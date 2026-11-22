@@ -26103,11 +26103,95 @@
         "approximate": true,
         "deal_id": 2826
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.92224968911372,
+          32.2462038633729
+        ]
+      },
+      "properties": {
+        "name": "Project 1254",
+        "project_number": 1254,
+        "address_type": "city",
+        "person_id": 2593,
+        "place": "תל מונד",
+        "locality_id": "154",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.47649047418053,
+          32.48184008569876
+        ]
+      },
+      "properties": {
+        "name": "Project 1255",
+        "project_number": 1255,
+        "address_type": "city",
+        "person_id": 2595,
+        "place": "רשפים",
+        "locality_id": "437",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4738626499184,
+          32.48281463302865
+        ]
+      },
+      "properties": {
+        "name": "Project 1256",
+        "project_number": 1256,
+        "address_type": "city",
+        "person_id": 2596,
+        "place": "רשפים",
+        "locality_id": "437",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.005276516081906,
+          32.307582961213015
+        ]
+      },
+      "properties": {
+        "name": "Project 1257",
+        "project_number": 1257,
+        "address_type": "city",
+        "person_id": 2597,
+        "place": "ניצני עוז",
+        "locality_id": "851",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2830
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-19T17:40:10.466358+00:00",
-    "deals_total": 1248,
-    "without_address": 4
+    "generated_at": "2026-11-22T14:22:48.178244+00:00",
+    "deals_total": 1253,
+    "without_address": 5
   }
 }
