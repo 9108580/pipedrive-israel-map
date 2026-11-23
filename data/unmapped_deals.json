@@ -3,21 +3,21 @@
     {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 1,
+      "attempts": 2,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-22T14:22:46.780934+00:00",
+      "last_failed_at": "2026-11-23T17:44:17.375197+00:00",
       "previous_pin_preserved": false
     }
   ],
   "deferred_total": 1,
-  "generated_at": "2026-11-22T14:22:48.178244+00:00",
-  "crm_deals_total": 1253,
-  "crm_deals_mappable": 1248,
-  "map_pins": 1247,
+  "generated_at": "2026-11-23T17:45:46.230018+00:00",
+  "crm_deals_total": 1257,
+  "crm_deals_mappable": 1251,
+  "map_pins": 1250,
   "sync": {
-    "added": 4,
-    "reused": 0,
-    "skipped": 1243,
+    "added": 3,
+    "reused": 1,
+    "skipped": 1247,
     "failed": 1
   },
   "unmapped_no_person": [
@@ -56,9 +56,16 @@
       "title": "בדיקה",
       "add_time": "2026-11-22 08:52:26",
       "reason": "person_has_no_address"
+    },
+    {
+      "deal_id": 2835,
+      "person_id": 2601,
+      "title": "ישי סלוצקי",
+      "add_time": "2026-11-23 15:53:07",
+      "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 5,
+  "unmapped_total": 6,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }

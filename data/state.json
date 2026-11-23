@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1258,
+  "next_project_number": 1261,
   "persons": {
     "9": {
       "person_id": 9,
@@ -38895,20 +38895,89 @@
       "locality_name": "ניצני עוז",
       "locality_source": "crm_raw",
       "locality_reason": ""
+    },
+    "2832": {
+      "deal_id": 2832,
+      "person_id": 2599,
+      "title": "כורם שמעון (רעפים)",
+      "project_number": 1258,
+      "address": "88, Arugot, Israel",
+      "lat": 31.743477905909828,
+      "lon": 34.769093975761955,
+      "address_type": "city",
+      "city_key": "מועצה אזורית באר טוביה",
+      "geocode_display": "ערוגות, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "error": null,
+      "address_raw": "88, ערוגות, Israel",
+      "address_formatted": "88, Arugot, Israel",
+      "crm_locality": "Arugot",
+      "locality_id": "593",
+      "locality_name": "ערוגות",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
+    },
+    "2833": {
+      "deal_id": 2833,
+      "person_id": 2599,
+      "title": "כורם שמעון (בטון)",
+      "project_number": 1259,
+      "address": "88, Arugot, Israel",
+      "lat": 31.743477905909828,
+      "lon": 34.769093975761955,
+      "address_type": "city",
+      "city_key": "מועצה אזורית באר טוביה",
+      "geocode_display": "ערוגות, מועצה אזורית באר טוביה, נפת אשקלון, מחוז הדרום, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "osm_building",
+      "reused_person_geocode": true,
+      "address_raw": "88, ערוגות, Israel",
+      "address_formatted": "88, Arugot, Israel",
+      "crm_locality": "Arugot",
+      "locality_id": "593",
+      "locality_name": "ערוגות",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
+    },
+    "2834": {
+      "deal_id": 2834,
+      "person_id": 2600,
+      "title": "מיהלי נכסים",
+      "project_number": 1260,
+      "address": "HaNapah St 6, Karmiel, Israel",
+      "lat": 32.9088353,
+      "lon": 35.2751009,
+      "address_type": "city",
+      "city_key": "כרמיאל",
+      "geocode_display": "כרמיאל, נפת עכו, מחוז הצפון, 2195106, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null,
+      "address_raw": "הנפח 6, כרמיאל, Israel",
+      "address_formatted": "HaNapah St 6, Karmiel, Israel",
+      "crm_locality": "Karmiel",
+      "locality_id": "1139",
+      "locality_name": "כרמיאל",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-22T14:22:48.178244+00:00",
-    "deals_total": 1253,
-    "without_address": 5
+    "generated_at": "2026-11-23T17:45:46.230018+00:00",
+    "deals_total": 1257,
+    "without_address": 6
   },
   "pending_deals": {
     "2831": {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 1,
+      "attempts": 2,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-22T14:22:46.780934+00:00",
+      "last_failed_at": "2026-11-23T17:44:17.375197+00:00",
       "previous_pin_preserved": false
     }
   }
