@@ -38967,7 +38967,7 @@
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-23T17:45:46.230018+00:00",
+    "generated_at": "2026-11-24T17:16:28.219437+00:00",
     "deals_total": 1257,
     "without_address": 6
   },
@@ -38975,9 +38975,9 @@
     "2831": {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 2,
+      "attempts": 3,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-23T17:44:17.375197+00:00",
+      "last_failed_at": "2026-11-24T17:16:26.665699+00:00",
       "previous_pin_preserved": false
     }
   }

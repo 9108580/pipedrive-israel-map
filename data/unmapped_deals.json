@@ -3,21 +3,21 @@
     {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 2,
+      "attempts": 3,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-23T17:44:17.375197+00:00",
+      "last_failed_at": "2026-11-24T17:16:26.665699+00:00",
       "previous_pin_preserved": false
     }
   ],
   "deferred_total": 1,
-  "generated_at": "2026-11-23T17:45:46.230018+00:00",
+  "generated_at": "2026-11-24T17:16:28.219437+00:00",
   "crm_deals_total": 1257,
   "crm_deals_mappable": 1251,
   "map_pins": 1250,
   "sync": {
-    "added": 3,
-    "reused": 1,
-    "skipped": 1247,
+    "added": 0,
+    "reused": 0,
+    "skipped": 1250,
     "failed": 1
   },
   "unmapped_no_person": [
