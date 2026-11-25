@@ -3,22 +3,54 @@
     {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 3,
+      "attempts": 4,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-24T17:16:26.665699+00:00",
+      "last_failed_at": "2026-11-25T17:01:00.015882+00:00",
+      "previous_pin_preserved": false
+    },
+    {
+      "deal_id": 2229,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:16.195621+00:00",
+      "last_failed_at": "2026-11-25T17:00:16.195621+00:00",
+      "previous_pin_preserved": false
+    },
+    {
+      "deal_id": 2409,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:18.446635+00:00",
+      "last_failed_at": "2026-11-25T17:00:18.446635+00:00",
+      "previous_pin_preserved": false
+    },
+    {
+      "deal_id": 2800,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:20.028360+00:00",
+      "last_failed_at": "2026-11-25T17:00:20.028360+00:00",
+      "previous_pin_preserved": false
+    },
+    {
+      "deal_id": 2836,
+      "reason": "geocode_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:01:14.996305+00:00",
+      "last_failed_at": "2026-11-25T17:01:14.996305+00:00",
       "previous_pin_preserved": false
     }
   ],
-  "deferred_total": 1,
-  "generated_at": "2026-11-24T17:16:28.219437+00:00",
-  "crm_deals_total": 1257,
-  "crm_deals_mappable": 1251,
-  "map_pins": 1250,
+  "deferred_total": 5,
+  "generated_at": "2026-11-25T17:01:17.716385+00:00",
+  "crm_deals_total": 1259,
+  "crm_deals_mappable": 1256,
+  "map_pins": 1251,
   "sync": {
-    "added": 0,
+    "added": 3,
     "reused": 0,
-    "skipped": 1250,
-    "failed": 1
+    "skipped": 1248,
+    "failed": 5
   },
   "unmapped_no_person": [
     {
@@ -29,27 +61,6 @@
     }
   ],
   "unmapped_no_address": [
-    {
-      "deal_id": 2229,
-      "person_id": 2060,
-      "title": "עראף מהנא",
-      "add_time": "2025-08-05 07:23:28",
-      "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2409,
-      "person_id": 2226,
-      "title": "יהודה לוי",
-      "add_time": "2025-12-01 08:10:46",
-      "reason": "person_has_no_address"
-    },
-    {
-      "deal_id": 2800,
-      "person_id": 2570,
-      "title": "איתן ארשדי",
-      "add_time": "2026-11-10 08:03:33",
-      "reason": "person_has_no_address"
-    },
     {
       "deal_id": 2829,
       "person_id": 1956,
@@ -65,7 +76,7 @@
       "reason": "person_has_no_address"
     }
   ],
-  "unmapped_total": 6,
+  "unmapped_total": 3,
   "note_he": "עסקאות בלי כתובת אצל איש הקשר לא יכולות להופיע במפה. מלאו כתובת ב־Pipedrive — הסריקה הבאה תוסיף אותן אוטומטית.",
   "note_ru": "Сделки без адреса у контакта не попадают на карту. Заполните адрес в Pipedrive — следующий sync добавит их сам."
 }

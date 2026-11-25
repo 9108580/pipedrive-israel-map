@@ -1,5 +1,5 @@
 {
-  "next_project_number": 1261,
+  "next_project_number": 1262,
   "persons": {
     "9": {
       "person_id": 9,
@@ -12838,16 +12838,17 @@
       "person_id": 86,
       "title": "מצרי מחמוד",
       "project_number": 69,
-      "address": "אקסודוס 5",
-      "lat": 32.3290606,
-      "lon": 34.8634574,
+      "address": "ירוש",
+      "lat": 31.929144179968112,
+      "lon": 34.784931328806096,
       "address_type": "city",
-      "city_key": "נתניה",
-      "geocode_display": "אקסודוס, נאות שקד, נתניה, נפת השרון, מחוז המרכז, 4246382, ישראל",
+      "city_key": "אירוס",
+      "geocode_display": "אירוס, נפת רחובות, מחוז המרכז, 7680900, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
-      "location_source": "microsoft_footprint",
-      "address_raw": "אקסודוס 5",
+      "location_source": "osm_building",
+      "error": null,
+      "address_raw": "ירוש",
       "address_formatted": "",
       "crm_locality": "",
       "locality_id": null,
@@ -20385,22 +20386,23 @@
       "person_id": 1817,
       "title": "סוויסה אלברט deal",
       "project_number": 499,
-      "address": "סתוונית 44",
-      "lat": 31.5228173,
-      "lon": 34.5920766,
+      "address": "Sitvanit St 44, Be'er Sheva, Israel",
+      "lat": 31.2571577,
+      "lon": 34.7903127,
       "address_type": "city",
-      "city_key": "שדרות",
-      "geocode_display": "סתוונית, כלניות, שדרות, נפת אשקלון, מחוז הדרום, 8720178, ישראל",
+      "city_key": "באר-שבע",
+      "geocode_display": "באר-שבע, נפת באר שבע, מחוז הדרום, ישראל",
       "snapped_to_building": true,
       "location_precision": "settlement_approximate",
       "location_source": "microsoft_footprint",
-      "address_raw": "סתוונית 44",
-      "address_formatted": "",
-      "crm_locality": "",
-      "locality_id": null,
-      "locality_name": "",
-      "locality_source": "unresolved",
-      "locality_reason": "CRM address has no unambiguous registered locality"
+      "error": null,
+      "address_raw": "סתוונית 44, באר שבע, Israel",
+      "address_formatted": "Sitvanit St 44, Be'er Sheva, Israel",
+      "crm_locality": "Be'er Sheva",
+      "locality_id": "9000",
+      "locality_name": "באר שבע",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
     },
     "1876": {
       "deal_id": 1876,
@@ -38964,20 +38966,75 @@
       "locality_name": "כרמיאל",
       "locality_source": "crm_raw",
       "locality_reason": ""
+    },
+    "2837": {
+      "deal_id": 2837,
+      "person_id": 2603,
+      "title": "אביחי קייטס",
+      "project_number": 1261,
+      "address": "Rotem St 5, Kfar Vradim, Israel",
+      "lat": 32.9934005,
+      "lon": 35.2587219,
+      "address_type": "city",
+      "city_key": "כפר ורדים",
+      "geocode_display": "כפר ורדים, נפת עכו, מחוז הצפון, 2514700, ישראל",
+      "snapped_to_building": true,
+      "location_precision": "settlement_approximate",
+      "location_source": "microsoft_footprint",
+      "error": null,
+      "address_raw": "רותם 5, כפר ורדים, Israel",
+      "address_formatted": "Rotem St 5, Kfar Vradim, Israel",
+      "crm_locality": "Kfar Vradim",
+      "locality_id": "1263",
+      "locality_name": "כפר ורדים",
+      "locality_source": "crm_raw",
+      "locality_reason": ""
     }
   },
   "crm_summary": {
-    "generated_at": "2026-11-24T17:16:28.219437+00:00",
-    "deals_total": 1257,
-    "without_address": 6
+    "generated_at": "2026-11-25T17:01:17.716385+00:00",
+    "deals_total": 1259,
+    "without_address": 3
   },
   "pending_deals": {
     "2831": {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 3,
+      "attempts": 4,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-24T17:16:26.665699+00:00",
+      "last_failed_at": "2026-11-25T17:01:00.015882+00:00",
+      "previous_pin_preserved": false
+    },
+    "2229": {
+      "deal_id": 2229,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:16.195621+00:00",
+      "last_failed_at": "2026-11-25T17:00:16.195621+00:00",
+      "previous_pin_preserved": false
+    },
+    "2409": {
+      "deal_id": 2409,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:18.446635+00:00",
+      "last_failed_at": "2026-11-25T17:00:18.446635+00:00",
+      "previous_pin_preserved": false
+    },
+    "2800": {
+      "deal_id": 2800,
+      "reason": "building_service_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:00:20.028360+00:00",
+      "last_failed_at": "2026-11-25T17:00:20.028360+00:00",
+      "previous_pin_preserved": false
+    },
+    "2836": {
+      "deal_id": 2836,
+      "reason": "geocode_unavailable",
+      "attempts": 1,
+      "first_failed_at": "2026-11-25T17:01:14.996305+00:00",
+      "last_failed_at": "2026-11-25T17:01:14.996305+00:00",
       "previous_pin_preserved": false
     }
   }

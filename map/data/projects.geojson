@@ -1413,8 +1413,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.8634574,
-          32.3290606
+          34.784931328806096,
+          31.929144179968112
         ]
       },
       "properties": {
@@ -10401,8 +10401,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.5920766,
-          31.5228173
+          34.7903127,
+          31.2571577
         ]
       },
       "properties": {
@@ -10410,9 +10410,9 @@
         "project_number": 499,
         "address_type": "city",
         "person_id": 1817,
-        "place": "",
-        "locality_id": null,
-        "locality_status": "unresolved",
+        "place": "באר שבע",
+        "locality_id": "9000",
+        "locality_status": "resolved",
         "approximate": true,
         "deal_id": 1875
       }
@@ -26250,11 +26250,32 @@
         "approximate": true,
         "deal_id": 2834
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2587219,
+          32.9934005
+        ]
+      },
+      "properties": {
+        "name": "Project 1261",
+        "project_number": 1261,
+        "address_type": "city",
+        "person_id": 2603,
+        "place": "כפר ורדים",
+        "locality_id": "1263",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2837
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-24T17:16:28.219437+00:00",
-    "deals_total": 1257,
-    "without_address": 6
+    "generated_at": "2026-11-25T17:01:17.716385+00:00",
+    "deals_total": 1259,
+    "without_address": 3
   }
 }
