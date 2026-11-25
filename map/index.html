@@ -329,14 +329,6 @@
         if (projectsEl) projectsEl.textContent = projectsCount.toLocaleString("he-IL");
         if (statsEl) {
           statsEl.hidden = false;
-          const unresolved = features.filter(f => !f.properties.locality_id).length;
-          const note = document.createElement("div");
-          note.id = "locality-note";
-          note.style.cssText = "font-size:12px;margin-top:6px;color:#555";
-          note.textContent = unresolved ? `${unresolved} פרויקטים עם יישוב לא מזוהה — אינם נספרים כיישוב נוסף` : "כל היישובים מאוחדים לפי סמל יישוב";
-          const noAddress = (geojson.crm_summary || {}).without_address || 0;
-          if (noAddress) note.textContent += ` · ${noAddress} עסקאות CRM ללא כתובת אינן מוצגות במפה`;
-          statsEl.appendChild(note);
         }
 
         // Company logo floating on the Mediterranean (west of Israel)
