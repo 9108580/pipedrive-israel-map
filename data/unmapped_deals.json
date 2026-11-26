@@ -3,54 +3,30 @@
     {
       "deal_id": 2831,
       "reason": "geocode_unavailable",
-      "attempts": 4,
+      "attempts": 5,
       "first_failed_at": "2026-11-22T14:22:46.780934+00:00",
-      "last_failed_at": "2026-11-25T17:01:00.015882+00:00",
-      "previous_pin_preserved": false
-    },
-    {
-      "deal_id": 2229,
-      "reason": "building_service_unavailable",
-      "attempts": 1,
-      "first_failed_at": "2026-11-25T17:00:16.195621+00:00",
-      "last_failed_at": "2026-11-25T17:00:16.195621+00:00",
-      "previous_pin_preserved": false
-    },
-    {
-      "deal_id": 2409,
-      "reason": "building_service_unavailable",
-      "attempts": 1,
-      "first_failed_at": "2026-11-25T17:00:18.446635+00:00",
-      "last_failed_at": "2026-11-25T17:00:18.446635+00:00",
-      "previous_pin_preserved": false
-    },
-    {
-      "deal_id": 2800,
-      "reason": "building_service_unavailable",
-      "attempts": 1,
-      "first_failed_at": "2026-11-25T17:00:20.028360+00:00",
-      "last_failed_at": "2026-11-25T17:00:20.028360+00:00",
+      "last_failed_at": "2026-11-26T16:41:40.388317+00:00",
       "previous_pin_preserved": false
     },
     {
       "deal_id": 2836,
       "reason": "geocode_unavailable",
-      "attempts": 1,
+      "attempts": 2,
       "first_failed_at": "2026-11-25T17:01:14.996305+00:00",
-      "last_failed_at": "2026-11-25T17:01:14.996305+00:00",
+      "last_failed_at": "2026-11-26T16:41:55.429182+00:00",
       "previous_pin_preserved": false
     }
   ],
-  "deferred_total": 5,
-  "generated_at": "2026-11-25T17:01:17.716385+00:00",
-  "crm_deals_total": 1259,
-  "crm_deals_mappable": 1256,
-  "map_pins": 1251,
+  "deferred_total": 2,
+  "generated_at": "2026-11-26T16:41:58.203341+00:00",
+  "crm_deals_total": 1260,
+  "crm_deals_mappable": 1257,
+  "map_pins": 1255,
   "sync": {
-    "added": 3,
+    "added": 4,
     "reused": 0,
-    "skipped": 1248,
-    "failed": 5
+    "skipped": 1251,
+    "failed": 2
   },
   "unmapped_no_person": [
     {

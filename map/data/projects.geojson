@@ -26271,11 +26271,95 @@
         "approximate": true,
         "deal_id": 2837
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.08895001761959,
+          32.83043914888854
+        ]
+      },
+      "properties": {
+        "name": "Project 1262",
+        "project_number": 1262,
+        "address_type": "city",
+        "person_id": 2060,
+        "place": "קרית ביאליק",
+        "locality_id": "9500",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2229
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.85213400223736,
+          31.878381086663143
+        ]
+      },
+      "properties": {
+        "name": "Project 1263",
+        "project_number": 1263,
+        "address_type": "city",
+        "person_id": 2226,
+        "place": "נען",
+        "locality_id": "158",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2409
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.14131721984186,
+          32.9719183984301
+        ]
+      },
+      "properties": {
+        "name": "Project 1264",
+        "project_number": 1264,
+        "address_type": "city",
+        "person_id": 2570,
+        "place": "נתיב השיירה",
+        "locality_id": "792",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1153103,
+          33.0616802
+        ]
+      },
+      "properties": {
+        "name": "Project 1265",
+        "project_number": 1265,
+        "address_type": "city",
+        "person_id": 2604,
+        "place": "כפר ראש הנקרה",
+        "locality_id": "579",
+        "locality_status": "resolved",
+        "approximate": true,
+        "deal_id": 2838
+      }
     }
   ],
   "crm_summary": {
-    "generated_at": "2026-11-25T17:01:17.716385+00:00",
-    "deals_total": 1259,
+    "generated_at": "2026-11-26T16:41:58.203341+00:00",
+    "deals_total": 1260,
     "without_address": 3
   }
 }
